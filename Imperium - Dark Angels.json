@@ -106,7 +106,8 @@
         "categoryLinks": [
           {"name": "Deathwing", "id": "78da-0921-b968-d499", "hidden": false, "primary": false, "targetId": "e21f-8e64-c5d-7df0"},
           {"name": "Ironwing", "id": "b29e-5a31-07ee-866f", "hidden": false, "primary": false, "targetId": "0a82-2ca2-6290-7d07"}
-        ]
+        ],
+        "entryLinks": [{"name": "Enhancements", "id": "f432-e374-b1f2-cfe8", "hidden": false, "import": true, "targetId": "9e5d-de4c-c5d1-1d3e", "type": "selectionEntryGroup"}]
       },
       {"name": "Firewing Assassin", "id": "12fa-533f-aaf8-4611", "hidden": false, "import": true, "targetId": "36d0-025f-81e6-4d68", "type": "selectionEntry"},
       {"name": "Dreadwing Interemptors", "id": "2bab-56ea-58fb-fe87", "hidden": false, "import": true, "targetId": "99ed-26df-83f3-b41b", "type": "selectionEntry"},
@@ -12181,7 +12182,8 @@
             "sortIndex": 1,
             "targetId": "9a99-f13c-a667-e698",
             "type": "selectionEntryGroup"
-          }
+          },
+          {"name": "Enhancements", "id": "171e-4787-af7a-4107", "hidden": false, "import": true, "targetId": "9e5d-de4c-c5d1-1d3e", "type": "selectionEntryGroup"}
         ],
         "infoLinks": [
           {

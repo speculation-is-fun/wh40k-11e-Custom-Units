@@ -19648,6 +19648,9 @@
                   {"name": "Detachment Points", "typeId": "82ae-1066-5107-6ae0", "value": 0},
                   {"name": "Enhancements", "typeId": "f759-1bc4-cb3a-f0d2", "value": 0}
                 ],
+                "entryLinks": [
+                  {"name": "Weapon Modifications", "id": "2225-0c1a-8836-395f", "hidden": false, "import": true, "targetId": "f9da-852a-d7f0-92e9", "type": "selectionEntryGroup"}
+                ],
                 "infoLinks": [
                   {"name": "Close-quarters", "id": "8577-6728-1828-b6fb", "hidden": false, "targetId": "5238-5ad4-52f7-6eb4", "type": "rule"},
                   {"name": "Devastating Wounds", "id": "df94-830a-b823-1400", "hidden": false, "targetId": "be1e-ac8e-1e2c-3528", "type": "rule"},
@@ -19721,6 +19724,9 @@
                   {"name": "Blackstone Fragments", "typeId": "ac6b-ced3-9b5e-9a6e", "value": 0},
                   {"name": "Detachment Points", "typeId": "82ae-1066-5107-6ae0", "value": 0},
                   {"name": "Enhancements", "typeId": "f759-1bc4-cb3a-f0d2", "value": 0}
+                ],
+                "entryLinks": [
+                  {"name": "Weapon Modifications", "id": "1e20-dbf9-8d1b-9ac5", "hidden": false, "import": true, "targetId": "f9da-852a-d7f0-92e9", "type": "selectionEntryGroup"}
                 ],
                 "infoLinks": [
                   {"name": "Close-quarters", "id": "719e-341f-c73a-7a0a", "hidden": false, "targetId": "5238-5ad4-52f7-6eb4", "type": "rule"},
