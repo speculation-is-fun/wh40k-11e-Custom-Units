@@ -43,7 +43,8 @@
       {"name": "Dawnbreakers", "id": "39d3-9759-491a-b66a", "hidden": false},
       {"name": "Contemptor-Incaendius Dreadnought", "id": "df19-3935-52d2-e7c8", "hidden": false},
       {"name": "Angel's Tears", "id": "8043-17f4-3d4c-260c", "hidden": false},
-      {"name": "Burning Eyes", "id": "fd20-fe36-74d9-0ef9", "hidden": false}
+      {"name": "Burning Eyes", "id": "fd20-fe36-74d9-0ef9", "hidden": false},
+      {"name": "Custo,", "id": "040e-7289-ee17-f34b", "hidden": false}
     ],
     "entryLinks": [
       {"name": "Death Company Intercessors", "id": "995-6e4c-ec61-ec2c", "hidden": false, "import": true, "targetId": "bb83-db85-6ce1-9a61", "type": "selectionEntry"},
@@ -11900,7 +11901,7 @@
         ]
       },
       {
-        "name": "Contemptor-Incaendius Dreadnought",
+        "name": "Contemptor-Incaendius Dreadnought [Custom Units]",
         "id": "3ff4-62d6-998b-f969",
         "hidden": false,
         "import": true,
@@ -11912,7 +11913,8 @@
           {"name": "Dreadnought", "id": "5351-c572-2948-a63a", "primary": false, "targetId": "c97c-376-e2e0-1dd2"},
           {"name": "Faction: Adeptus Astartes", "id": "84e7-9ce8-063f-59bf", "primary": false, "targetId": "6e7-40c-58d9-e402"},
           {"name": "Faction: Blood Angels", "id": "3997-9e5c-46f9-6846", "primary": false, "targetId": "62ac-ef42-27b4-ae7"},
-          {"name": "Contemptor-Incaendius Dreadnought", "id": "5df8-6496-0578-06c0", "hidden": false, "primary": false, "targetId": "df19-3935-52d2-e7c8"}
+          {"name": "Contemptor-Incaendius Dreadnought", "id": "5df8-6496-0578-06c0", "hidden": false, "primary": false, "targetId": "df19-3935-52d2-e7c8"},
+          {"name": "Custom Units", "id": "2b38-8102-4fa0-4f4d", "hidden": false, "primary": false, "targetId": "e875-4d09-70f8-e315"}
         ],
         "constraints": [
           {"id": "9299-e740-4d24-c8a9", "field": "75bb-ded1-c86d-bdf0", "includeChildSelections": false, "scope": "self", "shared": true, "type": "max", "value": 3},
@@ -12140,6 +12142,24 @@
                 ]
               }
             ]
+          },
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "9d3b-38d9-2d95-fac7",
+                "childName": "Show Custom Units",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "lessThan",
+                "value": 1
+              }
+            ]
           }
         ],
         "profiles": [
@@ -12286,7 +12306,7 @@
         ]
       },
       {
-        "name": "Crimson Paladins",
+        "name": "Crimson Paladins [Custom Units]",
         "id": "2ecc-6be2-6989-64b4",
         "hidden": false,
         "import": true,
@@ -12297,7 +12317,8 @@
           {"name": "Terminator", "id": "4b65-f273-125f-01f4", "hidden": false, "primary": false, "targetId": "740a-892c-8958-defa"},
           {"name": "Faction: Adeptus Astartes", "id": "b59e-4525-dfbf-473b", "hidden": false, "primary": false, "targetId": "6e7-40c-58d9-e402"},
           {"name": "Crimson Paladins", "id": "8e6f-76ed-a24c-fd56", "hidden": false, "primary": false, "targetId": "12e5-4822-29db-5451"},
-          {"name": "Faction: Blood Angels", "id": "b1f9-ad3c-0274-8ffd", "hidden": false, "primary": false, "targetId": "62ac-ef42-27b4-ae7"}
+          {"name": "Faction: Blood Angels", "id": "b1f9-ad3c-0274-8ffd", "hidden": false, "primary": false, "targetId": "62ac-ef42-27b4-ae7"},
+          {"name": "Custom Units", "id": "3ab2-19c5-189b-4c1d", "hidden": false, "primary": false, "targetId": "e875-4d09-70f8-e315"}
         ],
         "constraints": [
           {"id": "f57a-40d8-2d17-6253", "field": "75bb-ded1-c86d-bdf0", "includeChildSelections": false, "scope": "self", "shared": true, "type": "max", "value": 3},
@@ -12513,12 +12534,6 @@
             ]
           },
           {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "f89b-84e0-6e3b-f1e2", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1}]
-          },
-          {
             "field": "bcba-446f-590f-faaa",
             "type": "set",
             "value": 2,
@@ -12565,6 +12580,24 @@
                     ]
                   }
                 ]
+              }
+            ]
+          },
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "9d3b-38d9-2d95-fac7",
+                "childName": "Show Custom Units",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "lessThan",
+                "value": 1
               }
             ]
           }
@@ -13256,7 +13289,7 @@
         ]
       },
       {
-        "name": "Dawnbreaker Cohort",
+        "name": "Dawnbreaker Cohort [Custom Units]",
         "id": "7c90-2613-2c4f-f7a7",
         "hidden": false,
         "import": true,
@@ -13270,7 +13303,8 @@
           {"name": "Jump Pack", "id": "0d7a-74a7-0e34-bc8e", "primary": false, "targetId": "dda2-bb0a-215e-ad9c"},
           {"name": "Explosives", "id": "81dc-04ed-9cdd-9230", "hidden": false, "primary": false, "targetId": "e33d-891d-33aa-e9bf"},
           {"name": "Tacticus", "id": "6d97-308c-5dce-63de", "hidden": false, "primary": false, "targetId": "5179-8ede-45e3-49a2"},
-          {"name": "Dawnbreakers", "id": "9ea0-6c93-527e-7db7", "hidden": false, "primary": false, "targetId": "39d3-9759-491a-b66a"}
+          {"name": "Dawnbreakers", "id": "9ea0-6c93-527e-7db7", "hidden": false, "primary": false, "targetId": "39d3-9759-491a-b66a"},
+          {"name": "Custom Units", "id": "ce26-954b-c62b-184c", "hidden": false, "primary": false, "targetId": "e875-4d09-70f8-e315"}
         ],
         "constraints": [
           {"id": "8c58-88b5-0d48-61da", "field": "75bb-ded1-c86d-bdf0", "includeChildSelections": false, "scope": "self", "shared": true, "type": "max", "value": 3},
@@ -13523,6 +13557,24 @@
                     ]
                   }
                 ]
+              }
+            ]
+          },
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "9d3b-38d9-2d95-fac7",
+                "childName": "Show Custom Units",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "lessThan",
+                "value": 1
               }
             ]
           }
@@ -13832,7 +13884,7 @@
         ]
       },
       {
-        "name": "Angel's Tears",
+        "name": "Angel's Tears [Custom Units]",
         "id": "d3b9-296d-fab9-dc7f",
         "hidden": false,
         "import": true,
@@ -13846,7 +13898,8 @@
           {"name": "Jump Pack", "id": "22a6-6f67-e056-6e9c", "primary": false, "targetId": "dda2-bb0a-215e-ad9c"},
           {"name": "Explosives", "id": "5c22-009b-c308-e448", "hidden": false, "primary": false, "targetId": "e33d-891d-33aa-e9bf"},
           {"name": "Tacticus", "id": "7b9f-6df0-0d4e-b074", "hidden": false, "primary": false, "targetId": "5179-8ede-45e3-49a2"},
-          {"name": "Angel's Tears", "id": "05b4-3c7d-2a3d-0d3e", "hidden": false, "primary": false, "targetId": "8043-17f4-3d4c-260c"}
+          {"name": "Angel's Tears", "id": "05b4-3c7d-2a3d-0d3e", "hidden": false, "primary": false, "targetId": "8043-17f4-3d4c-260c"},
+          {"name": "Custom Units", "id": "dbea-1d96-e797-47a0", "hidden": false, "primary": false, "targetId": "e875-4d09-70f8-e315"}
         ],
         "constraints": [
           {"id": "2adf-93a8-e480-b4f1", "field": "75bb-ded1-c86d-bdf0", "includeChildSelections": false, "scope": "self", "shared": true, "type": "max", "value": 3},
@@ -14100,6 +14153,24 @@
                     ]
                   }
                 ]
+              }
+            ]
+          },
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "9d3b-38d9-2d95-fac7",
+                "childName": "Show Custom Units",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "lessThan",
+                "value": 1
               }
             ]
           }
@@ -14384,7 +14455,7 @@
         ]
       },
       {
-        "name": "Burning Eyes",
+        "name": "Burning Eyes [Custom Units]",
         "id": "027d-8c62-d861-44d3",
         "hidden": false,
         "import": true,
@@ -14395,7 +14466,8 @@
           {"name": "Tacticus", "id": "c19b-d899-1f0f-1ff3", "hidden": false, "primary": false, "targetId": "5179-8ede-45e3-49a2"},
           {"name": "Faction: Adeptus Astartes", "id": "823b-27ba-3561-6569", "hidden": false, "primary": false, "targetId": "6e7-40c-58d9-e402"},
           {"name": "Faction: Blood Angels", "id": "f542-b50d-4bf5-e37e", "hidden": false, "primary": false, "targetId": "62ac-ef42-27b4-ae7"},
-          {"name": "Burning Eyes", "id": "1d19-ca2e-341f-b7ed", "hidden": false, "primary": false, "targetId": "fd20-fe36-74d9-0ef9"}
+          {"name": "Burning Eyes", "id": "1d19-ca2e-341f-b7ed", "hidden": false, "primary": false, "targetId": "fd20-fe36-74d9-0ef9"},
+          {"name": "Custom Units", "id": "496e-dfdb-ccda-67e2", "hidden": false, "primary": false, "targetId": "e875-4d09-70f8-e315"}
         ],
         "constraints": [
           {"id": "7631-0eff-95f7-1370", "field": "75bb-ded1-c86d-bdf0", "includeChildSelections": false, "scope": "self", "shared": true, "type": "max", "value": 3},
@@ -14642,6 +14714,24 @@
                     ]
                   }
                 ]
+              }
+            ]
+          },
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "9d3b-38d9-2d95-fac7",
+                "childName": "Show Custom Units",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "lessThan",
+                "value": 1
               }
             ]
           }

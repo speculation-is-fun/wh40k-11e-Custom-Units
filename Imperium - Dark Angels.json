@@ -9003,7 +9003,7 @@
         ]
       },
       {
-        "name": "Firewing Assassin",
+        "name": "Firewing Assassin [Custom Units]",
         "id": "36d0-025f-81e6-4d68",
         "hidden": false,
         "import": true,
@@ -9040,7 +9040,8 @@
           {"name": "Imperium", "id": "7f48-aae9-96c0-88a2", "hidden": false, "primary": false, "targetId": "aff3-d6a3-2a95-9dc"},
           {"name": "Faction: Adeptus Astartes", "id": "c273-27cb-af38-1c3b", "hidden": false, "primary": false, "targetId": "6e7-40c-58d9-e402"},
           {"name": "Phobos", "id": "e5c5-25c0-3890-2a60", "hidden": false, "primary": false, "targetId": "7295-ed65-8ff4-7a5f"},
-          {"name": "Firewing", "id": "b5b5-db60-17d0-f652", "hidden": false, "primary": false, "targetId": "3d58-7b7a-58e0-ded6"}
+          {"name": "Firewing", "id": "b5b5-db60-17d0-f652", "hidden": false, "primary": false, "targetId": "3d58-7b7a-58e0-ded6"},
+          {"name": "Custom Units", "id": "8b87-3e1a-f41f-17fc", "hidden": false, "primary": false, "targetId": "e875-4d09-70f8-e315"}
         ],
         "constraints": [
           {"id": "5943-234b-a608-1c9b", "field": "75bb-ded1-c86d-bdf0", "includeChildSelections": false, "scope": "self", "shared": true, "type": "max", "value": 6},
@@ -9258,6 +9259,24 @@
                 "value": 1
               }
             ]
+          },
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "9d3b-38d9-2d95-fac7",
+                "childName": "Show Custom Units",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "lessThan",
+                "value": 1
+              }
+            ]
           }
         ],
         "profiles": [
@@ -9394,7 +9413,7 @@
         ]
       },
       {
-        "name": "Dreadwing Interemptors",
+        "name": "Dreadwing Interemptors [Custom Units]",
         "id": "99ed-26df-83f3-b41b",
         "hidden": false,
         "import": true,
@@ -9406,7 +9425,8 @@
           {"name": "Sternguard Veteran Squad", "id": "1142-9afb-0a1e-87fe", "hidden": false, "primary": false, "targetId": "e05e-b4e4-6db0-5d42"},
           {"name": "Faction: Adeptus Astartes", "id": "d118-cc37-52a2-b616", "hidden": false, "primary": false, "targetId": "6e7-40c-58d9-e402"},
           {"name": "Explosives", "id": "de9f-7f68-43ab-a380", "hidden": false, "primary": false, "targetId": "e33d-891d-33aa-e9bf"},
-          {"name": "Dreadwing", "id": "0325-3718-abbd-d87f", "hidden": false, "primary": false, "targetId": "6706-3f48-8160-6a51"}
+          {"name": "Dreadwing", "id": "0325-3718-abbd-d87f", "hidden": false, "primary": false, "targetId": "6706-3f48-8160-6a51"},
+          {"name": "Custom Units", "id": "8930-6b0e-62ee-acf2", "hidden": false, "primary": false, "targetId": "e875-4d09-70f8-e315"}
         ],
         "constraints": [
           {"id": "dd69-4af3-66cf-e9a4", "field": "75bb-ded1-c86d-bdf0", "includeChildSelections": false, "scope": "self", "shared": true, "type": "max", "value": 3},
@@ -9700,6 +9720,24 @@
                     ]
                   }
                 ]
+              }
+            ]
+          },
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "9d3b-38d9-2d95-fac7",
+                "childName": "Show Custom Units",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "lessThan",
+                "value": 1
               }
             ]
           }
@@ -10131,7 +10169,7 @@
         ]
       },
       {
-        "name": "Enigmatus Cabal",
+        "name": "Enigmatus Cabal [Custom Units]",
         "id": "8223-2a5e-e50b-3b45",
         "hidden": false,
         "import": true,
@@ -10145,7 +10183,8 @@
           {"name": "Firewing", "id": "3c19-c4f6-0cc2-389f", "hidden": false, "primary": false, "targetId": "3d58-7b7a-58e0-ded6"},
           {"name": "Jump Pack", "id": "117c-31e6-d48b-e4f0", "hidden": false, "primary": false, "targetId": "dda2-bb0a-215e-ad9c"},
           {"name": "Enigmatus Cabal", "id": "554d-9aec-279d-8359", "hidden": false, "primary": false, "targetId": "f428-2005-728d-feb2"},
-          {"name": "Fly", "id": "106f-8830-8cb4-d302", "hidden": false, "primary": false, "targetId": "c619-2086-bbcf-69c9"}
+          {"name": "Fly", "id": "106f-8830-8cb4-d302", "hidden": false, "primary": false, "targetId": "c619-2086-bbcf-69c9"},
+          {"name": "Custom Units", "id": "e048-0608-f840-b50c", "hidden": false, "primary": false, "targetId": "e875-4d09-70f8-e315"}
         ],
         "constraints": [
           {"id": "cd6c-a7bf-6e9e-8199", "field": "75bb-ded1-c86d-bdf0", "includeChildSelections": false, "scope": "self", "shared": true, "type": "max", "value": 3},
@@ -10187,7 +10226,7 @@
           }
         ],
         "costs": [
-          {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 135},
+          {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 115},
           {"name": "Crusade Points", "typeId": "b03b-c239-15a5-da55", "value": 0},
           {"name": "Crusade: Battle Honours", "typeId": "75bb-ded1-c86d-bdf0", "value": 0},
           {"name": "Crusade: Experience", "typeId": "a623-fe74-1d33-cddf", "value": 0},
@@ -10346,7 +10385,7 @@
           {
             "field": "51b2-306e-1021-d207",
             "type": "set",
-            "value": 220,
+            "value": 200,
             "conditions": [{"childId": "model", "field": "selections", "includeChildSelections": true, "scope": "8223-2a5e-e50b-3b45", "shared": true, "type": "greaterThan", "value": 3}]
           },
           {
@@ -10396,6 +10435,24 @@
                     ]
                   }
                 ]
+              }
+            ]
+          },
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "9d3b-38d9-2d95-fac7",
+                "childName": "Show Custom Units",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "lessThan",
+                "value": 1
               }
             ]
           }
@@ -10558,7 +10615,7 @@
         ]
       },
       {
-        "name": "Stoneborn",
+        "name": "Stoneborn [Custom Units]",
         "id": "b95f-0489-915a-6bc1",
         "hidden": false,
         "import": true,
@@ -10572,7 +10629,8 @@
           {"name": "Deathwing Knights", "id": "f266-2847-f2fa-aade", "primary": false, "targetId": "8c-33f-ebc7-f623"},
           {"name": "Terminator", "id": "594e-e703-26bd-86e2", "primary": false, "targetId": "740a-892c-8958-defa"},
           {"name": "Ironwing", "id": "7b37-1e00-bfda-d022", "hidden": false, "primary": false, "targetId": "0a82-2ca2-6290-7d07"},
-          {"name": "Stoneborn", "id": "f2b5-3dee-4741-43a1", "hidden": false, "primary": false, "targetId": "0fb8-2fe3-5f87-67c0"}
+          {"name": "Stoneborn", "id": "f2b5-3dee-4741-43a1", "hidden": false, "primary": false, "targetId": "0fb8-2fe3-5f87-67c0"},
+          {"name": "Custom Units", "id": "baeb-4bec-5b93-1826", "hidden": false, "primary": false, "targetId": "e875-4d09-70f8-e315"}
         ],
         "constraints": [
           {"id": "a62f-9b0f-57d1-eebc", "field": "75bb-ded1-c86d-bdf0", "includeChildSelections": false, "scope": "self", "shared": true, "type": "max", "value": 3},
@@ -10808,6 +10866,24 @@
                     ]
                   }
                 ]
+              }
+            ]
+          },
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "9d3b-38d9-2d95-fac7",
+                "childName": "Show Custom Units",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "lessThan",
+                "value": 1
               }
             ]
           }
@@ -11124,7 +11200,7 @@
         ]
       },
       {
-        "name": "Forge-Wright",
+        "name": "Forge-Wright [Custom Units]",
         "id": "2383-3b74-e344-0568",
         "hidden": false,
         "import": true,
@@ -11291,7 +11367,8 @@
           {"name": "Terminator", "id": "3898-598f-0129-f64a", "hidden": false, "primary": false, "targetId": "740a-892c-8958-defa"},
           {"name": "Techmarine", "id": "953d-00c8-79af-ce9e", "hidden": false, "primary": false, "targetId": "b957-d9cd-ee81-560"},
           {"name": "Forge-Wright", "id": "c968-9e24-ca21-92ea", "hidden": false, "primary": false, "targetId": "5408-66e9-8d1f-a05e"},
-          {"name": "Faction: Dark Angels", "id": "a816-cb5d-eaa1-e171", "hidden": false, "primary": false, "targetId": "aab1-4f05-fabe-5ba5"}
+          {"name": "Faction: Dark Angels", "id": "a816-cb5d-eaa1-e171", "hidden": false, "primary": false, "targetId": "aab1-4f05-fabe-5ba5"},
+          {"name": "Custom Units", "id": "af2c-ccf5-916d-d136", "hidden": false, "primary": false, "targetId": "e875-4d09-70f8-e315"}
         ],
         "constraints": [
           {"id": "577c-2467-b780-50f6", "field": "75bb-ded1-c86d-bdf0", "includeChildSelections": false, "scope": "self", "shared": true, "type": "max", "value": 6},
@@ -11494,6 +11571,24 @@
                 "value": 1
               }
             ]
+          },
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "9d3b-38d9-2d95-fac7",
+                "childName": "Show Custom Units",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "lessThan",
+                "value": 1
+              }
+            ]
           }
         ],
         "profiles": [
@@ -11679,7 +11774,7 @@
         ]
       },
       {
-        "name": "Land Raider Solumnus Aggressor",
+        "name": "Land Raider Solumnus Aggressor [Custom Units]",
         "id": "b167-dae2-2035-0be5",
         "hidden": false,
         "import": true,
@@ -11694,7 +11789,8 @@
           {"name": "Land Raider", "id": "a468-0292-8788-67b4", "hidden": false, "primary": false, "targetId": "8c5e-74f4-e3cf-56ed"},
           {"name": "Frame", "id": "736c-575e-e56b-54a1", "hidden": false, "primary": false, "targetId": "b927-8eeb-7cc3-8dec"},
           {"name": "Explosives", "id": "efd5-2ea0-75c0-4245", "hidden": false, "primary": false, "targetId": "e33d-891d-33aa-e9bf"},
-          {"name": "Ironwing", "id": "cd50-6bb1-8230-6e78", "hidden": false, "primary": false, "targetId": "0a82-2ca2-6290-7d07"}
+          {"name": "Ironwing", "id": "cd50-6bb1-8230-6e78", "hidden": false, "primary": false, "targetId": "0a82-2ca2-6290-7d07"},
+          {"name": "Custom Units", "id": "b25c-0436-67f8-ae1a", "hidden": false, "primary": false, "targetId": "e875-4d09-70f8-e315"}
         ],
         "constraints": [
           {"id": "632d-b7e1-8480-c753", "field": "75bb-ded1-c86d-bdf0", "includeChildSelections": false, "scope": "self", "shared": true, "type": "max", "value": 3},
@@ -11959,6 +12055,24 @@
                 "value": 1
               }
             ]
+          },
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "9d3b-38d9-2d95-fac7",
+                "childName": "Show Custom Units",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "lessThan",
+                "value": 1
+              }
+            ]
           }
         ],
         "profiles": [
@@ -12139,7 +12253,7 @@
         ]
       },
       {
-        "name": "Avenger Inferno",
+        "name": "Avenger Inferno [Custom Units]",
         "id": "69c2-8698-f27d-31e0",
         "hidden": false,
         "import": true,
@@ -12153,7 +12267,8 @@
           {"name": "Faction: Dark Angels", "id": "6ddd-415a-56ee-466f", "hidden": false, "primary": false, "targetId": "aab1-4f05-fabe-5ba5"},
           {"name": "Avenger Inferno", "id": "9694-19ea-26aa-d32d", "hidden": false, "primary": false, "targetId": "49a1-e73b-9e6f-761a"},
           {"name": "Ravenwing", "id": "4fdf-7285-03ac-411c", "hidden": false, "primary": false, "targetId": "e9c7-1590-1bda-bf7f"},
-          {"name": "Faction: Adeptus Astartes", "id": "dad4-4c8b-45da-6494", "hidden": false, "primary": false, "targetId": "6e7-40c-58d9-e402"}
+          {"name": "Faction: Adeptus Astartes", "id": "dad4-4c8b-45da-6494", "hidden": false, "primary": false, "targetId": "6e7-40c-58d9-e402"},
+          {"name": "Custom Units", "id": "39d4-0f18-fb00-b1db", "hidden": false, "primary": false, "targetId": "e875-4d09-70f8-e315"}
         ],
         "constraints": [
           {"id": "9896-0b78-ddb5-62c0", "field": "75bb-ded1-c86d-bdf0", "includeChildSelections": false, "scope": "self", "shared": true, "type": "max", "value": 3},
@@ -12333,6 +12448,24 @@
                 "value": 1
               }
             ]
+          },
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "9d3b-38d9-2d95-fac7",
+                "childName": "Show Custom Units",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "lessThan",
+                "value": 1
+              }
+            ]
           }
         ],
         "profiles": [
@@ -12445,7 +12578,7 @@
         ]
       },
       {
-        "name": "Eskaton in Terminator Armor",
+        "name": "Eskaton in Terminator Armor [Custom Units]",
         "id": "7a75-0338-6c2c-7dd7",
         "hidden": false,
         "import": true,
@@ -12539,7 +12672,8 @@
           {"name": "Terminator", "id": "0dfa-37fb-8a03-6213", "hidden": false, "primary": false, "targetId": "740a-892c-8958-defa"},
           {"name": "Leader", "id": "9dc9-e25c-9f5a-634a", "hidden": false, "primary": false, "targetId": "1556-9b56-fba6-4370"},
           {"name": "Dreadwing", "id": "b8d9-a500-bf01-d0fd", "hidden": false, "primary": false, "targetId": "6706-3f48-8160-6a51"},
-          {"name": "Eskaton", "id": "deed-d7ae-e477-d77e", "hidden": false, "primary": false, "targetId": "4c18-f5ae-8c3a-15b0"}
+          {"name": "Eskaton", "id": "deed-d7ae-e477-d77e", "hidden": false, "primary": false, "targetId": "4c18-f5ae-8c3a-15b0"},
+          {"name": "Custom Units", "id": "ffe5-80f7-40d4-7fbf", "hidden": false, "primary": false, "targetId": "e875-4d09-70f8-e315"}
         ],
         "constraints": [
           {"id": "b112-f2f8-01a9-52ff", "field": "75bb-ded1-c86d-bdf0", "includeChildSelections": false, "scope": "self", "shared": true, "type": "max", "value": 6},
@@ -12749,6 +12883,24 @@
                 "value": 1
               }
             ]
+          },
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "9d3b-38d9-2d95-fac7",
+                "childName": "Show Custom Units",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "lessThan",
+                "value": 1
+              }
+            ]
           }
         ],
         "profiles": [
@@ -12945,7 +13097,7 @@
         ]
       },
       {
-        "name": "Eskaton",
+        "name": "Eskaton [Custom Units]",
         "id": "0684-26ab-76a8-8fe4",
         "hidden": false,
         "import": true,
@@ -13131,7 +13283,8 @@
           {"name": "Leader", "id": "17d7-7fe9-27fe-7aa3", "hidden": false, "primary": false, "targetId": "1556-9b56-fba6-4370"},
           {"name": "Explosives", "id": "d973-6992-8b2e-4c3b", "hidden": false, "primary": false, "targetId": "e33d-891d-33aa-e9bf"},
           {"name": "Dreadwing", "id": "9262-8256-46f3-c0d9", "hidden": false, "primary": false, "targetId": "6706-3f48-8160-6a51"},
-          {"name": "Eskaton", "id": "40c4-4b3b-2de5-a209", "hidden": false, "primary": false, "targetId": "4c18-f5ae-8c3a-15b0"}
+          {"name": "Eskaton", "id": "40c4-4b3b-2de5-a209", "hidden": false, "primary": false, "targetId": "4c18-f5ae-8c3a-15b0"},
+          {"name": "Custom Units", "id": "a6c2-3626-d40e-b743", "hidden": false, "primary": false, "targetId": "e875-4d09-70f8-e315"}
         ],
         "constraints": [
           {"id": "a813-cd49-f1d7-d155", "field": "75bb-ded1-c86d-bdf0", "includeChildSelections": false, "scope": "self", "shared": true, "type": "max", "value": 6},
@@ -13334,6 +13487,24 @@
                 "scope": "force",
                 "shared": true,
                 "type": "atLeast",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "9d3b-38d9-2d95-fac7",
+                "childName": "Show Custom Units",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "lessThan",
                 "value": 1
               }
             ]
@@ -13740,7 +13911,7 @@
         ]
       },
       {
-        "name": "Excindio-Battle Automata",
+        "name": "Excindio-Battle Automata [Custom Units]",
         "id": "c442-e233-73ab-ccdf",
         "collective": false,
         "hidden": false,
@@ -13753,7 +13924,8 @@
           {"name": "Faction: Adeptus Astartes", "id": "c5e2-7fc2-c08d-6a38", "hidden": false, "primary": false, "targetId": "6e7-40c-58d9-e402"},
           {"name": "Faction: Dark Angels", "id": "4147-e25c-aec5-2fe3", "hidden": false, "primary": false, "targetId": "aab1-4f05-fabe-5ba5"},
           {"name": "Ironwing", "id": "de61-0b4c-56e0-5c68", "hidden": false, "primary": false, "targetId": "0a82-2ca2-6290-7d07"},
-          {"name": "Dreadnought", "id": "7995-cdca-f6b7-be8c", "hidden": false, "primary": false, "targetId": "c97c-376-e2e0-1dd2"}
+          {"name": "Dreadnought", "id": "7995-cdca-f6b7-be8c", "hidden": false, "primary": false, "targetId": "c97c-376-e2e0-1dd2"},
+          {"name": "Custom Units", "id": "0504-d407-1efe-6b53", "hidden": false, "primary": false, "targetId": "e875-4d09-70f8-e315"}
         ],
         "constraints": [
           {"id": "986d-add8-7238-6465", "field": "75bb-ded1-c86d-bdf0", "includeChildSelections": false, "scope": "self", "shared": true, "type": "max", "value": 3},
@@ -13963,6 +14135,24 @@
             "type": "set",
             "value": 300,
             "conditions": [{"childId": "model", "field": "selections", "includeChildSelections": true, "scope": "bf1f-7b13-b1ff-9e5b", "shared": true, "type": "greaterThan", "value": 1}]
+          },
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "9d3b-38d9-2d95-fac7",
+                "childName": "Show Custom Units",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "lessThan",
+                "value": 1
+              }
+            ]
           }
         ],
         "profiles": [
@@ -14590,7 +14780,7 @@
         ]
       },
       {
-        "name": "Land Raider Purgatus",
+        "name": "Land Raider Purgatus [Custom Units]",
         "id": "9775-383e-08b1-95ef",
         "hidden": false,
         "import": true,
@@ -14606,7 +14796,8 @@
           {"name": "Frame", "id": "7190-8175-2105-42ce", "hidden": false, "primary": false, "targetId": "b927-8eeb-7cc3-8dec"},
           {"name": "Explosives", "id": "0b12-a2a1-7f99-2a36", "hidden": false, "primary": false, "targetId": "e33d-891d-33aa-e9bf"},
           {"name": "Dreadwing", "id": "39ab-c21a-2cd2-9b82", "hidden": false, "primary": false, "targetId": "6706-3f48-8160-6a51"},
-          {"name": "Ironwing", "id": "84bd-5b8c-01ce-1672", "hidden": false, "primary": false, "targetId": "0a82-2ca2-6290-7d07"}
+          {"name": "Ironwing", "id": "84bd-5b8c-01ce-1672", "hidden": false, "primary": false, "targetId": "0a82-2ca2-6290-7d07"},
+          {"name": "Custom Units", "id": "65ea-488e-fbd8-b18f", "hidden": false, "primary": false, "targetId": "e875-4d09-70f8-e315"}
         ],
         "constraints": [
           {"id": "58cd-c046-fbc7-f4b3", "field": "75bb-ded1-c86d-bdf0", "includeChildSelections": false, "scope": "self", "shared": true, "type": "max", "value": 3},
@@ -14871,6 +15062,24 @@
                 "value": 1
               }
             ]
+          },
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "9d3b-38d9-2d95-fac7",
+                "childName": "Show Custom Units",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "lessThan",
+                "value": 1
+              }
+            ]
           }
         ],
         "profiles": [
@@ -15113,7 +15322,7 @@
         ]
       },
       {
-        "name": "Paladin",
+        "name": "Paladin [Custom Units]",
         "id": "95da-2207-da40-e156",
         "hidden": false,
         "import": true,
@@ -15229,7 +15438,8 @@
           {"name": "Firewing", "id": "8c68-1881-b464-08fe", "hidden": false, "primary": false, "targetId": "3d58-7b7a-58e0-ded6"},
           {"name": "Deathwing", "id": "7e86-1fcc-d629-c4ec", "hidden": false, "primary": false, "targetId": "e21f-8e64-c5d-7df0"},
           {"name": "Dreadwing", "id": "6e95-d329-aa90-d818", "hidden": false, "primary": false, "targetId": "6706-3f48-8160-6a51"},
-          {"name": "Paladin", "id": "11a1-bab2-a42a-9981", "hidden": false, "primary": false, "targetId": "b9e3-9954-49ba-84a7"}
+          {"name": "Paladin", "id": "11a1-bab2-a42a-9981", "hidden": false, "primary": false, "targetId": "b9e3-9954-49ba-84a7"},
+          {"name": "Custom Units", "id": "fa27-c6f3-8776-1d82", "hidden": false, "primary": false, "targetId": "e875-4d09-70f8-e315"}
         ],
         "constraints": [{"id": "f238-fc62-15f4-039e", "field": "selections", "scope": "roster", "shared": true, "type": "max", "value": 3}],
         "costs": [
@@ -15252,6 +15462,26 @@
         "infoLinks": [
           {"name": "Combat Doctrines", "id": "4d75-2cf4-2119-e6b2", "hidden": false, "targetId": "3b76-4053-ece9-6e7d", "type": "rule"},
           {"name": "Transhuman Strategist", "id": "bf91-f054-5b10-a178", "hidden": false, "targetId": "c6cc-c38c-dfe6-dbb8", "type": "rule"}
+        ],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "9d3b-38d9-2d95-fac7",
+                "childName": "Show Custom Units",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "lessThan",
+                "value": 1
+              }
+            ]
+          }
         ],
         "profiles": [
           {
@@ -15400,7 +15630,7 @@
         ]
       },
       {
-        "name": "Naufragia",
+        "name": "Naufragia [Custom Units]",
         "id": "4671-b8f3-9ad2-bb32",
         "hidden": false,
         "import": true,
@@ -15414,7 +15644,8 @@
           {"name": "Deathwing Knights", "id": "912a-7fd6-02b3-638e", "primary": false, "targetId": "8c-33f-ebc7-f623"},
           {"name": "Terminator", "id": "14bc-5ef1-6d7c-c73e", "primary": false, "targetId": "740a-892c-8958-defa"},
           {"name": "Dreadwing", "id": "13b0-4f44-150d-dce6", "hidden": false, "primary": false, "targetId": "6706-3f48-8160-6a51"},
-          {"name": "Naufragia", "id": "56d4-7807-9f69-c305", "hidden": false, "primary": false, "targetId": "d915-f4be-54d4-b0fd"}
+          {"name": "Naufragia", "id": "56d4-7807-9f69-c305", "hidden": false, "primary": false, "targetId": "d915-f4be-54d4-b0fd"},
+          {"name": "Custom Units", "id": "3e1b-3b56-b79a-1242", "hidden": false, "primary": false, "targetId": "e875-4d09-70f8-e315"}
         ],
         "constraints": [
           {"id": "af94-f866-b7d2-75de", "field": "75bb-ded1-c86d-bdf0", "includeChildSelections": false, "scope": "self", "shared": true, "type": "max", "value": 3},
@@ -15650,6 +15881,24 @@
                     ]
                   }
                 ]
+              }
+            ]
+          },
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "9d3b-38d9-2d95-fac7",
+                "childName": "Show Custom Units",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "lessThan",
+                "value": 1
               }
             ]
           }

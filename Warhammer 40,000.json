@@ -1256,7 +1256,8 @@
       {"name": "Fortis Kill Team", "id": "94a4-4c41-84a4-d038", "hidden": false},
       {"name": "Indomitor Kill Team", "id": "2546-062b-7236-7fa3", "hidden": false},
       {"name": "Spectrus Kill Team", "id": "2b33-05a8-bf42-72f9", "hidden": false},
-      {"name": "Allies: Tyranids", "id": "747a-c6a9-6f4f-7f09", "hidden": false}
+      {"name": "Allies: Tyranids", "id": "747a-c6a9-6f4f-7f09", "hidden": false},
+      {"name": "Custom Units", "id": "e875-4d09-70f8-e315", "hidden": true}
     ],
     "costTypes": [
       {
@@ -3122,7 +3123,8 @@
             "targetId": "e916-2cf4-a49d-b8c4",
             "type": "selectionEntry"
           },
-          {"name": "Show Crucible Characters", "id": "f578-4362-f482-9f54", "hidden": false, "import": true, "targetId": "57cc-822a-1d43-be52", "type": "selectionEntry"}
+          {"name": "Show Crucible Characters", "id": "f578-4362-f482-9f54", "hidden": false, "import": true, "targetId": "57cc-822a-1d43-be52", "type": "selectionEntry"},
+          {"name": "Show Custom Units", "id": "af2b-e21c-89f7-47d9", "hidden": false, "import": true, "targetId": "9d3b-38d9-2d95-fac7", "type": "selectionEntry"}
         ],
         "modifiers": [
           {"field": "7478-2e95-2444-b500", "type": "set", "value": 0},
@@ -4280,6 +4282,58 @@
             "type": "set",
             "value": "Imperial Knights are visible",
             "conditions": [{"childId": "e82c-6f8c-2b97-a287", "field": "selections", "scope": "parent", "shared": true, "type": "atLeast", "value": 1}]
+          }
+        ]
+      },
+      {
+        "name": "Show Custom Units",
+        "id": "9d3b-38d9-2d95-fac7",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Configuration", "id": "0b97-bbc6-5ed1-b218", "hidden": false, "primary": true, "targetId": "4ac9-fd30-1e3d-b249"}],
+        "constraints": [{"id": "9e8d-4ade-051a-3331", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "modifiers": [
+          {
+            "field": "name",
+            "type": "set",
+            "value": "Custom Units are visible",
+            "conditions": [{"childId": "9d3b-38d9-2d95-fac7", "field": "selections", "scope": "parent", "shared": true, "type": "atLeast", "value": 1}]
+          },
+          {
+            "field": "warning",
+            "type": "add",
+            "value": "You need to check this option to see your Custom Units",
+            "conditionGroups": [
+              {
+                "type": "and",
+                "conditions": [
+                  {
+                    "childId": "9d3b-38d9-2d95-fac7",
+                    "childName": "Show Crucible Characters",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "lessThan",
+                    "value": 1
+                  },
+                  {
+                    "childId": "e875-4d09-70f8-e315",
+                    "childName": "Custom Units",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
           }
         ]
       }

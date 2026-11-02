@@ -9619,7 +9619,7 @@
         ]
       },
       {
-        "name": "Sword Brethren Squad with Jump Packs",
+        "name": "Sword Brethren Squad with Jump Packs [Custom Units]",
         "id": "bd07-2c37-62fc-0129",
         "hidden": false,
         "import": true,
@@ -9634,7 +9634,8 @@
           {"name": "Sword Brethren Squad", "id": "e847-2b9d-1dbe-bde5", "primary": false, "targetId": "f790-2929-6951-c241"},
           {"name": "Sword Brethren Squad with Jump Packs", "id": "c0d1-68a3-b686-c18e", "hidden": false, "primary": false, "targetId": "4ff8-2c97-7eed-14cf"},
           {"name": "Jump Pack", "id": "ceb5-dc00-a89c-6a12", "hidden": false, "primary": false, "targetId": "dda2-bb0a-215e-ad9c"},
-          {"name": "Fly", "id": "bf02-013a-5b09-bf6a", "hidden": false, "primary": false, "targetId": "c619-2086-bbcf-69c9"}
+          {"name": "Fly", "id": "bf02-013a-5b09-bf6a", "hidden": false, "primary": false, "targetId": "c619-2086-bbcf-69c9"},
+          {"name": "Custom Units", "id": "4797-9e02-bae6-2056", "hidden": false, "primary": false, "targetId": "e875-4d09-70f8-e315"}
         ],
         "constraints": [
           {"id": "bb37-1c44-619b-025e", "field": "75bb-ded1-c86d-bdf0", "includeChildSelections": false, "scope": "self", "shared": true, "type": "max", "value": 3},
@@ -9923,6 +9924,24 @@
                     ]
                   }
                 ]
+              }
+            ]
+          },
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "9d3b-38d9-2d95-fac7",
+                "childName": "Show Custom Units",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "lessThan",
+                "value": 1
               }
             ]
           }
@@ -10343,7 +10362,7 @@
         ]
       },
       {
-        "name": "Sword Brethren Squad in Tartaros Pattern Terminator Armor",
+        "name": "Sword Brethren Squad in Tartaros Pattern Terminator Armor [Custom Units]",
         "id": "2574-c76a-eff6-56b9",
         "hidden": false,
         "import": true,
@@ -10362,7 +10381,8 @@
             "hidden": false,
             "primary": false,
             "targetId": "b90f-db8f-9b68-1dfb"
-          }
+          },
+          {"name": "Custom Units", "id": "f018-d2a8-658b-55ba", "hidden": false, "primary": false, "targetId": "e875-4d09-70f8-e315"}
         ],
         "constraints": [
           {"id": "2d9f-665a-b4bd-80fe", "field": "75bb-ded1-c86d-bdf0", "includeChildSelections": false, "scope": "self", "shared": true, "type": "max", "value": 3},
@@ -10651,6 +10671,24 @@
                     ]
                   }
                 ]
+              }
+            ]
+          },
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "9d3b-38d9-2d95-fac7",
+                "childName": "Show Custom Units",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "lessThan",
+                "value": 1
               }
             ]
           }
@@ -11071,7 +11109,7 @@
         ]
       },
       {
-        "name": "Sword Brethren Squad in Cataphractii Pattern Terminator Armor",
+        "name": "Sword Brethren Squad in Cataphractii Pattern Terminator Armor [Custom Units]",
         "id": "161d-3216-e5c1-cbbc",
         "hidden": false,
         "import": true,
@@ -11090,7 +11128,8 @@
             "hidden": false,
             "primary": false,
             "targetId": "62f0-6d33-180a-6c13"
-          }
+          },
+          {"name": "Custom Units", "id": "b18a-7210-891d-aaa5", "hidden": false, "primary": false, "targetId": "e875-4d09-70f8-e315"}
         ],
         "constraints": [
           {"id": "da3d-752e-5576-b966", "field": "75bb-ded1-c86d-bdf0", "includeChildSelections": false, "scope": "self", "shared": true, "type": "max", "value": 3},
@@ -11351,6 +11390,24 @@
                     ]
                   }
                 ]
+              }
+            ]
+          },
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "9d3b-38d9-2d95-fac7",
+                "childName": "Show Custom Units",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "lessThan",
+                "value": 1
               }
             ]
           }

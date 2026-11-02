@@ -16190,7 +16190,7 @@
         ]
       },
       {
-        "name": "Saturnine Dreadnought [Legends]",
+        "name": "Saturnine Dreadnought [Legends] [Custom Units]",
         "id": "5790-c56f-aff3-fc5b",
         "collective": false,
         "hidden": false,
@@ -16201,7 +16201,8 @@
           {"name": "Walker", "id": "cbc5-88e4-83f0-c8a1", "hidden": false, "primary": false, "targetId": "6dda-e157-334d-e93a"},
           {"name": "Smoke", "id": "e81c-9e7f-44c5-8f3b", "hidden": false, "primary": false, "targetId": "6df-937-16bc-8c1a"},
           {"name": "Dreadnought", "id": "70a3-b633-9f72-8487", "hidden": false, "primary": false, "targetId": "c97c-376-e2e0-1dd2"},
-          {"name": "Saturnine Dreadnought", "id": "7082-e7cb-bc36-8c4a", "hidden": false, "primary": false, "targetId": "5000-e7ff-b212-e707"}
+          {"name": "Saturnine Dreadnought", "id": "7082-e7cb-bc36-8c4a", "hidden": false, "primary": false, "targetId": "5000-e7ff-b212-e707"},
+          {"name": "Custom Units", "id": "44d2-cf4e-5f0a-04d6", "hidden": false, "primary": false, "targetId": "e875-4d09-70f8-e315"}
         ],
         "costs": [
           {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 240},
@@ -16234,6 +16235,24 @@
               {
                 "id": "31a1-f791-8d2f-a775",
                 "childId": "9ed-cbf4-bfe5-90bf",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "lessThan",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "9d3b-38d9-2d95-fac7",
+                "childName": "Show Custom Units",
                 "field": "selections",
                 "includeChildForces": true,
                 "includeChildSelections": true,
@@ -17001,7 +17020,7 @@
         ]
       },
       {
-        "name": "Land Raider Ares",
+        "name": "Land Raider Ares [Custom Units]",
         "id": "f3c0-7e75-8ba9-1df6",
         "hidden": false,
         "import": true,
@@ -17010,7 +17029,8 @@
           {"name": "Vehicle", "id": "6e6f-b62f-e9a0-fcaa", "primary": true, "targetId": "dbd4-63-af05-998"},
           {"name": "Transport", "id": "a86b-553d-16a5-5486", "primary": false, "targetId": "75e8-57c4-40e3-1817"},
           {"name": "Smoke", "id": "6e68-2542-2bc6-17a1", "primary": false, "targetId": "6df-937-16bc-8c1a"},
-          {"name": "Land Raider Ares", "id": "37ef-4797-99dd-7fdd", "hidden": false, "primary": false, "targetId": "683f-fca8-b42c-e10e"}
+          {"name": "Land Raider Ares", "id": "37ef-4797-99dd-7fdd", "hidden": false, "primary": false, "targetId": "683f-fca8-b42c-e10e"},
+          {"name": "Custom Units", "id": "6f9d-95cc-12ec-be34", "hidden": false, "primary": false, "targetId": "e875-4d09-70f8-e315"}
         ],
         "costs": [
           {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 280},
@@ -17035,24 +17055,6 @@
           {"name": "Combat Doctrines", "id": "e77d-c787-8cf6-b9c6", "hidden": false, "targetId": "3b76-4053-ece9-6e7d", "type": "rule"}
         ],
         "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [
-              {
-                "id": "c019-3bca-5d9c-017f",
-                "childId": "9ed-cbf4-bfe5-90bf",
-                "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "scope": "roster",
-                "shared": true,
-                "type": "lessThan",
-                "value": 1
-              }
-            ]
-          },
           {
             "field": "category",
             "type": "add",
@@ -17086,6 +17088,24 @@
                 "shared": true,
                 "type": "instanceOf",
                 "value": 0
+              }
+            ]
+          },
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "9d3b-38d9-2d95-fac7",
+                "childName": "Show Custom Units",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "lessThan",
+                "value": 1
               }
             ]
           }
@@ -17582,11 +17602,11 @@
             "typeName": "Ranged Weapons",
             "characteristics": [
               {"name": "Range", "$text": "36\"", "typeId": "9896-9419-16a1-92fc"},
-              {"name": "A", "$text": "8", "typeId": "3bb-c35f-f54-fb08"},
+              {"name": "A", "$text": "6", "typeId": "3bb-c35f-f54-fb08"},
               {"name": "BS", "$text": "3+", "typeId": "94d-8a98-cf90-183e"},
               {"name": "S", "$text": "8", "typeId": "2229-f494-25db-c5d3"},
               {"name": "AP", "$text": "0", "typeId": "9ead-8a10-520-de15"},
-              {"name": "D", "$text": "4", "typeId": "a354-c1c8-a745-f9e3"},
+              {"name": "D", "$text": "3", "typeId": "a354-c1c8-a745-f9e3"},
               {"name": "Keywords", "$text": "Devastating Wounds, Sustained Hits 1", "typeId": "7f1b-8591-2fcf-d01c"}
             ]
           }
@@ -17687,7 +17707,7 @@
         ]
       },
       {
-        "name": "Sabre Strike Tanks [Legends]",
+        "name": "Sabre Strike Tanks [Legends] [Custom Units]",
         "id": "d6f2-b68c-4df6-c0b5",
         "collective": false,
         "hidden": false,
@@ -17696,7 +17716,8 @@
         "categoryLinks": [
           {"name": "Vehicle", "id": "6cbf-ff3c-96b6-f82c", "hidden": false, "primary": true, "targetId": "dbd4-63-af05-998"},
           {"name": "Smoke", "id": "d8da-5334-0e1e-57e5", "hidden": false, "primary": false, "targetId": "6df-937-16bc-8c1a"},
-          {"name": "Sabre Strike Tank", "id": "dbc5-3247-c2f1-e328", "hidden": false, "primary": false, "targetId": "1d2c-758e-2343-c46f"}
+          {"name": "Sabre Strike Tank", "id": "dbc5-3247-c2f1-e328", "hidden": false, "primary": false, "targetId": "1d2c-758e-2343-c46f"},
+          {"name": "Custom Units", "id": "afc0-ecf5-937c-ea5a", "hidden": false, "primary": false, "targetId": "e875-4d09-70f8-e315"}
         ],
         "costs": [
           {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 140},
@@ -17770,6 +17791,24 @@
                 "shared": true,
                 "type": "instanceOf",
                 "value": 0
+              }
+            ]
+          },
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "9d3b-38d9-2d95-fac7",
+                "childName": "Show Custom Units",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "lessThan",
+                "value": 1
               }
             ]
           }
@@ -17936,7 +17975,8 @@
                             "hidden": false,
                             "import": true,
                             "targetId": "bbf3-ac49-d1bb-4abb",
-                            "type": "selectionEntry"
+                            "type": "selectionEntry",
+                            "costs": [{"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 10}]
                           },
                           {
                             "name": "Volkite Saker",
@@ -17946,7 +17986,7 @@
                             "import": true,
                             "targetId": "d659-76c7-4c99-bdaf",
                             "type": "selectionEntry",
-                            "costs": [{"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 10}]
+                            "costs": [{"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 0}]
                           },
                           {
                             "name": "Neutron Blaster",
@@ -18112,7 +18152,7 @@
         ]
       },
       {
-        "name": "Aquitor Bombard [Legends]",
+        "name": "Aquitor Bombard [Legends] [Custom Units]",
         "id": "9ee5-d3ab-1837-88b1",
         "collective": false,
         "hidden": false,
@@ -18121,7 +18161,8 @@
         "categoryLinks": [
           {"name": "Vehicle", "id": "ee29-56a0-3053-1d83", "hidden": false, "primary": true, "targetId": "dbd4-63-af05-998"},
           {"name": "Smoke", "id": "9ff0-558e-b818-386e", "hidden": false, "primary": false, "targetId": "6df-937-16bc-8c1a"},
-          {"name": "Aquitor Bombard", "id": "b220-01f9-3b46-0ac4", "hidden": false, "primary": false, "targetId": "cd8f-0acd-d380-ba09"}
+          {"name": "Aquitor Bombard", "id": "b220-01f9-3b46-0ac4", "hidden": false, "primary": false, "targetId": "cd8f-0acd-d380-ba09"},
+          {"name": "Custom Units", "id": "5add-75b2-acc2-e8d1", "hidden": false, "primary": false, "targetId": "e875-4d09-70f8-e315"}
         ],
         "costs": [
           {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 240},
@@ -18178,6 +18219,24 @@
                 "shared": true,
                 "type": "instanceOf",
                 "value": 0
+              }
+            ]
+          },
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "9d3b-38d9-2d95-fac7",
+                "childName": "Show Custom Units",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "lessThan",
+                "value": 1
               }
             ]
           }
@@ -18730,18 +18789,19 @@
         ]
       },
       {
-        "name": "Legion Command Mastodon [Legends]",
+        "name": "Legion Command Mastodon [Legends] [Custom Units]",
         "id": "78d3-adc4-56c9-086d",
         "hidden": false,
         "import": true,
         "type": "model",
         "categoryLinks": [
-          {"name": "Vehicle", "id": "0436-599b-8cc2-cc39", "primary": true, "targetId": "dbd4-63-af05-998"},
+          {"name": "Vehicle", "id": "0436-599b-8cc2-cc39", "primary": false, "targetId": "dbd4-63-af05-998"},
           {"name": "Titanic", "id": "3412-8a61-91eb-791d", "primary": false, "targetId": "5929-ad51-d006-e008"},
           {"name": "Transport", "id": "e3b7-eac2-0055-becd", "primary": false, "targetId": "75e8-57c4-40e3-1817"},
           {"name": "Smoke", "id": "2af7-29f9-ead6-9d86", "primary": false, "targetId": "6df-937-16bc-8c1a"},
           {"name": "Mastodon", "id": "538c-2b07-92c9-d5dd", "primary": false, "targetId": "61a4-aefb-ed56-cd15"},
-          {"name": "Character", "id": "2393-9c79-c11d-2c9c", "hidden": false, "primary": false, "targetId": "9cfd-1c32-585f-7d5c"}
+          {"name": "Character", "id": "2393-9c79-c11d-2c9c", "hidden": false, "primary": true, "targetId": "9cfd-1c32-585f-7d5c"},
+          {"name": "Custom Units", "id": "e104-e818-511d-9e0d", "hidden": false, "primary": false, "targetId": "e875-4d09-70f8-e315"}
         ],
         "costs": [
           {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 450},
@@ -18817,6 +18877,24 @@
                 "shared": true,
                 "type": "instanceOf",
                 "value": 0
+              }
+            ]
+          },
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "9d3b-38d9-2d95-fac7",
+                "childName": "Show Custom Units",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "lessThan",
+                "value": 1
               }
             ]
           }
@@ -19546,7 +19624,7 @@
         ]
       },
       {
-        "name": "Moritat",
+        "name": "Moritat [Custom Units]",
         "id": "7628-cf21-c8b9-e455",
         "hidden": false,
         "import": true,
@@ -19557,7 +19635,8 @@
           {"name": "Imperium", "id": "f3ba-8212-aa23-0281", "hidden": false, "primary": false, "targetId": "aff3-d6a3-2a95-9dc"},
           {"name": "Tacticus", "id": "1cb7-9dca-c752-5cad", "hidden": false, "primary": false, "targetId": "5179-8ede-45e3-49a2"},
           {"name": "Faction: Adeptus Astartes", "id": "b31d-cb20-894b-ea2d", "hidden": false, "primary": false, "targetId": "6e7-40c-58d9-e402"},
-          {"name": "Moritat", "id": "3b45-1908-4c7f-5a05", "hidden": false, "primary": false, "targetId": "28f2-2ac9-4af1-45cd"}
+          {"name": "Moritat", "id": "3b45-1908-4c7f-5a05", "hidden": false, "primary": false, "targetId": "28f2-2ac9-4af1-45cd"},
+          {"name": "Custom Units", "id": "97ec-b813-1af9-1ff9", "hidden": false, "primary": false, "targetId": "e875-4d09-70f8-e315"}
         ],
         "constraints": [{"id": "fa21-4442-9740-327d", "field": "selections", "scope": "roster", "shared": true, "type": "max", "value": 3}],
         "costs": [
@@ -19583,6 +19662,26 @@
             "modifiers": [{"field": "name", "type": "append", "value": "2D3"}]
           },
           {"name": "Lone Operative", "id": "7699-41ba-ea9a-bef4", "hidden": false, "targetId": "a8a0-8fe7-898-e0f3", "type": "rule"}
+        ],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "9d3b-38d9-2d95-fac7",
+                "childName": "Show Custom Units",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "lessThan",
+                "value": 1
+              }
+            ]
+          }
         ],
         "profiles": [
           {
