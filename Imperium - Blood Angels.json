@@ -154,7 +154,7 @@
         "type": "selectionEntry"
       },
       {"name": "Crimson Paladins", "id": "6fb3-77eb-38e0-a17e", "hidden": false, "import": true, "targetId": "2ecc-6be2-6989-64b4", "type": "selectionEntry"},
-      {"name": "Dawnbreakers", "id": "4dc3-087d-38fc-8947", "hidden": false, "import": true, "targetId": "7c90-2613-2c4f-f7a7", "type": "selectionEntry"}
+      {"name": "Dawnbreaker Cohort", "id": "4dc3-087d-38fc-8947", "hidden": false, "import": true, "targetId": "7c90-2613-2c4f-f7a7", "type": "selectionEntry"}
     ],
     "sharedProfiles": [
       {
@@ -14057,7 +14057,7 @@
                 "scope": "d3b9-296d-fab9-dc7f",
                 "shared": true,
                 "type": "atLeast",
-                "value": 4
+                "value": 6
               }
             ]
           },
