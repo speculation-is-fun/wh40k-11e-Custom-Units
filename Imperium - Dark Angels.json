@@ -10626,6 +10626,7 @@
                     "hidden": false,
                     "import": true,
                     "type": "upgrade",
+                    "categoryLinks": [{"name": "Power Weapon", "id": "c45c-35a4-78a0-7a65", "hidden": false, "primary": false, "targetId": "72a2-ff76-451c-9d12"}],
                     "constraints": [
                       {"id": "f516-2966-752b-b75c", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
                       {"id": "a52a-54aa-4679-d7ee", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
@@ -11713,7 +11714,10 @@
                 "hidden": false,
                 "import": true,
                 "type": "upgrade",
-                "categoryLinks": [{"name": "Ranged Weapon", "id": "b91f-522f-fe4d-d1c9", "hidden": false, "primary": false, "targetId": "eeda-8544-a2f3-3fab"}],
+                "categoryLinks": [
+                  {"name": "Ranged Weapon", "id": "b91f-522f-fe4d-d1c9", "hidden": false, "primary": false, "targetId": "eeda-8544-a2f3-3fab"},
+                  {"name": "Bolt Weapon", "id": "c58e-7673-4ecf-1376", "hidden": false, "primary": false, "targetId": "1c08-e7e4-55b9-8e30"}
+                ],
                 "constraints": [
                   {"id": "f947-7b5f-d2f2-413a", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
                   {"id": "f472-8c33-fde3-9669", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
@@ -12266,6 +12270,7 @@
                 "hidden": false,
                 "import": true,
                 "type": "upgrade",
+                "categoryLinks": [{"name": "Bolt Weapon", "id": "82fd-959f-00be-701b", "hidden": false, "primary": false, "targetId": "1c08-e7e4-55b9-8e30"}],
                 "constraints": [
                   {"id": "6636-337e-6709-b632", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 2},
                   {"id": "8b3a-8a4a-d638-5939", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}
@@ -12594,6 +12599,7 @@
                 "hidden": false,
                 "import": true,
                 "type": "upgrade",
+                "categoryLinks": [{"name": "Bolt Weapon", "id": "f1f8-da84-cf8a-5ebb", "hidden": false, "primary": false, "targetId": "1c08-e7e4-55b9-8e30"}],
                 "constraints": [
                   {"id": "c18b-cd80-cae7-fad5", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
                   {"id": "1227-3d5a-0b04-220a", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
@@ -14332,6 +14338,7 @@
                             "hidden": false,
                             "import": true,
                             "type": "upgrade",
+                            "categoryLinks": [{"name": "Bolt Weapon", "id": "0678-bf3f-a1f0-bab9", "hidden": false, "primary": false, "targetId": "1c08-e7e4-55b9-8e30"}],
                             "constraints": [
                               {"id": "98be-d1cf-37da-929a", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2},
                               {"id": "3327-2be0-0b35-6b00", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 2}
@@ -15629,6 +15636,7 @@
             "import": true,
             "page": 15,
             "type": "upgrade",
+            "categoryLinks": [{"name": "Power Weapon", "id": "1f24-9605-c4fb-36c1", "hidden": false, "primary": false, "targetId": "72a2-ff76-451c-9d12"}],
             "constraints": [
               {"id": "92b3-3799-983e-efb8", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "545a-f384-b97c-203f", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}

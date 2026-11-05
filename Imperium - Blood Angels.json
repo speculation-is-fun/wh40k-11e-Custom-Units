@@ -144,18 +144,46 @@
         "targetId": "bcfe-f4fb-5c44-652d",
         "type": "selectionEntry"
       },
-      {"name": "Angel's Tears", "id": "7df6-3e76-b000-6544", "hidden": false, "import": true, "targetId": "d3b9-296d-fab9-dc7f", "type": "selectionEntry"},
-      {"name": "Burning Eyes", "id": "747d-e9ec-d978-8968", "hidden": false, "import": true, "targetId": "027d-8c62-d861-44d3", "type": "selectionEntry"},
       {
-        "name": "Contemptor-Incaendius Dreadnought",
+        "name": "Angel's Tears [Custom Units]",
+        "id": "7df6-3e76-b000-6544",
+        "hidden": false,
+        "import": true,
+        "targetId": "d3b9-296d-fab9-dc7f",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Burning Eyes [Custom Units]",
+        "id": "747d-e9ec-d978-8968",
+        "hidden": false,
+        "import": true,
+        "targetId": "027d-8c62-d861-44d3",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Contemptor-Incaendius Dreadnought [Custom Units]",
         "id": "f2ce-69cf-8556-424a",
         "hidden": false,
         "import": true,
         "targetId": "3ff4-62d6-998b-f969",
         "type": "selectionEntry"
       },
-      {"name": "Crimson Paladins", "id": "6fb3-77eb-38e0-a17e", "hidden": false, "import": true, "targetId": "2ecc-6be2-6989-64b4", "type": "selectionEntry"},
-      {"name": "Dawnbreaker Cohort", "id": "4dc3-087d-38fc-8947", "hidden": false, "import": true, "targetId": "7c90-2613-2c4f-f7a7", "type": "selectionEntry"}
+      {
+        "name": "Crimson Paladins [Custom Units]",
+        "id": "6fb3-77eb-38e0-a17e",
+        "hidden": false,
+        "import": true,
+        "targetId": "2ecc-6be2-6989-64b4",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Dawnbreaker Cohort [Custom Units]",
+        "id": "4dc3-087d-38fc-8947",
+        "hidden": false,
+        "import": true,
+        "targetId": "7c90-2613-2c4f-f7a7",
+        "type": "selectionEntry"
+      }
     ],
     "sharedProfiles": [
       {
@@ -14109,8 +14137,8 @@
                 "includeChildSelections": true,
                 "scope": "d3b9-296d-fab9-dc7f",
                 "shared": true,
-                "type": "atLeast",
-                "value": 6
+                "type": "greaterThan",
+                "value": 5
               }
             ]
           },
@@ -14231,7 +14259,18 @@
                     "targetId": "e7f9-66f5-9b9e-c587",
                     "type": "selectionEntry"
                   },
-                  {"name": "Knives and Fists", "id": "cb42-0e1b-e1b1-5a28", "hidden": false, "import": true, "targetId": "b552-e2fb-4634-b098", "type": "selectionEntry"}
+                  {
+                    "name": "Knives and Fists",
+                    "id": "cb42-0e1b-e1b1-5a28",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "b552-e2fb-4634-b098",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {"id": "4a9c-24a8-22f0-19c2", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
+                      {"id": "60c2-1232-f59d-0fcc", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1}
+                    ]
+                  }
                 ],
                 "profiles": [
                   {
@@ -14260,6 +14299,10 @@
                     "hidden": false,
                     "import": true,
                     "type": "upgrade",
+                    "constraints": [
+                      {"id": "53fa-1be4-7f85-b971", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
+                      {"id": "22a1-c32d-4a97-2b88", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1}
+                    ],
                     "infoLinks": [
                       {"name": "Devastating Wounds", "id": "2eab-21a6-22f5-a664", "hidden": false, "targetId": "be1e-ac8e-1e2c-3528", "type": "rule"},
                       {"name": "Blast", "id": "24f2-1348-4631-eebf", "hidden": false, "targetId": "6c1f-1cf7-ff25-c99e", "type": "rule"}
@@ -14301,7 +14344,18 @@
                     "targetId": "e7f9-66f5-9b9e-c587",
                     "type": "selectionEntry"
                   },
-                  {"name": "Knives and Fists", "id": "f4e0-8515-32c4-b329", "hidden": false, "import": true, "targetId": "b552-e2fb-4634-b098", "type": "selectionEntry"}
+                  {
+                    "name": "Knives and Fists",
+                    "id": "f4e0-8515-32c4-b329",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "b552-e2fb-4634-b098",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {"id": "7981-a812-1c3e-f060", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
+                      {"id": "015c-caf1-4145-5467", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1}
+                    ]
+                  }
                 ],
                 "profiles": [
                   {
@@ -14330,6 +14384,10 @@
                     "hidden": false,
                     "import": true,
                     "type": "upgrade",
+                    "constraints": [
+                      {"id": "834b-e9ff-d1d4-996d", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
+                      {"id": "3711-7294-6949-1418", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1}
+                    ],
                     "costs": [
                       {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 0},
                       {"name": "Crusade Points", "typeId": "b03b-c239-15a5-da55", "value": 0},
@@ -14396,7 +14454,18 @@
                     "targetId": "e7f9-66f5-9b9e-c587",
                     "type": "selectionEntry"
                   },
-                  {"name": "Knives and Fists", "id": "9388-e440-6605-beb1", "hidden": false, "import": true, "targetId": "b552-e2fb-4634-b098", "type": "selectionEntry"}
+                  {
+                    "name": "Knives and Fists",
+                    "id": "9388-e440-6605-beb1",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "b552-e2fb-4634-b098",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {"id": "60ad-12db-008f-9e7a", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
+                      {"id": "54d8-53e8-d5a5-3c11", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1}
+                    ]
+                  }
                 ],
                 "profiles": [
                   {
@@ -14425,6 +14494,10 @@
                     "hidden": false,
                     "import": true,
                     "type": "upgrade",
+                    "constraints": [
+                      {"id": "91e1-ed87-ec37-2784", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
+                      {"id": "fb01-82e7-d92a-5748", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1}
+                    ],
                     "infoLinks": [
                       {"name": "Devastating Wounds", "id": "3e90-45f2-925e-1fe0", "hidden": false, "targetId": "be1e-ac8e-1e2c-3528", "type": "rule"},
                       {"name": "Blast", "id": "2dd4-dd96-bcd0-5eea", "hidden": false, "targetId": "6c1f-1cf7-ff25-c99e", "type": "rule"}

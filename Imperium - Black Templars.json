@@ -55,7 +55,14 @@
         "targetId": "85b9-b304-a55c-30ef",
         "type": "selectionEntry"
       },
-      {"name": "Templar Brethren", "id": "fae5-37b8-2d16-8ac2", "hidden": false, "import": true, "targetId": "2f2a-e289-8942-e663", "type": "selectionEntry"},
+      {
+        "name": "Templar Brethren [Custom Units]",
+        "id": "fae5-37b8-2d16-8ac2",
+        "hidden": false,
+        "import": true,
+        "targetId": "2f2a-e289-8942-e663",
+        "type": "selectionEntry"
+      },
       {"name": "Huscarls [Custom Units]", "id": "50e5-45a6-b40a-0f4b", "hidden": false, "import": true, "targetId": "248d-e6f0-0a2e-9cde", "type": "selectionEntry"}
     ],
     "selectionEntries": [
@@ -4389,6 +4396,7 @@
                         "hidden": false,
                         "import": true,
                         "type": "upgrade",
+                        "categoryLinks": [{"name": "Chain Weapon", "id": "8504-31b2-a25f-af29", "hidden": false, "primary": false, "targetId": "2e73-b4c9-6069-ad09"}],
                         "entryLinks": [{"name": "Weapon Upgrades", "id": "26d8-b96e-2491-a923", "hidden": false, "import": true, "targetId": "8cf2-a48c-58d2-cb4e", "type": "selectionEntryGroup"}],
                         "infoLinks": [{"name": "Sustained Hits", "id": "8ad5-fa24-3e79-0747", "hidden": false, "targetId": "1897-c22c-9597-12b1", "type": "rule"}],
                         "profiles": [
@@ -10296,6 +10304,7 @@
                         "hidden": false,
                         "import": true,
                         "type": "upgrade",
+                        "categoryLinks": [{"name": "Chain Weapon", "id": "e233-d7b2-cafd-ccc7", "hidden": false, "primary": false, "targetId": "2e73-b4c9-6069-ad09"}],
                         "entryLinks": [{"name": "Weapon Upgrades", "id": "9af8-de2a-ab00-ff56", "hidden": false, "import": true, "targetId": "8cf2-a48c-58d2-cb4e", "type": "selectionEntryGroup"}],
                         "infoLinks": [{"name": "Sustained Hits", "id": "3156-0530-5405-e454", "hidden": false, "targetId": "1897-c22c-9597-12b1", "type": "rule"}],
                         "profiles": [
@@ -11043,6 +11052,7 @@
                         "hidden": false,
                         "import": true,
                         "type": "upgrade",
+                        "categoryLinks": [{"name": "Chain Weapon", "id": "40ca-4dc3-c1f1-edef", "hidden": false, "primary": false, "targetId": "2e73-b4c9-6069-ad09"}],
                         "entryLinks": [{"name": "Weapon Upgrades", "id": "78d4-f213-d8c2-8019", "hidden": false, "import": true, "targetId": "8cf2-a48c-58d2-cb4e", "type": "selectionEntryGroup"}],
                         "infoLinks": [{"name": "Sustained Hits", "id": "2efc-f377-587b-42dc", "hidden": false, "targetId": "1897-c22c-9597-12b1", "type": "rule"}],
                         "profiles": [
@@ -11762,6 +11772,7 @@
                         "hidden": false,
                         "import": true,
                         "type": "upgrade",
+                        "categoryLinks": [{"name": "Chain Weapon", "id": "40f5-6aa8-3406-d30a", "hidden": false, "primary": false, "targetId": "2e73-b4c9-6069-ad09"}],
                         "entryLinks": [{"name": "Weapon Upgrades", "id": "5727-d5ec-d1a0-7052", "hidden": false, "import": true, "targetId": "8cf2-a48c-58d2-cb4e", "type": "selectionEntryGroup"}],
                         "infoLinks": [{"name": "Sustained Hits", "id": "d53f-f92a-e3d2-6127", "hidden": false, "targetId": "1897-c22c-9597-12b1", "type": "rule"}],
                         "profiles": [
@@ -12529,6 +12540,10 @@
         "hidden": false,
         "import": true,
         "type": "upgrade",
+        "categoryLinks": [
+          {"name": "Bolt Weapon", "id": "bc96-e448-3913-f1b6", "hidden": false, "primary": false, "targetId": "1c08-e7e4-55b9-8e30"},
+          {"name": "Ranged Weapon", "id": "356c-9705-132b-0149", "hidden": false, "primary": false, "targetId": "eeda-8544-a2f3-3fab"}
+        ],
         "infoLinks": [
           {"name": "Close-quarters", "id": "2792-ca0d-6ca6-f559", "hidden": false, "targetId": "5238-5ad4-52f7-6eb4", "type": "rule"},
           {"name": "Assault", "id": "6f10-ad96-2cad-93f9", "hidden": false, "targetId": "fc8a-8c24-bae9-cc1c", "type": "rule"}
@@ -12559,6 +12574,10 @@
         "hidden": false,
         "import": true,
         "type": "upgrade",
+        "categoryLinks": [
+          {"name": "Chain Weapon", "id": "f4d9-1dc9-8e10-c7c8", "hidden": false, "primary": false, "targetId": "2e73-b4c9-6069-ad09"},
+          {"name": "Melee Weapon", "id": "7765-0f30-749d-a012", "hidden": false, "primary": false, "targetId": "ccdd-3987-11ed-90cd"}
+        ],
         "infoLinks": [{"name": "Sustained Hits", "id": "87a7-a643-b808-ef1a", "hidden": false, "targetId": "1897-c22c-9597-12b1", "type": "rule"}],
         "profiles": [
           {
@@ -13019,6 +13038,7 @@
                         "hidden": false,
                         "import": true,
                         "type": "upgrade",
+                        "categoryLinks": [{"name": "Chain Weapon", "id": "4cd9-acb7-9f1f-5d70", "hidden": false, "primary": false, "targetId": "2e73-b4c9-6069-ad09"}],
                         "entryLinks": [{"name": "Weapon Upgrades", "id": "b01b-9831-dcaf-3dbb", "hidden": false, "import": true, "targetId": "8cf2-a48c-58d2-cb4e", "type": "selectionEntryGroup"}],
                         "infoLinks": [{"name": "Sustained Hits", "id": "86b9-7d11-ca1b-fa18", "hidden": false, "targetId": "1897-c22c-9597-12b1", "type": "rule"}],
                         "profiles": [
@@ -13047,6 +13067,7 @@
                         "hidden": false,
                         "import": true,
                         "type": "upgrade",
+                        "categoryLinks": [{"name": "Chain Weapon", "id": "aaf6-7cc8-25df-c446", "hidden": false, "primary": false, "targetId": "2e73-b4c9-6069-ad09"}],
                         "entryLinks": [{"name": "Weapon Upgrades", "id": "0859-86d2-698f-fb73", "hidden": false, "import": true, "targetId": "8cf2-a48c-58d2-cb4e", "type": "selectionEntryGroup"}],
                         "infoLinks": [{"name": "Sustained Hits", "id": "731c-9f51-28df-8358", "hidden": false, "targetId": "1897-c22c-9597-12b1", "type": "rule"}],
                         "profiles": [

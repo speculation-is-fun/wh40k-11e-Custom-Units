@@ -1050,6 +1050,7 @@
                     "hidden": false,
                     "import": true,
                     "type": "upgrade",
+                    "categoryLinks": [{"name": "Bolt Weapon", "id": "7d8d-855d-1ae5-d7fe", "hidden": false, "primary": false, "targetId": "1c08-e7e4-55b9-8e30"}],
                     "constraints": [
                       {"id": "a574-ba5b-3580-adfb", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
                       {"id": "2607-ab9f-e6d1-43d0", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1}
@@ -1083,6 +1084,7 @@
                     "hidden": false,
                     "import": true,
                     "type": "upgrade",
+                    "categoryLinks": [{"name": "Power Weapon", "id": "6640-3018-2e0e-b8a2", "hidden": false, "primary": false, "targetId": "72a2-ff76-451c-9d12"}],
                     "constraints": [
                       {"id": "0ffb-6dda-9c0a-e637", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
                       {"id": "fb29-0c15-706e-10d8", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1}
@@ -1157,6 +1159,7 @@
                     "hidden": false,
                     "import": true,
                     "type": "upgrade",
+                    "categoryLinks": [{"name": "Bolt Weapon", "id": "1b91-8bc2-2606-5194", "hidden": false, "primary": false, "targetId": "1c08-e7e4-55b9-8e30"}],
                     "constraints": [
                       {"id": "d2b0-1e96-ee51-0a78", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
                       {"id": "ee1f-f5e5-85ad-de3e", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1}
@@ -1190,6 +1193,7 @@
                     "hidden": false,
                     "import": true,
                     "type": "upgrade",
+                    "categoryLinks": [{"name": "Power Weapon", "id": "d0c0-389c-3d17-49be", "hidden": false, "primary": false, "targetId": "72a2-ff76-451c-9d12"}],
                     "constraints": [
                       {"id": "9926-7d9d-508f-efba", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
                       {"id": "a9c4-5bd6-e962-677d", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1}
@@ -1870,6 +1874,43 @@
             "id": "74a2-8be6-71ce-99f1",
             "hidden": false,
             "sortIndex": 4,
+            "selectionEntries": [
+              {
+                "name": "Scatterbolt Launcher",
+                "id": "de60-a9a1-78b6-64a2",
+                "collective": true,
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "categoryLinks": [{"name": "Bolt Weapon", "id": "37af-5ba2-dfc3-8cbd", "hidden": false, "primary": false, "targetId": "1c08-e7e4-55b9-8e30"}],
+                "constraints": [
+                  {"id": "7dc4-2f82-0283-f2a4", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
+                  {"id": "6900-625d-aaec-cddf", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1}
+                ],
+                "infoLinks": [
+                  {"name": "Sustained Hits", "id": "7844-e2e6-5c28-2296", "hidden": false, "targetId": "1897-c22c-9597-12b1", "type": "rule"},
+                  {"name": "Assault", "id": "4761-690e-0909-79d7", "hidden": false, "targetId": "fc8a-8c24-bae9-cc1c", "type": "rule"}
+                ],
+                "profiles": [
+                  {
+                    "name": "Scatterbolt Launcher",
+                    "id": "5e91-765a-a5a2-ee52",
+                    "hidden": false,
+                    "typeId": "f77d-b953-8fa4-b762",
+                    "typeName": "Ranged Weapons",
+                    "characteristics": [
+                      {"name": "Range", "$text": "18\"", "typeId": "9896-9419-16a1-92fc"},
+                      {"name": "A", "$text": "D3+3", "typeId": "3bb-c35f-f54-fb08"},
+                      {"name": "BS", "$text": "3+", "typeId": "94d-8a98-cf90-183e"},
+                      {"name": "S", "$text": "5", "typeId": "2229-f494-25db-c5d3"},
+                      {"name": "AP", "$text": "-1", "typeId": "9ead-8a10-520-de15"},
+                      {"name": "D", "$text": "1", "typeId": "a354-c1c8-a745-f9e3"},
+                      {"name": "Keywords", "$text": "Assault, Sustained Hits 1", "typeId": "7f1b-8591-2fcf-d01c"}
+                    ]
+                  }
+                ]
+              }
+            ],
             "selectionEntryGroups": [
               {
                 "name": "Pistol",
@@ -1920,6 +1961,7 @@
                     "hidden": false,
                     "import": true,
                     "type": "upgrade",
+                    "categoryLinks": [{"name": "Power Weapon", "id": "241c-51cf-db52-fe2a", "hidden": false, "primary": false, "targetId": "72a2-ff76-451c-9d12"}],
                     "infoLinks": [{"name": "Lance", "id": "386b-e65e-2712-96d5", "hidden": false, "targetId": "2ebc-abdf-8129-6c57", "type": "rule"}],
                     "profiles": [
                       {
@@ -1936,47 +1978,6 @@
                           {"name": "AP", "$text": "-3", "typeId": "41a0-1301-112a-e2f2"},
                           {"name": "D", "$text": "3", "typeId": "3254-9fe6-d824-513e"},
                           {"name": "Keywords", "$text": "Lance", "typeId": "893f-9000-ccf7-648e"}
-                        ]
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "name": "Ranged Weapon",
-                "id": "aad5-a8a8-f997-b070",
-                "hidden": false,
-                "selectionEntries": [
-                  {
-                    "name": "Scatterbolt Launcher",
-                    "id": "de60-a9a1-78b6-64a2",
-                    "collective": true,
-                    "hidden": false,
-                    "import": true,
-                    "type": "upgrade",
-                    "constraints": [
-                      {"id": "7dc4-2f82-0283-f2a4", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
-                      {"id": "6900-625d-aaec-cddf", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1}
-                    ],
-                    "infoLinks": [
-                      {"name": "Sustained Hits", "id": "7844-e2e6-5c28-2296", "hidden": false, "targetId": "1897-c22c-9597-12b1", "type": "rule"},
-                      {"name": "Assault", "id": "4761-690e-0909-79d7", "hidden": false, "targetId": "fc8a-8c24-bae9-cc1c", "type": "rule"}
-                    ],
-                    "profiles": [
-                      {
-                        "name": "Scatterbolt Launcher",
-                        "id": "5e91-765a-a5a2-ee52",
-                        "hidden": false,
-                        "typeId": "f77d-b953-8fa4-b762",
-                        "typeName": "Ranged Weapons",
-                        "characteristics": [
-                          {"name": "Range", "$text": "18\"", "typeId": "9896-9419-16a1-92fc"},
-                          {"name": "A", "$text": "D3+3", "typeId": "3bb-c35f-f54-fb08"},
-                          {"name": "BS", "$text": "3+", "typeId": "94d-8a98-cf90-183e"},
-                          {"name": "S", "$text": "5", "typeId": "2229-f494-25db-c5d3"},
-                          {"name": "AP", "$text": "-1", "typeId": "9ead-8a10-520-de15"},
-                          {"name": "D", "$text": "1", "typeId": "a354-c1c8-a745-f9e3"},
-                          {"name": "Keywords", "$text": "Assault, Sustained Hits 1", "typeId": "7f1b-8591-2fcf-d01c"}
                         ]
                       }
                     ]
@@ -3920,6 +3921,7 @@
                     "hidden": false,
                     "import": true,
                     "type": "upgrade",
+                    "categoryLinks": [{"name": "Power Weapon", "id": "7496-c66e-3562-5ad5", "hidden": false, "primary": false, "targetId": "72a2-ff76-451c-9d12"}],
                     "infoLinks": [{"name": "Cleave", "id": "079f-f088-6a38-1e7f", "hidden": false, "targetId": "bf16-5d16-4725-f912", "type": "rule"}],
                     "profiles": [
                       {
@@ -4050,6 +4052,7 @@
                         "hidden": false,
                         "import": true,
                         "type": "upgrade",
+                        "categoryLinks": [{"name": "Power Weapon", "id": "9620-2d7b-74d1-8375", "hidden": false, "primary": false, "targetId": "72a2-ff76-451c-9d12"}],
                         "infoLinks": [{"name": "Cleave", "id": "d399-a3ee-6ab5-d699", "hidden": false, "targetId": "bf16-5d16-4725-f912", "type": "rule"}],
                         "profiles": [
                           {
