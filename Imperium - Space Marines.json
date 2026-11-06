@@ -90025,7 +90025,7 @@
           {"name": "Faction: Adeptus Astartes", "id": "2db9-ef56-145c-f137", "primary": false, "targetId": "6e7-40c-58d9-e402"},
           {"name": "Praetor", "id": "2256-ff4d-b2d3-6cfa", "hidden": false, "primary": false, "targetId": "59d1-48ff-705b-c7cf"},
           {"name": "Custom Units", "id": "320e-2a68-815d-3870", "hidden": false, "primary": false, "targetId": "e875-4d09-70f8-e315"},
-          {"name": "High Command (Force Org)", "id": "6a91-d788-28a6-74d7", "hidden": false, "primary": true, "targetId": "9425-213a-a17e-05d7"}
+          {"name": "High Command (Force Org)", "id": "8ec6-112b-0885-a06f", "hidden": false, "primary": true, "targetId": "9425-213a-a17e-05d7"}
         ],
         "constraints": [
           {"id": "f397-9dc1-858c-e13f", "field": "75bb-ded1-c86d-bdf0", "includeChildSelections": false, "scope": "self", "shared": true, "type": "max", "value": 6},
@@ -90334,42 +90334,6 @@
                     "value": 1
                   }
                 ]
-              }
-            ]
-          },
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [
-              {
-                "childId": "9d3b-38d9-2d95-fac7",
-                "childName": "Show Custom Units",
-                "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "scope": "roster",
-                "shared": true,
-                "type": "lessThan",
-                "value": 1
-              }
-            ]
-          },
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [
-              {
-                "childId": "d62d-db22-4893-4bc0",
-                "childName": "1. Incursion (1000 Point limit)",
-                "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "scope": "roster",
-                "shared": true,
-                "type": "lessThan",
-                "value": 1
               }
             ]
           }
