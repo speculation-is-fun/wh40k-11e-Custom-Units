@@ -282,7 +282,7 @@
           }
         ],
         "categoryLinks": [
-          {"name": "Epic Hero", "id": "d23a-e650-3750-9f1c", "primary": true, "targetId": "4f3a-f0f7-6647-348d"},
+          {"name": "Epic Hero", "id": "d23a-e650-3750-9f1c", "primary": false, "targetId": "4f3a-f0f7-6647-348d"},
           {"name": "Character", "id": "de99-73ce-af5a-db0b", "primary": false, "targetId": "9cfd-1c32-585f-7d5c"},
           {"name": "Infantry", "id": "fc44-41f9-326d-2178", "primary": false, "targetId": "cf47-a0d7-7207-29dc"},
           {"name": "Grenades", "id": "333-3750-4e57-1ac7", "primary": false, "targetId": "5a61-81ac-eb7c-a87e"},
@@ -293,7 +293,8 @@
           {"name": "Faction: Adeptus Astartes", "id": "7602-2152-3830-4f1d", "primary": false, "targetId": "6e7-40c-58d9-e402"},
           {"name": "Faction: Blood Angels", "id": "b2fd-e768-9174-9e5b", "primary": false, "targetId": "62ac-ef42-27b4-ae7"},
           {"name": "Astorath", "id": "5e2c-d136-51e8-cf0c", "primary": false, "targetId": "da64-bc59-71f9-96e8"},
-          {"name": "Leader", "id": "1bf5-b212-1482-9f18", "primary": false, "targetId": "1556-9b56-fba6-4370"}
+          {"name": "Leader", "id": "1bf5-b212-1482-9f18", "primary": false, "targetId": "1556-9b56-fba6-4370"},
+          {"name": "High Command (Force Org)", "id": "4a55-378c-a20c-0ee9", "hidden": false, "primary": true, "targetId": "9425-213a-a17e-05d7"}
         ],
         "constraints": [{"id": "373e-99de-ce49-806b", "field": "selections", "scope": "roster", "shared": true, "type": "max", "value": 1}],
         "costs": [
@@ -443,11 +444,12 @@
         "categoryLinks": [
           {"name": "Imperium", "id": "70fc-e940-f904-d4c", "primary": false, "targetId": "aff3-d6a3-2a95-9dc"},
           {"name": "Smoke", "id": "fecf-7176-e00e-f0a", "primary": false, "targetId": "6df-937-16bc-8c1a"},
-          {"name": "Vehicle", "id": "1739-48e-79f6-6f85", "primary": true, "targetId": "dbd4-63-af05-998"},
+          {"name": "Vehicle", "id": "1739-48e-79f6-6f85", "primary": false, "targetId": "dbd4-63-af05-998"},
           {"name": "Faction: Adeptus Astartes", "id": "75fe-49f1-f5af-bed6", "primary": false, "targetId": "6e7-40c-58d9-e402"},
           {"name": "Baal Predator", "id": "f8b-78a6-2bdc-6c0d", "primary": false, "targetId": "6305-2974-3890-6ba0"},
           {"name": "Faction: Blood Angels", "id": "306d-bc56-434a-ae0a", "primary": false, "targetId": "62ac-ef42-27b4-ae7"},
-          {"name": "Frame", "id": "a2ca-e01f-0b48-8ffa", "primary": false, "targetId": "b927-8eeb-7cc3-8dec"}
+          {"name": "Frame", "id": "a2ca-e01f-0b48-8ffa", "primary": false, "targetId": "b927-8eeb-7cc3-8dec"},
+          {"name": "Armor (Force Org)", "id": "2381-5fa8-58d9-938d", "hidden": false, "primary": true, "targetId": "a54a-187d-22a3-5d90"}
         ],
         "constraints": [
           {"id": "71c3-52e4-9303-395b", "field": "75bb-ded1-c86d-bdf0", "includeChildSelections": false, "scope": "self", "shared": true, "type": "max", "value": 3},
@@ -1042,7 +1044,7 @@
           }
         ],
         "categoryLinks": [
-          {"name": "Epic Hero", "id": "3f91-e12e-3518-b709", "primary": true, "targetId": "4f3a-f0f7-6647-348d"},
+          {"name": "Epic Hero", "id": "3f91-e12e-3518-b709", "primary": false, "targetId": "4f3a-f0f7-6647-348d"},
           {"name": "Character", "id": "df23-fd8f-9e0b-2148", "primary": false, "targetId": "9cfd-1c32-585f-7d5c"},
           {"name": "Infantry", "id": "58bc-26e8-dafd-e46d", "primary": false, "targetId": "cf47-a0d7-7207-29dc"},
           {"name": "Grenades", "id": "d56e-1423-90ad-4ae3", "primary": false, "targetId": "5a61-81ac-eb7c-a87e"},
@@ -1050,7 +1052,8 @@
           {"name": "Faction: Adeptus Astartes", "id": "b7ca-4d28-b200-8f0a", "primary": false, "targetId": "6e7-40c-58d9-e402"},
           {"name": "Faction: Blood Angels", "id": "db71-8400-3ed3-5bfa", "primary": false, "targetId": "62ac-ef42-27b4-ae7"},
           {"name": "Sanguinary Priest", "id": "53f2-c27e-8d11-5294", "primary": false, "targetId": "561f-8606-9555-b3ba"},
-          {"name": "Brother Corbulo", "id": "8b0a-280e-41b2-ab7b", "primary": false, "targetId": "3ab-66f3-c313-f621"}
+          {"name": "Brother Corbulo", "id": "8b0a-280e-41b2-ab7b", "primary": false, "targetId": "3ab-66f3-c313-f621"},
+          {"name": "High Command (Force Org)", "id": "cd6e-44e8-fa22-0dba", "hidden": false, "primary": true, "targetId": "9425-213a-a17e-05d7"}
         ],
         "constraints": [{"id": "85f0-ec14-4435-8845", "field": "selections", "scope": "roster", "shared": true, "type": "max", "value": 1}],
         "costs": [{"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 75}],
@@ -1369,7 +1372,7 @@
           }
         ],
         "categoryLinks": [
-          {"name": "Epic Hero", "id": "44f3-8488-c6b1-f2a2", "primary": true, "targetId": "4f3a-f0f7-6647-348d"},
+          {"name": "Epic Hero", "id": "44f3-8488-c6b1-f2a2", "primary": false, "targetId": "4f3a-f0f7-6647-348d"},
           {"name": "Character", "id": "29c4-86f3-656a-6b93", "primary": false, "targetId": "9cfd-1c32-585f-7d5c"},
           {"name": "Infantry", "id": "1036-a081-9cdb-e04b", "primary": false, "targetId": "cf47-a0d7-7207-29dc"},
           {"name": "Captain", "id": "e386-8452-ed6b-1570", "primary": false, "targetId": "2d7f-1892-2fd0-e29c"},
@@ -1377,7 +1380,8 @@
           {"name": "Imperium", "id": "456e-e510-29de-8811", "primary": false, "targetId": "aff3-d6a3-2a95-9dc"},
           {"name": "Faction: Adeptus Astartes", "id": "ad72-1131-2a46-2ae2", "primary": false, "targetId": "6e7-40c-58d9-e402"},
           {"name": "Faction: Blood Angels", "id": "6ab8-fadb-f274-a74d", "primary": false, "targetId": "62ac-ef42-27b4-ae7"},
-          {"name": "Tycho", "id": "ac31-23ae-6380-f4e6", "primary": false, "targetId": "8739-4fc4-25e3-5bac"}
+          {"name": "Tycho", "id": "ac31-23ae-6380-f4e6", "primary": false, "targetId": "8739-4fc4-25e3-5bac"},
+          {"name": "High Command (Force Org)", "id": "bce1-344e-d23c-0242", "hidden": false, "primary": true, "targetId": "9425-213a-a17e-05d7"}
         ],
         "constraints": [{"id": "cbf0-6863-deea-572a", "field": "selections", "scope": "roster", "shared": true, "type": "max", "value": 1}],
         "costs": [{"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 75}],
@@ -1638,14 +1642,15 @@
         ],
         "categoryLinks": [
           {"name": "Character", "id": "b73c-4ad2-b62e-1857", "primary": false, "targetId": "9cfd-1c32-585f-7d5c"},
-          {"name": "Epic Hero", "id": "b5e7-41de-b3-fb97", "primary": true, "targetId": "4f3a-f0f7-6647-348d"},
+          {"name": "Epic Hero", "id": "b5e7-41de-b3-fb97", "primary": false, "targetId": "4f3a-f0f7-6647-348d"},
           {"name": "Infantry", "id": "f9d6-8203-ece8-64a1", "primary": false, "targetId": "cf47-a0d7-7207-29dc"},
           {"name": "Captain", "id": "c81b-28c5-8dc-5101", "primary": false, "targetId": "2d7f-1892-2fd0-e29c"},
           {"name": "Imperium", "id": "976b-770b-f779-ef5e", "primary": false, "targetId": "aff3-d6a3-2a95-9dc"},
           {"name": "Grenades", "id": "8bde-c844-4901-46cf", "primary": false, "targetId": "5a61-81ac-eb7c-a87e"},
           {"name": "Tycho the Lost", "id": "46b4-861-1dac-4e38", "primary": false, "targetId": "4254-134e-b56f-a5bd"},
           {"name": "Faction: Adeptus Astartes", "id": "3027-f9d4-1b79-275a", "primary": false, "targetId": "6e7-40c-58d9-e402"},
-          {"name": "Faction: Blood Angels", "id": "248c-290a-adfd-5577", "primary": false, "targetId": "62ac-ef42-27b4-ae7"}
+          {"name": "Faction: Blood Angels", "id": "248c-290a-adfd-5577", "primary": false, "targetId": "62ac-ef42-27b4-ae7"},
+          {"name": "High Command (Force Org)", "id": "b9ac-9d2d-1ac7-dee8", "hidden": false, "primary": true, "targetId": "9425-213a-a17e-05d7"}
         ],
         "constraints": [{"id": "96ce-1ad2-d58f-e368", "field": "selections", "scope": "roster", "shared": true, "type": "max", "value": 1}],
         "costs": [{"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 90}],
@@ -1807,7 +1812,7 @@
         "import": true,
         "type": "model",
         "categoryLinks": [
-          {"name": "Epic Hero", "id": "3237-1a66-35d0-d554", "primary": true, "targetId": "4f3a-f0f7-6647-348d"},
+          {"name": "Epic Hero", "id": "3237-1a66-35d0-d554", "primary": false, "targetId": "4f3a-f0f7-6647-348d"},
           {"name": "Character", "id": "a7ac-3054-3c4f-5316", "primary": false, "targetId": "9cfd-1c32-585f-7d5c"},
           {"name": "Infantry", "id": "1738-e3f9-79df-a4d8", "primary": false, "targetId": "cf47-a0d7-7207-29dc"},
           {"name": "Tacticus", "id": "3abf-3c69-1687-6a48", "primary": false, "targetId": "5179-8ede-45e3-49a2"},
@@ -1815,7 +1820,8 @@
           {"name": "Faction: Adeptus Astartes", "id": "440f-cff0-1134-f3d2", "primary": false, "targetId": "6e7-40c-58d9-e402"},
           {"name": "Faction: Blood Angels", "id": "9a7e-5e89-fe1c-afb9", "primary": false, "targetId": "62ac-ef42-27b4-ae7"},
           {"name": "Chief Librarian Mephiston", "id": "1e2c-42d8-5d7c-2a8c", "primary": false, "targetId": "369e-b2c9-4637-8cba"},
-          {"name": "Explosives", "id": "1eb7-1ea6-a216-b158", "hidden": false, "primary": false, "targetId": "e33d-891d-33aa-e9bf"}
+          {"name": "Explosives", "id": "1eb7-1ea6-a216-b158", "hidden": false, "primary": false, "targetId": "e33d-891d-33aa-e9bf"},
+          {"name": "High Command (Force Org)", "id": "d549-f551-0b99-9d4a", "hidden": false, "primary": true, "targetId": "9425-213a-a17e-05d7"}
         ],
         "constraints": [{"id": "76f1-154d-581a-b2ae", "field": "selections", "scope": "roster", "shared": true, "type": "max", "value": 1}],
         "costs": [
@@ -2131,7 +2137,7 @@
           }
         ],
         "categoryLinks": [
-          {"name": "Epic Hero", "id": "923b-c5fc-cd3b-c5bc", "primary": true, "targetId": "4f3a-f0f7-6647-348d"},
+          {"name": "Epic Hero", "id": "923b-c5fc-cd3b-c5bc", "primary": false, "targetId": "4f3a-f0f7-6647-348d"},
           {"name": "Character", "id": "f571-17c8-73c0-142d", "primary": false, "targetId": "9cfd-1c32-585f-7d5c"},
           {"name": "Infantry", "id": "3ee5-fd0-d03f-2875", "primary": false, "targetId": "cf47-a0d7-7207-29dc"},
           {"name": "Imperium", "id": "3efa-34dd-be75-3a12", "primary": false, "targetId": "aff3-d6a3-2a95-9dc"},
@@ -2143,7 +2149,8 @@
           {"name": "Chapter Master", "id": "cc1a-ed37-aa1b-1d08", "primary": false, "targetId": "5bd8-882d-302b-48f3"},
           {"name": "Commander Dante", "id": "dc1e-edb6-29a-c9ce", "primary": false, "targetId": "742d-f2f8-2cec-67b3"},
           {"name": "Leader", "id": "c024-cc59-5c61-9360", "primary": false, "targetId": "1556-9b56-fba6-4370"},
-          {"name": "Explosives", "id": "6031-b872-c058-de92", "hidden": false, "primary": false, "targetId": "e33d-891d-33aa-e9bf"}
+          {"name": "Explosives", "id": "6031-b872-c058-de92", "hidden": false, "primary": false, "targetId": "e33d-891d-33aa-e9bf"},
+          {"name": "High Command (Force Org)", "id": "980e-e974-46a7-2ccf", "hidden": false, "primary": true, "targetId": "9425-213a-a17e-05d7"}
         ],
         "constraints": [{"id": "573f-bbc-4c57-25ce", "field": "selections", "scope": "roster", "shared": true, "type": "max", "value": 1}],
         "costs": [
@@ -2329,14 +2336,15 @@
         "import": true,
         "type": "model",
         "categoryLinks": [
-          {"name": "Vehicle", "id": "c656-6c6e-1ac7-c903", "primary": true, "targetId": "dbd4-63-af05-998"},
+          {"name": "Vehicle", "id": "c656-6c6e-1ac7-c903", "primary": false, "targetId": "dbd4-63-af05-998"},
           {"name": "Walker", "id": "6fc0-b806-da33-6400", "primary": false, "targetId": "6dda-e157-334d-e93a"},
           {"name": "Imperium", "id": "6160-12a0-d509-88a3", "primary": false, "targetId": "aff3-d6a3-2a95-9dc"},
           {"name": "Death Company Dreadnought", "id": "d98d-a76-3f1-13c8", "primary": false, "targetId": "d7bd-dd9-4492-cf9a"},
           {"name": "Faction: Adeptus Astartes", "id": "d7c7-126d-3040-f37a", "primary": false, "targetId": "6e7-40c-58d9-e402"},
           {"name": "Faction: Blood Angels", "id": "9cf3-9ed1-de9e-313c", "primary": false, "targetId": "62ac-ef42-27b4-ae7"},
           {"name": "Death Company", "id": "fcc9-d068-c5db-0033", "primary": false, "targetId": "7278-781b-ce6c-d23c"},
-          {"name": "Dreadnought", "id": "117a-c342-1288-3052", "hidden": false, "primary": false, "targetId": "c97c-376-e2e0-1dd2"}
+          {"name": "Dreadnought", "id": "117a-c342-1288-3052", "hidden": false, "primary": false, "targetId": "c97c-376-e2e0-1dd2"},
+          {"name": "War-engine (Force Org)", "id": "e478-22a7-c67c-364e", "hidden": false, "primary": true, "targetId": "8b8b-9caa-c557-393f"}
         ],
         "constraints": [
           {"id": "1439-6b6e-45c6-e640", "field": "75bb-ded1-c86d-bdf0", "includeChildSelections": false, "scope": "self", "shared": true, "type": "max", "value": 3},
@@ -2683,13 +2691,14 @@
         "import": true,
         "type": "unit",
         "categoryLinks": [
-          {"name": "Infantry", "id": "4968-96d3-f33-589", "primary": true, "targetId": "cf47-a0d7-7207-29dc"},
+          {"name": "Infantry", "id": "4968-96d3-f33-589", "primary": false, "targetId": "cf47-a0d7-7207-29dc"},
           {"name": "Grenades", "id": "3a9-2af9-d3f2-8868", "primary": false, "targetId": "5a61-81ac-eb7c-a87e"},
           {"name": "Imperium", "id": "3d0a-2353-809d-93e5", "primary": false, "targetId": "aff3-d6a3-2a95-9dc"},
           {"name": "Tacticus", "id": "91f0-6ae-9457-c441", "primary": false, "targetId": "5179-8ede-45e3-49a2"},
           {"name": "Faction: Adeptus Astartes", "id": "69bb-d09e-270b-cda0", "primary": false, "targetId": "6e7-40c-58d9-e402"},
           {"name": "Faction: Blood Angels", "id": "a630-5977-cfa4-7261", "primary": false, "targetId": "62ac-ef42-27b4-ae7"},
-          {"name": "Death Company Intercessors", "id": "fdbc-4a76-736f-6574", "primary": false, "targetId": "18d-e753-9859-b059"}
+          {"name": "Death Company Intercessors", "id": "fdbc-4a76-736f-6574", "primary": false, "targetId": "18d-e753-9859-b059"},
+          {"name": "Troops (Force Org)", "id": "e4c4-6212-e9f0-d132", "hidden": false, "primary": true, "targetId": "1a68-83ef-edaa-f6af"}
         ],
         "constraints": [
           {"id": "d962-04cc-47da-0e39", "field": "75bb-ded1-c86d-bdf0", "includeChildSelections": false, "scope": "self", "shared": true, "type": "max", "value": 3},
@@ -3387,13 +3396,14 @@
         "import": true,
         "type": "unit",
         "categoryLinks": [
-          {"name": "Infantry", "id": "17fb-9895-5a66-9f58", "primary": true, "targetId": "cf47-a0d7-7207-29dc"},
+          {"name": "Infantry", "id": "17fb-9895-5a66-9f58", "primary": false, "targetId": "cf47-a0d7-7207-29dc"},
           {"name": "Grenades", "id": "7460-51dd-6149-8755", "primary": false, "targetId": "5a61-81ac-eb7c-a87e"},
           {"name": "Imperium", "id": "4cb4-6a64-5db8-7352", "primary": false, "targetId": "aff3-d6a3-2a95-9dc"},
           {"name": "Faction: Adeptus Astartes", "id": "fc87-a64c-1765-8c6d", "primary": false, "targetId": "6e7-40c-58d9-e402"},
           {"name": "Faction: Blood Angels", "id": "5d9c-da01-b5f2-27e7", "primary": false, "targetId": "62ac-ef42-27b4-ae7"},
           {"name": "Death Company Marines with Boltguns", "id": "b5f1-c6e4-db3e-83eb", "hidden": false, "primary": false, "targetId": "d57c-d980-bdae-2999"},
-          {"name": "Death Company", "id": "7224-cad2-7cec-583f", "hidden": false, "primary": false, "targetId": "7278-781b-ce6c-d23c"}
+          {"name": "Death Company", "id": "7224-cad2-7cec-583f", "hidden": false, "primary": false, "targetId": "7278-781b-ce6c-d23c"},
+          {"name": "Troops (Force Org)", "id": "e94d-2230-99b9-f61d", "hidden": false, "primary": true, "targetId": "1a68-83ef-edaa-f6af"}
         ],
         "constraints": [
           {"id": "f82a-d97e-024f-e3ac", "field": "75bb-ded1-c86d-bdf0", "includeChildSelections": false, "scope": "self", "shared": true, "type": "max", "value": 3},
@@ -3790,7 +3800,7 @@
         "import": true,
         "type": "unit",
         "categoryLinks": [
-          {"name": "Infantry", "id": "933a-a48d-3fb6-7c1a", "primary": true, "targetId": "cf47-a0d7-7207-29dc"},
+          {"name": "Infantry", "id": "933a-a48d-3fb6-7c1a", "primary": false, "targetId": "cf47-a0d7-7207-29dc"},
           {"name": "Imperium", "id": "f544-fede-9da7-b7d1", "primary": false, "targetId": "aff3-d6a3-2a95-9dc"},
           {"name": "Faction: Adeptus Astartes", "id": "2a33-62a2-7f8d-7db8", "primary": false, "targetId": "6e7-40c-58d9-e402"},
           {"name": "Faction: Blood Angels", "id": "d6f-6af9-8f1-c0b2", "primary": false, "targetId": "62ac-ef42-27b4-ae7"},
@@ -3799,7 +3809,8 @@
           {"name": "Fly", "id": "9a42-3f1b-5c44-bd51", "primary": false, "targetId": "c619-2086-bbcf-69c9"},
           {"name": "Jump Pack", "id": "a612-4dc6-19f1-960e", "primary": false, "targetId": "dda2-bb0a-215e-ad9c"},
           {"name": "Death Company", "id": "0d4c-f000-e07b-c9d7", "hidden": false, "primary": false, "targetId": "7278-781b-ce6c-d23c"},
-          {"name": "Explosives", "id": "0ecf-950d-20b7-30b6", "hidden": false, "primary": false, "targetId": "e33d-891d-33aa-e9bf"}
+          {"name": "Explosives", "id": "0ecf-950d-20b7-30b6", "hidden": false, "primary": false, "targetId": "e33d-891d-33aa-e9bf"},
+          {"name": "Troops (Force Org)", "id": "17ae-78b2-5b79-54ff", "hidden": false, "primary": true, "targetId": "1a68-83ef-edaa-f6af"}
         ],
         "constraints": [
           {"id": "9542-fe94-9b08-5bce", "field": "75bb-ded1-c86d-bdf0", "includeChildSelections": false, "scope": "self", "shared": true, "type": "max", "value": 3},
@@ -4363,14 +4374,15 @@
         "import": true,
         "type": "model",
         "categoryLinks": [
-          {"name": "Vehicle", "id": "839a-7acb-7c1c-ee16", "primary": true, "targetId": "dbd4-63-af05-998"},
+          {"name": "Vehicle", "id": "839a-7acb-7c1c-ee16", "primary": false, "targetId": "dbd4-63-af05-998"},
           {"name": "Walker", "id": "98b-2ac0-d795-e06e", "primary": false, "targetId": "6dda-e157-334d-e93a"},
           {"name": "Imperium", "id": "88de-499d-9b92-f344", "primary": false, "targetId": "aff3-d6a3-2a95-9dc"},
           {"name": "Faction: Adeptus Astartes", "id": "9b87-838-b8c0-2096", "primary": false, "targetId": "6e7-40c-58d9-e402"},
           {"name": "Faction: Blood Angels", "id": "bc0a-5b37-ce25-fe23", "primary": false, "targetId": "62ac-ef42-27b4-ae7"},
           {"name": "Furioso Dreadnought", "id": "64c5-754e-923a-89fd", "primary": false, "targetId": "2ee1-97ca-5a76-906a"},
           {"name": "Smoke", "id": "f960-c714-898c-4e35", "primary": false, "targetId": "6df-937-16bc-8c1a"},
-          {"name": "Dreadnought", "id": "11fa-626b-7b2c-cab8", "hidden": false, "primary": false, "targetId": "c97c-376-e2e0-1dd2"}
+          {"name": "Dreadnought", "id": "11fa-626b-7b2c-cab8", "hidden": false, "primary": false, "targetId": "c97c-376-e2e0-1dd2"},
+          {"name": "War-engine (Force Org)", "id": "ebe2-ac5b-6123-4da4", "hidden": false, "primary": true, "targetId": "8b8b-9caa-c557-393f"}
         ],
         "constraints": [
           {"id": "011e-e0ca-2496-1e2a", "field": "75bb-ded1-c86d-bdf0", "includeChildSelections": false, "scope": "self", "shared": true, "type": "max", "value": 3},
@@ -5097,7 +5109,7 @@
           }
         ],
         "categoryLinks": [
-          {"name": "Epic Hero", "id": "d353-24dc-6f87-56f1", "primary": true, "targetId": "4f3a-f0f7-6647-348d"},
+          {"name": "Epic Hero", "id": "d353-24dc-6f87-56f1", "primary": false, "targetId": "4f3a-f0f7-6647-348d"},
           {"name": "Character", "id": "e318-2951-5d19-a119", "primary": false, "targetId": "9cfd-1c32-585f-7d5c"},
           {"name": "Infantry", "id": "1da7-5a9d-bc6c-c9c5", "primary": false, "targetId": "cf47-a0d7-7207-29dc"},
           {"name": "Grenades", "id": "f276-d313-f5ed-874c", "primary": false, "targetId": "5a61-81ac-eb7c-a87e"},
@@ -5105,7 +5117,8 @@
           {"name": "Imperium", "id": "fe6-56ed-f134-3924", "primary": false, "targetId": "aff3-d6a3-2a95-9dc"},
           {"name": "Faction: Adeptus Astartes", "id": "90d6-5b78-a54c-65fb", "primary": false, "targetId": "6e7-40c-58d9-e402"},
           {"name": "Faction: Blood Angels", "id": "c9ad-4adb-96a5-a5ce", "primary": false, "targetId": "62ac-ef42-27b4-ae7"},
-          {"name": "Gabriel Seth", "id": "e376-28a1-565f-990d", "primary": false, "targetId": "9276-a8c8-908a-463d"}
+          {"name": "Gabriel Seth", "id": "e376-28a1-565f-990d", "primary": false, "targetId": "9276-a8c8-908a-463d"},
+          {"name": "High Command (Force Org)", "id": "10db-e6d4-12c9-03b9", "hidden": false, "primary": true, "targetId": "9425-213a-a17e-05d7"}
         ],
         "constraints": [{"id": "c6ed-8693-8973-2bd7", "field": "selections", "scope": "roster", "shared": true, "type": "max", "value": 1}],
         "costs": [{"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 90}],
@@ -5307,7 +5320,7 @@
           }
         ],
         "categoryLinks": [
-          {"name": "Epic Hero", "id": "40ee-2e76-5838-d294", "primary": true, "targetId": "4f3a-f0f7-6647-348d"},
+          {"name": "Epic Hero", "id": "40ee-2e76-5838-d294", "primary": false, "targetId": "4f3a-f0f7-6647-348d"},
           {"name": "Character", "id": "2bff-b3cb-96fb-e5e", "primary": false, "targetId": "9cfd-1c32-585f-7d5c"},
           {"name": "Infantry", "id": "792f-de94-80d5-59c8", "primary": false, "targetId": "cf47-a0d7-7207-29dc"},
           {"name": "Imperium", "id": "a460-2bf6-a032-58c1", "primary": false, "targetId": "aff3-d6a3-2a95-9dc"},
@@ -5318,7 +5331,8 @@
           {"name": "Faction: Blood Angels", "id": "2458-9dd0-bd9a-ebc", "primary": false, "targetId": "62ac-ef42-27b4-ae7"},
           {"name": "Jump Pack", "id": "26c6-9ca3-e011-47b", "primary": false, "targetId": "dda2-bb0a-215e-ad9c"},
           {"name": "Leader", "id": "85e2-c17a-5848-5787", "primary": false, "targetId": "1556-9b56-fba6-4370"},
-          {"name": "Explosives", "id": "c103-4ef7-38f1-b394", "hidden": false, "primary": false, "targetId": "e33d-891d-33aa-e9bf"}
+          {"name": "Explosives", "id": "c103-4ef7-38f1-b394", "hidden": false, "primary": false, "targetId": "e33d-891d-33aa-e9bf"},
+          {"name": "High Command (Force Org)", "id": "8a58-77e6-9584-9b9c", "hidden": false, "primary": true, "targetId": "9425-213a-a17e-05d7"}
         ],
         "constraints": [{"id": "c4cb-6409-6c33-6458", "field": "selections", "scope": "roster", "shared": true, "type": "max", "value": 1}],
         "costs": [
@@ -5518,7 +5532,7 @@
         "import": true,
         "type": "model",
         "categoryLinks": [
-          {"name": "Vehicle", "id": "4221-9c49-fd8-4e4a", "primary": true, "targetId": "dbd4-63-af05-998"},
+          {"name": "Vehicle", "id": "4221-9c49-fd8-4e4a", "primary": false, "targetId": "dbd4-63-af05-998"},
           {"name": "Walker", "id": "9348-dbef-8405-87fe", "primary": false, "targetId": "6dda-e157-334d-e93a"},
           {"name": "Psyker", "id": "cba6-cc2f-96de-e394", "primary": false, "targetId": "13bf-2bee-3ae0-b414"},
           {"name": "Imperium", "id": "fe8f-8e1a-2fcb-9e08", "primary": false, "targetId": "aff3-d6a3-2a95-9dc"},
@@ -5526,7 +5540,8 @@
           {"name": "Faction: Adeptus Astartes", "id": "551a-81e5-11a5-f1d6", "primary": false, "targetId": "6e7-40c-58d9-e402"},
           {"name": "Faction: Blood Angels", "id": "de92-96dd-4cfe-4ea6", "primary": false, "targetId": "62ac-ef42-27b4-ae7"},
           {"name": "Smoke", "id": "ccd3-ac9f-5e9-4a3d", "primary": false, "targetId": "6df-937-16bc-8c1a"},
-          {"name": "Dreadnought", "id": "89c3-3e67-4111-8fa2", "hidden": false, "primary": false, "targetId": "c97c-376-e2e0-1dd2"}
+          {"name": "Dreadnought", "id": "89c3-3e67-4111-8fa2", "hidden": false, "primary": false, "targetId": "c97c-376-e2e0-1dd2"},
+          {"name": "War-engine (Force Org)", "id": "7bdf-9b3b-82ce-2a8f", "hidden": false, "primary": true, "targetId": "8b8b-9caa-c557-393f"}
         ],
         "constraints": [
           {"id": "54e5-01d4-6abd-3b86", "field": "75bb-ded1-c86d-bdf0", "includeChildSelections": false, "scope": "self", "shared": true, "type": "max", "value": 3},
@@ -5957,7 +5972,7 @@
         "import": true,
         "type": "unit",
         "categoryLinks": [
-          {"name": "Infantry", "id": "b929-ac1e-a8dc-dd66", "primary": true, "targetId": "cf47-a0d7-7207-29dc"},
+          {"name": "Infantry", "id": "b929-ac1e-a8dc-dd66", "primary": false, "targetId": "cf47-a0d7-7207-29dc"},
           {"name": "Fly", "id": "f435-d9a6-3cf-2e16", "primary": false, "targetId": "c619-2086-bbcf-69c9"},
           {"name": "Imperium", "id": "e653-4b48-7007-b3c4", "primary": false, "targetId": "aff3-d6a3-2a95-9dc"},
           {"name": "Faction: Adeptus Astartes", "id": "9ad7-b573-d4c9-d207", "primary": false, "targetId": "6e7-40c-58d9-e402"},
@@ -5965,7 +5980,8 @@
           {"name": "Sanguinary Guard", "id": "2dc9-9fcf-347d-8f15", "primary": false, "targetId": "d30a-a7c5-389a-e78"},
           {"name": "Jump Pack", "id": "f28d-9816-dbcc-1b5b", "primary": false, "targetId": "dda2-bb0a-215e-ad9c"},
           {"name": "Explosives", "id": "1881-886c-7730-5973", "hidden": false, "primary": false, "targetId": "e33d-891d-33aa-e9bf"},
-          {"name": "Tacticus", "id": "4fac-52b3-e80e-7d47", "hidden": false, "primary": false, "targetId": "5179-8ede-45e3-49a2"}
+          {"name": "Tacticus", "id": "4fac-52b3-e80e-7d47", "hidden": false, "primary": false, "targetId": "5179-8ede-45e3-49a2"},
+          {"name": "Elites (Force Org)", "id": "0e55-2add-f5f1-a39e", "hidden": false, "primary": true, "targetId": "eeca-bfd1-736b-4d89"}
         ],
         "constraints": [
           {"id": "e001-678c-49ed-a79c", "field": "75bb-ded1-c86d-bdf0", "includeChildSelections": false, "scope": "self", "shared": true, "type": "max", "value": 3},
@@ -6576,7 +6592,7 @@
           }
         ],
         "categoryLinks": [
-          {"name": "Character", "id": "1745-3589-5d6b-5454", "primary": true, "targetId": "9cfd-1c32-585f-7d5c"},
+          {"name": "Character", "id": "1745-3589-5d6b-5454", "primary": false, "targetId": "9cfd-1c32-585f-7d5c"},
           {"name": "Infantry", "id": "f4c-54f0-e9b9-e40a", "primary": false, "targetId": "cf47-a0d7-7207-29dc"},
           {"name": "Imperium", "id": "f102-fdf3-83ae-4bca", "primary": false, "targetId": "aff3-d6a3-2a95-9dc"},
           {"name": "Sanguinary Priest", "id": "a064-e396-b8ec-6f5d", "primary": false, "targetId": "561f-8606-9555-b3ba"},
@@ -6584,7 +6600,8 @@
           {"name": "Faction: Blood Angels", "id": "25b7-a267-cb0c-38d9", "primary": false, "targetId": "62ac-ef42-27b4-ae7"},
           {"name": "Tacticus", "id": "a5ab-e25c-7c42-0f41", "primary": false, "targetId": "5179-8ede-45e3-49a2"},
           {"name": "Explosives", "id": "bb5a-08fc-a682-fa4a", "hidden": false, "primary": false, "targetId": "e33d-891d-33aa-e9bf"},
-          {"name": "Support", "id": "eb0e-40e4-c6dc-663c", "hidden": false, "primary": false, "targetId": "7dcd-7f61-69a7-0294"}
+          {"name": "Support", "id": "eb0e-40e4-c6dc-663c", "hidden": false, "primary": false, "targetId": "7dcd-7f61-69a7-0294"},
+          {"name": "Support (Force Org)", "id": "ad7c-cf71-19bc-8260", "hidden": false, "primary": true, "targetId": "9554-e253-adb0-c412"}
         ],
         "constraints": [
           {"id": "ad95-a04c-853b-cb7b", "field": "75bb-ded1-c86d-bdf0", "includeChildSelections": false, "scope": "self", "shared": true, "type": "max", "value": 6},
@@ -6897,7 +6914,7 @@
         "import": true,
         "type": "model",
         "categoryLinks": [
-          {"name": "Epic Hero", "id": "9458-848b-3ef4-a0ad", "primary": true, "targetId": "4f3a-f0f7-6647-348d"},
+          {"name": "Epic Hero", "id": "9458-848b-3ef4-a0ad", "primary": false, "targetId": "4f3a-f0f7-6647-348d"},
           {"name": "Character", "id": "e186-8dcb-c090-cc21", "primary": false, "targetId": "9cfd-1c32-585f-7d5c"},
           {"name": "Infantry", "id": "b302-d216-2021-fe23", "primary": false, "targetId": "cf47-a0d7-7207-29dc"},
           {"name": "Fly", "id": "8d01-bbee-8bc3-9e79", "primary": false, "targetId": "c619-2086-bbcf-69c9"},
@@ -6906,7 +6923,8 @@
           {"name": "The Sanguinor", "id": "6c75-19dc-6fa0-1737", "primary": false, "targetId": "8f39-9585-fc72-ba71"},
           {"name": "Faction: Adeptus Astartes", "id": "eac6-850b-d2b2-eb5e", "primary": false, "targetId": "6e7-40c-58d9-e402"},
           {"name": "Faction: Blood Angels", "id": "e25b-8fb1-48d9-8415", "primary": false, "targetId": "62ac-ef42-27b4-ae7"},
-          {"name": "Tacticus", "id": "77a2-e6ed-70d0-9afd", "hidden": false, "primary": false, "targetId": "5179-8ede-45e3-49a2"}
+          {"name": "Tacticus", "id": "77a2-e6ed-70d0-9afd", "hidden": false, "primary": false, "targetId": "5179-8ede-45e3-49a2"},
+          {"name": "High Command (Force Org)", "id": "2519-feb4-cec0-5269", "hidden": false, "primary": true, "targetId": "9425-213a-a17e-05d7"}
         ],
         "constraints": [{"id": "f8a8-20a9-9ba4-1851", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
         "costs": [
@@ -7078,7 +7096,7 @@
           }
         ],
         "categoryLinks": [
-          {"name": "Character", "id": "22e-8aa3-e95f-d4c", "primary": true, "targetId": "9cfd-1c32-585f-7d5c"},
+          {"name": "Character", "id": "22e-8aa3-e95f-d4c", "primary": false, "targetId": "9cfd-1c32-585f-7d5c"},
           {"name": "Infantry", "id": "25b6-650b-3109-791d", "primary": false, "targetId": "cf47-a0d7-7207-29dc"},
           {"name": "Grenades", "id": "5716-9fcb-2945-de33", "primary": false, "targetId": "5a61-81ac-eb7c-a87e"},
           {"name": "Imperium", "id": "2a1d-80af-c167-5ebe", "primary": false, "targetId": "aff3-d6a3-2a95-9dc"},
@@ -7086,7 +7104,8 @@
           {"name": "Faction: Blood Angels", "id": "d275-78c5-9120-8ff9", "primary": false, "targetId": "62ac-ef42-27b4-ae7"},
           {"name": "Fly", "id": "f2d4-7de3-4f72-b64", "primary": false, "targetId": "c619-2086-bbcf-69c9"},
           {"name": "Jump Pack", "id": "515f-8220-632f-2dc6", "primary": false, "targetId": "dda2-bb0a-215e-ad9c"},
-          {"name": "Sanguinary Priest", "id": "62eb-17ef-0bb2-1d6c", "hidden": false, "primary": false, "targetId": "561f-8606-9555-b3ba"}
+          {"name": "Sanguinary Priest", "id": "62eb-17ef-0bb2-1d6c", "hidden": false, "primary": false, "targetId": "561f-8606-9555-b3ba"},
+          {"name": "Support (Force Org)", "id": "c9ef-6ff8-446f-0291", "hidden": false, "primary": true, "targetId": "9554-e253-adb0-c412"}
         ],
         "constraints": [
           {"id": "ea01-1153-d751-cd9a", "field": "75bb-ded1-c86d-bdf0", "includeChildSelections": false, "scope": "self", "shared": true, "type": "max", "value": 6},
@@ -7439,13 +7458,14 @@
         "import": true,
         "type": "model",
         "categoryLinks": [
-          {"name": "Character", "id": "d5c6-64cc-2fa3-b1db", "primary": true, "targetId": "9cfd-1c32-585f-7d5c"},
+          {"name": "Character", "id": "d5c6-64cc-2fa3-b1db", "primary": false, "targetId": "9cfd-1c32-585f-7d5c"},
           {"name": "Mounted", "id": "f990-6852-686c-dd20", "primary": false, "targetId": "14a0-40c9-2748-ae6e"},
           {"name": "Grenades", "id": "eafe-938a-bfa5-cc38", "primary": false, "targetId": "5a61-81ac-eb7c-a87e"},
           {"name": "Imperium", "id": "f47f-47b0-829-afc2", "primary": false, "targetId": "aff3-d6a3-2a95-9dc"},
           {"name": "Sanguinary Priest", "id": "98b8-b1e4-8365-835d", "primary": false, "targetId": "561f-8606-9555-b3ba"},
           {"name": "Faction: Adeptus Astartes", "id": "b1e0-51c1-4ef4-9792", "primary": false, "targetId": "6e7-40c-58d9-e402"},
-          {"name": "Faction: Blood Angels", "id": "a5c4-8a81-fc57-56b7", "primary": false, "targetId": "62ac-ef42-27b4-ae7"}
+          {"name": "Faction: Blood Angels", "id": "a5c4-8a81-fc57-56b7", "primary": false, "targetId": "62ac-ef42-27b4-ae7"},
+          {"name": "Support (Force Org)", "id": "23a0-347c-9462-555b", "hidden": false, "primary": true, "targetId": "9554-e253-adb0-c412"}
         ],
         "constraints": [
           {"id": "e190-a3f6-38cb-7678", "field": "75bb-ded1-c86d-bdf0", "includeChildSelections": false, "scope": "self", "shared": true, "type": "max", "value": 6},
@@ -8173,14 +8193,15 @@
         ],
         "categoryLinks": [
           {"name": "Infantry", "id": "e7e3-3a3f-3162-3112", "primary": false, "targetId": "cf47-a0d7-7207-29dc"},
-          {"name": "Character", "id": "9349-1078-0ef5-e100", "primary": true, "targetId": "9cfd-1c32-585f-7d5c"},
+          {"name": "Character", "id": "9349-1078-0ef5-e100", "primary": false, "targetId": "9cfd-1c32-585f-7d5c"},
           {"name": "Grenades", "id": "2d53-4ea3-41cc-31b8", "primary": false, "targetId": "5a61-81ac-eb7c-a87e"},
           {"name": "Imperium", "id": "b384-f04e-82f9-1a29", "primary": false, "targetId": "aff3-d6a3-2a95-9dc"},
           {"name": "Captain", "id": "ecfa-ade5-383d-2318", "primary": false, "targetId": "2d7f-1892-2fd0-e29c"},
           {"name": "Faction: Adeptus Astartes", "id": "5345-68be-18bd-ab25", "primary": false, "targetId": "6e7-40c-58d9-e402"},
           {"name": "Faction: Blood Angels", "id": "fe57-cc4e-a7c5-60fe", "primary": false, "targetId": "62ac-ef42-27b4-ae7"},
           {"name": "Tacticus", "id": "c103-7d78-fdc4-8a58", "primary": false, "targetId": "5179-8ede-45e3-49a2"},
-          {"name": "Leader", "id": "c74e-5aad-50e3-1933", "primary": false, "targetId": "1556-9b56-fba6-4370"}
+          {"name": "Leader", "id": "c74e-5aad-50e3-1933", "primary": false, "targetId": "1556-9b56-fba6-4370"},
+          {"name": "Command (Force Org)", "id": "15bc-41cb-982a-e022", "hidden": false, "primary": true, "targetId": "e91f-006d-1f90-47d1"}
         ],
         "constraints": [
           {"id": "f624-815a-bca5-137a", "field": "75bb-ded1-c86d-bdf0", "includeChildSelections": false, "scope": "self", "shared": true, "type": "max", "value": 6},
@@ -8648,7 +8669,7 @@
         ],
         "categoryLinks": [
           {"name": "Infantry", "id": "9266-84ed-6879-cb79", "hidden": false, "primary": false, "targetId": "cf47-a0d7-7207-29dc"},
-          {"name": "Character", "id": "d47f-4886-dcd6-58eb", "hidden": false, "primary": true, "targetId": "9cfd-1c32-585f-7d5c"},
+          {"name": "Character", "id": "d47f-4886-dcd6-58eb", "hidden": false, "primary": false, "targetId": "9cfd-1c32-585f-7d5c"},
           {"name": "Imperium", "id": "4038-19ce-c638-641b", "hidden": false, "primary": false, "targetId": "aff3-d6a3-2a95-9dc"},
           {"name": "Captain", "id": "d331-3399-9094-c8f1", "hidden": false, "primary": false, "targetId": "2d7f-1892-2fd0-e29c"},
           {"name": "Faction: Adeptus Astartes", "id": "0d3a-1a16-2eb0-321d", "hidden": false, "primary": false, "targetId": "6e7-40c-58d9-e402"},
@@ -8656,7 +8677,8 @@
           {"name": "Tacticus", "id": "4f5e-602e-885d-09ed", "primary": false, "targetId": "5179-8ede-45e3-49a2"},
           {"name": "Death Company", "id": "2504-5575-1540-a7bf", "primary": false, "targetId": "7278-781b-ce6c-d23c"},
           {"name": "Leader", "id": "0a94-1e24-a187-ff4e", "primary": false, "targetId": "1556-9b56-fba6-4370"},
-          {"name": "Explosives", "id": "edff-6abe-0bb2-aa29", "hidden": false, "primary": false, "targetId": "e33d-891d-33aa-e9bf"}
+          {"name": "Explosives", "id": "edff-6abe-0bb2-aa29", "hidden": false, "primary": false, "targetId": "e33d-891d-33aa-e9bf"},
+          {"name": "Command (Force Org)", "id": "92ec-e466-14c5-64bc", "hidden": false, "primary": true, "targetId": "e91f-006d-1f90-47d1"}
         ],
         "constraints": [
           {"id": "d073-da80-958f-aa1a", "field": "75bb-ded1-c86d-bdf0", "includeChildSelections": false, "scope": "self", "shared": true, "type": "max", "value": 6},
@@ -9053,7 +9075,7 @@
           }
         ],
         "categoryLinks": [
-          {"name": "Character", "id": "0bdf-50ed-4cad-4033", "primary": true, "targetId": "9cfd-1c32-585f-7d5c"},
+          {"name": "Character", "id": "0bdf-50ed-4cad-4033", "primary": false, "targetId": "9cfd-1c32-585f-7d5c"},
           {"name": "Infantry", "id": "6bfc-b46e-d68d-e94d", "primary": false, "targetId": "cf47-a0d7-7207-29dc"},
           {"name": "Captain", "id": "b066-4071-288a-4769", "primary": false, "targetId": "2d7f-1892-2fd0-e29c"},
           {"name": "Fly", "id": "ce1d-8b9b-99f1-4aa1", "primary": false, "targetId": "c619-2086-bbcf-69c9"},
@@ -9064,7 +9086,8 @@
           {"name": "Tacticus", "id": "e184-d760-e70e-4a2e", "primary": false, "targetId": "5179-8ede-45e3-49a2"},
           {"name": "Death Company", "id": "1954-e02e-774e-2eab", "primary": false, "targetId": "7278-781b-ce6c-d23c"},
           {"name": "Leader", "id": "5533-3424-df0c-8284", "primary": false, "targetId": "1556-9b56-fba6-4370"},
-          {"name": "Explosives", "id": "6cb4-0995-b4b3-1a11", "hidden": false, "primary": false, "targetId": "e33d-891d-33aa-e9bf"}
+          {"name": "Explosives", "id": "6cb4-0995-b4b3-1a11", "hidden": false, "primary": false, "targetId": "e33d-891d-33aa-e9bf"},
+          {"name": "Troops (Force Org)", "id": "ad59-fd24-705a-65c2", "hidden": false, "primary": true, "targetId": "1a68-83ef-edaa-f6af"}
         ],
         "constraints": [
           {"id": "a949-cabb-53fb-69fc", "field": "75bb-ded1-c86d-bdf0", "includeChildSelections": false, "scope": "self", "shared": true, "type": "max", "value": 6},
@@ -9529,14 +9552,15 @@
         "import": true,
         "type": "unit",
         "categoryLinks": [
-          {"name": "Infantry", "id": "15cc-bcc9-8d2b-f029", "primary": true, "targetId": "cf47-a0d7-7207-29dc"},
+          {"name": "Infantry", "id": "15cc-bcc9-8d2b-f029", "primary": false, "targetId": "cf47-a0d7-7207-29dc"},
           {"name": "Grenades", "id": "c0c0-fe27-dde2-b792", "primary": false, "targetId": "5a61-81ac-eb7c-a87e"},
           {"name": "Imperium", "id": "f0c5-6166-ff8d-e1bc", "primary": false, "targetId": "aff3-d6a3-2a95-9dc"},
           {"name": "Faction: Adeptus Astartes", "id": "f131-f10c-d49e-9816", "primary": false, "targetId": "6e7-40c-58d9-e402"},
           {"name": "Faction: Blood Angels", "id": "5932-f63b-e0b8-a4ca", "primary": false, "targetId": "62ac-ef42-27b4-ae7"},
           {"name": "Death Company Marines with Bolt Rifles", "id": "084a-fa1f-fc67-f6ea", "primary": false, "targetId": "3055-9a0b-b062-5f31"},
           {"name": "Tacticus", "id": "da1c-ecfd-fdc1-7c80", "primary": false, "targetId": "5179-8ede-45e3-49a2"},
-          {"name": "Death Company", "id": "9856-f130-02c7-08f4", "hidden": false, "primary": false, "targetId": "7278-781b-ce6c-d23c"}
+          {"name": "Death Company", "id": "9856-f130-02c7-08f4", "hidden": false, "primary": false, "targetId": "7278-781b-ce6c-d23c"},
+          {"name": "Troops (Force Org)", "id": "c97e-4a11-7d3a-cdb7", "hidden": false, "primary": true, "targetId": "1a68-83ef-edaa-f6af"}
         ],
         "constraints": [
           {"id": "b3e7-aba7-e5ba-b180", "field": "75bb-ded1-c86d-bdf0", "includeChildSelections": false, "scope": "self", "shared": true, "type": "max", "value": 3},
@@ -10222,14 +10246,15 @@
         "import": true,
         "type": "unit",
         "categoryLinks": [
-          {"name": "Infantry", "id": "b9e0-f110-6f3a-4fb0", "primary": true, "targetId": "cf47-a0d7-7207-29dc"},
+          {"name": "Infantry", "id": "b9e0-f110-6f3a-4fb0", "primary": false, "targetId": "cf47-a0d7-7207-29dc"},
           {"name": "Grenades", "id": "92d1-4fb8-ff23-39da", "primary": false, "targetId": "5a61-81ac-eb7c-a87e"},
           {"name": "Imperium", "id": "ea6a-1ce7-b63c-708f", "primary": false, "targetId": "aff3-d6a3-2a95-9dc"},
           {"name": "Faction: Adeptus Astartes", "id": "ffb6-3cd1-274d-bcbe", "primary": false, "targetId": "6e7-40c-58d9-e402"},
           {"name": "Faction: Blood Angels", "id": "7e0f-489d-ad94-f447", "primary": false, "targetId": "62ac-ef42-27b4-ae7"},
           {"name": "Death Company Marines", "id": "56c3-9e1d-6904-04bb", "primary": false, "targetId": "caed-a62d-2318-dda1"},
           {"name": "Tacticus", "id": "c38e-ba92-47a2-8ef8", "primary": false, "targetId": "5179-8ede-45e3-49a2"},
-          {"name": "Death Company", "id": "25f2-fecf-dadb-aaa9", "hidden": false, "primary": false, "targetId": "7278-781b-ce6c-d23c"}
+          {"name": "Death Company", "id": "25f2-fecf-dadb-aaa9", "hidden": false, "primary": false, "targetId": "7278-781b-ce6c-d23c"},
+          {"name": "Troops (Force Org)", "id": "ae60-94f6-e402-c58e", "hidden": false, "primary": true, "targetId": "1a68-83ef-edaa-f6af"}
         ],
         "constraints": [
           {"id": "7e85-e567-56c8-db3a", "field": "75bb-ded1-c86d-bdf0", "includeChildSelections": false, "scope": "self", "shared": true, "type": "max", "value": 3},
@@ -11000,14 +11025,15 @@
         "import": true,
         "type": "model",
         "categoryLinks": [
-          {"name": "Vehicle", "id": "2f8e-363d-cdc8-3abf", "primary": true, "targetId": "dbd4-63-af05-998"},
+          {"name": "Vehicle", "id": "2f8e-363d-cdc8-3abf", "primary": false, "targetId": "dbd4-63-af05-998"},
           {"name": "Walker", "id": "f856-2760-2911-6010", "primary": false, "targetId": "6dda-e157-334d-e93a"},
           {"name": "Imperium", "id": "433c-ef70-9052-b4ca", "primary": false, "targetId": "aff3-d6a3-2a95-9dc"},
           {"name": "Dreadnought", "id": "5579-aa6b-9a8a-0b22", "primary": false, "targetId": "c97c-376-e2e0-1dd2"},
           {"name": "Death Company Dreadnought", "id": "19ed-8e14-9fb1-9458", "primary": false, "targetId": "d7bd-dd9-4492-cf9a"},
           {"name": "Faction: Adeptus Astartes", "id": "0e9e-09b4-00bc-1d5c", "primary": false, "targetId": "6e7-40c-58d9-e402"},
           {"name": "Faction: Blood Angels", "id": "9eea-113b-36de-393a", "primary": false, "targetId": "62ac-ef42-27b4-ae7"},
-          {"name": "Death Company", "id": "617a-2324-ed57-6d21", "primary": false, "targetId": "7278-781b-ce6c-d23c"}
+          {"name": "Death Company", "id": "617a-2324-ed57-6d21", "primary": false, "targetId": "7278-781b-ce6c-d23c"},
+          {"name": "War-engine (Force Org)", "id": "58eb-8106-4900-4c1f", "hidden": false, "primary": true, "targetId": "8b8b-9caa-c557-393f"}
         ],
         "constraints": [
           {"id": "ba24-fef3-82ea-f2fc", "field": "75bb-ded1-c86d-bdf0", "includeChildSelections": false, "scope": "self", "shared": true, "type": "max", "value": 3},
@@ -11492,7 +11518,7 @@
         "import": true,
         "type": "unit",
         "categoryLinks": [
-          {"name": "Infantry", "id": "c319-4a2d-340b-03e3", "hidden": false, "primary": true, "targetId": "cf47-a0d7-7207-29dc"},
+          {"name": "Infantry", "id": "c319-4a2d-340b-03e3", "hidden": false, "primary": false, "targetId": "cf47-a0d7-7207-29dc"},
           {"name": "Grenades", "id": "055e-a788-348b-3e81", "hidden": false, "primary": false, "targetId": "5a61-81ac-eb7c-a87e"},
           {"name": "Imperium", "id": "e464-e1fb-877e-3b6f", "hidden": false, "primary": false, "targetId": "aff3-d6a3-2a95-9dc"},
           {"name": "Faction: Adeptus Astartes", "id": "2dec-03bf-7d94-a009", "hidden": false, "primary": false, "targetId": "6e7-40c-58d9-e402"},
@@ -11504,7 +11530,8 @@
             "primary": false,
             "targetId": "f884-eba8-9896-a544"
           },
-          {"name": "Death Company", "id": "8a21-9c28-fe85-aa33", "hidden": false, "primary": false, "targetId": "7278-781b-ce6c-d23c"}
+          {"name": "Death Company", "id": "8a21-9c28-fe85-aa33", "hidden": false, "primary": false, "targetId": "7278-781b-ce6c-d23c"},
+          {"name": "Troops (Force Org)", "id": "13cd-01d1-3805-f355", "hidden": false, "primary": true, "targetId": "1a68-83ef-edaa-f6af"}
         ],
         "constraints": [
           {"id": "1197-0788-9a91-ebed", "field": "75bb-ded1-c86d-bdf0", "includeChildSelections": false, "scope": "self", "shared": true, "type": "max", "value": 3},
@@ -11935,14 +11962,15 @@
         "import": true,
         "type": "model",
         "categoryLinks": [
-          {"name": "Vehicle", "id": "7060-a8b7-4a72-8303", "primary": true, "targetId": "dbd4-63-af05-998"},
+          {"name": "Vehicle", "id": "7060-a8b7-4a72-8303", "primary": false, "targetId": "dbd4-63-af05-998"},
           {"name": "Walker", "id": "ebcc-26a2-de95-a838", "primary": false, "targetId": "6dda-e157-334d-e93a"},
           {"name": "Imperium", "id": "7463-0b89-25ed-a8cd", "primary": false, "targetId": "aff3-d6a3-2a95-9dc"},
           {"name": "Dreadnought", "id": "5351-c572-2948-a63a", "primary": false, "targetId": "c97c-376-e2e0-1dd2"},
           {"name": "Faction: Adeptus Astartes", "id": "84e7-9ce8-063f-59bf", "primary": false, "targetId": "6e7-40c-58d9-e402"},
           {"name": "Faction: Blood Angels", "id": "3997-9e5c-46f9-6846", "primary": false, "targetId": "62ac-ef42-27b4-ae7"},
           {"name": "Contemptor-Incaendius Dreadnought", "id": "5df8-6496-0578-06c0", "hidden": false, "primary": false, "targetId": "df19-3935-52d2-e7c8"},
-          {"name": "Custom Units", "id": "2b38-8102-4fa0-4f4d", "hidden": false, "primary": false, "targetId": "e875-4d09-70f8-e315"}
+          {"name": "Custom Units", "id": "2b38-8102-4fa0-4f4d", "hidden": false, "primary": false, "targetId": "e875-4d09-70f8-e315"},
+          {"name": "War-engine (Force Org)", "id": "9044-274f-4887-7579", "hidden": false, "primary": true, "targetId": "8b8b-9caa-c557-393f"}
         ],
         "constraints": [
           {"id": "9299-e740-4d24-c8a9", "field": "75bb-ded1-c86d-bdf0", "includeChildSelections": false, "scope": "self", "shared": true, "type": "max", "value": 3},
@@ -12340,13 +12368,14 @@
         "import": true,
         "type": "unit",
         "categoryLinks": [
-          {"name": "Infantry", "id": "edee-191f-6cf2-97c0", "hidden": false, "primary": true, "targetId": "cf47-a0d7-7207-29dc"},
+          {"name": "Infantry", "id": "edee-191f-6cf2-97c0", "hidden": false, "primary": false, "targetId": "cf47-a0d7-7207-29dc"},
           {"name": "Imperium", "id": "eb25-5223-9423-171d", "hidden": false, "primary": false, "targetId": "aff3-d6a3-2a95-9dc"},
           {"name": "Terminator", "id": "4b65-f273-125f-01f4", "hidden": false, "primary": false, "targetId": "740a-892c-8958-defa"},
           {"name": "Faction: Adeptus Astartes", "id": "b59e-4525-dfbf-473b", "hidden": false, "primary": false, "targetId": "6e7-40c-58d9-e402"},
           {"name": "Crimson Paladins", "id": "8e6f-76ed-a24c-fd56", "hidden": false, "primary": false, "targetId": "12e5-4822-29db-5451"},
           {"name": "Faction: Blood Angels", "id": "b1f9-ad3c-0274-8ffd", "hidden": false, "primary": false, "targetId": "62ac-ef42-27b4-ae7"},
-          {"name": "Custom Units", "id": "3ab2-19c5-189b-4c1d", "hidden": false, "primary": false, "targetId": "e875-4d09-70f8-e315"}
+          {"name": "Custom Units", "id": "3ab2-19c5-189b-4c1d", "hidden": false, "primary": false, "targetId": "e875-4d09-70f8-e315"},
+          {"name": "Heavy Assault (Force Org)", "id": "0622-7c70-224d-33e5", "hidden": false, "primary": true, "targetId": "4319-8377-b24a-7338"}
         ],
         "constraints": [
           {"id": "f57a-40d8-2d17-6253", "field": "75bb-ded1-c86d-bdf0", "includeChildSelections": false, "scope": "self", "shared": true, "type": "max", "value": 3},
@@ -13323,7 +13352,7 @@
         "import": true,
         "type": "unit",
         "categoryLinks": [
-          {"name": "Infantry", "id": "be71-80e1-6312-0882", "primary": true, "targetId": "cf47-a0d7-7207-29dc"},
+          {"name": "Infantry", "id": "be71-80e1-6312-0882", "primary": false, "targetId": "cf47-a0d7-7207-29dc"},
           {"name": "Fly", "id": "0071-cbbb-626a-31eb", "primary": false, "targetId": "c619-2086-bbcf-69c9"},
           {"name": "Imperium", "id": "6ee9-85ae-3db9-e87e", "primary": false, "targetId": "aff3-d6a3-2a95-9dc"},
           {"name": "Faction: Adeptus Astartes", "id": "aa02-3684-9e98-5c1d", "primary": false, "targetId": "6e7-40c-58d9-e402"},
@@ -13332,7 +13361,8 @@
           {"name": "Explosives", "id": "81dc-04ed-9cdd-9230", "hidden": false, "primary": false, "targetId": "e33d-891d-33aa-e9bf"},
           {"name": "Tacticus", "id": "6d97-308c-5dce-63de", "hidden": false, "primary": false, "targetId": "5179-8ede-45e3-49a2"},
           {"name": "Dawnbreakers", "id": "9ea0-6c93-527e-7db7", "hidden": false, "primary": false, "targetId": "39d3-9759-491a-b66a"},
-          {"name": "Custom Units", "id": "ce26-954b-c62b-184c", "hidden": false, "primary": false, "targetId": "e875-4d09-70f8-e315"}
+          {"name": "Custom Units", "id": "ce26-954b-c62b-184c", "hidden": false, "primary": false, "targetId": "e875-4d09-70f8-e315"},
+          {"name": "Elites (Force Org)", "id": "172d-9a40-de6f-24f7", "hidden": false, "primary": true, "targetId": "eeca-bfd1-736b-4d89"}
         ],
         "constraints": [
           {"id": "8c58-88b5-0d48-61da", "field": "75bb-ded1-c86d-bdf0", "includeChildSelections": false, "scope": "self", "shared": true, "type": "max", "value": 3},
@@ -13918,7 +13948,7 @@
         "import": true,
         "type": "unit",
         "categoryLinks": [
-          {"name": "Infantry", "id": "c70e-c27b-8dfa-e055", "primary": true, "targetId": "cf47-a0d7-7207-29dc"},
+          {"name": "Infantry", "id": "c70e-c27b-8dfa-e055", "primary": false, "targetId": "cf47-a0d7-7207-29dc"},
           {"name": "Fly", "id": "679b-4ce9-0c8a-dba4", "primary": false, "targetId": "c619-2086-bbcf-69c9"},
           {"name": "Imperium", "id": "16a4-f2c2-acee-ebe0", "primary": false, "targetId": "aff3-d6a3-2a95-9dc"},
           {"name": "Faction: Adeptus Astartes", "id": "978c-fcc6-57ee-9772", "primary": false, "targetId": "6e7-40c-58d9-e402"},
@@ -13927,7 +13957,8 @@
           {"name": "Explosives", "id": "5c22-009b-c308-e448", "hidden": false, "primary": false, "targetId": "e33d-891d-33aa-e9bf"},
           {"name": "Tacticus", "id": "7b9f-6df0-0d4e-b074", "hidden": false, "primary": false, "targetId": "5179-8ede-45e3-49a2"},
           {"name": "Angel's Tears", "id": "05b4-3c7d-2a3d-0d3e", "hidden": false, "primary": false, "targetId": "8043-17f4-3d4c-260c"},
-          {"name": "Custom Units", "id": "dbea-1d96-e797-47a0", "hidden": false, "primary": false, "targetId": "e875-4d09-70f8-e315"}
+          {"name": "Custom Units", "id": "dbea-1d96-e797-47a0", "hidden": false, "primary": false, "targetId": "e875-4d09-70f8-e315"},
+          {"name": "Heavy Assault (Force Org)", "id": "a30b-12a8-29fb-cce1", "hidden": false, "primary": true, "targetId": "4319-8377-b24a-7338"}
         ],
         "constraints": [
           {"id": "2adf-93a8-e480-b4f1", "field": "75bb-ded1-c86d-bdf0", "includeChildSelections": false, "scope": "self", "shared": true, "type": "max", "value": 3},
@@ -14534,13 +14565,14 @@
         "import": true,
         "type": "unit",
         "categoryLinks": [
-          {"name": "Infantry", "id": "e3d5-5bf4-b866-929b", "hidden": false, "primary": true, "targetId": "cf47-a0d7-7207-29dc"},
+          {"name": "Infantry", "id": "e3d5-5bf4-b866-929b", "hidden": false, "primary": false, "targetId": "cf47-a0d7-7207-29dc"},
           {"name": "Imperium", "id": "12f9-31ec-e568-17a9", "hidden": false, "primary": false, "targetId": "aff3-d6a3-2a95-9dc"},
           {"name": "Tacticus", "id": "c19b-d899-1f0f-1ff3", "hidden": false, "primary": false, "targetId": "5179-8ede-45e3-49a2"},
           {"name": "Faction: Adeptus Astartes", "id": "823b-27ba-3561-6569", "hidden": false, "primary": false, "targetId": "6e7-40c-58d9-e402"},
           {"name": "Faction: Blood Angels", "id": "f542-b50d-4bf5-e37e", "hidden": false, "primary": false, "targetId": "62ac-ef42-27b4-ae7"},
           {"name": "Burning Eyes", "id": "1d19-ca2e-341f-b7ed", "hidden": false, "primary": false, "targetId": "fd20-fe36-74d9-0ef9"},
-          {"name": "Custom Units", "id": "496e-dfdb-ccda-67e2", "hidden": false, "primary": false, "targetId": "e875-4d09-70f8-e315"}
+          {"name": "Custom Units", "id": "496e-dfdb-ccda-67e2", "hidden": false, "primary": false, "targetId": "e875-4d09-70f8-e315"},
+          {"name": "Elites (Force Org)", "id": "9ef4-e115-38c1-cbde", "hidden": false, "primary": true, "targetId": "eeca-bfd1-736b-4d89"}
         ],
         "constraints": [
           {"id": "7631-0eff-95f7-1370", "field": "75bb-ded1-c86d-bdf0", "includeChildSelections": false, "scope": "self", "shared": true, "type": "max", "value": 3},

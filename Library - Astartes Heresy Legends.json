@@ -1478,9 +1478,10 @@
         "import": true,
         "type": "model",
         "categoryLinks": [
-          {"name": "Vehicle", "id": "3fe8-ae33-8d62-cb0b", "hidden": false, "primary": true, "targetId": "dbd4-63-af05-998"},
+          {"name": "Vehicle", "id": "3fe8-ae33-8d62-cb0b", "hidden": false, "primary": false, "targetId": "dbd4-63-af05-998"},
           {"name": "Smoke", "id": "273a-4e9b-26b7-8a5b", "hidden": false, "primary": false, "targetId": "6df-937-16bc-8c1a"},
-          {"name": "Kratos", "id": "78ab-462-6e65-3981", "hidden": false, "primary": false, "targetId": "39b9-56da-6787-1880"}
+          {"name": "Kratos", "id": "78ab-462-6e65-3981", "hidden": false, "primary": false, "targetId": "39b9-56da-6787-1880"},
+          {"name": "Armor (Force Org)", "id": "2a49-65c4-7a90-48fc", "hidden": false, "primary": true, "targetId": "a54a-187d-22a3-5d90"}
         ],
         "costs": [
           {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 240},
@@ -2748,11 +2749,12 @@
         "import": true,
         "type": "model",
         "categoryLinks": [
-          {"name": "Vehicle", "id": "842a-388f-edc-46ad", "hidden": false, "primary": true, "targetId": "dbd4-63-af05-998"},
+          {"name": "Vehicle", "id": "842a-388f-edc-46ad", "hidden": false, "primary": false, "targetId": "dbd4-63-af05-998"},
           {"name": "Walker", "id": "4585-cce4-1a81-96de", "hidden": false, "primary": false, "targetId": "6dda-e157-334d-e93a"},
           {"name": "Smoke", "id": "6099-8bd9-f05c-6672", "hidden": false, "primary": false, "targetId": "6df-937-16bc-8c1a"},
           {"name": "Dreadnought", "id": "cd37-99d-45ca-7793", "hidden": false, "primary": false, "targetId": "c97c-376-e2e0-1dd2"},
-          {"name": "Deredeo Dreadnought", "id": "cb02-4ff1-29bc-cb53", "hidden": false, "primary": false, "targetId": "4091-3761-4405-49bc"}
+          {"name": "Deredeo Dreadnought", "id": "cb02-4ff1-29bc-cb53", "hidden": false, "primary": false, "targetId": "4091-3761-4405-49bc"},
+          {"name": "War-engine (Force Org)", "id": "67f0-6adc-0a7f-827b", "hidden": false, "primary": true, "targetId": "8b8b-9caa-c557-393f"}
         ],
         "costs": [
           {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 160},
@@ -3297,10 +3299,11 @@
         "import": true,
         "type": "model",
         "categoryLinks": [
-          {"name": "Vehicle", "id": "3f70-a4ef-11ce-2d90", "hidden": false, "primary": true, "targetId": "dbd4-63-af05-998"},
+          {"name": "Vehicle", "id": "3f70-a4ef-11ce-2d90", "hidden": false, "primary": false, "targetId": "dbd4-63-af05-998"},
           {"name": "Walker", "id": "2afd-d12c-ce4a-5618", "hidden": false, "primary": false, "targetId": "6dda-e157-334d-e93a"},
           {"name": "Dreadnought", "id": "4643-337-d64b-96fb", "hidden": false, "primary": false, "targetId": "c97c-376-e2e0-1dd2"},
-          {"name": "Relic Contemptor Dreadnought", "id": "72bb-7bcb-d67a-dcd2", "hidden": false, "primary": false, "targetId": "3847-7af4-207a-be61"}
+          {"name": "Relic Contemptor Dreadnought", "id": "72bb-7bcb-d67a-dcd2", "hidden": false, "primary": false, "targetId": "3847-7af4-207a-be61"},
+          {"name": "War-engine (Force Org)", "id": "8c29-1f18-bf9f-06e1", "hidden": false, "primary": true, "targetId": "8b8b-9caa-c557-393f"}
         ],
         "costs": [
           {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 140},
@@ -4318,10 +4321,11 @@
         "type": "model",
         "categoryLinks": [
           {"name": "Faction: Adeptus Astartes", "id": "1c8c-c534-f1c-7b04", "hidden": false, "primary": false, "targetId": "6e7-40c-58d9-e402"},
-          {"name": "Vehicle", "id": "3080-eb2b-e02a-c715", "hidden": false, "primary": true, "targetId": "dbd4-63-af05-998"},
+          {"name": "Vehicle", "id": "3080-eb2b-e02a-c715", "hidden": false, "primary": false, "targetId": "dbd4-63-af05-998"},
           {"name": "Fly", "id": "bd11-2547-78ab-58c9", "hidden": false, "primary": false, "targetId": "c619-2086-bbcf-69c9"},
           {"name": "Imperium", "id": "27e5-18b4-3860-32de", "hidden": false, "primary": false, "targetId": "aff3-d6a3-2a95-9dc"},
-          {"name": "Javelin Attack Speeder", "id": "cb5e-3fc8-1e9f-412b", "hidden": false, "primary": false, "targetId": "8f99-5633-e6f3-970d"}
+          {"name": "Javelin Attack Speeder", "id": "cb5e-3fc8-1e9f-412b", "hidden": false, "primary": false, "targetId": "8f99-5633-e6f3-970d"},
+          {"name": "Fast Attack (Force Org)", "id": "abbd-e214-09e4-61bb", "hidden": false, "primary": true, "targetId": "f39b-d3bc-b92d-9941"}
         ],
         "costs": [{"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 110}],
         "infoLinks": [
@@ -4760,9 +4764,10 @@
         "type": "model",
         "categoryLinks": [
           {"name": "Faction: Adeptus Astartes", "id": "2d66-be8b-cb6e-af23", "hidden": false, "primary": false, "targetId": "6e7-40c-58d9-e402"},
-          {"name": "Vehicle", "id": "8925-faca-cacd-a74e", "hidden": false, "primary": true, "targetId": "dbd4-63-af05-998"},
+          {"name": "Vehicle", "id": "8925-faca-cacd-a74e", "hidden": false, "primary": false, "targetId": "dbd4-63-af05-998"},
           {"name": "Imperium", "id": "2973-a3b8-44f8-9a1e", "hidden": false, "primary": false, "targetId": "aff3-d6a3-2a95-9dc"},
-          {"name": "Deathstorm Drop Pod", "id": "dee9-bde-28c6-299f", "hidden": false, "primary": false, "targetId": "ea32-6c58-5ba8-1817"}
+          {"name": "Deathstorm Drop Pod", "id": "dee9-bde-28c6-299f", "hidden": false, "primary": false, "targetId": "ea32-6c58-5ba8-1817"},
+          {"name": "Support (Force Org)", "id": "be3e-bced-c762-e541", "hidden": false, "primary": true, "targetId": "9554-e253-adb0-c412"}
         ],
         "costs": [{"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 95}],
         "infoLinks": [
@@ -4954,10 +4959,11 @@
         "import": true,
         "type": "model",
         "categoryLinks": [
-          {"name": "Vehicle", "id": "ad28-994e-e12e-f40a", "hidden": false, "primary": true, "targetId": "dbd4-63-af05-998"},
+          {"name": "Vehicle", "id": "ad28-994e-e12e-f40a", "hidden": false, "primary": false, "targetId": "dbd4-63-af05-998"},
           {"name": "Transport", "id": "f747-a2cf-af6f-863c", "hidden": false, "primary": false, "targetId": "75e8-57c4-40e3-1817"},
           {"name": "Smoke", "id": "37bf-2e38-9fd7-10a2", "hidden": false, "primary": false, "targetId": "6df-937-16bc-8c1a"},
-          {"name": "Land Raider Proteus", "id": "5e8f-7d98-3f95-c5aa", "hidden": false, "primary": false, "targetId": "d864-e0e3-a261-3096"}
+          {"name": "Land Raider Proteus", "id": "5e8f-7d98-3f95-c5aa", "hidden": false, "primary": false, "targetId": "d864-e0e3-a261-3096"},
+          {"name": "Heavy Transport (Force Org)", "id": "88db-e08b-b81b-f899", "hidden": false, "primary": true, "targetId": "b798-f356-6a85-2b6a"}
         ],
         "costs": [
           {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 220},
@@ -5411,10 +5417,11 @@
         "import": true,
         "type": "model",
         "categoryLinks": [
-          {"name": "Vehicle", "id": "25c7-9244-f8fa-a550", "primary": true, "targetId": "dbd4-63-af05-998"},
+          {"name": "Vehicle", "id": "25c7-9244-f8fa-a550", "primary": false, "targetId": "dbd4-63-af05-998"},
           {"name": "Transport", "id": "8276-e512-a9e4-c1ea", "primary": false, "targetId": "75e8-57c4-40e3-1817"},
           {"name": "Smoke", "id": "6f01-7421-8cc2-439f", "primary": false, "targetId": "6df-937-16bc-8c1a"},
-          {"name": "Land Raider Achilles", "id": "a0a-19a-579a-959b", "primary": false, "targetId": "ce2d-77e-6f94-cbc5"}
+          {"name": "Land Raider Achilles", "id": "a0a-19a-579a-959b", "primary": false, "targetId": "ce2d-77e-6f94-cbc5"},
+          {"name": "Heavy Transport (Force Org)", "id": "b5c0-3eeb-ebf0-b9d4", "hidden": false, "primary": true, "targetId": "b798-f356-6a85-2b6a"}
         ],
         "costs": [
           {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 230},
@@ -5951,9 +5958,10 @@
         "import": true,
         "type": "model",
         "categoryLinks": [
-          {"name": "Vehicle", "id": "5425-5fc2-c61e-f46", "primary": true, "targetId": "dbd4-63-af05-998"},
+          {"name": "Vehicle", "id": "5425-5fc2-c61e-f46", "primary": false, "targetId": "dbd4-63-af05-998"},
           {"name": "Smoke", "id": "3131-a569-5283-a0b4", "primary": false, "targetId": "6df-937-16bc-8c1a"},
-          {"name": "Sicaran Battle Tank", "id": "22dd-5ffe-3896-16c9", "primary": false, "targetId": "cd01-df65-c4bc-db47"}
+          {"name": "Sicaran Battle Tank", "id": "22dd-5ffe-3896-16c9", "primary": false, "targetId": "cd01-df65-c4bc-db47"},
+          {"name": "Armor (Force Org)", "id": "040f-0e3b-04c7-21dc", "hidden": false, "primary": true, "targetId": "a54a-187d-22a3-5d90"}
         ],
         "costs": [
           {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 160},
@@ -6305,10 +6313,11 @@
         "type": "model",
         "categoryLinks": [
           {"name": "Faction: Adeptus Astartes", "id": "fbbb-66e7-1081-e33f", "primary": false, "targetId": "6e7-40c-58d9-e402"},
-          {"name": "Vehicle", "id": "5144-a3b2-9362-f234", "primary": true, "targetId": "dbd4-63-af05-998"},
+          {"name": "Vehicle", "id": "5144-a3b2-9362-f234", "primary": false, "targetId": "dbd4-63-af05-998"},
           {"name": "Imperium", "id": "a5d9-395f-2964-2734", "primary": false, "targetId": "aff3-d6a3-2a95-9dc"},
           {"name": "Smoke", "id": "8a5a-a34e-2756-ef35", "primary": false, "targetId": "6df-937-16bc-8c1a"},
-          {"name": "Sicaran Arcus", "id": "f6e8-1ab9-cccd-a023", "primary": false, "targetId": "9c51-4e01-bac0-7763"}
+          {"name": "Sicaran Arcus", "id": "f6e8-1ab9-cccd-a023", "primary": false, "targetId": "9c51-4e01-bac0-7763"},
+          {"name": "Armor (Force Org)", "id": "bb43-1279-9688-4d49", "hidden": false, "primary": true, "targetId": "a54a-187d-22a3-5d90"}
         ],
         "costs": [
           {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 160},
@@ -6660,9 +6669,10 @@
         "import": true,
         "type": "model",
         "categoryLinks": [
-          {"name": "Vehicle", "id": "3ba2-ff8c-474e-1d2", "primary": true, "targetId": "dbd4-63-af05-998"},
+          {"name": "Vehicle", "id": "3ba2-ff8c-474e-1d2", "primary": false, "targetId": "dbd4-63-af05-998"},
           {"name": "Smoke", "id": "9fbd-bb1c-abd6-36c3", "primary": false, "targetId": "6df-937-16bc-8c1a"},
-          {"name": "Sicaran Venator", "id": "3e41-12df-2ce-8d84", "primary": false, "targetId": "4f5-7a56-eb75-c9f5"}
+          {"name": "Sicaran Venator", "id": "3e41-12df-2ce-8d84", "primary": false, "targetId": "4f5-7a56-eb75-c9f5"},
+          {"name": "Armor (Force Org)", "id": "4dce-acdb-f8ce-d87d", "hidden": false, "primary": true, "targetId": "a54a-187d-22a3-5d90"}
         ],
         "costs": [
           {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 180},
@@ -7013,9 +7023,10 @@
         "import": true,
         "type": "model",
         "categoryLinks": [
-          {"name": "Vehicle", "id": "bc62-c85b-48ba-ba71", "primary": true, "targetId": "dbd4-63-af05-998"},
+          {"name": "Vehicle", "id": "bc62-c85b-48ba-ba71", "primary": false, "targetId": "dbd4-63-af05-998"},
           {"name": "Smoke", "id": "de95-145-f669-8d80", "primary": false, "targetId": "6df-937-16bc-8c1a"},
-          {"name": "Sicaran Punisher", "id": "39c0-1f19-6130-d604", "primary": false, "targetId": "2850-d52-56db-75f9"}
+          {"name": "Sicaran Punisher", "id": "39c0-1f19-6130-d604", "primary": false, "targetId": "2850-d52-56db-75f9"},
+          {"name": "Armor (Force Org)", "id": "75f5-a955-2610-0ebb", "hidden": false, "primary": true, "targetId": "a54a-187d-22a3-5d90"}
         ],
         "costs": [
           {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 160},
@@ -7367,10 +7378,11 @@
         "type": "model",
         "categoryLinks": [
           {"name": "Faction: Adeptus Astartes", "id": "bb99-c0d1-afe1-a940", "primary": false, "targetId": "6e7-40c-58d9-e402"},
-          {"name": "Vehicle", "id": "5e30-cbbe-e9da-fc7e", "primary": true, "targetId": "dbd4-63-af05-998"},
+          {"name": "Vehicle", "id": "5e30-cbbe-e9da-fc7e", "primary": false, "targetId": "dbd4-63-af05-998"},
           {"name": "Smoke", "id": "de43-afb9-b9d0-1f01", "primary": false, "targetId": "6df-937-16bc-8c1a"},
           {"name": "Imperium", "id": "7428-1d29-58c-14ed", "primary": false, "targetId": "aff3-d6a3-2a95-9dc"},
-          {"name": "Sicaran Omega", "id": "c002-65f4-9049-41bc", "primary": false, "targetId": "3def-a3e5-91c0-68a9"}
+          {"name": "Sicaran Omega", "id": "c002-65f4-9049-41bc", "primary": false, "targetId": "3def-a3e5-91c0-68a9"},
+          {"name": "Armor (Force Org)", "id": "85a4-8bb0-dca5-6b5d", "hidden": false, "primary": true, "targetId": "a54a-187d-22a3-5d90"}
         ],
         "costs": [
           {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 180},
@@ -7739,8 +7751,9 @@
         "type": "model",
         "categoryLinks": [
           {"name": "Artillery", "id": "5e36-6f93-4910-8590", "primary": false, "targetId": "8cab-448d-37b7-32bc"},
-          {"name": "Vehicle", "id": "de46-70f3-3ae5-eee0", "primary": true, "targetId": "dbd4-63-af05-998"},
-          {"name": "Rapier Carrier", "id": "62c5-52aa-d785-b7d", "primary": false, "targetId": "efe7-5d3d-c28b-bf6"}
+          {"name": "Vehicle", "id": "de46-70f3-3ae5-eee0", "primary": false, "targetId": "dbd4-63-af05-998"},
+          {"name": "Rapier Carrier", "id": "62c5-52aa-d785-b7d", "primary": false, "targetId": "efe7-5d3d-c28b-bf6"},
+          {"name": "Support (Force Org)", "id": "0fed-86f4-17cf-7764", "hidden": false, "primary": true, "targetId": "9554-e253-adb0-c412"}
         ],
         "costs": [
           {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 90},
@@ -8093,9 +8106,10 @@
         "import": true,
         "type": "model",
         "categoryLinks": [
-          {"name": "Vehicle", "id": "a268-abb5-fb29-61ce", "primary": true, "targetId": "dbd4-63-af05-998"},
+          {"name": "Vehicle", "id": "a268-abb5-fb29-61ce", "primary": false, "targetId": "dbd4-63-af05-998"},
           {"name": "Smoke", "id": "7d9b-b3f-c6d5-785", "primary": false, "targetId": "6df-937-16bc-8c1a"},
-          {"name": "Whirlwind Scorpius", "id": "50ec-f60f-b6b1-e203", "primary": false, "targetId": "d71a-cb33-26eb-9b49"}
+          {"name": "Whirlwind Scorpius", "id": "50ec-f60f-b6b1-e203", "primary": false, "targetId": "d71a-cb33-26eb-9b49"},
+          {"name": "Armor (Force Org)", "id": "9c51-88cc-588b-a497", "hidden": false, "primary": true, "targetId": "a54a-187d-22a3-5d90"}
         ],
         "costs": [{"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 115}],
         "infoLinks": [
@@ -8354,10 +8368,11 @@
         "type": "model",
         "categoryLinks": [
           {"name": "Faction: Adeptus Astartes", "id": "3c5a-35e3-d715-ff54", "primary": false, "targetId": "6e7-40c-58d9-e402"},
-          {"name": "Vehicle", "id": "8284-ecfb-bb67-8d5f", "primary": true, "targetId": "dbd4-63-af05-998"},
+          {"name": "Vehicle", "id": "8284-ecfb-bb67-8d5f", "primary": false, "targetId": "dbd4-63-af05-998"},
           {"name": "Smoke", "id": "c6c9-57d0-49ec-9a1d", "primary": false, "targetId": "6df-937-16bc-8c1a"},
           {"name": "Imperium", "id": "9cc4-b765-afe7-7b7", "primary": false, "targetId": "aff3-d6a3-2a95-9dc"},
-          {"name": "Vindicator Laser Destroyer", "id": "43bd-4587-6691-dc2", "primary": false, "targetId": "5e44-f9e3-7d42-e512"}
+          {"name": "Vindicator Laser Destroyer", "id": "43bd-4587-6691-dc2", "primary": false, "targetId": "5e44-f9e3-7d42-e512"},
+          {"name": "Armor (Force Org)", "id": "0c3f-288d-4c51-83a4", "hidden": false, "primary": true, "targetId": "a54a-187d-22a3-5d90"}
         ],
         "costs": [{"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 175}],
         "infoLinks": [
@@ -8560,10 +8575,11 @@
         "type": "model",
         "categoryLinks": [
           {"name": "Faction: Adeptus Astartes", "id": "7960-fe87-f149-e7a9", "primary": false, "targetId": "6e7-40c-58d9-e402"},
-          {"name": "Vehicle", "id": "d208-abb5-930a-13b8", "primary": true, "targetId": "dbd4-63-af05-998"},
+          {"name": "Vehicle", "id": "d208-abb5-930a-13b8", "primary": false, "targetId": "dbd4-63-af05-998"},
           {"name": "Imperium", "id": "44dc-f29f-57f2-daa3", "primary": false, "targetId": "aff3-d6a3-2a95-9dc"},
           {"name": "Transport", "id": "25f9-7e42-aff1-78ad", "primary": false, "targetId": "75e8-57c4-40e3-1817"},
-          {"name": "Dreadnought Drop Pod", "id": "5383-66a8-78c0-2325", "primary": false, "targetId": "52a1-b7d1-d865-221e"}
+          {"name": "Dreadnought Drop Pod", "id": "5383-66a8-78c0-2325", "primary": false, "targetId": "52a1-b7d1-d865-221e"},
+          {"name": "Transport (Force Org)", "id": "093b-baca-4b79-72b3", "hidden": false, "primary": true, "targetId": "0e1b-eb85-d27e-4e92"}
         ],
         "costs": [{"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 75}],
         "infoLinks": [
@@ -8649,8 +8665,9 @@
         "categoryLinks": [
           {"name": "Vehicle", "id": "ed07-d5f6-6a09-59b1", "primary": false, "targetId": "dbd4-63-af05-998"},
           {"name": "Transport", "id": "2aa5-3a4-942c-bdeb", "primary": false, "targetId": "75e8-57c4-40e3-1817"},
-          {"name": "Dedicated Transport", "id": "f72-643e-c06-40b4", "primary": true, "targetId": "ba07-411c-2832-1f79"},
-          {"name": "Terrax-pattern Termite", "id": "800f-6daf-42d0-407c", "primary": false, "targetId": "94dd-77ef-7000-6eae"}
+          {"name": "Dedicated Transport", "id": "f72-643e-c06-40b4", "primary": false, "targetId": "ba07-411c-2832-1f79"},
+          {"name": "Terrax-pattern Termite", "id": "800f-6daf-42d0-407c", "primary": false, "targetId": "94dd-77ef-7000-6eae"},
+          {"name": "Transport (Force Org)", "id": "6b6d-8a8f-eb52-8577", "hidden": false, "primary": true, "targetId": "0e1b-eb85-d27e-4e92"}
         ],
         "costs": [{"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 200}],
         "infoLinks": [
@@ -8962,10 +8979,11 @@
         "import": true,
         "type": "model",
         "categoryLinks": [
-          {"name": "Vehicle", "id": "bc4b-5268-8953-fbda", "primary": true, "targetId": "dbd4-63-af05-998"},
+          {"name": "Vehicle", "id": "bc4b-5268-8953-fbda", "primary": false, "targetId": "dbd4-63-af05-998"},
           {"name": "Fly", "id": "35e0-d884-b04b-4d57", "primary": false, "targetId": "c619-2086-bbcf-69c9"},
           {"name": "Aircraft", "id": "5c78-1f11-5608-ceb8", "primary": false, "targetId": "63f1-e6e8-f6f6-a4f0"},
-          {"name": "Xiphon Interceptor", "id": "7711-c7b1-68ad-d392", "primary": false, "targetId": "4ad9-c3f1-cf62-4585"}
+          {"name": "Xiphon Interceptor", "id": "7711-c7b1-68ad-d392", "primary": false, "targetId": "4ad9-c3f1-cf62-4585"},
+          {"name": "Fast Attack (Force Org)", "id": "352a-8f0f-e9ef-295a", "hidden": false, "primary": true, "targetId": "f39b-d3bc-b92d-9941"}
         ],
         "costs": [{"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 115}],
         "infoLinks": [
@@ -9173,11 +9191,12 @@
         "import": true,
         "type": "model",
         "categoryLinks": [
-          {"name": "Vehicle", "id": "ac1b-eae2-8adf-fb10", "primary": true, "targetId": "dbd4-63-af05-998"},
+          {"name": "Vehicle", "id": "ac1b-eae2-8adf-fb10", "primary": false, "targetId": "dbd4-63-af05-998"},
           {"name": "Fly", "id": "d3b9-53fb-d459-295c", "primary": false, "targetId": "c619-2086-bbcf-69c9"},
           {"name": "Aircraft", "id": "a75c-bb7a-90b9-7dbc", "primary": false, "targetId": "63f1-e6e8-f6f6-a4f0"},
           {"name": "Transport", "id": "2bd4-ca10-b0c-c079", "primary": false, "targetId": "75e8-57c4-40e3-1817"},
-          {"name": "Storm Eagle Gunship", "id": "b668-e101-407f-925c", "primary": false, "targetId": "3968-364d-4ae9-dff2"}
+          {"name": "Storm Eagle Gunship", "id": "b668-e101-407f-925c", "primary": false, "targetId": "3968-364d-4ae9-dff2"},
+          {"name": "Fast Attack (Force Org)", "id": "4a3c-c6bf-ce2b-3e79", "hidden": false, "primary": true, "targetId": "f39b-d3bc-b92d-9941"}
         ],
         "costs": [
           {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 250},
@@ -9677,10 +9696,11 @@
         "import": true,
         "type": "model",
         "categoryLinks": [
-          {"name": "Vehicle", "id": "10ee-ef68-2e3d-d151", "primary": true, "targetId": "dbd4-63-af05-998"},
+          {"name": "Vehicle", "id": "10ee-ef68-2e3d-d151", "primary": false, "targetId": "dbd4-63-af05-998"},
           {"name": "Fly", "id": "4fe4-e740-50-513d", "primary": false, "targetId": "c619-2086-bbcf-69c9"},
           {"name": "Aircraft", "id": "3c9c-1983-9329-b536", "primary": false, "targetId": "63f1-e6e8-f6f6-a4f0"},
-          {"name": "Fire Raptor Gunship", "id": "3bdd-0e37-99d2-3a8a", "hidden": false, "primary": false, "targetId": "2f3c-b429-17fd-f5ea"}
+          {"name": "Fire Raptor Gunship", "id": "3bdd-0e37-99d2-3a8a", "hidden": false, "primary": false, "targetId": "2f3c-b429-17fd-f5ea"},
+          {"name": "Fast Attack (Force Org)", "id": "f216-ac39-f15a-d306", "hidden": false, "primary": true, "targetId": "f39b-d3bc-b92d-9941"}
         ],
         "costs": [{"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 290}],
         "infoLinks": [
@@ -10017,9 +10037,10 @@
         "import": true,
         "type": "model",
         "categoryLinks": [
-          {"name": "Vehicle", "id": "e02f-a5be-df57-627b", "primary": true, "targetId": "dbd4-63-af05-998"},
+          {"name": "Vehicle", "id": "e02f-a5be-df57-627b", "primary": false, "targetId": "dbd4-63-af05-998"},
           {"name": "Smoke", "id": "6b75-ec9a-207f-b5c0", "primary": false, "targetId": "6df-937-16bc-8c1a"},
-          {"name": "Typhon", "id": "40f3-eafb-922d-53bb", "primary": false, "targetId": "4978-fad8-9324-6c8a"}
+          {"name": "Typhon", "id": "40f3-eafb-922d-53bb", "primary": false, "targetId": "4978-fad8-9324-6c8a"},
+          {"name": "Lord of War (Force Org)", "id": "9a13-f6c4-6c05-530c", "hidden": false, "primary": true, "targetId": "ec4d-33a2-bb43-c06e"}
         ],
         "costs": [
           {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 320},
@@ -10349,9 +10370,10 @@
         "import": true,
         "type": "model",
         "categoryLinks": [
-          {"name": "Vehicle", "id": "f6c5-d1b4-bb4a-85d7", "primary": true, "targetId": "dbd4-63-af05-998"},
+          {"name": "Vehicle", "id": "f6c5-d1b4-bb4a-85d7", "primary": false, "targetId": "dbd4-63-af05-998"},
           {"name": "Smoke", "id": "bfb0-972f-fc10-2201", "primary": false, "targetId": "6df-937-16bc-8c1a"},
-          {"name": "Cerberus", "id": "81bb-3f82-c4a9-da21", "primary": false, "targetId": "d38b-c5f4-6414-19d4"}
+          {"name": "Cerberus", "id": "81bb-3f82-c4a9-da21", "primary": false, "targetId": "d38b-c5f4-6414-19d4"},
+          {"name": "Lord of War (Force Org)", "id": "f5b9-a761-10b2-5733", "hidden": false, "primary": true, "targetId": "ec4d-33a2-bb43-c06e"}
         ],
         "costs": [
           {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 270},
@@ -10664,10 +10686,11 @@
         "import": true,
         "type": "model",
         "categoryLinks": [
-          {"name": "Vehicle", "id": "d310-5ca7-7c4a-1a4b", "primary": true, "targetId": "dbd4-63-af05-998"},
+          {"name": "Vehicle", "id": "d310-5ca7-7c4a-1a4b", "primary": false, "targetId": "dbd4-63-af05-998"},
           {"name": "Transport", "id": "f054-a047-1ac9-a0a9", "primary": false, "targetId": "75e8-57c4-40e3-1817"},
           {"name": "Smoke", "id": "ded3-36e0-d465-930d", "primary": false, "targetId": "6df-937-16bc-8c1a"},
-          {"name": "Spartan", "id": "f3f8-4e3b-c351-7a4e", "primary": false, "targetId": "d567-8f69-67c3-fd7f"}
+          {"name": "Spartan", "id": "f3f8-4e3b-c351-7a4e", "primary": false, "targetId": "d567-8f69-67c3-fd7f"},
+          {"name": "Heavy Transport (Force Org)", "id": "483f-0af7-658a-b865", "hidden": false, "primary": true, "targetId": "b798-f356-6a85-2b6a"}
         ],
         "costs": [
           {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 300},
@@ -11063,10 +11086,11 @@
         "import": true,
         "type": "model",
         "categoryLinks": [
-          {"name": "Vehicle", "id": "74c0-9049-a2c3-87ca", "primary": true, "targetId": "dbd4-63-af05-998"},
+          {"name": "Vehicle", "id": "74c0-9049-a2c3-87ca", "primary": false, "targetId": "dbd4-63-af05-998"},
           {"name": "Titanic", "id": "3a6-7ec2-f6ac-8d0c", "primary": false, "targetId": "5929-ad51-d006-e008"},
           {"name": "Smoke", "id": "81e7-8980-380c-83a9", "primary": false, "targetId": "6df-937-16bc-8c1a"},
-          {"name": "Fellblade", "id": "35ae-9ccc-c860-a28a", "primary": false, "targetId": "f7a9-bb57-5e7f-54b6"}
+          {"name": "Fellblade", "id": "35ae-9ccc-c860-a28a", "primary": false, "targetId": "f7a9-bb57-5e7f-54b6"},
+          {"name": "Lord of War (Force Org)", "id": "3cab-560e-b6cc-9cf0", "hidden": false, "primary": true, "targetId": "ec4d-33a2-bb43-c06e"}
         ],
         "costs": [
           {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 480},
@@ -11596,10 +11620,11 @@
         "import": true,
         "type": "model",
         "categoryLinks": [
-          {"name": "Vehicle", "id": "df39-dd9e-fcb8-d7e1", "primary": true, "targetId": "dbd4-63-af05-998"},
+          {"name": "Vehicle", "id": "df39-dd9e-fcb8-d7e1", "primary": false, "targetId": "dbd4-63-af05-998"},
           {"name": "Titanic", "id": "e86-dc0c-ae9-f433", "primary": false, "targetId": "5929-ad51-d006-e008"},
           {"name": "Smoke", "id": "f673-d48d-d427-7e9c", "primary": false, "targetId": "6df-937-16bc-8c1a"},
-          {"name": "Falchion", "id": "d62e-a829-635d-7a68", "primary": false, "targetId": "2423-750-51f-b957"}
+          {"name": "Falchion", "id": "d62e-a829-635d-7a68", "primary": false, "targetId": "2423-750-51f-b957"},
+          {"name": "Lord of War (Force Org)", "id": "8592-d6ba-21bd-e6c6", "hidden": false, "primary": true, "targetId": "ec4d-33a2-bb43-c06e"}
         ],
         "costs": [
           {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 420},
@@ -12004,11 +12029,12 @@
         "import": true,
         "type": "model",
         "categoryLinks": [
-          {"name": "Vehicle", "id": "6a62-39e7-b86-e24e", "primary": true, "targetId": "dbd4-63-af05-998"},
+          {"name": "Vehicle", "id": "6a62-39e7-b86-e24e", "primary": false, "targetId": "dbd4-63-af05-998"},
           {"name": "Titanic", "id": "7f2c-babe-9f6d-9eb5", "primary": false, "targetId": "5929-ad51-d006-e008"},
           {"name": "Transport", "id": "c79c-a937-f35f-4eba", "primary": false, "targetId": "75e8-57c4-40e3-1817"},
           {"name": "Smoke", "id": "3322-4048-b92-1565", "primary": false, "targetId": "6df-937-16bc-8c1a"},
-          {"name": "Mastodon", "id": "fc69-7956-4d75-c1da", "primary": false, "targetId": "61a4-aefb-ed56-cd15"}
+          {"name": "Mastodon", "id": "fc69-7956-4d75-c1da", "primary": false, "targetId": "61a4-aefb-ed56-cd15"},
+          {"name": "Lord of War (Force Org)", "id": "5608-13a7-1e5e-ad63", "hidden": false, "primary": true, "targetId": "ec4d-33a2-bb43-c06e"}
         ],
         "costs": [
           {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 400},
@@ -12571,12 +12597,13 @@
         "import": true,
         "type": "model",
         "categoryLinks": [
-          {"name": "Vehicle", "id": "9866-669d-fc6c-4ed1", "primary": true, "targetId": "dbd4-63-af05-998"},
+          {"name": "Vehicle", "id": "9866-669d-fc6c-4ed1", "primary": false, "targetId": "dbd4-63-af05-998"},
           {"name": "Titanic", "id": "395c-b014-d5c4-9ef2", "primary": false, "targetId": "5929-ad51-d006-e008"},
           {"name": "Fly", "id": "4d86-35c3-70f5-ddf2", "primary": false, "targetId": "c619-2086-bbcf-69c9"},
           {"name": "Transport", "id": "a410-85ca-141c-7fbf", "primary": false, "targetId": "75e8-57c4-40e3-1817"},
           {"name": "Sokar-pattern Stormbird", "id": "5647-4c54-a0ed-b0d1", "primary": false, "targetId": "a3ba-39df-9ad1-abe4"},
-          {"name": "Aircraft", "id": "0fb2-01d2-38c8-bc0c", "hidden": false, "primary": false, "targetId": "63f1-e6e8-f6f6-a4f0"}
+          {"name": "Aircraft", "id": "0fb2-01d2-38c8-bc0c", "hidden": false, "primary": false, "targetId": "63f1-e6e8-f6f6-a4f0"},
+          {"name": "Lord of War (Force Org)", "id": "bcd5-e820-2c51-b5d9", "hidden": false, "primary": true, "targetId": "ec4d-33a2-bb43-c06e"}
         ],
         "costs": [
           {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 900},
@@ -12862,10 +12889,11 @@
         "type": "unit",
         "categoryLinks": [
           {"name": "Faction: Adeptus Astartes", "id": "2e5a-1f9e-662a-aa79", "primary": false, "targetId": "6e7-40c-58d9-e402"},
-          {"name": "Vehicle", "id": "2d4b-c3ff-2f18-115", "primary": true, "targetId": "dbd4-63-af05-998"},
+          {"name": "Vehicle", "id": "2d4b-c3ff-2f18-115", "primary": false, "targetId": "dbd4-63-af05-998"},
           {"name": "Artillery", "id": "955a-b890-be78-9374", "primary": false, "targetId": "8cab-448d-37b7-32bc"},
           {"name": "Imperium", "id": "b3ed-2af4-da00-a95c", "primary": false, "targetId": "aff3-d6a3-2a95-9dc"},
-          {"name": "Tarantula Sentry Battery", "id": "9f36-391b-17bb-e7e1", "primary": false, "targetId": "54d-a72c-de79-525d"}
+          {"name": "Tarantula Sentry Battery", "id": "9f36-391b-17bb-e7e1", "primary": false, "targetId": "54d-a72c-de79-525d"},
+          {"name": "Support (Force Org)", "id": "0bd8-1361-458d-4825", "hidden": false, "primary": true, "targetId": "9554-e253-adb0-c412"}
         ],
         "costs": [
           {"name": "Crusade Points", "typeId": "b03b-c239-15a5-da55", "value": 0},
@@ -15416,11 +15444,12 @@
         "import": true,
         "type": "model",
         "categoryLinks": [
-          {"name": "Vehicle", "id": "80a4-6c0e-eea3-3724", "hidden": false, "primary": true, "targetId": "dbd4-63-af05-998"},
+          {"name": "Vehicle", "id": "80a4-6c0e-eea3-3724", "hidden": false, "primary": false, "targetId": "dbd4-63-af05-998"},
           {"name": "Walker", "id": "c2e1-fd52-33d2-e41b", "hidden": false, "primary": false, "targetId": "6dda-e157-334d-e93a"},
           {"name": "Smoke", "id": "a994-cbfc-d496-a209", "hidden": false, "primary": false, "targetId": "6df-937-16bc-8c1a"},
           {"name": "Dreadnought", "id": "1169-4bdd-69c5-3d2c", "hidden": false, "primary": false, "targetId": "c97c-376-e2e0-1dd2"},
-          {"name": "Leviathan Dreadnought", "id": "45b9-dda8-f5c1-8fc7", "hidden": false, "primary": false, "targetId": "4610-30f4-126d-95f"}
+          {"name": "Leviathan Dreadnought", "id": "45b9-dda8-f5c1-8fc7", "hidden": false, "primary": false, "targetId": "4610-30f4-126d-95f"},
+          {"name": "War-engine (Force Org)", "id": "4514-0e97-1ea3-ddfe", "hidden": false, "primary": true, "targetId": "8b8b-9caa-c557-393f"}
         ],
         "costs": [
           {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 160},
@@ -16197,12 +16226,13 @@
         "import": true,
         "type": "model",
         "categoryLinks": [
-          {"name": "Vehicle", "id": "16e0-ea66-20fc-5946", "hidden": false, "primary": true, "targetId": "dbd4-63-af05-998"},
+          {"name": "Vehicle", "id": "16e0-ea66-20fc-5946", "hidden": false, "primary": false, "targetId": "dbd4-63-af05-998"},
           {"name": "Walker", "id": "cbc5-88e4-83f0-c8a1", "hidden": false, "primary": false, "targetId": "6dda-e157-334d-e93a"},
           {"name": "Smoke", "id": "e81c-9e7f-44c5-8f3b", "hidden": false, "primary": false, "targetId": "6df-937-16bc-8c1a"},
           {"name": "Dreadnought", "id": "70a3-b633-9f72-8487", "hidden": false, "primary": false, "targetId": "c97c-376-e2e0-1dd2"},
           {"name": "Saturnine Dreadnought", "id": "7082-e7cb-bc36-8c4a", "hidden": false, "primary": false, "targetId": "5000-e7ff-b212-e707"},
-          {"name": "Custom Units", "id": "44d2-cf4e-5f0a-04d6", "hidden": false, "primary": false, "targetId": "e875-4d09-70f8-e315"}
+          {"name": "Custom Units", "id": "44d2-cf4e-5f0a-04d6", "hidden": false, "primary": false, "targetId": "e875-4d09-70f8-e315"},
+          {"name": "War-engine (Force Org)", "id": "4a2a-d044-342f-245f", "hidden": false, "primary": true, "targetId": "8b8b-9caa-c557-393f"}
         ],
         "costs": [
           {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 240},
@@ -17026,11 +17056,12 @@
         "import": true,
         "type": "model",
         "categoryLinks": [
-          {"name": "Vehicle", "id": "6e6f-b62f-e9a0-fcaa", "primary": true, "targetId": "dbd4-63-af05-998"},
+          {"name": "Vehicle", "id": "6e6f-b62f-e9a0-fcaa", "primary": false, "targetId": "dbd4-63-af05-998"},
           {"name": "Transport", "id": "a86b-553d-16a5-5486", "primary": false, "targetId": "75e8-57c4-40e3-1817"},
           {"name": "Smoke", "id": "6e68-2542-2bc6-17a1", "primary": false, "targetId": "6df-937-16bc-8c1a"},
           {"name": "Land Raider Ares", "id": "37ef-4797-99dd-7fdd", "hidden": false, "primary": false, "targetId": "683f-fca8-b42c-e10e"},
-          {"name": "Custom Units", "id": "6f9d-95cc-12ec-be34", "hidden": false, "primary": false, "targetId": "e875-4d09-70f8-e315"}
+          {"name": "Custom Units", "id": "6f9d-95cc-12ec-be34", "hidden": false, "primary": false, "targetId": "e875-4d09-70f8-e315"},
+          {"name": "Heavy Transport (Force Org)", "id": "e636-fde3-cd23-dc91", "hidden": false, "primary": true, "targetId": "b798-f356-6a85-2b6a"}
         ],
         "costs": [
           {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 280},
@@ -17714,10 +17745,11 @@
         "import": true,
         "type": "unit",
         "categoryLinks": [
-          {"name": "Vehicle", "id": "6cbf-ff3c-96b6-f82c", "hidden": false, "primary": true, "targetId": "dbd4-63-af05-998"},
+          {"name": "Vehicle", "id": "6cbf-ff3c-96b6-f82c", "hidden": false, "primary": false, "targetId": "dbd4-63-af05-998"},
           {"name": "Smoke", "id": "d8da-5334-0e1e-57e5", "hidden": false, "primary": false, "targetId": "6df-937-16bc-8c1a"},
           {"name": "Sabre Strike Tank", "id": "dbc5-3247-c2f1-e328", "hidden": false, "primary": false, "targetId": "1d2c-758e-2343-c46f"},
-          {"name": "Custom Units", "id": "afc0-ecf5-937c-ea5a", "hidden": false, "primary": false, "targetId": "e875-4d09-70f8-e315"}
+          {"name": "Custom Units", "id": "afc0-ecf5-937c-ea5a", "hidden": false, "primary": false, "targetId": "e875-4d09-70f8-e315"},
+          {"name": "Recon (Force Org)", "id": "2566-da8d-db72-a995", "hidden": false, "primary": true, "targetId": "42a1-86b9-f78c-4e54"}
         ],
         "costs": [
           {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 140},
@@ -18159,10 +18191,11 @@
         "import": true,
         "type": "model",
         "categoryLinks": [
-          {"name": "Vehicle", "id": "ee29-56a0-3053-1d83", "hidden": false, "primary": true, "targetId": "dbd4-63-af05-998"},
+          {"name": "Vehicle", "id": "ee29-56a0-3053-1d83", "hidden": false, "primary": false, "targetId": "dbd4-63-af05-998"},
           {"name": "Smoke", "id": "9ff0-558e-b818-386e", "hidden": false, "primary": false, "targetId": "6df-937-16bc-8c1a"},
           {"name": "Aquitor Bombard", "id": "b220-01f9-3b46-0ac4", "hidden": false, "primary": false, "targetId": "cd8f-0acd-d380-ba09"},
-          {"name": "Custom Units", "id": "5add-75b2-acc2-e8d1", "hidden": false, "primary": false, "targetId": "e875-4d09-70f8-e315"}
+          {"name": "Custom Units", "id": "5add-75b2-acc2-e8d1", "hidden": false, "primary": false, "targetId": "e875-4d09-70f8-e315"},
+          {"name": "Armor (Force Org)", "id": "578d-84b8-17a2-1bde", "hidden": false, "primary": true, "targetId": "a54a-187d-22a3-5d90"}
         ],
         "costs": [
           {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 240},
@@ -18800,8 +18833,9 @@
           {"name": "Transport", "id": "e3b7-eac2-0055-becd", "primary": false, "targetId": "75e8-57c4-40e3-1817"},
           {"name": "Smoke", "id": "2af7-29f9-ead6-9d86", "primary": false, "targetId": "6df-937-16bc-8c1a"},
           {"name": "Mastodon", "id": "538c-2b07-92c9-d5dd", "primary": false, "targetId": "61a4-aefb-ed56-cd15"},
-          {"name": "Character", "id": "2393-9c79-c11d-2c9c", "hidden": false, "primary": true, "targetId": "9cfd-1c32-585f-7d5c"},
-          {"name": "Custom Units", "id": "e104-e818-511d-9e0d", "hidden": false, "primary": false, "targetId": "e875-4d09-70f8-e315"}
+          {"name": "Character", "id": "2393-9c79-c11d-2c9c", "hidden": false, "primary": false, "targetId": "9cfd-1c32-585f-7d5c"},
+          {"name": "Custom Units", "id": "e104-e818-511d-9e0d", "hidden": false, "primary": false, "targetId": "e875-4d09-70f8-e315"},
+          {"name": "High Command (Force Org)", "id": "2c22-0994-cc82-a8cf", "hidden": false, "primary": true, "targetId": "9425-213a-a17e-05d7"}
         ],
         "costs": [
           {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 450},
@@ -19630,13 +19664,14 @@
         "import": true,
         "type": "model",
         "categoryLinks": [
-          {"name": "Character", "id": "bf20-fc82-2239-93cd", "hidden": false, "primary": true, "targetId": "9cfd-1c32-585f-7d5c"},
+          {"name": "Character", "id": "bf20-fc82-2239-93cd", "hidden": false, "primary": false, "targetId": "9cfd-1c32-585f-7d5c"},
           {"name": "Infantry", "id": "bdcc-5939-af18-1b65", "hidden": false, "primary": false, "targetId": "cf47-a0d7-7207-29dc"},
           {"name": "Imperium", "id": "f3ba-8212-aa23-0281", "hidden": false, "primary": false, "targetId": "aff3-d6a3-2a95-9dc"},
           {"name": "Tacticus", "id": "1cb7-9dca-c752-5cad", "hidden": false, "primary": false, "targetId": "5179-8ede-45e3-49a2"},
           {"name": "Faction: Adeptus Astartes", "id": "b31d-cb20-894b-ea2d", "hidden": false, "primary": false, "targetId": "6e7-40c-58d9-e402"},
           {"name": "Moritat", "id": "3b45-1908-4c7f-5a05", "hidden": false, "primary": false, "targetId": "28f2-2ac9-4af1-45cd"},
-          {"name": "Custom Units", "id": "97ec-b813-1af9-1ff9", "hidden": false, "primary": false, "targetId": "e875-4d09-70f8-e315"}
+          {"name": "Custom Units", "id": "97ec-b813-1af9-1ff9", "hidden": false, "primary": false, "targetId": "e875-4d09-70f8-e315"},
+          {"name": "Command (Force Org)", "id": "23df-8c96-b6a4-ac0c", "hidden": false, "primary": true, "targetId": "e91f-006d-1f90-47d1"}
         ],
         "constraints": [{"id": "fa21-4442-9740-327d", "field": "selections", "scope": "roster", "shared": true, "type": "max", "value": 3}],
         "costs": [

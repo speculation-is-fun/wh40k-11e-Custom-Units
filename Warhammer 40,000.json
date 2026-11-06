@@ -1257,7 +1257,35 @@
       {"name": "Indomitor Kill Team", "id": "2546-062b-7236-7fa3", "hidden": false},
       {"name": "Spectrus Kill Team", "id": "2b33-05a8-bf42-72f9", "hidden": false},
       {"name": "Allies: Tyranids", "id": "747a-c6a9-6f4f-7f09", "hidden": false},
-      {"name": "Custom Units", "id": "e875-4d09-70f8-e315", "hidden": true}
+      {"name": "Custom Units", "id": "e875-4d09-70f8-e315", "hidden": true},
+      {"name": "High Command (Force Org)", "id": "9425-213a-a17e-05d7", "hidden": false},
+      {"name": "Troops (Force Org)", "id": "1a68-83ef-edaa-f6af", "hidden": false},
+      {"name": "Command (Force Org)", "id": "e91f-006d-1f90-47d1", "hidden": false},
+      {"name": "Elites (Force Org)", "id": "eeca-bfd1-736b-4d89", "hidden": false},
+      {"name": "Fast Attack (Force Org)", "id": "f39b-d3bc-b92d-9941", "hidden": false},
+      {"name": "Retinue (Force Org)", "id": "a62d-fbb8-e2de-ad50", "hidden": false},
+      {"name": "Support (Force Org)", "id": "9554-e253-adb0-c412", "hidden": true},
+      {"name": "Transport (Force Org)", "id": "0e1b-eb85-d27e-4e92", "hidden": false},
+      {"name": "War-engine (Force Org)", "id": "8b8b-9caa-c557-393f", "hidden": false},
+      {"name": "Heavy Transport (Force Org)", "id": "b798-f356-6a85-2b6a", "hidden": false},
+      {"name": "Heavy Assault (Force Org)", "id": "4319-8377-b24a-7338", "hidden": false},
+      {"name": "Armor (Force Org)", "id": "a54a-187d-22a3-5d90", "hidden": false},
+      {"name": "Recon (Force Org)", "id": "42a1-86b9-f78c-4e54", "hidden": false},
+      {"name": "Warlord (Force Org)", "id": "2801-deb4-e949-7ec3", "hidden": false},
+      {"name": "Lord of War (Force Org)", "id": "ec4d-33a2-bb43-c06e", "hidden": false},
+      {"name": "Dedicated Transport (Force Org)", "id": "0a9b-9cd0-5b2d-369a", "hidden": false},
+      {"name": "Command Detachment", "id": "7052-f0da-56dc-7840", "hidden": false},
+      {"name": "War-engine Detachment", "id": "c5a9-66f4-9b88-8768", "hidden": false},
+      {"name": "Armor Detachment", "id": "4328-1e40-126d-b1e2", "hidden": false},
+      {"name": "Infantry Detachment", "id": "7fe7-f0b3-1a52-2b4d", "hidden": false},
+      {"name": "Heavy Detachment", "id": "e7f0-eddd-1c96-0cf7", "hidden": false},
+      {"name": "Recon Detachment", "id": "5843-3a2a-476e-5922", "hidden": false},
+      {"name": "Combined Arms Detachment", "id": "f208-5fc9-d608-2fb6", "hidden": false},
+      {"name": "Elites Detachment", "id": "55a8-9751-4751-b211", "hidden": false},
+      {"name": "Fast Attack Detachment", "id": "9ce1-7833-8ccf-ea19", "hidden": false},
+      {"name": "Support Detachment", "id": "2469-8215-3318-740f", "hidden": false},
+      {"name": "Assault Detachment", "id": "e126-6b6f-b9c3-276d", "hidden": false},
+      {"name": "Mechanized Infantry Detachment", "id": "2fda-cca4-e36a-42b5", "hidden": false}
     ],
     "costTypes": [
       {
@@ -1451,69 +1479,6 @@
         "readme": "#PLEASE NOTE: Space Marine Legends may have some errors, we are aware and still working on them. \n\nPlease report any issues with the data via the Report Issue functionality found either at the top right of the app (on web) or in the Roster menu (on mobile), ensuring you select the correct option based on the problem you are experiencing.\n\nIssues with Yellowscribe/TTS should first be reported as New Recruit issues, not data issues.\n\n**PLEASE DO NOT REPORT ISSUES ON DISCORD!**\n",
         "categoryLinks": [
           {"name": "Configuration", "id": "d5de-ee57-ad4b-e4b7", "hidden": false, "primary": false, "targetId": "4ac9-fd30-1e3d-b249"},
-          {"name": "Epic Hero", "id": "16fc-8e39-ee82-cf96", "hidden": false, "primary": false, "targetId": "4f3a-f0f7-6647-348d"},
-          {
-            "name": "Character",
-            "id": "c932-1176-dc9-b390",
-            "hidden": false,
-            "primary": false,
-            "targetId": "9cfd-1c32-585f-7d5c",
-            "constraints": [
-              {
-                "id": "f08b-2179-601f-9af",
-                "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "percentValue": false,
-                "scope": "roster",
-                "shared": true,
-                "type": "min",
-                "value": 1
-              }
-            ],
-            "modifiers": [
-              {
-                "field": "f08b-2179-601f-9af",
-                "type": "set",
-                "value": 0,
-                "conditionGroups": [
-                  {
-                    "type": "or",
-                    "conditions": [
-                      {
-                        "id": "1fe4-8f37-4c24-271",
-                        "childId": "bdc0-c0d-72d7-87e2",
-                        "field": "selections",
-                        "scope": "primary-catalogue",
-                        "shared": true,
-                        "type": "instanceOf",
-                        "value": 1
-                      },
-                      {
-                        "id": "f16a-b2cd-1da5-4050",
-                        "childId": "880c-c7e-4a43-a0c1",
-                        "field": "selections",
-                        "scope": "primary-catalogue",
-                        "shared": true,
-                        "type": "instanceOf",
-                        "value": 1
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
-          },
-          {"name": "Battleline", "id": "b3ba-1e1a-a92d-60d2", "hidden": false, "primary": false, "targetId": "e338-111e-d0c6-b687"},
-          {"name": "Infantry", "id": "6d77-b79d-3ccb-6bf6", "hidden": false, "primary": false, "targetId": "cf47-a0d7-7207-29dc"},
-          {"name": "Swarm", "id": "f5d5-b603-69b3-411c", "hidden": false, "primary": false, "targetId": "b00b-5bae-444f-964e"},
-          {"name": "Mounted", "id": "6503-057c-cb62-badb", "hidden": false, "primary": false, "targetId": "14a0-40c9-2748-ae6e"},
-          {"name": "Beast", "id": "87ea-37d2-7b40-c708", "hidden": false, "primary": false, "targetId": "4c3e-9310-a516-3590"},
-          {"name": "Monster", "id": "8e39-465e-7cfc-3085", "hidden": false, "primary": false, "targetId": "9693-cf84-fe69-37a9"},
-          {"name": "Vehicle", "id": "2c76-65c5-bad0-8208", "hidden": false, "primary": false, "targetId": "dbd4-63-af05-998"},
-          {"name": "Drone", "id": "8243-857b-2133-8887", "hidden": false, "primary": false, "targetId": "2471-e2e0-3f55-d6cb"},
-          {"name": "Dedicated Transport", "id": "cf3e-2c24-fe34-39f9", "hidden": false, "primary": false, "targetId": "ba07-411c-2832-1f79"},
-          {"name": "Fortification", "id": "9198-c35d-71cd-eea3", "hidden": false, "primary": false, "targetId": "19d7-9c74-2140-5851"},
           {"name": "Unit", "id": "a41a-6330-4718-d8d2", "hidden": false, "primary": false, "targetId": "1160-70ae-a862-b1a8"},
           {"name": "Allies: Adeptus Titanicus", "id": "d30c-1ea7-4805-b4be", "hidden": false, "targetId": "9988-6b5e-660e-d973"},
           {"name": "Allies: Astra Militarum", "id": "58e9-03a9-8da7-f45b", "hidden": false, "targetId": "8247-35f6-ec2a-7caa"},
@@ -1526,7 +1491,649 @@
           {"name": "Allies: Titanicus Traitoris", "id": "722c-1b43-cac8-8d7a", "hidden": false, "targetId": "24fa-8caf-cd68-31fb"},
           {"name": "Allies: Tyranids", "id": "2a70-f48a-2223-f633", "hidden": false, "targetId": "747a-c6a9-6f4f-7f09"},
           {"name": "Allies: Unaligned Forces", "id": "ea72-49d5-9b60-d6cf", "hidden": false, "targetId": "07d9-ab1c-cf28-0939"},
-          {"name": "Reference", "id": "3761-5a4e-79e0-3c18", "hidden": false, "targetId": "eef1-be80-500a-edfc"}
+          {"name": "Reference", "id": "3761-5a4e-79e0-3c18", "hidden": false, "targetId": "eef1-be80-500a-edfc"},
+          {
+            "name": "High Command (Force Org)",
+            "id": "8b3f-badf-cfd7-0069",
+            "hidden": false,
+            "primary": false,
+            "targetId": "9425-213a-a17e-05d7",
+            "constraints": [{"id": "6944-d29f-06b2-12fa", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "modifiers": [
+              {
+                "field": "6944-d29f-06b2-12fa",
+                "type": "increment",
+                "value": 1,
+                "repeats": [
+                  {
+                    "childId": "7052-f0da-56dc-7840",
+                    "childName": "Command Detachment",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "repeats": 1,
+                    "roundUp": false,
+                    "scope": "roster",
+                    "shared": true,
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Command (Force Org)",
+            "id": "ff6c-4bb0-bd25-9cc6",
+            "hidden": false,
+            "primary": false,
+            "targetId": "e91f-006d-1f90-47d1",
+            "constraints": [
+              {"id": "1bbf-33c2-e0d8-52f7", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 3},
+              {"id": "463d-dd08-68e1-f935", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1}
+            ],
+            "modifiers": [
+              {
+                "field": "1bbf-33c2-e0d8-52f7",
+                "type": "increment",
+                "value": 1,
+                "repeats": [
+                  {
+                    "childId": "7052-f0da-56dc-7840",
+                    "childName": "Command Detachment",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "repeats": 1,
+                    "roundUp": false,
+                    "scope": "roster",
+                    "shared": true,
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Troops (Force Org)",
+            "id": "2257-fcc9-d772-9c69",
+            "hidden": false,
+            "primary": false,
+            "targetId": "1a68-83ef-edaa-f6af",
+            "constraints": [
+              {"id": "bcb5-07b0-1608-8a9a", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 6},
+              {"id": "d796-3721-b902-5994", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 2}
+            ]
+          },
+          {
+            "name": "Transport (Force Org)",
+            "id": "605b-8e6e-327f-4963",
+            "hidden": false,
+            "primary": false,
+            "targetId": "0e1b-eb85-d27e-4e92",
+            "constraints": [{"id": "99c8-d070-74c4-2ada", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 6}]
+          },
+          {
+            "name": "Armor (Force Org)",
+            "id": "c189-071d-b1ab-237a",
+            "hidden": false,
+            "primary": false,
+            "targetId": "a54a-187d-22a3-5d90",
+            "constraints": [{"id": "1838-c16d-41f0-08a2", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "modifiers": [
+              {
+                "field": "1838-c16d-41f0-08a2",
+                "type": "increment",
+                "value": 2,
+                "repeats": [
+                  {
+                    "childId": "4328-1e40-126d-b1e2",
+                    "childName": "Armor Detachment",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "repeats": 1,
+                    "roundUp": false,
+                    "scope": "roster",
+                    "shared": true,
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "1838-c16d-41f0-08a2",
+                "type": "increment",
+                "value": 1,
+                "repeats": [
+                  {
+                    "childId": "f208-5fc9-d608-2fb6",
+                    "childName": "Combined Arms Detachment",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "repeats": 1,
+                    "roundUp": false,
+                    "scope": "roster",
+                    "shared": true,
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "1838-c16d-41f0-08a2",
+                "type": "increment",
+                "value": 1,
+                "repeats": [
+                  {
+                    "childId": "2fda-cca4-e36a-42b5",
+                    "childName": "Mechanized Infantry Detachment",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "repeats": 1,
+                    "roundUp": false,
+                    "scope": "roster",
+                    "shared": true,
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Elites (Force Org)",
+            "id": "7270-06b6-9845-9951",
+            "hidden": false,
+            "primary": false,
+            "targetId": "eeca-bfd1-736b-4d89",
+            "constraints": [{"id": "b662-7f16-5916-4990", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}],
+            "modifiers": [
+              {
+                "field": "b662-7f16-5916-4990",
+                "type": "increment",
+                "value": 2,
+                "repeats": [
+                  {
+                    "childId": "55a8-9751-4751-b211",
+                    "childName": "Elites Detachment",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "repeats": 1,
+                    "roundUp": false,
+                    "scope": "roster",
+                    "shared": true,
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "b662-7f16-5916-4990",
+                "type": "increment",
+                "value": 1,
+                "repeats": [
+                  {
+                    "childId": "e126-6b6f-b9c3-276d",
+                    "childName": "Assault Detachment",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "repeats": 1,
+                    "roundUp": false,
+                    "scope": "roster",
+                    "shared": true,
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "b662-7f16-5916-4990",
+                "type": "increment",
+                "value": 1,
+                "repeats": [
+                  {
+                    "childId": "f208-5fc9-d608-2fb6",
+                    "childName": "Combined Arms Detachment",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "repeats": 1,
+                    "roundUp": false,
+                    "scope": "roster",
+                    "shared": true,
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "b662-7f16-5916-4990",
+                "type": "increment",
+                "value": 1,
+                "repeats": [
+                  {
+                    "childId": "7fe7-f0b3-1a52-2b4d",
+                    "childName": "Infantry Detachment",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "repeats": 1,
+                    "roundUp": false,
+                    "scope": "roster",
+                    "shared": true,
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Fast Attack (Force Org)",
+            "id": "54ee-1723-462e-db51",
+            "hidden": false,
+            "primary": false,
+            "targetId": "f39b-d3bc-b92d-9941",
+            "constraints": [{"id": "3c0b-f050-cd63-5d84", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "modifiers": [
+              {
+                "field": "3c0b-f050-cd63-5d84",
+                "type": "increment",
+                "value": 1,
+                "repeats": [
+                  {
+                    "childId": "f208-5fc9-d608-2fb6",
+                    "childName": "Combined Arms Detachment",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "repeats": 1,
+                    "roundUp": false,
+                    "scope": "roster",
+                    "shared": true,
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "3c0b-f050-cd63-5d84",
+                "type": "increment",
+                "value": 2,
+                "repeats": [
+                  {
+                    "childId": "9ce1-7833-8ccf-ea19",
+                    "childName": "Fast Attack Detachment",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "repeats": 1,
+                    "roundUp": false,
+                    "scope": "roster",
+                    "shared": true,
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "3c0b-f050-cd63-5d84",
+                "type": "increment",
+                "value": 1,
+                "repeats": [
+                  {
+                    "childId": "2fda-cca4-e36a-42b5",
+                    "childName": "Mechanized Infantry Detachment",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "repeats": 1,
+                    "roundUp": false,
+                    "scope": "roster",
+                    "shared": true,
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Heavy Assault (Force Org)",
+            "id": "2978-a452-35d2-01f7",
+            "hidden": false,
+            "primary": false,
+            "targetId": "4319-8377-b24a-7338",
+            "constraints": [{"id": "8335-e7d1-deac-3274", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "modifiers": [
+              {
+                "field": "8335-e7d1-deac-3274",
+                "type": "increment",
+                "value": 1,
+                "repeats": [
+                  {
+                    "childId": "e7f0-eddd-1c96-0cf7",
+                    "childName": "Heavy Detachment",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "repeats": 1,
+                    "roundUp": false,
+                    "scope": "roster",
+                    "shared": true,
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "8335-e7d1-deac-3274",
+                "type": "increment",
+                "value": 2,
+                "repeats": [
+                  {
+                    "childId": "e126-6b6f-b9c3-276d",
+                    "childName": "Assault Detachment",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "repeats": 1,
+                    "roundUp": false,
+                    "scope": "roster",
+                    "shared": true,
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "8335-e7d1-deac-3274",
+                "type": "increment",
+                "value": 1,
+                "repeats": [
+                  {
+                    "childId": "55a8-9751-4751-b211",
+                    "childName": "Elites Detachment",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "repeats": 1,
+                    "roundUp": false,
+                    "scope": "roster",
+                    "shared": true,
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "8335-e7d1-deac-3274",
+                "type": "increment",
+                "value": 1,
+                "repeats": [
+                  {
+                    "childId": "7fe7-f0b3-1a52-2b4d",
+                    "childName": "Infantry Detachment",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "repeats": 1,
+                    "roundUp": false,
+                    "scope": "roster",
+                    "shared": true,
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Heavy Transport (Force Org)",
+            "id": "6fc0-4bc2-205e-92bd",
+            "hidden": false,
+            "primary": false,
+            "targetId": "b798-f356-6a85-2b6a",
+            "constraints": [{"id": "24ba-02c1-c14d-2450", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "modifiers": [
+              {
+                "field": "24ba-02c1-c14d-2450",
+                "type": "increment",
+                "value": 1,
+                "repeats": [
+                  {
+                    "childId": "e7f0-eddd-1c96-0cf7",
+                    "childName": "Heavy Detachment",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "repeats": 1,
+                    "roundUp": false,
+                    "scope": "roster",
+                    "shared": true,
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "24ba-02c1-c14d-2450",
+                "type": "increment",
+                "value": 1,
+                "repeats": [
+                  {
+                    "childId": "4328-1e40-126d-b1e2",
+                    "childName": "Armor Detachment",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "repeats": 1,
+                    "roundUp": false,
+                    "scope": "roster",
+                    "shared": true,
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Lord of War (Force Org)",
+            "id": "1332-d267-dae8-72f9",
+            "hidden": false,
+            "primary": false,
+            "targetId": "ec4d-33a2-bb43-c06e",
+            "constraints": [{"id": "903c-48b2-060b-9115", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
+          },
+          {
+            "name": "Recon (Force Org)",
+            "id": "2b9d-63ad-90a6-54e3",
+            "hidden": false,
+            "primary": false,
+            "targetId": "42a1-86b9-f78c-4e54",
+            "constraints": [{"id": "4531-766c-a2d4-9bb4", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "modifiers": [
+              {
+                "field": "4531-766c-a2d4-9bb4",
+                "type": "increment",
+                "value": 2,
+                "repeats": [
+                  {
+                    "childId": "5843-3a2a-476e-5922",
+                    "childName": "Recon Detachment",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "repeats": 1,
+                    "roundUp": false,
+                    "scope": "roster",
+                    "shared": true,
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Retinue (Force Org)",
+            "id": "074b-f948-65a9-81f9",
+            "hidden": false,
+            "primary": false,
+            "targetId": "a62d-fbb8-e2de-ad50",
+            "constraints": [{"id": "8de5-8143-1eea-8c97", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "modifiers": [
+              {
+                "field": "8de5-8143-1eea-8c97",
+                "type": "increment",
+                "value": 1,
+                "repeats": [
+                  {
+                    "childId": "7052-f0da-56dc-7840",
+                    "childName": "Command Detachment",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "repeats": 1,
+                    "roundUp": false,
+                    "scope": "roster",
+                    "shared": true,
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Support (Force Org)",
+            "id": "b40a-4ec3-e55e-31d7",
+            "hidden": false,
+            "primary": false,
+            "targetId": "9554-e253-adb0-c412",
+            "constraints": [{"id": "f015-9945-93c3-226b", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "modifiers": [
+              {
+                "field": "f015-9945-93c3-226b",
+                "type": "increment",
+                "value": 2,
+                "repeats": [
+                  {
+                    "childId": "7fe7-f0b3-1a52-2b4d",
+                    "childName": "Infantry Detachment",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "repeats": 1,
+                    "roundUp": false,
+                    "scope": "roster",
+                    "shared": true,
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "f015-9945-93c3-226b",
+                "type": "increment",
+                "value": 1,
+                "repeats": [
+                  {
+                    "childId": "f208-5fc9-d608-2fb6",
+                    "childName": "Combined Arms Detachment",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "repeats": 1,
+                    "roundUp": false,
+                    "scope": "roster",
+                    "shared": true,
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "f015-9945-93c3-226b",
+                "type": "increment",
+                "value": 2,
+                "repeats": [
+                  {
+                    "childId": "2469-8215-3318-740f",
+                    "childName": "Support Detachment",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "repeats": 1,
+                    "roundUp": false,
+                    "scope": "roster",
+                    "shared": true,
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "f015-9945-93c3-226b",
+                "type": "increment",
+                "value": 1,
+                "repeats": [
+                  {
+                    "childId": "2fda-cca4-e36a-42b5",
+                    "childName": "Mechanized Infantry Detachment",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "repeats": 1,
+                    "roundUp": false,
+                    "scope": "roster",
+                    "shared": true,
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "War-engine (Force Org)",
+            "id": "2de0-fb4d-255d-87e2",
+            "hidden": false,
+            "primary": false,
+            "targetId": "8b8b-9caa-c557-393f",
+            "constraints": [{"id": "4fab-2483-a62f-6eaa", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "modifiers": [
+              {
+                "field": "4fab-2483-a62f-6eaa",
+                "type": "increment",
+                "value": 2,
+                "repeats": [
+                  {
+                    "childId": "c5a9-66f4-9b88-8768",
+                    "childName": "War-engine Detachment",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "repeats": 1,
+                    "roundUp": false,
+                    "scope": "roster",
+                    "shared": true,
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "4fab-2483-a62f-6eaa",
+                "type": "increment",
+                "value": 1,
+                "repeats": [
+                  {
+                    "childId": "2fda-cca4-e36a-42b5",
+                    "childName": "Mechanized Infantry Detachment",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "repeats": 1,
+                    "roundUp": false,
+                    "scope": "roster",
+                    "shared": true,
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Warlord (Force Org)",
+            "id": "4e5e-026b-3c4b-deb7",
+            "hidden": false,
+            "primary": false,
+            "targetId": "2801-deb4-e949-7ec3",
+            "constraints": [{"id": "29a7-f408-0681-5876", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
+          }
         ],
         "constraints": [
           {"id": "95c5-effd-74f1-c8f4", "field": "82ae-1066-5107-6ae0", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "max", "value": 2},

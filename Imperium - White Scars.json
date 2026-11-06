@@ -152,7 +152,7 @@
           }
         ],
         "categoryLinks": [
-          {"name": "Epic Hero", "id": "91c8-2439-6241-59ac", "primary": true, "targetId": "4f3a-f0f7-6647-348d"},
+          {"name": "Epic Hero", "id": "91c8-2439-6241-59ac", "primary": false, "targetId": "4f3a-f0f7-6647-348d"},
           {"name": "Character", "id": "8698-34e9-3674-bc4d", "primary": false, "targetId": "9cfd-1c32-585f-7d5c"},
           {"name": "Infantry", "id": "11be-d531-53fd-19f7", "primary": false, "targetId": "cf47-a0d7-7207-29dc"},
           {"name": "Captain", "id": "d4d7-37e4-7b12-e97b", "primary": false, "targetId": "2d7f-1892-2fd0-e29c"},
@@ -162,7 +162,8 @@
           {"name": "Kor'sarro Khan", "id": "55f6-c289-506d-455f", "primary": false, "targetId": "ecaf-d9ca-6ab0-8dcb"},
           {"name": "Tacticus", "id": "2ef1-b613-5bc9-c6ab", "primary": false, "targetId": "5179-8ede-45e3-49a2"},
           {"name": "Leader", "id": "7b4d-d3ad-ab7d-bbb0", "primary": false, "targetId": "1556-9b56-fba6-4370"},
-          {"name": "Explosives", "id": "49b2-dcb8-6f7a-4a42", "hidden": false, "primary": false, "targetId": "e33d-891d-33aa-e9bf"}
+          {"name": "Explosives", "id": "49b2-dcb8-6f7a-4a42", "hidden": false, "primary": false, "targetId": "e33d-891d-33aa-e9bf"},
+          {"name": "High Command (Force Org)", "id": "c6e8-bad2-f6d4-00ee", "hidden": false, "primary": true, "targetId": "9425-213a-a17e-05d7"}
         ],
         "constraints": [{"id": "354c-9a92-ab1f-72a4", "field": "selections", "scope": "roster", "shared": true, "type": "max", "value": 1}],
         "costs": [
@@ -420,14 +421,15 @@
         "categoryLinks": [
           {"name": "Mounted", "id": "6108-3dc7-7dee-6782", "primary": false, "targetId": "14a0-40c9-2748-ae6e"},
           {"name": "Character", "id": "b121-cbde-fd47-a423", "primary": false, "targetId": "9cfd-1c32-585f-7d5c"},
-          {"name": "Epic Hero", "id": "e2b5-2ce9-3ccc-a9d7", "primary": true, "targetId": "4f3a-f0f7-6647-348d"},
+          {"name": "Epic Hero", "id": "e2b5-2ce9-3ccc-a9d7", "primary": false, "targetId": "4f3a-f0f7-6647-348d"},
           {"name": "Imperium", "id": "f132-e8bf-f850-0185", "primary": false, "targetId": "aff3-d6a3-2a95-9dc"},
           {"name": "Grenades", "id": "d591-2567-2e4d-3b1c", "primary": false, "targetId": "5a61-81ac-eb7c-a87e"},
           {"name": "Captain", "id": "05d8-1f12-2f9c-b1ab", "primary": false, "targetId": "2d7f-1892-2fd0-e29c"},
           {"name": "Faction: Adeptus Astartes", "id": "3679-afa4-5a9f-945b", "primary": false, "targetId": "6e7-40c-58d9-e402"},
           {"name": "Faction: White Scars", "id": "00d0-1140-3de4-e545", "primary": false, "targetId": "5c0e-2250-dd3a-1df9"},
           {"name": "Suboden Khan", "id": "6d62-4480-e164-9558", "primary": false, "targetId": "b20a-783c-0d41-7238"},
-          {"name": "Leader", "id": "4917-1011-5577-0d72", "primary": false, "targetId": "1556-9b56-fba6-4370"}
+          {"name": "Leader", "id": "4917-1011-5577-0d72", "primary": false, "targetId": "1556-9b56-fba6-4370"},
+          {"name": "High Command (Force Org)", "id": "eacc-28fe-011a-6215", "hidden": false, "primary": true, "targetId": "9425-213a-a17e-05d7"}
         ],
         "constraints": [{"id": "3efb-3875-0585-1de4", "field": "selections", "scope": "roster", "shared": true, "type": "max", "value": 1}],
         "costs": [
@@ -666,14 +668,15 @@
         "import": true,
         "type": "unit",
         "categoryLinks": [
-          {"name": "Mounted", "id": "6e2b-b977-2bd4-4e68", "hidden": false, "primary": true, "targetId": "14a0-40c9-2748-ae6e"},
+          {"name": "Mounted", "id": "6e2b-b977-2bd4-4e68", "hidden": false, "primary": false, "targetId": "14a0-40c9-2748-ae6e"},
           {"name": "Imperium", "id": "b05b-4344-1cdb-907a", "hidden": false, "primary": false, "targetId": "aff3-d6a3-2a95-9dc"},
           {"name": "Faction: Adeptus Astartes", "id": "02b2-211c-baa5-2c41", "hidden": false, "primary": false, "targetId": "6e7-40c-58d9-e402"},
           {"name": "Explosives", "id": "67cc-10dd-167b-b884", "hidden": false, "primary": false, "targetId": "e33d-891d-33aa-e9bf"},
           {"name": "Golden Keshig", "id": "2048-aad4-928d-2f36", "hidden": false, "primary": false, "targetId": "f39a-9783-b601-5b1f"},
           {"name": "Faction: White Scars", "id": "1b53-ea85-f425-f927", "hidden": false, "primary": false, "targetId": "5c0e-2250-dd3a-1df9"},
           {"name": "Keshig", "id": "098c-a149-5548-7ada", "hidden": false, "primary": false, "targetId": "4627-7f6f-2de8-aeab"},
-          {"name": "Custom Units", "id": "c0d2-ccb1-2493-2e78", "hidden": false, "primary": false, "targetId": "e875-4d09-70f8-e315"}
+          {"name": "Custom Units", "id": "c0d2-ccb1-2493-2e78", "hidden": false, "primary": false, "targetId": "e875-4d09-70f8-e315"},
+          {"name": "Fast Attack (Force Org)", "id": "dc77-7b9e-d65d-e78b", "hidden": false, "primary": true, "targetId": "f39b-d3bc-b92d-9941"}
         ],
         "constraints": [
           {"id": "4350-a60e-4039-feb5", "field": "75bb-ded1-c86d-bdf0", "includeChildSelections": false, "scope": "self", "shared": true, "type": "max", "value": 3},
@@ -1589,7 +1592,7 @@
           }
         ],
         "categoryLinks": [
-          {"name": "Character", "id": "7c0c-61b6-a5a9-4fd5", "hidden": false, "primary": true, "targetId": "9cfd-1c32-585f-7d5c"},
+          {"name": "Character", "id": "7c0c-61b6-a5a9-4fd5", "hidden": false, "primary": false, "targetId": "9cfd-1c32-585f-7d5c"},
           {"name": "Captain", "id": "3df6-26e1-b2ce-6ea8", "hidden": false, "primary": false, "targetId": "2d7f-1892-2fd0-e29c"},
           {"name": "Imperium", "id": "86c2-0919-d06a-4034", "hidden": false, "primary": false, "targetId": "aff3-d6a3-2a95-9dc"},
           {"name": "Faction: Adeptus Astartes", "id": "6cb8-4a4e-0218-1a20", "hidden": false, "primary": false, "targetId": "6e7-40c-58d9-e402"},
@@ -1597,7 +1600,8 @@
           {"name": "Explosives", "id": "fc6e-fe85-5395-4d63", "hidden": false, "primary": false, "targetId": "e33d-891d-33aa-e9bf"},
           {"name": "Faction: White Scars", "id": "69d4-5e26-dc73-0195", "hidden": false, "primary": false, "targetId": "5c0e-2250-dd3a-1df9"},
           {"name": "Khan on Bike", "id": "39e1-0209-6a99-67ec", "hidden": false, "primary": false, "targetId": "0f03-a903-b820-0fd7"},
-          {"name": "Custom Units", "id": "1263-039f-05fe-b26d", "hidden": false, "primary": false, "targetId": "e875-4d09-70f8-e315"}
+          {"name": "Custom Units", "id": "1263-039f-05fe-b26d", "hidden": false, "primary": false, "targetId": "e875-4d09-70f8-e315"},
+          {"name": "Command (Force Org)", "id": "4aac-6cb1-d856-3ab4", "hidden": false, "primary": true, "targetId": "e91f-006d-1f90-47d1"}
         ],
         "constraints": [
           {"id": "c57e-e753-f131-dbb6", "field": "75bb-ded1-c86d-bdf0", "includeChildSelections": false, "scope": "self", "shared": true, "type": "max", "value": 6},
@@ -2176,7 +2180,7 @@
           }
         ],
         "categoryLinks": [
-          {"name": "Character", "id": "8f7b-22f0-a9e6-65a6", "hidden": false, "primary": true, "targetId": "9cfd-1c32-585f-7d5c"},
+          {"name": "Character", "id": "8f7b-22f0-a9e6-65a6", "hidden": false, "primary": false, "targetId": "9cfd-1c32-585f-7d5c"},
           {"name": "Infantry", "id": "5c5b-4744-1123-7c25", "hidden": false, "primary": false, "targetId": "cf47-a0d7-7207-29dc"},
           {"name": "Captain", "id": "861a-6581-8ea6-d004", "hidden": false, "primary": false, "targetId": "2d7f-1892-2fd0-e29c"},
           {"name": "Imperium", "id": "63cd-d2a8-2eeb-6af4", "hidden": false, "primary": false, "targetId": "aff3-d6a3-2a95-9dc"},
@@ -2186,7 +2190,8 @@
           {"name": "Explosives", "id": "556a-b16a-9a54-3a5e", "hidden": false, "primary": false, "targetId": "e33d-891d-33aa-e9bf"},
           {"name": "Khan on Foot", "id": "c3d9-a318-fbd8-a2e9", "hidden": false, "primary": false, "targetId": "bd92-90c4-8919-025b"},
           {"name": "Faction: White Scars", "id": "c0dd-7ae6-12b1-96ac", "hidden": false, "primary": false, "targetId": "5c0e-2250-dd3a-1df9"},
-          {"name": "Custom Units", "id": "6cff-5e23-28ed-2ef3", "hidden": false, "primary": false, "targetId": "e875-4d09-70f8-e315"}
+          {"name": "Custom Units", "id": "6cff-5e23-28ed-2ef3", "hidden": false, "primary": false, "targetId": "e875-4d09-70f8-e315"},
+          {"name": "Command (Force Org)", "id": "c6b8-035b-d788-abcc", "hidden": false, "primary": true, "targetId": "e91f-006d-1f90-47d1"}
         ],
         "constraints": [
           {"id": "be1c-f3c5-767a-1046", "field": "75bb-ded1-c86d-bdf0", "includeChildSelections": false, "scope": "self", "shared": true, "type": "max", "value": 6},
@@ -2810,7 +2815,7 @@
         "import": true,
         "type": "unit",
         "categoryLinks": [
-          {"name": "Infantry", "id": "52b2-a1f1-8024-310c", "hidden": false, "primary": true, "targetId": "cf47-a0d7-7207-29dc"},
+          {"name": "Infantry", "id": "52b2-a1f1-8024-310c", "hidden": false, "primary": false, "targetId": "cf47-a0d7-7207-29dc"},
           {"name": "Imperium", "id": "55ae-2e33-e53a-bb4c", "hidden": false, "primary": false, "targetId": "aff3-d6a3-2a95-9dc"},
           {"name": "Smoke", "id": "5a14-0d44-0969-1ccf", "hidden": false, "primary": false, "targetId": "6df-937-16bc-8c1a"},
           {"name": "Faction: Adeptus Astartes", "id": "f819-e740-8e5c-97a4", "hidden": false, "primary": false, "targetId": "6e7-40c-58d9-e402"},
@@ -2818,7 +2823,8 @@
           {"name": "Falcon's Claws", "id": "47d2-c90e-dd99-3b08", "hidden": false, "primary": false, "targetId": "0ccf-f080-7e3f-6baf"},
           {"name": "Tacticus", "id": "8473-20e4-3067-60ca", "hidden": false, "primary": false, "targetId": "5179-8ede-45e3-49a2"},
           {"name": "Faction: White Scars", "id": "e137-4836-e8f4-c925", "hidden": false, "primary": false, "targetId": "5c0e-2250-dd3a-1df9"},
-          {"name": "Custom Units", "id": "a567-e293-a8cc-2e81", "hidden": false, "primary": false, "targetId": "e875-4d09-70f8-e315"}
+          {"name": "Custom Units", "id": "a567-e293-a8cc-2e81", "hidden": false, "primary": false, "targetId": "e875-4d09-70f8-e315"},
+          {"name": "Recon (Force Org)", "id": "1500-3ac1-a50e-8497", "hidden": false, "primary": true, "targetId": "42a1-86b9-f78c-4e54"}
         ],
         "constraints": [
           {"id": "df18-4201-1d12-9d04", "field": "75bb-ded1-c86d-bdf0", "includeChildSelections": false, "scope": "self", "shared": true, "type": "max", "value": 3},
@@ -3276,13 +3282,14 @@
         "type": "model",
         "categoryLinks": [
           {"name": "Faction: Adeptus Astartes", "id": "5111-9c5b-1caf-e2df", "hidden": false, "primary": false, "targetId": "6e7-40c-58d9-e402"},
-          {"name": "Vehicle", "id": "20d6-5a86-2d88-2249", "hidden": false, "primary": true, "targetId": "dbd4-63-af05-998"},
+          {"name": "Vehicle", "id": "20d6-5a86-2d88-2249", "hidden": false, "primary": false, "targetId": "dbd4-63-af05-998"},
           {"name": "Fly", "id": "187b-2981-d636-f3ee", "hidden": false, "primary": false, "targetId": "c619-2086-bbcf-69c9"},
           {"name": "Imperium", "id": "ce5e-f2d0-bc42-a1e6", "hidden": false, "primary": false, "targetId": "aff3-d6a3-2a95-9dc"},
           {"name": "Faction: White Scars", "id": "ec78-2bf5-5a5e-1c26", "hidden": false, "primary": false, "targetId": "5c0e-2250-dd3a-1df9"},
           {"name": "Custom Units", "id": "b166-d857-aa36-6e74", "hidden": false, "primary": false, "targetId": "e875-4d09-70f8-e315"},
           {"name": "Speeder", "id": "e2b3-9bae-090b-8220", "hidden": false, "primary": false, "targetId": "966c-5300-a13d-f524"},
-          {"name": "Kyzagan Assault Speeder", "id": "dca7-6fe8-7e2e-d294", "hidden": false, "primary": false, "targetId": "7e84-c828-1434-43e7"}
+          {"name": "Kyzagan Assault Speeder", "id": "dca7-6fe8-7e2e-d294", "hidden": false, "primary": false, "targetId": "7e84-c828-1434-43e7"},
+          {"name": "Fast Attack (Force Org)", "id": "0927-e582-05f1-9d90", "hidden": false, "primary": true, "targetId": "f39b-d3bc-b92d-9941"}
         ],
         "costs": [
           {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 130},
@@ -3575,14 +3582,15 @@
         "import": true,
         "type": "unit",
         "categoryLinks": [
-          {"name": "Infantry", "id": "0349-787d-6ebd-bf04", "hidden": false, "primary": true, "targetId": "cf47-a0d7-7207-29dc"},
+          {"name": "Infantry", "id": "0349-787d-6ebd-bf04", "hidden": false, "primary": false, "targetId": "cf47-a0d7-7207-29dc"},
           {"name": "Imperium", "id": "8897-5bff-533c-971d", "hidden": false, "primary": false, "targetId": "aff3-d6a3-2a95-9dc"},
           {"name": "Terminator", "id": "997e-7893-1381-3591", "hidden": false, "primary": false, "targetId": "740a-892c-8958-defa"},
           {"name": "Faction: Adeptus Astartes", "id": "ebd7-704e-0288-1818", "hidden": false, "primary": false, "targetId": "6e7-40c-58d9-e402"},
           {"name": "Faction: White Scars", "id": "8fa1-90d0-ef01-0c76", "hidden": false, "primary": false, "targetId": "5c0e-2250-dd3a-1df9"},
           {"name": "Ebon Keshig", "id": "199b-2530-bf61-232e", "hidden": false, "primary": false, "targetId": "ebec-00ab-d46b-1853"},
           {"name": "Keshig", "id": "fba1-9f02-1521-35df", "hidden": false, "primary": false, "targetId": "4627-7f6f-2de8-aeab"},
-          {"name": "Custom Units", "id": "6614-cd93-4d58-d4a4", "hidden": false, "primary": false, "targetId": "e875-4d09-70f8-e315"}
+          {"name": "Custom Units", "id": "6614-cd93-4d58-d4a4", "hidden": false, "primary": false, "targetId": "e875-4d09-70f8-e315"},
+          {"name": "Heavy Assault (Force Org)", "id": "ea1d-26b9-fdfc-a61b", "hidden": false, "primary": true, "targetId": "4319-8377-b24a-7338"}
         ],
         "constraints": [
           {"id": "f385-cf0e-4716-487c", "field": "75bb-ded1-c86d-bdf0", "includeChildSelections": false, "scope": "self", "shared": true, "type": "max", "value": 3},
@@ -4261,7 +4269,7 @@
           }
         ],
         "categoryLinks": [
-          {"name": "Character", "id": "7c3a-03fa-41dd-dbb6", "hidden": false, "primary": true, "targetId": "9cfd-1c32-585f-7d5c"},
+          {"name": "Character", "id": "7c3a-03fa-41dd-dbb6", "hidden": false, "primary": false, "targetId": "9cfd-1c32-585f-7d5c"},
           {"name": "Infantry", "id": "cb79-412c-ff80-871b", "hidden": false, "primary": false, "targetId": "cf47-a0d7-7207-29dc"},
           {"name": "Imperium", "id": "2322-2f63-ca49-937f", "hidden": false, "primary": false, "targetId": "aff3-d6a3-2a95-9dc"},
           {"name": "Psyker", "id": "222d-9851-f844-01f8", "hidden": false, "primary": false, "targetId": "13bf-2bee-3ae0-b414"},
@@ -4272,7 +4280,8 @@
           {"name": "Explosives", "id": "d9a0-20f3-f65f-ede6", "hidden": false, "primary": false, "targetId": "e33d-891d-33aa-e9bf"},
           {"name": "Faction: White Scars", "id": "c502-e560-ca07-def2", "hidden": false, "primary": false, "targetId": "5c0e-2250-dd3a-1df9"},
           {"name": "Stormseer", "id": "6e07-1a17-1440-0611", "hidden": false, "primary": false, "targetId": "923d-f69d-1b9f-f195"},
-          {"name": "Custom Units", "id": "abd6-61ca-f4bd-451b", "hidden": false, "primary": false, "targetId": "e875-4d09-70f8-e315"}
+          {"name": "Custom Units", "id": "abd6-61ca-f4bd-451b", "hidden": false, "primary": false, "targetId": "e875-4d09-70f8-e315"},
+          {"name": "Command (Force Org)", "id": "1633-101e-90d2-7590", "hidden": false, "primary": true, "targetId": "e91f-006d-1f90-47d1"}
         ],
         "constraints": [
           {"id": "6fbe-1bbd-5c1e-2df3", "field": "75bb-ded1-c86d-bdf0", "includeChildSelections": false, "scope": "self", "shared": true, "type": "max", "value": 6},
