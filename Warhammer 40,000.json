@@ -1264,7 +1264,7 @@
       {"name": "Elites (Force Org)", "id": "eeca-bfd1-736b-4d89", "hidden": false},
       {"name": "Fast Attack (Force Org)", "id": "f39b-d3bc-b92d-9941", "hidden": false},
       {"name": "Retinue (Force Org)", "id": "a62d-fbb8-e2de-ad50", "hidden": false},
-      {"name": "Support (Force Org)", "id": "9554-e253-adb0-c412", "hidden": true},
+      {"name": "Support (Force Org)", "id": "9554-e253-adb0-c412", "hidden": false},
       {"name": "Transport (Force Org)", "id": "0e1b-eb85-d27e-4e92", "hidden": false},
       {"name": "War-engine (Force Org)", "id": "8b8b-9caa-c557-393f", "hidden": false},
       {"name": "Heavy Transport (Force Org)", "id": "b798-f356-6a85-2b6a", "hidden": false},
@@ -1998,7 +1998,7 @@
             "hidden": false,
             "primary": false,
             "targetId": "9554-e253-adb0-c412",
-            "constraints": [{"id": "f015-9945-93c3-226b", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "constraints": [{"id": "f015-9945-93c3-226b", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}],
             "modifiers": [
               {
                 "field": "f015-9945-93c3-226b",
