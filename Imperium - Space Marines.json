@@ -97921,6 +97921,23 @@
                 "value": 1
               }
             ]
+          },
+          {
+            "field": "category",
+            "type": "add",
+            "value": "a225-6bf9-a142-9de6",
+            "conditions": [
+              {
+                "childId": "470a-6daa-9014-12df",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "scope": "primary-catalogue",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 0
+              }
+            ]
           }
         ],
         "profiles": [
@@ -98012,7 +98029,7 @@
                 ],
                 "entryLinks": [{"name": "Weapon Upgrades", "id": "b780-0f4d-7afb-7deb", "hidden": false, "import": true, "targetId": "8cf2-a48c-58d2-cb4e", "type": "selectionEntryGroup"}],
                 "infoLinks": [
-                  {"name": "Heavy", "id": "1092-5872-986b-9f53", "hidden": false, "targetId": "1202-10a8-78e9-4c67", "type": "rule"},
+                  {"name": "Devastating Wounds", "id": "1092-5872-986b-9f53", "hidden": false, "targetId": "be1e-ac8e-1e2c-3528", "type": "rule"},
                   {"name": "Precision", "id": "72c4-9eb8-f603-fd61", "hidden": false, "targetId": "9143-31ae-e0a6-6007", "type": "rule"},
                   {"name": "Rapid Fire", "id": "ffb3-c8a8-ea45-e261", "hidden": false, "targetId": "c5c8-8b58-b8b6-7786", "type": "rule"}
                 ],
@@ -98030,7 +98047,7 @@
                       {"name": "S", "$text": "7", "typeId": "2229-f494-25db-c5d3"},
                       {"name": "AP", "$text": "-2", "typeId": "9ead-8a10-520-de15"},
                       {"name": "D", "$text": "3", "typeId": "a354-c1c8-a745-f9e3"},
-                      {"name": "Keywords", "$text": "Heavy, Rapid Fire 1, Precision", "typeId": "7f1b-8591-2fcf-d01c"}
+                      {"name": "Keywords", "$text": "Devastating Wounds, Rapid Fire 1, Precision", "typeId": "7f1b-8591-2fcf-d01c"}
                     ]
                   }
                 ]
@@ -111694,7 +111711,7 @@
                     "characteristics": [
                       {
                         "name": "Description",
-                        "$text": "(Once per Battle) Eskaton model only. In your shooting phase in the 2nd, 3rd, or 4th battle round, you can use this ability.\n\n\nEvery unit within 6\" of the center objective(s) must take a Leadership test at -2. On a success nothing happens. On a failed test, that unit is battle-shocked and takes 4D3 Mortal Wounds.",
+                        "$text": "(Once per Battle) Eskaton model only. In your shooting phase in the 2nd, 3rd, or 4th battle round, you can use this ability.\n\n\nEvery unit within 6\" of the center objective(s) must take a Leadership test at -2. On a success that unit takes 1D6 Mortal Wounds. On a failed test, that unit is battle-shocked and takes 3D3 Mortal Wounds. On a 2 that unit is battle shocked and takes 5D3 Mortal Wounds",
                         "typeId": "9b8f-694b-e5e-b573"
                       }
                     ]
@@ -111781,6 +111798,15 @@
                         "value": 1
                       }
                     ]
+                  },
+                  {
+                    "affects": "self.entries.group.recursive.profiles.Ranged Weapons",
+                    "field": "893f-9000-ccf7-648e",
+                    "join": ", ",
+                    "scope": "parent",
+                    "skipIfPresent": "Assault",
+                    "type": "append",
+                    "value": "Assault"
                   }
                 ],
                 "profiles": [

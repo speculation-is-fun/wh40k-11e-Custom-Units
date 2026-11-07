@@ -46,7 +46,8 @@
       {"name": "Stoneborn", "id": "0fb8-2fe3-5f87-67c0", "hidden": false},
       {"name": "Eskaton", "id": "4c18-f5ae-8c3a-15b0", "hidden": false},
       {"name": "Paladin", "id": "b9e3-9954-49ba-84a7", "hidden": false},
-      {"name": "Naufragia", "id": "d915-f4be-54d4-b0fd", "hidden": false}
+      {"name": "Naufragia", "id": "d915-f4be-54d4-b0fd", "hidden": false},
+      {"name": "Firebringer", "id": "986f-3d5e-c1e0-e2ed", "hidden": false}
     ],
     "entryLinks": [
       {"name": "Azrael", "id": "f6b9-ebd3-b25d-5ea8", "hidden": false, "import": true, "targetId": "81bd-ce4e-229f-a88", "type": "selectionEntry"},
@@ -184,7 +185,15 @@
         "type": "selectionEntry"
       },
       {"name": "Paladin [Custom Units]", "id": "011a-ae94-1a06-0923", "hidden": false, "import": true, "targetId": "95da-2207-da40-e156", "type": "selectionEntry"},
-      {"name": "Naufragia [Custom Units]", "id": "1908-7df6-379f-119c", "hidden": false, "import": true, "targetId": "4671-b8f3-9ad2-bb32", "type": "selectionEntry"}
+      {"name": "Naufragia [Custom Units]", "id": "1908-7df6-379f-119c", "hidden": false, "import": true, "targetId": "4671-b8f3-9ad2-bb32", "type": "selectionEntry"},
+      {
+        "name": "Firebringer [Custom Units]",
+        "id": "f1fa-46ae-cea9-a656",
+        "hidden": false,
+        "import": true,
+        "targetId": "1af4-075d-84b0-31d5",
+        "type": "selectionEntry"
+      }
     ],
     "profileTypes": [
       {
@@ -10597,7 +10606,6 @@
                       {"name": "Rapid Fire", "id": "d07d-720d-0ed3-8ab8", "hidden": false, "targetId": "c5c8-8b58-b8b6-7786", "type": "rule"},
                       {"name": "Assault", "id": "0aee-69a3-1c87-a28c", "hidden": false, "targetId": "fc8a-8c24-bae9-cc1c", "type": "rule"},
                       {"name": "Precision", "id": "0c14-f213-6047-738b", "hidden": false, "targetId": "9143-31ae-e0a6-6007", "type": "rule"},
-                      {"name": "Devastating Wounds", "id": "e01e-7703-9f0c-f6c2", "hidden": false, "targetId": "be1e-ac8e-1e2c-3528", "type": "rule"},
                       {"name": "Close-quarters", "id": "fcfe-4cce-ec00-88f6", "hidden": false, "targetId": "5238-5ad4-52f7-6eb4", "type": "rule"}
                     ],
                     "profiles": [
@@ -10614,7 +10622,7 @@
                           {"name": "S", "$text": "6", "typeId": "2229-f494-25db-c5d3"},
                           {"name": "AP", "$text": "-3", "typeId": "9ead-8a10-520-de15"},
                           {"name": "D", "$text": "1", "typeId": "a354-c1c8-a745-f9e3"},
-                          {"name": "Keywords", "$text": "Assault, Close-quarters, Devastating Wounds, Precision, Rapid Fire 2", "typeId": "7f1b-8591-2fcf-d01c"}
+                          {"name": "Keywords", "$text": "Assault, Close-quarters, Precision, Rapid Fire 2", "typeId": "7f1b-8591-2fcf-d01c"}
                         ]
                       }
                     ]
@@ -10635,7 +10643,6 @@
                       {"name": "Weapon Modifications", "id": "46c0-9826-351c-402d", "hidden": false, "import": true, "targetId": "f9da-852a-d7f0-92e9", "type": "selectionEntryGroup"}
                     ],
                     "infoLinks": [
-                      {"name": "Lethal Hits", "id": "ba54-29d6-b42c-d827", "hidden": false, "targetId": "d1d1-611e-5191-1095", "type": "rule"},
                       {"name": "Precision", "id": "bee4-643d-7ad5-fd38", "hidden": false, "targetId": "9143-31ae-e0a6-6007", "type": "rule"},
                       {"name": "Devastating Wounds", "id": "2843-bb74-cb88-e5f5", "hidden": false, "targetId": "be1e-ac8e-1e2c-3528", "type": "rule"}
                     ],
@@ -10653,7 +10660,7 @@
                           {"name": "S", "$text": "6", "typeId": "ab33-d393-96ce-ccba"},
                           {"name": "AP", "$text": "-3", "typeId": "41a0-1301-112a-e2f2"},
                           {"name": "D", "$text": "2", "typeId": "3254-9fe6-d824-513e"},
-                          {"name": "Keywords", "$text": "Devastating Wounds, Lethal Hits, Precision", "typeId": "893f-9000-ccf7-648e"}
+                          {"name": "Keywords", "$text": "Devastating Wounds, Precision", "typeId": "893f-9000-ccf7-648e"}
                         ]
                       }
                     ]
@@ -15397,6 +15404,15 @@
             "conditionGroups": [
               {
                 "type": "or",
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {"childId": "cf47-a0d7-7207-29dc", "childName": "Infantry", "field": "selections", "scope": "self", "shared": true, "type": "instanceOf", "value": 1},
+                      {"childId": "5179-8ede-45e3-49a2", "childName": "Tacticus", "field": "selections", "scope": "self", "shared": true, "type": "instanceOf", "value": 1}
+                    ]
+                  }
+                ],
                 "conditions": [
                   {
                     "childId": "9ba8-7087-dcbd-9fd8",
@@ -16235,6 +16251,219 @@
                       }
                     ]
                   }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Firebringer [Custom Units]",
+        "id": "1af4-075d-84b0-31d5",
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [
+          {"name": "Character", "id": "5582-9c69-a4fb-e49c", "hidden": false, "primary": true, "targetId": "9cfd-1c32-585f-7d5c"},
+          {"name": "Infantry", "id": "516e-5d22-8523-2a13", "hidden": false, "primary": false, "targetId": "cf47-a0d7-7207-29dc"},
+          {"name": "Imperium", "id": "26b0-72f1-1b64-3a9d", "hidden": false, "primary": false, "targetId": "aff3-d6a3-2a95-9dc"},
+          {"name": "Faction: Adeptus Astartes", "id": "0aa1-e3e0-8c96-9c6c", "hidden": false, "primary": false, "targetId": "6e7-40c-58d9-e402"},
+          {"name": "Faction: Dark Angels", "id": "b97e-1a24-01c7-400c", "hidden": false, "primary": false, "targetId": "aab1-4f05-fabe-5ba5"},
+          {"name": "Firewing", "id": "79b5-93d5-88a7-6806", "hidden": false, "primary": false, "targetId": "3d58-7b7a-58e0-ded6"},
+          {"name": "Custom Units", "id": "d40e-94d6-fe67-7a89", "hidden": false, "primary": false, "targetId": "e875-4d09-70f8-e315"},
+          {"name": "Jump Pack", "id": "80e2-99cf-ba60-17a8", "hidden": false, "primary": false, "targetId": "dda2-bb0a-215e-ad9c"},
+          {"name": "Fly", "id": "2640-99e1-19a7-d968", "hidden": false, "primary": false, "targetId": "c619-2086-bbcf-69c9"},
+          {"name": "Firebringer", "id": "31f7-a3a0-a4b7-c9b8", "hidden": false, "primary": false, "targetId": "986f-3d5e-c1e0-e2ed"},
+          {"name": "Phobos", "id": "21fa-e1ee-447c-9650", "hidden": false, "primary": false, "targetId": "7295-ed65-8ff4-7a5f"}
+        ],
+        "constraints": [{"id": "a48b-c1d2-d868-fbc1", "field": "selections", "scope": "roster", "shared": true, "type": "max", "value": 1}],
+        "costs": [
+          {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 140},
+          {"name": "Crusade Points", "typeId": "b03b-c239-15a5-da55", "value": 0},
+          {"name": "Crusade: Battle Honours", "typeId": "75bb-ded1-c86d-bdf0", "value": 0},
+          {"name": "Crusade: Experience", "typeId": "a623-fe74-1d33-cddf", "value": 0},
+          {"name": "Crusade: Weapon Modifications", "typeId": "716d-91b7-d55a-1022", "value": 0},
+          {"name": "Blackstone Fragments", "typeId": "ac6b-ced3-9b5e-9a6e", "value": 0},
+          {"name": "Detachment Points", "typeId": "82ae-1066-5107-6ae0", "value": 0},
+          {"name": "Enhancements", "typeId": "f759-1bc4-cb3a-f0d2", "value": 0},
+          {"name": "Honour Points", "typeId": "8135-9a2f-6627-09e2", "value": 0},
+          {"name": "Relic Fragments", "typeId": "0ece-6541-4662-ece2", "value": 0}
+        ],
+        "entryLinks": [
+          {"name": "Warlord", "id": "0e94-9e8d-2c5a-9c75", "hidden": false, "import": true, "targetId": "caa-f869-3cbd-b48e", "type": "selectionEntry"},
+          {"name": "Crusade", "id": "e280-2f25-9c03-2291", "hidden": false, "import": true, "targetId": "9a99-f13c-a667-e698", "type": "selectionEntryGroup"},
+          {"name": "Enhancements", "id": "ceb6-c61a-d9c1-9f83", "hidden": false, "import": true, "targetId": "9e5d-de4c-c5d1-1d3e", "type": "selectionEntryGroup"}
+        ],
+        "infoLinks": [
+          {"name": "Stealth", "id": "1171-61f1-fc44-002c", "hidden": false, "targetId": "bec5-4288-34a6-ccfa", "type": "rule"},
+          {"name": "Transhuman Strategist", "id": "1c7d-2295-7b69-7f59", "hidden": false, "targetId": "c6cc-c38c-dfe6-dbb8", "type": "rule"},
+          {"name": "Combat Doctrines", "id": "6ccd-79e4-a014-d065", "hidden": false, "targetId": "3b76-4053-ece9-6e7d", "type": "rule"},
+          {"name": "Lone Operative", "id": "3b45-26af-aa17-ce1c", "hidden": false, "targetId": "a8a0-8fe7-898-e0f3", "type": "rule"}
+        ],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "9d3b-38d9-2d95-fac7",
+                "childName": "Show Custom Units",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "lessThan",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Firebringer",
+            "id": "0c2e-f7ac-f894-184f",
+            "hidden": false,
+            "page": 15,
+            "typeId": "c547-1836-d8a-ff4f",
+            "typeName": "Unit",
+            "characteristics": [
+              {"name": "M", "$text": "12\"", "typeId": "e703-ecb6-5ce7-aec1"},
+              {"name": "T", "$text": "4", "typeId": "d29d-cf75-fc2d-34a4"},
+              {"name": "Sv", "$text": "2+", "typeId": "450-a17e-9d5e-29da"},
+              {"name": "W", "$text": "5", "typeId": "750a-a2ec-90d3-21fe"},
+              {"name": "LD", "$text": "5+", "typeId": "58d2-b879-49c7-43bc"},
+              {"name": "OC", "$text": "1", "typeId": "bef7-942a-1a23-59f8"},
+              {"name": "InSv", "$text": "5+", "typeId": "55a7-5b54-c60d-11dc"},
+              {"name": "Base", "$text": "40mm", "typeId": "nr-base-size"}
+            ]
+          },
+          {
+            "name": "Master Assassin",
+            "id": "7190-e1c8-23e5-9c76",
+            "hidden": false,
+            "page": 15,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [{"name": "Description", "$text": "This model has [Fights First] and can reroll 1 hit roll and 1 wound roll per phase.", "typeId": "9b8f-694b-e5e-b573"}]
+          },
+          {
+            "name": "Ceaseless hunt",
+            "id": "2b75-3454-47da-809c",
+            "hidden": false,
+            "page": 15,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [{"name": "Description", "$text": "The assault doctrine is always active for this model.", "typeId": "9b8f-694b-e5e-b573"}]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Judgement",
+            "id": "6883-e2f2-d4b7-c3ce",
+            "hidden": false,
+            "import": true,
+            "page": 15,
+            "type": "upgrade",
+            "constraints": [
+              {"id": "44d2-afbc-41ec-ab9f", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "0aa6-855e-39e7-b21b", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "infoLinks": [
+              {"name": "Anti", "id": "0d8f-315a-aec5-251a", "hidden": false, "targetId": "4111-82e3-9444-e942", "type": "rule"},
+              {"name": "Close-quarters", "id": "4b52-9105-7ce2-526b", "hidden": false, "targetId": "5238-5ad4-52f7-6eb4", "type": "rule"},
+              {"name": "One Shot", "id": "ccc7-145c-ff29-5070", "hidden": false, "targetId": "cd26-1611-860a-91e4", "type": "rule"},
+              {"name": "Devastating Wounds", "id": "06a6-4d04-d4cc-a40b", "hidden": false, "targetId": "be1e-ac8e-1e2c-3528", "type": "rule"},
+              {"name": "Torrent", "id": "9713-06b5-d5db-e829", "hidden": false, "targetId": "5edf-d619-23e0-9b56", "type": "rule"},
+              {"name": "Precision", "id": "fd10-1529-099b-da7c", "hidden": false, "targetId": "9143-31ae-e0a6-6007", "type": "rule"}
+            ],
+            "profiles": [
+              {
+                "name": "Judgement",
+                "id": "593c-248e-eb19-4165",
+                "hidden": false,
+                "typeId": "f77d-b953-8fa4-b762",
+                "typeName": "Ranged Weapons",
+                "characteristics": [
+                  {"name": "Range", "$text": "12\"", "typeId": "9896-9419-16a1-92fc"},
+                  {"name": "A", "$text": "1", "typeId": "3bb-c35f-f54-fb08"},
+                  {"name": "BS", "$text": "-", "typeId": "94d-8a98-cf90-183e"},
+                  {"name": "S", "$text": "10", "typeId": "2229-f494-25db-c5d3"},
+                  {"name": "AP", "$text": "-3", "typeId": "9ead-8a10-520-de15"},
+                  {"name": "D", "$text": "2D3+3", "typeId": "a354-c1c8-a745-f9e3"},
+                  {"name": "Keywords", "$text": "Anti-Character 3+, Close-quarters, Devastating Wounds, One Shot, Precision, Torrent", "typeId": "7f1b-8591-2fcf-d01c"}
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Phoenix Blades",
+            "id": "cdc9-860e-ee3c-7454",
+            "hidden": false,
+            "import": true,
+            "page": 15,
+            "type": "upgrade",
+            "categoryLinks": [{"name": "Power Weapon", "id": "c075-9953-f7c6-ae26", "hidden": false, "primary": false, "targetId": "72a2-ff76-451c-9d12"}],
+            "constraints": [
+              {"id": "8141-11dd-f755-552f", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "f002-7594-b930-7ff1", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "infoLinks": [
+              {"name": "Devastating Wounds", "id": "b80a-2473-07e7-02a3", "hidden": false, "targetId": "be1e-ac8e-1e2c-3528", "type": "rule"},
+              {"name": "Cleave", "id": "2772-3b16-da1c-867c", "hidden": false, "targetId": "bf16-5d16-4725-f912", "type": "rule"},
+              {"name": "Precision", "id": "fb5f-2c64-d223-82af", "hidden": false, "targetId": "9143-31ae-e0a6-6007", "type": "rule"}
+            ],
+            "profiles": [
+              {
+                "name": "Phoenix Blades",
+                "id": "04b4-04a2-6e3e-3afc",
+                "hidden": false,
+                "page": 15,
+                "typeId": "8a40-4aaa-c780-9046",
+                "typeName": "Melee Weapons",
+                "characteristics": [
+                  {"name": "Range", "$text": "Melee", "typeId": "914c-b413-91e3-a132"},
+                  {"name": "A", "$text": "8", "typeId": "2337-daa1-6682-b110"},
+                  {"name": "WS", "$text": "2+", "typeId": "95d1-95f-45b4-11d6"},
+                  {"name": "S", "$text": "6", "typeId": "ab33-d393-96ce-ccba"},
+                  {"name": "AP", "$text": "-4", "typeId": "41a0-1301-112a-e2f2"},
+                  {"name": "D", "$text": "3", "typeId": "3254-9fe6-d824-513e"},
+                  {"name": "Keywords", "$text": "Cleave, Devastating Wounds, Precision", "typeId": "893f-9000-ccf7-648e"}
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Jury",
+            "id": "ee02-120e-5d09-c4f3",
+            "hidden": false,
+            "import": true,
+            "page": 15,
+            "type": "upgrade",
+            "constraints": [
+              {"id": "13d5-6fb6-d26a-13ce", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "fbb2-ea23-578d-52ac", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "infoLinks": [
+              {"name": "Close-quarters", "id": "510d-8a4b-6194-7eaf", "hidden": false, "targetId": "5238-5ad4-52f7-6eb4", "type": "rule"},
+              {"name": "Devastating Wounds", "id": "ea9d-f755-012a-a469", "hidden": false, "targetId": "be1e-ac8e-1e2c-3528", "type": "rule"}
+            ],
+            "profiles": [
+              {
+                "name": "Jury",
+                "id": "ace4-2b25-f93b-c5ca",
+                "hidden": false,
+                "typeId": "f77d-b953-8fa4-b762",
+                "typeName": "Ranged Weapons",
+                "characteristics": [
+                  {"name": "Range", "$text": "18\"", "typeId": "9896-9419-16a1-92fc"},
+                  {"name": "A", "$text": "5", "typeId": "3bb-c35f-f54-fb08"},
+                  {"name": "BS", "$text": "3+", "typeId": "94d-8a98-cf90-183e"},
+                  {"name": "S", "$text": "6", "typeId": "2229-f494-25db-c5d3"},
+                  {"name": "AP", "$text": "-2", "typeId": "9ead-8a10-520-de15"},
+                  {"name": "D", "$text": "3", "typeId": "a354-c1c8-a745-f9e3"},
+                  {"name": "Keywords", "$text": "Close-quarters, Devastating Wounds", "typeId": "7f1b-8591-2fcf-d01c"}
                 ]
               }
             ]
