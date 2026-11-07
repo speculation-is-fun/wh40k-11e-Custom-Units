@@ -2939,7 +2939,7 @@
                 "name": "3. Onslaught (3000 Point limit)",
                 "id": "4204-82d0-908c-a62a",
                 "collective": false,
-                "hidden": true,
+                "hidden": false,
                 "import": true,
                 "type": "upgrade",
                 "constraints": [{"id": "7fe2-ed7d-73f5-6eca", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
