@@ -200,7 +200,8 @@
         "hidden": false,
         "import": true,
         "targetId": "42e1-b81c-27bc-7dbb",
-        "type": "selectionEntry"
+        "type": "selectionEntry",
+        "categoryLinks": [{"name": "Dreadwing", "id": "8323-ed9a-c62f-e6a2", "hidden": false, "primary": false, "targetId": "6706-3f48-8160-6a51"}]
       }
     ],
     "profileTypes": [
