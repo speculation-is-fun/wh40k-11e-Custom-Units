@@ -2219,7 +2219,7 @@
         "collective": false,
         "hidden": false,
         "import": true,
-        "targetId": "14d4-8062-f090-6719",
+        "targetId": "0646-8688-abe6-b492",
         "type": "selectionEntry",
         "categoryLinks": [
           {"name": "Faction: Heretic Astartes", "id": "c25-7dfe-b67e-a1f4", "hidden": false, "primary": false, "targetId": "1e42-dfae-cbdd-207d"},
@@ -5630,7 +5630,23 @@
         "targetId": "9573-8b24-3796-d9d9",
         "type": "selectionEntry"
       },
-      {"name": "Kravek Morne", "id": "2ad9-d9cb-8d57-59b6", "hidden": false, "import": true, "targetId": "eec8-c21f-c284-a682", "type": "selectionEntry"}
+      {"name": "Kravek Morne", "id": "2ad9-d9cb-8d57-59b6", "hidden": false, "import": true, "targetId": "eec8-c21f-c284-a682", "type": "selectionEntry"},
+      {
+        "name": "Glaive [Legends] [Custom Units]",
+        "id": "0119-e38e-e8da-9f3a",
+        "hidden": false,
+        "import": true,
+        "targetId": "e405-7147-d1bc-d43c",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Ascalon [Legends] [Custom Units]",
+        "id": "6e5c-c43b-34d3-4d7e",
+        "hidden": false,
+        "import": true,
+        "targetId": "aa80-cc86-93ac-16e9",
+        "type": "selectionEntry"
+      }
     ],
     "profileTypes": [
       {"name": "Marks of Chaos", "id": "3084-68b8-1d20-2f26", "sortIndex": 7, "characteristicTypes": [{"name": "Ability", "id": "26ae-f701-feee-96e9"}]},

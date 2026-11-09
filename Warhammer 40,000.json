@@ -1397,7 +1397,50 @@
           }
         ]
       },
-      {"name": "Enhancements", "id": "f759-1bc4-cb3a-f0d2", "defaultCostLimit": "", "hidden": true}
+      {"name": "Enhancements", "id": "f759-1bc4-cb3a-f0d2", "defaultCostLimit": "", "hidden": true},
+      {
+        "name": "Command Points",
+        "id": "621c-5e90-c575-8242",
+        "defaultCostLimit": -1,
+        "hidden": true,
+        "modifiers": [
+          {
+            "field": "hidden",
+            "scope": "roster",
+            "type": "set",
+            "value": false,
+            "conditionGroups": [
+              {
+                "type": "or",
+                "conditions": [
+                  {
+                    "childId": "bb9d-299a-ed60-2d8a",
+                    "childName": "Army Roster",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "self",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "ff7b-8f73-1756-650a",
+                    "childName": "Crusade Army",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "self",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
     ],
     "entryLinks": [
       {
@@ -1747,7 +1790,7 @@
       {
         "name": "Boarding Actions",
         "id": "1d6e-2579-8e7f-1ed4",
-        "hidden": true,
+        "hidden": false,
         "categoryLinks": [
           {"name": "Configuration", "id": "4f79-1f3a-7f95-ae21", "hidden": false, "primary": false, "targetId": "4ac9-fd30-1e3d-b249"},
           {"name": "Epic Hero", "id": "73b6-764d-b0ab-977c", "hidden": false, "primary": false, "targetId": "4f3a-f0f7-6647-348d"},

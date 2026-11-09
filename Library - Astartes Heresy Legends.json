@@ -1338,7 +1338,9 @@
       {"name": "Land Raider Ares", "id": "683f-fca8-b42c-e10e", "hidden": false},
       {"name": "Sabre Strike Tank", "id": "1d2c-758e-2343-c46f", "hidden": false},
       {"name": "Aquitor Bombard", "id": "cd8f-0acd-d380-ba09", "hidden": false},
-      {"name": "Moritat", "id": "28f2-2ac9-4af1-45cd", "hidden": false}
+      {"name": "Moritat", "id": "28f2-2ac9-4af1-45cd", "hidden": false},
+      {"name": "Glaive", "id": "c9d5-2261-ba45-971e", "hidden": false},
+      {"name": "Ascalon", "id": "ae5a-3925-d3c3-4c39", "hidden": false}
     ],
     "constraints": [{"id": "53ff-f971-f0ff-20b1", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
     "sharedProfiles": [
@@ -11059,7 +11061,7 @@
       {
         "name": "Fellblade [Legends]",
         "id": "585d-722b-4304-2f63",
-        "hidden": true,
+        "hidden": false,
         "import": true,
         "type": "model",
         "categoryLinks": [
@@ -11559,8 +11561,9 @@
                           {"id": "3904-2a92-6218-5bf7-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
                         ],
                         "infoLinks": [
-                          {"name": "Sustained Hits", "id": "be4d-8582-a8a0-434a", "hidden": false, "targetId": "1897-c22c-9597-12b1", "type": "rule"},
-                          {"name": "Twin-linked", "id": "8f19-3ccd-a31c-1c79", "hidden": false, "targetId": "cf93-ad4d-2f08-a79d", "type": "rule"}
+                          {"name": "Rapid Fire", "id": "be4d-8582-a8a0-434a", "hidden": false, "targetId": "c5c8-8b58-b8b6-7786", "type": "rule"},
+                          {"name": "Twin-linked", "id": "8f19-3ccd-a31c-1c79", "hidden": false, "targetId": "cf93-ad4d-2f08-a79d", "type": "rule"},
+                          {"name": "Sustained Hits", "id": "af9a-30f7-8b42-93cf", "hidden": false, "targetId": "1897-c22c-9597-12b1", "type": "rule"}
                         ],
                         "profiles": [
                           {
@@ -11573,10 +11576,10 @@
                               {"name": "Range", "$text": "36\"", "typeId": "9896-9419-16a1-92fc"},
                               {"name": "A", "$text": "6", "typeId": "3bb-c35f-f54-fb08"},
                               {"name": "BS", "$text": "3+", "typeId": "94d-8a98-cf90-183e"},
-                              {"name": "S", "$text": "5", "typeId": "2229-f494-25db-c5d3"},
+                              {"name": "S", "$text": "6", "typeId": "2229-f494-25db-c5d3"},
                               {"name": "AP", "$text": "-1", "typeId": "9ead-8a10-520-de15"},
                               {"name": "D", "$text": "2", "typeId": "a354-c1c8-a745-f9e3"},
-                              {"name": "Keywords", "$text": "Sustained Hits 1, Twin-linked", "typeId": "7f1b-8591-2fcf-d01c"}
+                              {"name": "Keywords", "$text": "Rapid Fire 6, Sustained Hits 1, Twin-linked", "typeId": "7f1b-8591-2fcf-d01c"}
                             ]
                           }
                         ]
@@ -18152,7 +18155,7 @@
         ]
       },
       {
-        "name": "Aquitor Bombard [Legends] [Custom Units]",
+        "name": "Arquitor Bombard [Legends] [Custom Units]",
         "id": "9ee5-d3ab-1837-88b1",
         "collective": false,
         "hidden": false,
@@ -19865,6 +19868,1461 @@
                       {"name": "AP", "$text": "0", "typeId": "9ead-8a10-520-de15"},
                       {"name": "D", "$text": "2", "typeId": "a354-c1c8-a745-f9e3"},
                       {"name": "Keywords", "$text": "Close-quarters, Devastating Wounds, Twin-linked", "typeId": "7f1b-8591-2fcf-d01c"}
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Ascalon [Legends] [Custom Units]",
+        "id": "aa80-cc86-93ac-16e9",
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [
+          {"name": "Vehicle", "id": "6d78-2fe2-2229-616b", "primary": true, "targetId": "dbd4-63-af05-998"},
+          {"name": "Titanic", "id": "e0b5-7159-7bd1-7e76", "primary": false, "targetId": "5929-ad51-d006-e008"},
+          {"name": "Smoke", "id": "b6fb-5399-f018-6494", "primary": false, "targetId": "6df-937-16bc-8c1a"},
+          {"name": "Custom Units", "id": "1a11-bcf0-c0cf-5870", "hidden": false, "primary": false, "targetId": "e875-4d09-70f8-e315"},
+          {"name": "Ascalon", "id": "e226-c007-1f30-6c98", "hidden": false, "primary": false, "targetId": "ae5a-3925-d3c3-4c39"}
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 470},
+          {"name": "Crusade Points", "typeId": "b03b-c239-15a5-da55", "value": 0},
+          {"name": "Crusade: Battle Honours", "typeId": "75bb-ded1-c86d-bdf0", "value": 0},
+          {"name": "Crusade: Experience", "typeId": "a623-fe74-1d33-cddf", "value": 0},
+          {"name": "Crusade: Weapon Modifications", "typeId": "716d-91b7-d55a-1022", "value": 0},
+          {"name": "Blackstone Fragments", "typeId": "ac6b-ced3-9b5e-9a6e", "value": 0},
+          {"name": "Detachment Points", "typeId": "82ae-1066-5107-6ae0", "value": 0},
+          {"name": "Enhancements", "typeId": "f759-1bc4-cb3a-f0d2", "value": 0},
+          {"name": "Command Points", "typeId": "621c-5e90-c575-8242", "value": 0}
+        ],
+        "infoLinks": [
+          {
+            "name": "Deadly Demise",
+            "id": "70df-6c06-7836-76d4",
+            "hidden": false,
+            "targetId": "b68a-5ded-65ac-98c",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "append", "value": "2D6+2"}]
+          },
+          {"name": "Damaged: 1-8 wounds remaining", "id": "682a-b41c-4171-9191", "hidden": false, "targetId": "4362-2036-1522-de2e", "type": "profile"},
+          {"name": "Combat Doctrines", "id": "fbe7-4861-6e96-7b18", "hidden": false, "targetId": "3b76-4053-ece9-6e7d", "type": "rule"}
+        ],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "id": "5a52-932b-2302-52a8",
+                "childId": "9d3b-38d9-2d95-fac7",
+                "childName": "Show Custom Units",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "lessThan",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "id": "211b-4e33-164e-1475",
+                "childId": "9ed-cbf4-bfe5-90bf",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "lessThan",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Ascalon",
+            "id": "1aad-0aff-5196-e2a1",
+            "hidden": false,
+            "typeId": "c547-1836-d8a-ff4f",
+            "typeName": "Unit",
+            "characteristics": [
+              {"name": "M", "$text": "9\"", "typeId": "e703-ecb6-5ce7-aec1"},
+              {"name": "T", "$text": "13", "typeId": "d29d-cf75-fc2d-34a4"},
+              {"name": "Sv", "$text": "2+", "typeId": "450-a17e-9d5e-29da"},
+              {"name": "W", "$text": "24", "typeId": "750a-a2ec-90d3-21fe"},
+              {"name": "LD", "$text": "6+", "typeId": "58d2-b879-49c7-43bc"},
+              {"name": "OC", "$text": "8", "typeId": "bef7-942a-1a23-59f8"},
+              {"name": "InSv", "$text": "", "typeId": "55a7-5b54-c60d-11dc"},
+              {"name": "Base", "$text": "Hull", "typeId": "nr-base-size"}
+            ]
+          },
+          {
+            "name": "Torrential Flames",
+            "id": "7dd5-748b-fc89-db94",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "Each time this model makes a ranged attack with its Ascalon Inferno Cannon that targets a Non MONSTER/VEHICLE unit, that unit has to take a battle shock test at -2 Ld.",
+                "typeId": "9b8f-694b-e5e-b573"
+              }
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Wargear",
+            "id": "b8fe-4615-57a8-44fa",
+            "hidden": false,
+            "entryLinks": [
+              {
+                "name": "Armoured tracks",
+                "id": "bb46-d048-b57f-056f",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "3013-a16f-26c5-21fa",
+                "type": "selectionEntry",
+                "entryLinks": [
+                  {
+                    "name": "Weapon Modifications",
+                    "id": "4f55-c06b-c089-dfa3",
+                    "flatten": false,
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "f9da-852a-d7f0-92e9",
+                    "type": "selectionEntryGroup"
+                  }
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Ascalon Inferno cannon",
+                "id": "cb08-6c46-a812-9f88",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "c9fe-86f1-250a-b157", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "bc44-6153-7123-b7db", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Weapon Modifications",
+                    "id": "97ae-45ed-5bd7-2513",
+                    "flatten": false,
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "f9da-852a-d7f0-92e9",
+                    "type": "selectionEntryGroup"
+                  }
+                ],
+                "infoLinks": [
+                  {"name": "Blast", "id": "158c-4198-7041-ba75", "hidden": false, "targetId": "6c1f-1cf7-ff25-c99e", "type": "rule"},
+                  {"name": "Twin-linked", "id": "a7db-65ba-93c8-de4b", "hidden": false, "targetId": "cf93-ad4d-2f08-a79d", "type": "rule"}
+                ],
+                "profiles": [
+                  {
+                    "name": "Ascalon Inferno cannon",
+                    "id": "de56-9706-f690-1b86",
+                    "hidden": false,
+                    "typeId": "f77d-b953-8fa4-b762",
+                    "typeName": "Ranged Weapons",
+                    "characteristics": [
+                      {"name": "Range", "$text": "24\"", "typeId": "9896-9419-16a1-92fc"},
+                      {"name": "A", "$text": "2D6+10", "typeId": "3bb-c35f-f54-fb08"},
+                      {"name": "BS", "$text": "-", "typeId": "94d-8a98-cf90-183e"},
+                      {"name": "S", "$text": "8", "typeId": "2229-f494-25db-c5d3"},
+                      {"name": "AP", "$text": "-3", "typeId": "9ead-8a10-520-de15"},
+                      {"name": "D", "$text": "3", "typeId": "a354-c1c8-a745-f9e3"},
+                      {"name": "Keywords", "$text": "Blast 4, Torrent", "typeId": "7f1b-8591-2fcf-d01c"}
+                    ]
+                  }
+                ]
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "name": "Frontal weapon",
+                "id": "3d66-e1f6-3c0e-c934",
+                "defaultSelectionEntryId": "dce0-c48e-76cd-66e8",
+                "hidden": false,
+                "constraints": [
+                  {"id": "4a6c-9bf0-0856-3313", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "abd1-df65-3e8c-563d", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Twin heavy bolter",
+                    "id": "b5cf-d9d2-ac5f-1be2",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "f1a6-b394-5bc5-a3cb",
+                    "type": "selectionEntry",
+                    "entryLinks": [
+                      {
+                        "name": "Weapon Modifications",
+                        "id": "d3f3-48c3-0937-8f19",
+                        "flatten": false,
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "f9da-852a-d7f0-92e9",
+                        "type": "selectionEntryGroup"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Twin heavy flamer",
+                    "id": "2d35-e816-a92a-7058",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "28c2-3ff0-43c1-380d",
+                    "type": "selectionEntry",
+                    "entryLinks": [
+                      {
+                        "name": "Weapon Modifications",
+                        "id": "2552-b786-e12d-341a",
+                        "flatten": false,
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "f9da-852a-d7f0-92e9",
+                        "type": "selectionEntryGroup"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Pintle weapon",
+                "id": "8dec-0717-69c2-322b",
+                "hidden": false,
+                "constraints": [{"id": "c932-fcca-deb8-ab93", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                "entryLinks": [
+                  {
+                    "name": "Heavy bolter",
+                    "id": "3d1f-e178-9097-9630",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "d243-77eb-2a1-ff34",
+                    "type": "selectionEntry",
+                    "entryLinks": [
+                      {
+                        "name": "Weapon Modifications",
+                        "id": "7fd8-b46e-c531-a582",
+                        "flatten": false,
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "f9da-852a-d7f0-92e9",
+                        "type": "selectionEntryGroup"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Heavy flamer",
+                    "id": "61c0-2ae5-8c35-f47a",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "bcef-39ba-a990-5490",
+                    "type": "selectionEntry",
+                    "entryLinks": [
+                      {
+                        "name": "Weapon Modifications",
+                        "id": "4701-195a-2a3d-d962",
+                        "flatten": false,
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "f9da-852a-d7f0-92e9",
+                        "type": "selectionEntryGroup"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Multi-melta",
+                    "id": "a638-eafd-3195-0471",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "91c8-b628-4d47-d01e",
+                    "type": "selectionEntry",
+                    "entryLinks": [
+                      {
+                        "name": "Weapon Modifications",
+                        "id": "3561-f89f-a0f1-2289",
+                        "flatten": false,
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "f9da-852a-d7f0-92e9",
+                        "type": "selectionEntryGroup"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Storm bolter",
+                    "id": "78ec-278f-608f-5695",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "7eb4-c21c-d0a2-39df",
+                    "type": "selectionEntry",
+                    "entryLinks": [
+                      {
+                        "name": "Weapon Modifications",
+                        "id": "6ef3-9914-073c-fd91",
+                        "flatten": false,
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "f9da-852a-d7f0-92e9",
+                        "type": "selectionEntryGroup"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Sponsons",
+                "id": "55ca-8cae-dbeb-466f",
+                "defaultSelectionEntryId": "d31c-6769-24dc-f79a",
+                "hidden": false,
+                "constraints": [
+                  {"id": "4391-bfea-b630-0bfb", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
+                  {"id": "9779-322a-1575-4dfb", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1}
+                ],
+                "selectionEntries": [
+                  {
+                    "name": "Two quad lascannons",
+                    "id": "dc44-cddd-a648-396c",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "selectionEntries": [
+                      {
+                        "name": "Quad lascannon",
+                        "id": "d59a-7e5f-b7da-5d71",
+                        "hidden": false,
+                        "import": true,
+                        "type": "upgrade",
+                        "constraints": [
+                          {"id": "7f01-0530-a198-9149", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 2},
+                          {"id": "a6a2-502a-6102-9263", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}
+                        ],
+                        "entryLinks": [
+                          {
+                            "name": "Weapon Modifications",
+                            "id": "bdfa-6026-b9f5-4e33",
+                            "flatten": false,
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "f9da-852a-d7f0-92e9",
+                            "type": "selectionEntryGroup"
+                          }
+                        ],
+                        "profiles": [
+                          {
+                            "name": "Quad lascannon",
+                            "id": "7227-769b-8bf6-b43f",
+                            "hidden": false,
+                            "typeId": "f77d-b953-8fa4-b762",
+                            "typeName": "Ranged Weapons",
+                            "characteristics": [
+                              {"name": "Range", "$text": "48\"", "typeId": "9896-9419-16a1-92fc"},
+                              {"name": "A", "$text": "4", "typeId": "3bb-c35f-f54-fb08"},
+                              {"name": "BS", "$text": "3+", "typeId": "94d-8a98-cf90-183e"},
+                              {"name": "S", "$text": "12", "typeId": "2229-f494-25db-c5d3"},
+                              {"name": "AP", "$text": "-3", "typeId": "9ead-8a10-520-de15"},
+                              {"name": "D", "$text": "D6+1", "typeId": "a354-c1c8-a745-f9e3"},
+                              {"name": "Keywords", "typeId": "7f1b-8591-2fcf-d01c"}
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Two laser destroyers",
+                    "id": "9a90-1864-6a86-9ddd",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "selectionEntries": [
+                      {
+                        "name": "Laser destroyer",
+                        "id": "51d8-2289-6f8b-8ca6",
+                        "hidden": false,
+                        "import": true,
+                        "type": "upgrade",
+                        "constraints": [
+                          {"id": "7508-7222-7966-1884", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 2},
+                          {"id": "2778-1e04-8d47-104a", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}
+                        ],
+                        "entryLinks": [
+                          {
+                            "name": "Weapon Modifications",
+                            "id": "c4d4-3ad2-0cc0-446d",
+                            "flatten": false,
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "f9da-852a-d7f0-92e9",
+                            "type": "selectionEntryGroup"
+                          }
+                        ],
+                        "infoLinks": [{"name": "Heavy", "id": "5d8b-867c-dc33-9115", "hidden": false, "targetId": "1202-10a8-78e9-4c67", "type": "rule"}],
+                        "profiles": [
+                          {
+                            "name": "Laser destroyer",
+                            "id": "3390-d390-2023-6257",
+                            "hidden": false,
+                            "typeId": "f77d-b953-8fa4-b762",
+                            "typeName": "Ranged Weapons",
+                            "characteristics": [
+                              {"name": "Range", "$text": "36\"", "typeId": "9896-9419-16a1-92fc"},
+                              {"name": "A", "$text": "3", "typeId": "3bb-c35f-f54-fb08"},
+                              {"name": "BS", "$text": "3+", "typeId": "94d-8a98-cf90-183e"},
+                              {"name": "S", "$text": "14", "typeId": "2229-f494-25db-c5d3"},
+                              {"name": "AP", "$text": "-4", "typeId": "9ead-8a10-520-de15"},
+                              {"name": "D", "$text": "D6+1", "typeId": "a354-c1c8-a745-f9e3"},
+                              {"name": "Keywords", "$text": "Heavy", "typeId": "7f1b-8591-2fcf-d01c"}
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Two quad heavy bolters",
+                    "id": "9549-b6e0-2631-165c",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "selectionEntries": [
+                      {
+                        "name": "Quad heavy bolter",
+                        "id": "0eaf-d3f2-d095-3160",
+                        "hidden": false,
+                        "import": true,
+                        "type": "upgrade",
+                        "constraints": [
+                          {"id": "d901-cc76-6a20-f448", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 2},
+                          {"id": "d29f-142b-cca4-c1d7", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
+                        ],
+                        "infoLinks": [
+                          {"name": "Rapid Fire", "id": "0b96-2565-7806-7702", "hidden": false, "targetId": "c5c8-8b58-b8b6-7786", "type": "rule"},
+                          {"name": "Twin-linked", "id": "c9c8-560d-9a81-e582", "hidden": false, "targetId": "cf93-ad4d-2f08-a79d", "type": "rule"},
+                          {"name": "Sustained Hits", "id": "cedb-29a8-1b59-2cb8", "hidden": false, "targetId": "1897-c22c-9597-12b1", "type": "rule"}
+                        ],
+                        "profiles": [
+                          {
+                            "name": "Quad heavy bolter",
+                            "id": "d852-a735-7a7f-06c7",
+                            "hidden": false,
+                            "typeId": "f77d-b953-8fa4-b762",
+                            "typeName": "Ranged Weapons",
+                            "characteristics": [
+                              {"name": "Range", "$text": "36\"", "typeId": "9896-9419-16a1-92fc"},
+                              {"name": "A", "$text": "6", "typeId": "3bb-c35f-f54-fb08"},
+                              {"name": "BS", "$text": "3+", "typeId": "94d-8a98-cf90-183e"},
+                              {"name": "S", "$text": "6", "typeId": "2229-f494-25db-c5d3"},
+                              {"name": "AP", "$text": "-1", "typeId": "9ead-8a10-520-de15"},
+                              {"name": "D", "$text": "2", "typeId": "a354-c1c8-a745-f9e3"},
+                              {"name": "Keywords", "$text": "Rapid Fire 6, Sustained Hits 1, Twin-linked", "typeId": "7f1b-8591-2fcf-d01c"}
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Glaive [Legends] [Custom Units]",
+        "id": "e405-7147-d1bc-d43c",
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [
+          {"name": "Vehicle", "id": "6238-9a0c-c0fd-b91e", "primary": true, "targetId": "dbd4-63-af05-998"},
+          {"name": "Titanic", "id": "2342-b5c4-218c-8cc6", "primary": false, "targetId": "5929-ad51-d006-e008"},
+          {"name": "Smoke", "id": "4296-ee6f-54db-9b8a", "primary": false, "targetId": "6df-937-16bc-8c1a"},
+          {"name": "Glaive", "id": "b10f-082b-3ed2-a14a", "hidden": false, "primary": false, "targetId": "c9d5-2261-ba45-971e"}
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 450},
+          {"name": "Crusade Points", "typeId": "b03b-c239-15a5-da55", "value": 0},
+          {"name": "Crusade: Battle Honours", "typeId": "75bb-ded1-c86d-bdf0", "value": 0},
+          {"name": "Crusade: Experience", "typeId": "a623-fe74-1d33-cddf", "value": 0},
+          {"name": "Crusade: Weapon Modifications", "typeId": "716d-91b7-d55a-1022", "value": 0},
+          {"name": "Blackstone Fragments", "typeId": "ac6b-ced3-9b5e-9a6e", "value": 0},
+          {"name": "Detachment Points", "typeId": "82ae-1066-5107-6ae0", "value": 0},
+          {"name": "Enhancements", "typeId": "f759-1bc4-cb3a-f0d2", "value": 0},
+          {"name": "Command Points", "typeId": "621c-5e90-c575-8242", "value": 0}
+        ],
+        "infoLinks": [
+          {
+            "name": "Deadly Demise",
+            "id": "6fe0-83a5-3b1e-3846",
+            "hidden": false,
+            "targetId": "b68a-5ded-65ac-98c",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "append", "value": "D6+2"}]
+          },
+          {"name": "Damaged: 1-8 wounds remaining", "id": "35cd-5654-9490-30a5", "hidden": false, "targetId": "4362-2036-1522-de2e", "type": "profile"},
+          {"name": "Combat Doctrines", "id": "7dca-e5ed-47a8-5b1b", "hidden": false, "targetId": "3b76-4053-ece9-6e7d", "type": "rule"}
+        ],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "id": "0820-7ead-5c4a-d034",
+                "childId": "9ed-cbf4-bfe5-90bf",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "lessThan",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "id": "505e-8048-0802-8e64",
+                "childId": "9d3b-38d9-2d95-fac7",
+                "childName": "Show Custom Units",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "lessThan",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Glaive",
+            "id": "1143-5e82-2847-deb3",
+            "hidden": false,
+            "typeId": "c547-1836-d8a-ff4f",
+            "typeName": "Unit",
+            "characteristics": [
+              {"name": "M", "$text": "9\"", "typeId": "e703-ecb6-5ce7-aec1"},
+              {"name": "T", "$text": "13", "typeId": "d29d-cf75-fc2d-34a4"},
+              {"name": "Sv", "$text": "2+", "typeId": "450-a17e-9d5e-29da"},
+              {"name": "W", "$text": "24", "typeId": "750a-a2ec-90d3-21fe"},
+              {"name": "LD", "$text": "6+", "typeId": "58d2-b879-49c7-43bc"},
+              {"name": "OC", "$text": "8", "typeId": "bef7-942a-1a23-59f8"},
+              {"name": "InSv", "$text": "", "typeId": "55a7-5b54-c60d-11dc"},
+              {"name": "Base", "$text": "Hull", "typeId": "nr-base-size"}
+            ]
+          },
+          {
+            "name": "Special Weapon Tank",
+            "id": "9731-f10b-f41a-0a3d",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [{"name": "Description", "$text": "Each time this model makes an attack, it can re-roll hit rolls of 1", "typeId": "9b8f-694b-e5e-b573"}]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Wargear",
+            "id": "1a72-e47e-83d0-b637",
+            "hidden": false,
+            "entryLinks": [
+              {
+                "name": "Armoured tracks",
+                "id": "71b0-1fee-478f-7900",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "3013-a16f-26c5-21fa",
+                "type": "selectionEntry",
+                "entryLinks": [
+                  {
+                    "name": "Weapon Modifications",
+                    "id": "2e67-ed58-35f8-a2e3",
+                    "flatten": false,
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "f9da-852a-d7f0-92e9",
+                    "type": "selectionEntryGroup"
+                  }
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Volkite Carronade",
+                "id": "8639-812c-9840-5ad3",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "3a7e-770c-5ca5-512b", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "0b6e-02d7-12b7-e093", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Weapon Modifications",
+                    "id": "d408-6b3d-7b29-2d1b",
+                    "flatten": false,
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "f9da-852a-d7f0-92e9",
+                    "type": "selectionEntryGroup"
+                  }
+                ],
+                "infoLinks": [{"name": "Blast", "id": "8be2-7300-05dc-5b5c", "hidden": false, "targetId": "6c1f-1cf7-ff25-c99e", "type": "rule"}],
+                "profiles": [
+                  {
+                    "name": "Volkite Carronade",
+                    "id": "405e-98ed-0547-56ac",
+                    "hidden": false,
+                    "typeId": "f77d-b953-8fa4-b762",
+                    "typeName": "Ranged Weapons",
+                    "characteristics": [
+                      {"name": "Range", "$text": "36\"", "typeId": "9896-9419-16a1-92fc"},
+                      {"name": "A", "$text": "15", "typeId": "3bb-c35f-f54-fb08"},
+                      {"name": "BS", "$text": "3+", "typeId": "94d-8a98-cf90-183e"},
+                      {"name": "S", "$text": "12", "typeId": "2229-f494-25db-c5d3"},
+                      {"name": "AP", "$text": "0", "typeId": "9ead-8a10-520-de15"},
+                      {"name": "D", "$text": "4", "typeId": "a354-c1c8-a745-f9e3"},
+                      {"name": "Keywords", "$text": "Blast 2, Devastating Wounds", "typeId": "7f1b-8591-2fcf-d01c"}
+                    ],
+                    "modifiers": [
+                      {
+                        "field": "3bb-c35f-f54-fb08",
+                        "join": "",
+                        "type": "append",
+                        "value": "+0",
+                        "conditionGroups": [
+                          {
+                            "type": "or",
+                            "conditions": [
+                              {"childId": "2801-9f1c-645d-cb3d", "field": "selections", "includeChildSelections": true, "scope": "self", "shared": true, "type": "atLeast", "value": 1},
+                              {
+                                "childId": "4c77-bf52-15d1-5080",
+                                "childName": "The Tyrant's Standard",
+                                "field": "selections",
+                                "includeChildSelections": true,
+                                "scope": "root-entry",
+                                "shared": true,
+                                "type": "atLeast",
+                                "value": 1
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "name": "Frontal weapon",
+                "id": "703c-eeff-3e85-5eb5",
+                "defaultSelectionEntryId": "bcaa-cb58-34e1-3e9",
+                "hidden": false,
+                "constraints": [
+                  {"id": "6dc7-00bc-2043-3a94", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "02d8-bfe3-528e-42c3", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Twin heavy bolter",
+                    "id": "8597-62b0-ac75-a010",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "f1a6-b394-5bc5-a3cb",
+                    "type": "selectionEntry",
+                    "entryLinks": [
+                      {
+                        "name": "Weapon Modifications",
+                        "id": "9542-0a88-2fae-7650",
+                        "flatten": false,
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "f9da-852a-d7f0-92e9",
+                        "type": "selectionEntryGroup"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Twin heavy flamer",
+                    "id": "c659-4dc0-52e3-2b83",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "28c2-3ff0-43c1-380d",
+                    "type": "selectionEntry",
+                    "entryLinks": [
+                      {
+                        "name": "Weapon Modifications",
+                        "id": "bed2-bc36-2db1-6614",
+                        "flatten": false,
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "f9da-852a-d7f0-92e9",
+                        "type": "selectionEntryGroup"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Pintle weapon",
+                "id": "cdda-0cf9-a0b7-9a8f",
+                "hidden": false,
+                "constraints": [{"id": "f1d1-6370-1b6e-1b7b", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                "entryLinks": [
+                  {
+                    "name": "Heavy bolter",
+                    "id": "f4f9-d969-77dc-004f",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "d243-77eb-2a1-ff34",
+                    "type": "selectionEntry",
+                    "entryLinks": [
+                      {
+                        "name": "Weapon Modifications",
+                        "id": "3950-7823-f950-6e42",
+                        "flatten": false,
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "f9da-852a-d7f0-92e9",
+                        "type": "selectionEntryGroup"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Heavy flamer",
+                    "id": "d878-b3cd-7294-6c99",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "bcef-39ba-a990-5490",
+                    "type": "selectionEntry",
+                    "entryLinks": [
+                      {
+                        "name": "Weapon Modifications",
+                        "id": "4321-a001-b738-2810",
+                        "flatten": false,
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "f9da-852a-d7f0-92e9",
+                        "type": "selectionEntryGroup"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Multi-melta",
+                    "id": "f215-4016-1df7-210b",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "91c8-b628-4d47-d01e",
+                    "type": "selectionEntry",
+                    "entryLinks": [
+                      {
+                        "name": "Weapon Modifications",
+                        "id": "6be8-4e43-05d9-b128",
+                        "flatten": false,
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "f9da-852a-d7f0-92e9",
+                        "type": "selectionEntryGroup"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Storm bolter",
+                    "id": "a9ce-0944-9792-7b35",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "7eb4-c21c-d0a2-39df",
+                    "type": "selectionEntry",
+                    "entryLinks": [
+                      {
+                        "name": "Weapon Modifications",
+                        "id": "5150-f3a6-56ed-a6ee",
+                        "flatten": false,
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "f9da-852a-d7f0-92e9",
+                        "type": "selectionEntryGroup"
+                      }
+                    ]
+                  },
+                  {"name": "Combi-weapon", "id": "08ef-264f-34a6-a712", "hidden": false, "import": true, "targetId": "8882-6dc0-3a7b-5266", "type": "selectionEntry"}
+                ]
+              },
+              {
+                "name": "Sponsons",
+                "id": "7b1c-5d15-de5c-6150",
+                "defaultSelectionEntryId": "3035-c6f9-c373-a69c",
+                "hidden": false,
+                "constraints": [
+                  {"id": "2d10-60c4-46f1-e3ee", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
+                  {"id": "bd3f-0b54-97be-075d", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1}
+                ],
+                "selectionEntries": [
+                  {
+                    "name": "Two quad lascannons",
+                    "id": "b154-72f7-cf1c-7555",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "selectionEntries": [
+                      {
+                        "name": "Quad lascannon",
+                        "id": "b22a-2c04-f2fd-debd",
+                        "hidden": false,
+                        "import": true,
+                        "type": "upgrade",
+                        "constraints": [
+                          {"id": "3a4c-2a54-1c51-08d2", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 2},
+                          {"id": "ac19-7756-4462-cf73", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}
+                        ],
+                        "entryLinks": [
+                          {
+                            "name": "Weapon Modifications",
+                            "id": "5ecd-2e4f-3764-115c",
+                            "flatten": false,
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "f9da-852a-d7f0-92e9",
+                            "type": "selectionEntryGroup"
+                          }
+                        ],
+                        "profiles": [
+                          {
+                            "name": "Quad lascannon",
+                            "id": "71e3-b624-b991-84fa",
+                            "hidden": false,
+                            "typeId": "f77d-b953-8fa4-b762",
+                            "typeName": "Ranged Weapons",
+                            "characteristics": [
+                              {"name": "Range", "$text": "48\"", "typeId": "9896-9419-16a1-92fc"},
+                              {"name": "A", "$text": "4", "typeId": "3bb-c35f-f54-fb08"},
+                              {"name": "BS", "$text": "3+", "typeId": "94d-8a98-cf90-183e"},
+                              {"name": "S", "$text": "12", "typeId": "2229-f494-25db-c5d3"},
+                              {"name": "AP", "$text": "-3", "typeId": "9ead-8a10-520-de15"},
+                              {"name": "D", "$text": "D6+1", "typeId": "a354-c1c8-a745-f9e3"},
+                              {"name": "Keywords", "typeId": "7f1b-8591-2fcf-d01c"}
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Two laser destroyers",
+                    "id": "c267-2045-7426-0f0f",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "selectionEntries": [
+                      {
+                        "name": "Laser destroyer",
+                        "id": "b36c-56cb-a905-ce1f",
+                        "hidden": false,
+                        "import": true,
+                        "type": "upgrade",
+                        "constraints": [
+                          {"id": "cc97-cbc3-afd0-7f67", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 2},
+                          {"id": "2fa6-621e-efe5-ca31", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}
+                        ],
+                        "entryLinks": [
+                          {
+                            "name": "Weapon Modifications",
+                            "id": "653d-cfc4-9702-67a7",
+                            "flatten": false,
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "f9da-852a-d7f0-92e9",
+                            "type": "selectionEntryGroup"
+                          }
+                        ],
+                        "infoLinks": [{"name": "Heavy", "id": "8e1b-5801-5f32-4aeb", "hidden": false, "targetId": "1202-10a8-78e9-4c67", "type": "rule"}],
+                        "profiles": [
+                          {
+                            "name": "Laser destroyer",
+                            "id": "b816-73b5-1562-487d",
+                            "hidden": false,
+                            "typeId": "f77d-b953-8fa4-b762",
+                            "typeName": "Ranged Weapons",
+                            "characteristics": [
+                              {"name": "Range", "$text": "36\"", "typeId": "9896-9419-16a1-92fc"},
+                              {"name": "A", "$text": "3", "typeId": "3bb-c35f-f54-fb08"},
+                              {"name": "BS", "$text": "3+", "typeId": "94d-8a98-cf90-183e"},
+                              {"name": "S", "$text": "14", "typeId": "2229-f494-25db-c5d3"},
+                              {"name": "AP", "$text": "-4", "typeId": "9ead-8a10-520-de15"},
+                              {"name": "D", "$text": "D6+1", "typeId": "a354-c1c8-a745-f9e3"},
+                              {"name": "Keywords", "$text": "Heavy", "typeId": "7f1b-8591-2fcf-d01c"}
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Two quad heavy bolters",
+                    "id": "dce7-1629-0d88-1069",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "selectionEntries": [
+                      {
+                        "name": "Quad heavy bolter",
+                        "id": "647b-6e91-7f5b-2543",
+                        "hidden": false,
+                        "import": true,
+                        "type": "upgrade",
+                        "constraints": [
+                          {"id": "94f5-a2fa-16cc-a5af", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 2},
+                          {"id": "3c40-1e6a-ba20-a1a6", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
+                        ],
+                        "infoLinks": [
+                          {"name": "Rapid Fire", "id": "c1eb-d0bd-028f-2cd4", "hidden": false, "targetId": "c5c8-8b58-b8b6-7786", "type": "rule"},
+                          {"name": "Twin-linked", "id": "5d25-0908-22b6-d56f", "hidden": false, "targetId": "cf93-ad4d-2f08-a79d", "type": "rule"},
+                          {"name": "Sustained Hits", "id": "3738-a006-4c16-f394", "hidden": false, "targetId": "1897-c22c-9597-12b1", "type": "rule"}
+                        ],
+                        "profiles": [
+                          {
+                            "name": "Quad heavy bolter",
+                            "id": "1b68-3ed6-23fc-afe2",
+                            "hidden": false,
+                            "typeId": "f77d-b953-8fa4-b762",
+                            "typeName": "Ranged Weapons",
+                            "characteristics": [
+                              {"name": "Range", "$text": "36\"", "typeId": "9896-9419-16a1-92fc"},
+                              {"name": "A", "$text": "6", "typeId": "3bb-c35f-f54-fb08"},
+                              {"name": "BS", "$text": "3+", "typeId": "94d-8a98-cf90-183e"},
+                              {"name": "S", "$text": "6", "typeId": "2229-f494-25db-c5d3"},
+                              {"name": "AP", "$text": "-1", "typeId": "9ead-8a10-520-de15"},
+                              {"name": "D", "$text": "2", "typeId": "a354-c1c8-a745-f9e3"},
+                              {"name": "Keywords", "$text": "Rapid Fire 6, Sustained Hits 1, Twin-linked", "typeId": "7f1b-8591-2fcf-d01c"}
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Glaive Annihilator [Legends] [Custom Units]",
+        "id": "42e1-b81c-27bc-7dbb",
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [
+          {"name": "Vehicle", "id": "32f2-6384-5188-7fae", "primary": true, "targetId": "dbd4-63-af05-998"},
+          {"name": "Titanic", "id": "2872-52d9-a879-c1c3", "primary": false, "targetId": "5929-ad51-d006-e008"},
+          {"name": "Smoke", "id": "a280-fcfc-f1c9-8288", "primary": false, "targetId": "6df-937-16bc-8c1a"},
+          {"name": "Glaive", "id": "28f9-d6be-c796-89b1", "hidden": false, "primary": false, "targetId": "c9d5-2261-ba45-971e"}
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 600},
+          {"name": "Crusade Points", "typeId": "b03b-c239-15a5-da55", "value": 0},
+          {"name": "Crusade: Battle Honours", "typeId": "75bb-ded1-c86d-bdf0", "value": 0},
+          {"name": "Crusade: Experience", "typeId": "a623-fe74-1d33-cddf", "value": 0},
+          {"name": "Crusade: Weapon Modifications", "typeId": "716d-91b7-d55a-1022", "value": 0},
+          {"name": "Blackstone Fragments", "typeId": "ac6b-ced3-9b5e-9a6e", "value": 0},
+          {"name": "Detachment Points", "typeId": "82ae-1066-5107-6ae0", "value": 0},
+          {"name": "Enhancements", "typeId": "f759-1bc4-cb3a-f0d2", "value": 0},
+          {"name": "Command Points", "typeId": "621c-5e90-c575-8242", "value": 0}
+        ],
+        "infoLinks": [
+          {
+            "name": "Deadly Demise",
+            "id": "1748-f1b9-4ba7-7265",
+            "hidden": false,
+            "targetId": "b68a-5ded-65ac-98c",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "append", "value": "D6+2"}]
+          },
+          {"name": "Damaged: 1-8 wounds remaining", "id": "24f4-340c-90d4-521c", "hidden": false, "targetId": "4362-2036-1522-de2e", "type": "profile"},
+          {"name": "Combat Doctrines", "id": "ab6c-44b6-f284-6fa6", "hidden": false, "targetId": "3b76-4053-ece9-6e7d", "type": "rule"}
+        ],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "id": "dd0a-e0fe-3965-9891",
+                "childId": "9ed-cbf4-bfe5-90bf",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "lessThan",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "id": "37b8-1203-1c92-695b",
+                "childId": "9d3b-38d9-2d95-fac7",
+                "childName": "Show Custom Units",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "lessThan",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Glaive",
+            "id": "6139-645a-fda8-c14a",
+            "hidden": false,
+            "typeId": "c547-1836-d8a-ff4f",
+            "typeName": "Unit",
+            "characteristics": [
+              {"name": "M", "$text": "9\"", "typeId": "e703-ecb6-5ce7-aec1"},
+              {"name": "T", "$text": "13", "typeId": "d29d-cf75-fc2d-34a4"},
+              {"name": "Sv", "$text": "2+", "typeId": "450-a17e-9d5e-29da"},
+              {"name": "W", "$text": "24", "typeId": "750a-a2ec-90d3-21fe"},
+              {"name": "LD", "$text": "6+", "typeId": "58d2-b879-49c7-43bc"},
+              {"name": "OC", "$text": "8", "typeId": "bef7-942a-1a23-59f8"},
+              {"name": "InSv", "$text": "", "typeId": "55a7-5b54-c60d-11dc"},
+              {"name": "Base", "$text": "Hull", "typeId": "nr-base-size"}
+            ]
+          },
+          {
+            "name": "Relic of the Dark Age",
+            "id": "d2ae-27a4-d426-4e0f",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "Whenever this model fails a hazard test, this model and every unit within 6\" take 2D3 Mortal Wounds",
+                "typeId": "9b8f-694b-e5e-b573"
+              }
+            ]
+          },
+          {
+            "name": "Dire Past",
+            "id": "0208-1cde-6364-26f1",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "This model must make a Hazardous Test for every other attack it makes with a [Hazardous] weapon, failing on 1s only.",
+                "typeId": "9b8f-694b-e5e-b573"
+              }
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Wargear",
+            "id": "0241-43c3-54da-f14c",
+            "hidden": false,
+            "entryLinks": [
+              {
+                "name": "Armoured tracks",
+                "id": "e492-57b3-c912-e62d",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "3013-a16f-26c5-21fa",
+                "type": "selectionEntry",
+                "entryLinks": [
+                  {
+                    "name": "Weapon Modifications",
+                    "id": "3475-dc9d-4cb1-d0d6",
+                    "flatten": false,
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "f9da-852a-d7f0-92e9",
+                    "type": "selectionEntryGroup"
+                  }
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Warp Cannon",
+                "id": "9fe3-44bc-5630-7472",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "6083-30a8-aaca-ac34", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "7af8-cc34-d15b-7e3a", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Weapon Modifications",
+                    "id": "e843-4940-c9e2-461d",
+                    "flatten": false,
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "f9da-852a-d7f0-92e9",
+                    "type": "selectionEntryGroup"
+                  }
+                ],
+                "infoLinks": [
+                  {"name": "Anti", "id": "d09d-bfe5-74ba-5b61", "hidden": false, "targetId": "4111-82e3-9444-e942", "type": "rule"},
+                  {"name": "Blast", "id": "b7ac-13ad-c5a6-68b1", "hidden": false, "targetId": "6c1f-1cf7-ff25-c99e", "type": "rule"},
+                  {"name": "Hazardous", "id": "c6c0-c088-82cd-0763", "hidden": false, "targetId": "8367-374c-f87-c627", "type": "rule"},
+                  {"name": "Devastating Wounds", "id": "1ce1-8fcb-60fc-cf06", "hidden": false, "targetId": "be1e-ac8e-1e2c-3528", "type": "rule"}
+                ],
+                "profiles": [
+                  {
+                    "name": "Warp Cannon",
+                    "id": "02a4-c857-0472-57b8",
+                    "hidden": false,
+                    "typeId": "f77d-b953-8fa4-b762",
+                    "typeName": "Ranged Weapons",
+                    "characteristics": [
+                      {"name": "Range", "$text": "48\"", "typeId": "9896-9419-16a1-92fc"},
+                      {"name": "A", "$text": "8", "typeId": "3bb-c35f-f54-fb08"},
+                      {"name": "BS", "$text": "3+", "typeId": "94d-8a98-cf90-183e"},
+                      {"name": "S", "$text": "16", "typeId": "2229-f494-25db-c5d3"},
+                      {"name": "AP", "$text": "-5", "typeId": "9ead-8a10-520-de15"},
+                      {"name": "D", "$text": "5", "typeId": "a354-c1c8-a745-f9e3"},
+                      {"name": "Keywords", "$text": "Anti-5+, Blast 3, Devastating Wounds, Hazardous", "typeId": "7f1b-8591-2fcf-d01c"}
+                    ]
+                  }
+                ]
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "name": "Frontal weapon",
+                "id": "9cab-65c8-70b6-1436",
+                "defaultSelectionEntryId": "bcaa-cb58-34e1-3e9",
+                "hidden": false,
+                "constraints": [
+                  {"id": "3557-7120-8b4c-835a", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "87d4-ba77-68e0-1eba", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Twin heavy bolter",
+                    "id": "ad0d-5b54-4355-8208",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "f1a6-b394-5bc5-a3cb",
+                    "type": "selectionEntry",
+                    "entryLinks": [
+                      {
+                        "name": "Weapon Modifications",
+                        "id": "9365-0a4d-a78a-a4d7",
+                        "flatten": false,
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "f9da-852a-d7f0-92e9",
+                        "type": "selectionEntryGroup"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Twin heavy flamer",
+                    "id": "3d0f-0e75-e37f-f714",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "28c2-3ff0-43c1-380d",
+                    "type": "selectionEntry",
+                    "entryLinks": [
+                      {
+                        "name": "Weapon Modifications",
+                        "id": "e60e-d592-24d3-4524",
+                        "flatten": false,
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "f9da-852a-d7f0-92e9",
+                        "type": "selectionEntryGroup"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Pintle weapon",
+                "id": "adbd-69f5-6ff1-8060",
+                "hidden": false,
+                "constraints": [{"id": "c2ca-77fa-f2b3-070a", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                "entryLinks": [
+                  {
+                    "name": "Heavy bolter",
+                    "id": "cb78-1ebb-03c5-9d3f",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "d243-77eb-2a1-ff34",
+                    "type": "selectionEntry",
+                    "entryLinks": [
+                      {
+                        "name": "Weapon Modifications",
+                        "id": "42a1-f62a-c56e-7430",
+                        "flatten": false,
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "f9da-852a-d7f0-92e9",
+                        "type": "selectionEntryGroup"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Heavy flamer",
+                    "id": "1b3e-f11f-69d2-30d3",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "bcef-39ba-a990-5490",
+                    "type": "selectionEntry",
+                    "entryLinks": [
+                      {
+                        "name": "Weapon Modifications",
+                        "id": "bda6-cfda-183d-074f",
+                        "flatten": false,
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "f9da-852a-d7f0-92e9",
+                        "type": "selectionEntryGroup"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Multi-melta",
+                    "id": "9d6d-2359-38e3-9b7c",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "91c8-b628-4d47-d01e",
+                    "type": "selectionEntry",
+                    "entryLinks": [
+                      {
+                        "name": "Weapon Modifications",
+                        "id": "3d3f-3f81-b4ba-5af2",
+                        "flatten": false,
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "f9da-852a-d7f0-92e9",
+                        "type": "selectionEntryGroup"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Storm bolter",
+                    "id": "9882-1c06-2db3-bf34",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "7eb4-c21c-d0a2-39df",
+                    "type": "selectionEntry",
+                    "entryLinks": [
+                      {
+                        "name": "Weapon Modifications",
+                        "id": "694d-ea07-c701-d5c5",
+                        "flatten": false,
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "f9da-852a-d7f0-92e9",
+                        "type": "selectionEntryGroup"
+                      }
+                    ]
+                  },
+                  {"name": "Combi-weapon", "id": "bbfa-783f-9822-7e6a", "hidden": false, "import": true, "targetId": "8882-6dc0-3a7b-5266", "type": "selectionEntry"}
+                ]
+              },
+              {
+                "name": "Sponsons",
+                "id": "6895-09fc-eb65-d565",
+                "defaultSelectionEntryId": "3035-c6f9-c373-a69c",
+                "hidden": false,
+                "constraints": [
+                  {"id": "eca8-1f4e-e5a6-43e1", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
+                  {"id": "2e39-1510-937c-9cee", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1}
+                ],
+                "selectionEntries": [
+                  {
+                    "name": "Two quad lascannons",
+                    "id": "c42d-54ad-7d2c-bcc2",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "selectionEntries": [
+                      {
+                        "name": "Quad lascannon",
+                        "id": "da1d-c510-df4a-0b63",
+                        "hidden": false,
+                        "import": true,
+                        "type": "upgrade",
+                        "constraints": [
+                          {"id": "babd-0d46-7ad3-202e", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 2},
+                          {"id": "7932-2b9b-b2cd-374e", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}
+                        ],
+                        "entryLinks": [
+                          {
+                            "name": "Weapon Modifications",
+                            "id": "c2a6-ca23-b32a-f85c",
+                            "flatten": false,
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "f9da-852a-d7f0-92e9",
+                            "type": "selectionEntryGroup"
+                          }
+                        ],
+                        "profiles": [
+                          {
+                            "name": "Quad lascannon",
+                            "id": "30dc-2b74-0b1d-085c",
+                            "hidden": false,
+                            "typeId": "f77d-b953-8fa4-b762",
+                            "typeName": "Ranged Weapons",
+                            "characteristics": [
+                              {"name": "Range", "$text": "48\"", "typeId": "9896-9419-16a1-92fc"},
+                              {"name": "A", "$text": "4", "typeId": "3bb-c35f-f54-fb08"},
+                              {"name": "BS", "$text": "3+", "typeId": "94d-8a98-cf90-183e"},
+                              {"name": "S", "$text": "12", "typeId": "2229-f494-25db-c5d3"},
+                              {"name": "AP", "$text": "-3", "typeId": "9ead-8a10-520-de15"},
+                              {"name": "D", "$text": "D6+1", "typeId": "a354-c1c8-a745-f9e3"},
+                              {"name": "Keywords", "typeId": "7f1b-8591-2fcf-d01c"}
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Two laser destroyers",
+                    "id": "c922-5af2-889d-f625",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "selectionEntries": [
+                      {
+                        "name": "Laser destroyer",
+                        "id": "1120-12ac-a8f3-0857",
+                        "hidden": false,
+                        "import": true,
+                        "type": "upgrade",
+                        "constraints": [
+                          {"id": "4aa1-b455-d391-6993", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 2},
+                          {"id": "b3af-7145-13a6-af78", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}
+                        ],
+                        "entryLinks": [
+                          {
+                            "name": "Weapon Modifications",
+                            "id": "e1be-3f9c-864f-aad2",
+                            "flatten": false,
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "f9da-852a-d7f0-92e9",
+                            "type": "selectionEntryGroup"
+                          }
+                        ],
+                        "infoLinks": [{"name": "Heavy", "id": "f2e8-d405-8100-443c", "hidden": false, "targetId": "1202-10a8-78e9-4c67", "type": "rule"}],
+                        "profiles": [
+                          {
+                            "name": "Laser destroyer",
+                            "id": "cc18-f914-d4c2-50e8",
+                            "hidden": false,
+                            "typeId": "f77d-b953-8fa4-b762",
+                            "typeName": "Ranged Weapons",
+                            "characteristics": [
+                              {"name": "Range", "$text": "36\"", "typeId": "9896-9419-16a1-92fc"},
+                              {"name": "A", "$text": "3", "typeId": "3bb-c35f-f54-fb08"},
+                              {"name": "BS", "$text": "3+", "typeId": "94d-8a98-cf90-183e"},
+                              {"name": "S", "$text": "14", "typeId": "2229-f494-25db-c5d3"},
+                              {"name": "AP", "$text": "-4", "typeId": "9ead-8a10-520-de15"},
+                              {"name": "D", "$text": "D6+1", "typeId": "a354-c1c8-a745-f9e3"},
+                              {"name": "Keywords", "$text": "Heavy", "typeId": "7f1b-8591-2fcf-d01c"}
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Two quad heavy bolters",
+                    "id": "92b1-03d4-3fab-756d",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "selectionEntries": [
+                      {
+                        "name": "Quad heavy bolter",
+                        "id": "8595-d64a-c5cc-64d6",
+                        "hidden": false,
+                        "import": true,
+                        "type": "upgrade",
+                        "constraints": [
+                          {"id": "a35b-cbaa-8ddc-1dd3", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 2},
+                          {"id": "4e2d-5e89-43e7-2c2e", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
+                        ],
+                        "infoLinks": [
+                          {"name": "Rapid Fire", "id": "3566-cab5-0826-8696", "hidden": false, "targetId": "c5c8-8b58-b8b6-7786", "type": "rule"},
+                          {"name": "Twin-linked", "id": "1a48-61a5-0c56-e6fd", "hidden": false, "targetId": "cf93-ad4d-2f08-a79d", "type": "rule"},
+                          {"name": "Sustained Hits", "id": "c9ca-f69e-5724-1182", "hidden": false, "targetId": "1897-c22c-9597-12b1", "type": "rule"}
+                        ],
+                        "profiles": [
+                          {
+                            "name": "Quad heavy bolter",
+                            "id": "5001-beff-ea82-0e50",
+                            "hidden": false,
+                            "typeId": "f77d-b953-8fa4-b762",
+                            "typeName": "Ranged Weapons",
+                            "characteristics": [
+                              {"name": "Range", "$text": "36\"", "typeId": "9896-9419-16a1-92fc"},
+                              {"name": "A", "$text": "6", "typeId": "3bb-c35f-f54-fb08"},
+                              {"name": "BS", "$text": "3+", "typeId": "94d-8a98-cf90-183e"},
+                              {"name": "S", "$text": "6", "typeId": "2229-f494-25db-c5d3"},
+                              {"name": "AP", "$text": "-1", "typeId": "9ead-8a10-520-de15"},
+                              {"name": "D", "$text": "2", "typeId": "a354-c1c8-a745-f9e3"},
+                              {"name": "Keywords", "$text": "Rapid Fire 6, Sustained Hits 1, Twin-linked", "typeId": "7f1b-8591-2fcf-d01c"}
+                            ]
+                          }
+                        ]
+                      }
                     ]
                   }
                 ]

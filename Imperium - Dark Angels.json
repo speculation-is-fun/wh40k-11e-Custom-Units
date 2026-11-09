@@ -193,6 +193,14 @@
         "import": true,
         "targetId": "1af4-075d-84b0-31d5",
         "type": "selectionEntry"
+      },
+      {
+        "name": "Glaive Annihilator [Legends] [Custom Units]",
+        "id": "7aa2-d07b-ca0c-5907",
+        "hidden": false,
+        "import": true,
+        "targetId": "42e1-b81c-27bc-7dbb",
+        "type": "selectionEntry"
       }
     ],
     "profileTypes": [
