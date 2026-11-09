@@ -71,6 +71,14 @@
         "import": true,
         "targetId": "6812-4235-b81f-6cec",
         "type": "selectionEntry"
+      },
+      {
+        "name": "Brother Germanius [Custom Units]",
+        "id": "508d-9e67-6a50-39bf",
+        "hidden": false,
+        "import": true,
+        "targetId": "d336-2679-abad-e7e5",
+        "type": "selectionEntry"
       }
     ],
     "selectionEntries": [
