@@ -378,7 +378,8 @@
       {"name": "Chief Apothecary", "id": "e0a1-f851-42aa-0090", "hidden": false},
       {"name": "Master of the Forge", "id": "789a-4bcf-87e6-12e0", "hidden": false},
       {"name": "Master of Sanctity", "id": "40c0-9353-6f8a-d281", "hidden": false},
-      {"name": "Chief Librarian", "id": "fe94-de84-7f3f-7fa7", "hidden": false}
+      {"name": "Chief Librarian", "id": "fe94-de84-7f3f-7fa7", "hidden": false},
+      {"name": "Land Raider Tempest", "id": "d705-4a81-0bed-305e", "hidden": false}
     ],
     "costTypes": [
       {
@@ -6643,7 +6644,8 @@
         "import": true,
         "targetId": "fad7-57e7-0d89-add7",
         "type": "selectionEntry"
-      }
+      },
+      {"name": "Land Raider Tempest", "id": "6e54-370e-2a05-897e", "hidden": false, "import": true, "targetId": "707e-5dc1-d8ad-5ace", "type": "selectionEntry"}
     ],
     "infoLinks": [
       {"name": "Combat Doctrines", "id": "001d-723a-56e2-f202", "hidden": false, "targetId": "3b76-4053-ece9-6e7d", "type": "rule"},
@@ -101164,7 +101166,7 @@
                 "scope": "roster",
                 "shared": true,
                 "type": "greaterThan",
-                "value": 0
+                "value": 1
               }
             ]
           },
@@ -109087,60 +109089,6 @@
                 "value": 1
               }
             ]
-          },
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [
-              {
-                "childId": "9d3b-38d9-2d95-fac7",
-                "childName": "Show Custom Units",
-                "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "scope": "roster",
-                "shared": true,
-                "type": "greaterThan",
-                "value": 0
-              }
-            ]
-          },
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [
-              {
-                "childId": "9bf9-1e30-e4b4-939c",
-                "childName": "Asmodai",
-                "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "scope": "roster",
-                "shared": true,
-                "type": "greaterThan",
-                "value": 0
-              }
-            ]
-          },
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [
-              {
-                "childId": "8165-e372-4fd6-3274",
-                "childName": "Chaplain Grimaldus",
-                "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "scope": "roster",
-                "shared": true,
-                "type": "greaterThan",
-                "value": 0
-              }
-            ]
           }
         ],
         "profiles": [
@@ -111763,42 +111711,6 @@
                 "value": 1
               }
             ]
-          },
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [
-              {
-                "childId": "af4f-95a4-dbfc-3987",
-                "childName": "Chief Librarian Mephiston",
-                "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "scope": "roster",
-                "shared": true,
-                "type": "greaterThan",
-                "value": 0
-              }
-            ]
-          },
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [
-              {
-                "childId": "38c9-66a1-fe60-46af",
-                "childName": "Ezekiel",
-                "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "scope": "roster",
-                "shared": true,
-                "type": "greaterThan",
-                "value": 0
-              }
-            ]
           }
         ],
         "profiles": [
@@ -112186,116 +112098,196 @@
               {"id": "70cd-b7e7-135c-9113", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 3},
               {"id": "97e0-9069-ed7f-0d7f", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1}
             ],
-            "profiles": [
+            "selectionEntries": [
               {
-                "name": "[Psychic Abilities] - Veil of Time (Psychic Level 1)",
-                "id": "d2d1-468f-a200-4efe",
+                "name": "[Psychic Abilities] - Engulfing Fear (psychic level 1)",
+                "id": "e4e7-05ea-572e-fa91",
                 "hidden": false,
-                "typeId": "9cc3-6d83-4dd3-9b64",
-                "typeName": "Abilities",
-                "characteristics": [
+                "import": true,
+                "type": "upgrade",
+                "constraints": [{"id": "e230-9c31-ff5c-601e", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                "profiles": [
                   {
-                    "name": "Description",
-                    "$text": "When this unit is selected to make an advance move, if this unit is not battle-shocked, you can make a psychic roll for this unit by rolling one D6. If you do: \n▪ On a 1, this unit is battle-shocked. \n▪ This unit can change that advance roll to a 6.",
-                    "typeId": "9b8f-694b-e5e-b573"
+                    "name": "[Psychic Abilities] - Engulfing Fear (psychic level 1)",
+                    "id": "7521-c6c7-6035-e00b",
+                    "hidden": false,
+                    "typeId": "7e03-38c2-7fea-e955",
+                    "typeName": "Psychic Abilities",
+                    "characteristics": [
+                      {
+                        "name": "Descriptions",
+                        "$text": "In your Shooting phase, if this unit is not battle-shocked, you can make a psychic roll for this unit by rolling one D6. If you do:\n\n\n- On a 1, this unit is battle-shocked.\n- Select one enemy unit within 12” of this model. That unit makes a battle-shock roll with -1 to that battle-shock roll.",
+                        "typeId": "1917-301f-5d49-2f76"
+                      }
+                    ]
                   }
                 ]
               },
               {
                 "name": "[Psychic Abilities] - Force Dome (Psychic Level 1)",
-                "id": "e493-6d22-ef45-196c",
+                "id": "16ee-1b26-c2fc-cbce",
                 "hidden": false,
-                "typeId": "9cc3-6d83-4dd3-9b64",
-                "typeName": "Abilities",
-                "characteristics": [
+                "import": true,
+                "type": "upgrade",
+                "constraints": [{"id": "31d8-f9fa-d4fd-d7fa", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                "profiles": [
                   {
-                    "name": "Description",
-                    "$text": "In your Movement phase, if this unit is not battle-shocked, you can make a psychic roll for this unit by rolling one D6. If you do: \n▪ On a 1, this unit is battle-shocked. \n▪ This unit has 4+ InSv until the start of your next turn.",
-                    "typeId": "9b8f-694b-e5e-b573"
-                  }
-                ]
-              },
-              {
-                "name": "[Psychic Abilities] - Shrouding (Psychic Level 1)",
-                "id": "9895-d627-1eaa-a2c9",
-                "hidden": false,
-                "typeId": "9cc3-6d83-4dd3-9b64",
-                "typeName": "Abilities",
-                "characteristics": [
-                  {
-                    "name": "Description",
-                    "$text": "When an enemy unit targets this unit, if this unit is not battle-shocked, you can make a psychic roll for this unit by rolling one D6. If you do: \n▪ On a 1, this unit is battle-shocked. \n▪ Attacks that target this unit have -1 to hit rolls until the end of the phase.",
-                    "typeId": "9b8f-694b-e5e-b573"
-                  }
-                ]
-              },
-              {
-                "name": "[Psychic Abilities] - Soul Sight (Psychic Level 1)",
-                "id": "56b3-409a-6301-ff39",
-                "hidden": false,
-                "typeId": "9cc3-6d83-4dd3-9b64",
-                "typeName": "Abilities",
-                "characteristics": [
-                  {
-                    "name": "Description",
-                    "$text": "In your Shooting phase, if this unit is not battle-shocked, you can make a psychic roll for this unit by rolling one D6. If you do: \n▪ On a 1, this unit is battle-shocked. \n▪ Select one visible enemy unit. Ranged attacks that target that enemy unit have [IGNORES COVER].",
-                    "typeId": "9b8f-694b-e5e-b573"
+                    "name": "[Psychic Abilities] - Force Dome (Psychic Level 1)",
+                    "id": "e493-6d22-ef45-196c",
+                    "hidden": false,
+                    "typeId": "9cc3-6d83-4dd3-9b64",
+                    "typeName": "Abilities",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "In your Movement phase, if this unit is not battle-shocked, you can make a psychic roll for this unit by rolling one D6. If you do: \n▪ On a 1, this unit is battle-shocked. \n▪ This unit has 4+ InSv until the start of your next turn.",
+                        "typeId": "9b8f-694b-e5e-b573"
+                      }
+                    ]
                   }
                 ]
               },
               {
                 "name": "[Psychic Abilities] - Might of Heroes (Psychic Level 1)",
-                "id": "8c51-8461-be43-0a44",
+                "id": "fa9b-b6ca-5bb7-9639",
                 "hidden": false,
-                "typeId": "9cc3-6d83-4dd3-9b64",
-                "typeName": "Abilities",
-                "characteristics": [
+                "import": true,
+                "type": "upgrade",
+                "constraints": [{"id": "8abe-36c2-3d0c-ff30", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                "profiles": [
                   {
-                    "name": "Description",
-                    "$text": "In the Fight phase, if this unit is not battle-shocked, you can make a psychic roll for this unit by rolling one D6. If you do: \n▪ On a 1, this unit is battle-shocked. \n▪ This unit's melee attacks have +2 S.",
-                    "typeId": "9b8f-694b-e5e-b573"
+                    "name": "[Psychic Abilities] - Might of Heroes (Psychic Level 1)",
+                    "id": "8c51-8461-be43-0a44",
+                    "hidden": false,
+                    "typeId": "9cc3-6d83-4dd3-9b64",
+                    "typeName": "Abilities",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "In the Fight phase, if this unit is not battle-shocked, you can make a psychic roll for this unit by rolling one D6. If you do: \n▪ On a 1, this unit is battle-shocked. \n▪ This unit's melee attacks have +2 S.",
+                        "typeId": "9b8f-694b-e5e-b573"
+                      }
+                    ]
                   }
                 ]
               },
               {
-                "name": "[Psychic Abilities] - Thunderous Force (Psychic Level 1)",
-                "id": "d633-e6fe-ceea-0f15",
+                "name": "[Psychic Abilities] - Shrouding (Psychic Level 1)",
+                "id": "0a07-2b16-2c99-3613",
                 "hidden": false,
-                "typeId": "9cc3-6d83-4dd3-9b64",
-                "typeName": "Abilities",
-                "characteristics": [
+                "import": true,
+                "type": "upgrade",
+                "constraints": [{"id": "57a0-629d-1867-50d5", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                "profiles": [
                   {
-                    "name": "Description",
-                    "$text": "In your Shooting phase, if this unit is not battle-shocked, you can make a psychic roll for this unit by rolling one D6. If you do: \n▪ On a 1, this unit is battle-shocked. \n▪ This unit's ranged attacks have +6\" R.",
-                    "typeId": "9b8f-694b-e5e-b573"
+                    "name": "[Psychic Abilities] - Shrouding (Psychic Level 1)",
+                    "id": "9895-d627-1eaa-a2c9",
+                    "hidden": false,
+                    "typeId": "9cc3-6d83-4dd3-9b64",
+                    "typeName": "Abilities",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "When an enemy unit targets this unit, if this unit is not battle-shocked, you can make a psychic roll for this unit by rolling one D6. If you do: \n▪ On a 1, this unit is battle-shocked. \n▪ Attacks that target this unit have -1 to hit rolls until the end of the phase.",
+                        "typeId": "9b8f-694b-e5e-b573"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "[Psychic Abilities] - Soul Sight (Psychic Level 1)",
+                "id": "a639-13a0-5434-8860",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [{"id": "4faf-7d8b-8868-d854", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                "profiles": [
+                  {
+                    "name": "[Psychic Abilities] - Soul Sight (Psychic Level 1)",
+                    "id": "56b3-409a-6301-ff39",
+                    "hidden": false,
+                    "typeId": "9cc3-6d83-4dd3-9b64",
+                    "typeName": "Abilities",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "In your Shooting phase, if this unit is not battle-shocked, you can make a psychic roll for this unit by rolling one D6. If you do: \n▪ On a 1, this unit is battle-shocked. \n▪ Select one visible enemy unit. Ranged attacks that target that enemy unit have [IGNORES COVER].",
+                        "typeId": "9b8f-694b-e5e-b573"
+                      }
+                    ]
                   }
                 ]
               },
               {
                 "name": "[Psychic Abilities] - The Quickening (psychic level 1)",
-                "id": "e133-fc6f-2b66-3b00",
+                "id": "b33e-e19e-0de6-0255",
                 "hidden": false,
-                "typeId": "7e03-38c2-7fea-e955",
-                "typeName": "Psychic Abilities",
-                "characteristics": [
+                "import": true,
+                "type": "upgrade",
+                "constraints": [{"id": "4df4-d77f-1e84-e378", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                "profiles": [
                   {
-                    "name": "Descriptions",
-                    "$text": "In your Command phase, if this unit is not battle-shocked, you can make a psychic roll for this unit by rolling one D6. If you do:\n\n\n- On a 1, this unit is battle-shocked.\n- The assault doctrine is active for this unit in addition to any other combat doctrine until the start of your next Command phase.",
-                    "typeId": "1917-301f-5d49-2f76"
+                    "name": "[Psychic Abilities] - The Quickening (psychic level 1)",
+                    "id": "e133-fc6f-2b66-3b00",
+                    "hidden": false,
+                    "typeId": "7e03-38c2-7fea-e955",
+                    "typeName": "Psychic Abilities",
+                    "characteristics": [
+                      {
+                        "name": "Descriptions",
+                        "$text": "In your Command phase, if this unit is not battle-shocked, you can make a psychic roll for this unit by rolling one D6. If you do:\n\n\n- On a 1, this unit is battle-shocked.\n- The assault doctrine is active for this unit in addition to any other combat doctrine until the start of your next Command phase.",
+                        "typeId": "1917-301f-5d49-2f76"
+                      }
+                    ]
                   }
                 ]
               },
               {
-                "name": "[Psychic Abilities] - Engulfing Fear (psychic level 1)",
-                "id": "7521-c6c7-6035-e00b",
+                "name": "[Psychic Abilities] - Thunderous Force (Psychic Level 1)",
+                "id": "1133-b513-8f21-11de",
                 "hidden": false,
-                "typeId": "7e03-38c2-7fea-e955",
-                "typeName": "Psychic Abilities",
-                "characteristics": [
+                "import": true,
+                "type": "upgrade",
+                "constraints": [{"id": "b4fe-9525-e40f-1ced", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                "profiles": [
                   {
-                    "name": "Descriptions",
-                    "$text": "In your Shooting phase, if this unit is not battle-shocked, you can make a psychic roll for this unit by rolling one D6. If you do:\n\n\n- On a 1, this unit is battle-shocked.\n- Select one enemy unit within 12” of this model. That unit makes a battle-shock roll with -1 to that battle-shock roll.",
-                    "typeId": "1917-301f-5d49-2f76"
+                    "name": "[Psychic Abilities] - Thunderous Force (Psychic Level 1)",
+                    "id": "d633-e6fe-ceea-0f15",
+                    "hidden": false,
+                    "typeId": "9cc3-6d83-4dd3-9b64",
+                    "typeName": "Abilities",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "In your Shooting phase, if this unit is not battle-shocked, you can make a psychic roll for this unit by rolling one D6. If you do: \n▪ On a 1, this unit is battle-shocked. \n▪ This unit's ranged attacks have +6\" R.",
+                        "typeId": "9b8f-694b-e5e-b573"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "[Psychic Abilities] - Veil of Time (Psychic Level 1)",
+                "id": "be61-6ad7-dd05-9d43",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [{"id": "4d79-991f-3903-9152", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                "profiles": [
+                  {
+                    "name": "[Psychic Abilities] - Veil of Time (Psychic Level 1)",
+                    "id": "d2d1-468f-a200-4efe",
+                    "hidden": false,
+                    "typeId": "9cc3-6d83-4dd3-9b64",
+                    "typeName": "Abilities",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "When this unit is selected to make an advance move, if this unit is not battle-shocked, you can make a psychic roll for this unit by rolling one D6. If you do: \n▪ On a 1, this unit is battle-shocked. \n▪ This unit can change that advance roll to a 6.",
+                        "typeId": "9b8f-694b-e5e-b573"
+                      }
+                    ]
                   }
                 ]
               }
@@ -112862,6 +112854,440 @@
                           {"name": "Keywords", "$text": "Psychic", "typeId": "893f-9000-ccf7-648e"}
                         ]
                       }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Land Raider Tempest",
+        "id": "707e-5dc1-d8ad-5ace",
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [
+          {"name": "Vehicle", "id": "0a2a-0ccd-fab5-f871", "primary": true, "targetId": "dbd4-63-af05-998"},
+          {"name": "Smoke", "id": "280c-f56c-a91e-d949", "primary": false, "targetId": "6df-937-16bc-8c1a"},
+          {"name": "Imperium", "id": "d460-41c3-e56a-8f81", "primary": false, "targetId": "aff3-d6a3-2a95-9dc"},
+          {"name": "Faction: Adeptus Astartes", "id": "5d8e-4174-3b24-5045", "primary": false, "targetId": "6e7-40c-58d9-e402"},
+          {"name": "Land Raider", "id": "0593-867b-cfa8-80bb", "primary": false, "targetId": "8c5e-74f4-e3cf-56ed"},
+          {"name": "Transport", "id": "18be-a92b-735c-4754", "primary": false, "targetId": "75e8-57c4-40e3-1817"},
+          {"name": "Frame", "id": "fb64-b54a-f9fd-ba77", "primary": false, "targetId": "b927-8eeb-7cc3-8dec"},
+          {"name": "Land Raider Tempest", "id": "c68c-46ee-b187-8aa8", "hidden": false, "primary": false, "targetId": "d705-4a81-0bed-305e"}
+        ],
+        "constraints": [
+          {"id": "7771-0694-fa02-2976", "field": "75bb-ded1-c86d-bdf0", "includeChildSelections": false, "scope": "self", "shared": true, "type": "max", "value": 3},
+          {"id": "ab3e-d4b7-07c9-e573", "field": "716d-91b7-d55a-1022", "includeChildSelections": true, "scope": "self", "shared": true, "type": "max", "value": 0},
+          {"id": "4a47-234a-67f3-6319", "field": "716d-91b7-d55a-1022", "includeChildSelections": true, "scope": "self", "shared": true, "type": "min", "value": 0},
+          {"id": "3d2b-a392-8d0f-3dba", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 3}
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 180},
+          {"name": "Crusade Points", "typeId": "b03b-c239-15a5-da55", "value": 0},
+          {"name": "Crusade: Battle Honours", "typeId": "75bb-ded1-c86d-bdf0", "value": 0},
+          {"name": "Crusade: Experience", "typeId": "a623-fe74-1d33-cddf", "value": 0},
+          {"name": "Crusade: Weapon Modifications", "typeId": "716d-91b7-d55a-1022", "value": 0},
+          {"name": "Blackstone Fragments", "typeId": "ac6b-ced3-9b5e-9a6e", "value": 0},
+          {"name": "Detachment Points", "typeId": "82ae-1066-5107-6ae0", "value": 0},
+          {"name": "Enhancements", "typeId": "f759-1bc4-cb3a-f0d2", "value": 0},
+          {"name": "Command Points", "typeId": "621c-5e90-c575-8242", "value": 0},
+          {"name": "Honour Points", "typeId": "8135-9a2f-6627-09e2", "value": 0},
+          {"name": "Relic Fragments", "typeId": "0ece-6541-4662-ece2", "value": 0}
+        ],
+        "entryLinks": [
+          {
+            "name": "Crusade",
+            "id": "612a-b2cd-50b9-ac61",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 1,
+            "targetId": "9a99-f13c-a667-e698",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Enhancements",
+            "id": "03dd-15d2-5bc2-1606",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 3,
+            "targetId": "9e5d-de4c-c5d1-1d3e",
+            "type": "selectionEntryGroup"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Deadly Demise",
+            "id": "4503-2227-c8fd-9092",
+            "hidden": false,
+            "targetId": "b68a-5ded-65ac-98c",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "append", "value": "D6"}]
+          },
+          {"name": "Combat Doctrines", "id": "3af6-05fe-8db4-4b62", "hidden": false, "targetId": "3b76-4053-ece9-6e7d", "type": "rule"},
+          {"name": "Templar Vows", "id": "a65a-be60-b6e0-1b94", "hidden": false, "targetId": "f26c-4b28-aaea-40cf", "type": "rule"},
+          {"name": "Assault Ramp", "id": "5b9c-8672-c2b8-1e44", "hidden": false, "targetId": "935c-e7a8-6740-6ed8", "type": "profile"},
+          {
+            "name": "Damaged",
+            "id": "7b6a-ff6a-8384-236c",
+            "hidden": false,
+            "targetId": "c68c-a968-354f-bb99",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "append", "value": "6"}]
+          }
+        ],
+        "modifierGroups": [
+          {
+            "comment": "Crusade modifiers",
+            "type": "and",
+            "modifiers": [
+              {
+                "field": "7771-0694-fa02-2976",
+                "type": "set",
+                "value": 6,
+                "conditionGroups": [
+                  {
+                    "type": "or",
+                    "conditions": [
+                      {"childId": "1511-18fe-f51e-7b9d", "field": "selections", "includeChildSelections": true, "scope": "self", "shared": true, "type": "atLeast", "value": 1},
+                      {
+                        "childId": "9cfd-1c32-585f-7d5c",
+                        "childName": "Character",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "self",
+                        "shared": true,
+                        "type": "instanceOf",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "field": "ab3e-d4b7-07c9-e573",
+                "type": "increment",
+                "value": 2,
+                "repeats": [
+                  {
+                    "childId": "d1a5-4297-168b-11cd",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "repeats": 1,
+                    "roundUp": false,
+                    "scope": "self",
+                    "shared": true,
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "4a47-234a-67f3-6319",
+                "type": "increment",
+                "value": 2,
+                "repeats": [
+                  {
+                    "childId": "d1a5-4297-168b-11cd",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "repeats": 1,
+                    "roundUp": false,
+                    "scope": "self",
+                    "shared": true,
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "name",
+                "type": "append",
+                "value": "(Battle-ready)",
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {"childId": "2dbf-4d49-5d74-85c9", "field": "selections", "includeChildSelections": true, "scope": "self", "shared": true, "type": "atMost", "value": 5},
+                      {
+                        "childId": "cac3-71d1-ea4b-795d",
+                        "field": "forces",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "roster",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "field": "name",
+                "type": "append",
+                "value": "(Blooded)",
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {"childId": "2dbf-4d49-5d74-85c9", "field": "selections", "includeChildSelections": true, "scope": "self", "shared": true, "type": "greaterThan", "value": 5},
+                      {"childId": "2dbf-4d49-5d74-85c9", "field": "selections", "includeChildSelections": true, "scope": "self", "shared": true, "type": "atMost", "value": 15}
+                    ]
+                  }
+                ]
+              },
+              {
+                "field": "name",
+                "type": "append",
+                "value": "(Battle-hardened)",
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {"childId": "2dbf-4d49-5d74-85c9", "field": "selections", "includeChildSelections": true, "scope": "self", "shared": true, "type": "greaterThan", "value": 15},
+                      {"childId": "2dbf-4d49-5d74-85c9", "field": "selections", "includeChildSelections": true, "scope": "self", "shared": true, "type": "atMost", "value": 30}
+                    ]
+                  }
+                ]
+              },
+              {
+                "field": "name",
+                "type": "append",
+                "value": "(Heroic)",
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {"childId": "2dbf-4d49-5d74-85c9", "field": "selections", "includeChildSelections": true, "scope": "self", "shared": true, "type": "greaterThan", "value": 30},
+                      {"childId": "2dbf-4d49-5d74-85c9", "field": "selections", "includeChildSelections": true, "scope": "self", "shared": true, "type": "atMost", "value": 50}
+                    ]
+                  }
+                ]
+              },
+              {
+                "field": "name",
+                "type": "append",
+                "value": "(Legendary)",
+                "conditions": [{"childId": "2dbf-4d49-5d74-85c9", "field": "selections", "includeChildSelections": true, "scope": "self", "shared": true, "type": "greaterThan", "value": 50}]
+              }
+            ]
+          }
+        ],
+        "modifiers": [
+          {
+            "field": "category",
+            "type": "add",
+            "value": "e21f-8e64-c5d-7df0",
+            "conditions": [
+              {
+                "childId": "470a-6daa-9014-12df",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "scope": "primary-catalogue",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "field": "category",
+            "type": "add",
+            "value": "abee-1a02-8002-a13f",
+            "conditions": [
+              {
+                "id": "beaf-12e1-8c31-9a07",
+                "childId": "187b-6ef3-33dd-fe0d",
+                "childName": "Armoured Speartip",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "field": "51b2-306e-1021-d207",
+            "type": "increment",
+            "value": 20,
+            "conditionGroups": [
+              {
+                "type": "and",
+                "localConditionGroups": [
+                  {
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "repeats": 1,
+                    "scope": "parent",
+                    "type": "atLeast",
+                    "value": 1,
+                    "conditions": [
+                      {"childId": "any", "field": "selections", "scope": "self", "shared": true, "type": "before", "value": 1},
+                      {"childId": "707e-5dc1-d8ad-5ace", "childName": "Land Raider", "field": "selections", "scope": "self", "shared": true, "type": "instanceOf", "value": 1}
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "field": "3d2b-a392-8d0f-3dba",
+            "type": "set",
+            "value": 2,
+            "conditions": [
+              {
+                "childId": "d62d-db22-4893-4bc0",
+                "childName": "1. Incursion (1000 Point limit)",
+                "field": "selections",
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Land Raider Tempest",
+            "id": "e4d0-c19e-f079-33dd",
+            "hidden": false,
+            "typeId": "c547-1836-d8a-ff4f",
+            "typeName": "Unit",
+            "characteristics": [
+              {"name": "M", "$text": "12\"", "typeId": "e703-ecb6-5ce7-aec1"},
+              {"name": "T", "$text": "10", "typeId": "d29d-cf75-fc2d-34a4"},
+              {"name": "Sv", "$text": "2+", "typeId": "450-a17e-9d5e-29da"},
+              {"name": "W", "$text": "16", "typeId": "750a-a2ec-90d3-21fe"},
+              {"name": "LD", "$text": "6+", "typeId": "58d2-b879-49c7-43bc"},
+              {"name": "OC", "$text": "5", "typeId": "bef7-942a-1a23-59f8"},
+              {"name": "InSv", "$text": "", "typeId": "55a7-5b54-c60d-11dc"},
+              {"name": "Base", "$text": "Hull", "typeId": "nr-base-size"}
+            ]
+          },
+          {
+            "name": "Transport",
+            "id": "2147-d6e1-8efd-dffd",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "This model has a transport capacity of 18 Adeptus Astartes Infantry models. It cannot transport Jump Pack models. Each Gravis/Terminator model takes up the space of 2 models",
+                "typeId": "9b8f-694b-e5e-b573"
+              }
+            ]
+          },
+          {
+            "name": "Power of the Machine Spirit",
+            "id": "e329-6b2c-5410-7871",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [{"name": "Description", "$text": "This unit's ranged attacks can:\n▪ Re-roll one hit roll.\n▪ Re-roll one wound roll.", "typeId": "9b8f-694b-e5e-b573"}]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Wargear",
+            "id": "69fb-31b0-cae5-d67f",
+            "hidden": false,
+            "sortIndex": 2,
+            "entryLinks": [
+              {
+                "name": "Armoured Tracks",
+                "id": "bdd7-8097-b6bb-bbbb",
+                "hidden": false,
+                "import": true,
+                "targetId": "eaa5-a41b-9e59-a5f3",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "51ca-30a7-620a-c840", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "2cbf-3524-9107-988f", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "entryLinks": [
+                  {"name": "Weapon Modifications", "id": "49de-cc92-c6c7-ccb9", "hidden": false, "import": true, "targetId": "f9da-852a-d7f0-92e9", "type": "selectionEntryGroup"}
+                ]
+              },
+              {
+                "name": "Hunter-killer missile",
+                "id": "5088-686c-8256-95fa",
+                "hidden": false,
+                "import": true,
+                "targetId": "2523-36d-531f-9910",
+                "type": "selectionEntry",
+                "constraints": [{"id": "95ac-fbce-e5e7-fc7b", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                "entryLinks": [
+                  {"name": "Weapon Modifications", "id": "d383-17d6-9f2c-ad8a", "hidden": false, "import": true, "targetId": "f9da-852a-d7f0-92e9", "type": "selectionEntryGroup"}
+                ]
+              },
+              {
+                "name": "Multi-melta",
+                "id": "add2-6aff-1aba-d0d5",
+                "hidden": false,
+                "import": true,
+                "targetId": "da38-da4f-dc42-7758",
+                "type": "selectionEntry",
+                "constraints": [{"id": "6742-014b-98e3-e5bf", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                "entryLinks": [
+                  {"name": "Weapon Modifications", "id": "8dd1-c8f7-3c79-07b1", "hidden": false, "import": true, "targetId": "f9da-852a-d7f0-92e9", "type": "selectionEntryGroup"}
+                ]
+              },
+              {
+                "name": "Storm bolter",
+                "id": "1a62-3d29-fb9f-8869",
+                "hidden": false,
+                "import": true,
+                "targetId": "eb61-5cd0-5242-74cc",
+                "type": "selectionEntry",
+                "constraints": [{"id": "de86-f6bf-d714-00f2", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                "entryLinks": [
+                  {"name": "Weapon Modifications", "id": "a873-db09-90a0-f86b", "hidden": false, "import": true, "targetId": "f9da-852a-d7f0-92e9", "type": "selectionEntryGroup"}
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Tempest Bolt Calivers",
+                "id": "bbf2-2fc4-62ee-7cf7",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "categoryLinks": [{"name": "Bolt Weapon", "id": "14b1-f5dc-a0c2-b01c", "hidden": false, "primary": false, "targetId": "1c08-e7e4-55b9-8e30"}],
+                "constraints": [
+                  {"id": "5275-ffdd-de30-faf6", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 2},
+                  {"id": "3e1c-ee68-f090-4931", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}
+                ],
+                "entryLinks": [
+                  {"name": "Weapon Modifications", "id": "c253-06b7-ae1a-bb3c", "hidden": false, "import": true, "targetId": "f9da-852a-d7f0-92e9", "type": "selectionEntryGroup"}
+                ],
+                "infoLinks": [
+                  {"name": "Sustained Hits", "id": "6223-1acb-d0b1-3411", "hidden": false, "targetId": "1897-c22c-9597-12b1", "type": "rule"},
+                  {"name": "Rapid Fire", "id": "8d3a-f195-44e9-b649", "hidden": false, "targetId": "c5c8-8b58-b8b6-7786", "type": "rule"}
+                ],
+                "profiles": [
+                  {
+                    "name": "Tempest Bolt Calivers",
+                    "id": "4c6b-2ad4-3501-da94",
+                    "hidden": false,
+                    "typeId": "f77d-b953-8fa4-b762",
+                    "typeName": "Ranged Weapons",
+                    "characteristics": [
+                      {"name": "Range", "$text": "24\"", "typeId": "9896-9419-16a1-92fc"},
+                      {"name": "A", "$text": "5", "typeId": "3bb-c35f-f54-fb08"},
+                      {"name": "BS", "$text": "3+", "typeId": "94d-8a98-cf90-183e"},
+                      {"name": "S", "$text": "5", "typeId": "2229-f494-25db-c5d3"},
+                      {"name": "AP", "$text": "-1", "typeId": "9ead-8a10-520-de15"},
+                      {"name": "D", "$text": "2", "typeId": "a354-c1c8-a745-f9e3"},
+                      {"name": "Keywords", "$text": "Rapid Fire 3, Sustained Hits 1", "typeId": "7f1b-8591-2fcf-d01c"}
                     ]
                   }
                 ]
