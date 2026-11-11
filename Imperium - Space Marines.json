@@ -95086,6 +95086,29 @@
             "characteristics": [{"name": "Description", "$text": "Neither advancing nor shooting prevent this unit from preforming an action this turn.", "typeId": "9b8f-694b-e5e-b573"}]
           }
         ],
+        "selectionEntries": [
+          {
+            "name": "Vexilia",
+            "id": "1d68-0b77-705e-d18c",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [{"id": "6aaa-ed37-99b9-6e1c", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "costs": [
+              {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 10},
+              {"name": "Crusade Points", "typeId": "b03b-c239-15a5-da55", "value": 0},
+              {"name": "Crusade: Battle Honours", "typeId": "75bb-ded1-c86d-bdf0", "value": 0},
+              {"name": "Crusade: Experience", "typeId": "a623-fe74-1d33-cddf", "value": 0},
+              {"name": "Crusade: Weapon Modifications", "typeId": "716d-91b7-d55a-1022", "value": 0},
+              {"name": "Blackstone Fragments", "typeId": "ac6b-ced3-9b5e-9a6e", "value": 0},
+              {"name": "Detachment Points", "typeId": "82ae-1066-5107-6ae0", "value": 0},
+              {"name": "Enhancements", "typeId": "f759-1bc4-cb3a-f0d2", "value": 0},
+              {"name": "Honour Points", "typeId": "8135-9a2f-6627-09e2", "value": 0},
+              {"name": "Relic Fragments", "typeId": "0ece-6541-4662-ece2", "value": 0}
+            ],
+            "infoLinks": [{"name": "Raise the Banner", "id": "3b6d-a305-7dd5-bc27", "hidden": false, "targetId": "4873-996f-a8a2-bcb1", "type": "profile"}]
+          }
+        ],
         "selectionEntryGroups": [
           {
             "name": "Tactical Marines",
@@ -95968,6 +95991,29 @@
             ]
           }
         ],
+        "selectionEntries": [
+          {
+            "name": "Vexilia",
+            "id": "683f-d99f-5a38-96b3",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [{"id": "c1f7-a8fc-3b76-8433", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "costs": [
+              {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 10},
+              {"name": "Crusade Points", "typeId": "b03b-c239-15a5-da55", "value": 0},
+              {"name": "Crusade: Battle Honours", "typeId": "75bb-ded1-c86d-bdf0", "value": 0},
+              {"name": "Crusade: Experience", "typeId": "a623-fe74-1d33-cddf", "value": 0},
+              {"name": "Crusade: Weapon Modifications", "typeId": "716d-91b7-d55a-1022", "value": 0},
+              {"name": "Blackstone Fragments", "typeId": "ac6b-ced3-9b5e-9a6e", "value": 0},
+              {"name": "Detachment Points", "typeId": "82ae-1066-5107-6ae0", "value": 0},
+              {"name": "Enhancements", "typeId": "f759-1bc4-cb3a-f0d2", "value": 0},
+              {"name": "Honour Points", "typeId": "8135-9a2f-6627-09e2", "value": 0},
+              {"name": "Relic Fragments", "typeId": "0ece-6541-4662-ece2", "value": 0}
+            ],
+            "infoLinks": [{"name": "Raise the Banner", "id": "86b1-7a37-7ce3-337e", "hidden": false, "targetId": "4873-996f-a8a2-bcb1", "type": "profile"}]
+          }
+        ],
         "selectionEntryGroups": [
           {
             "name": "Seeker Marines",
@@ -96007,6 +96053,7 @@
                     "import": true,
                     "targetId": "c5b3-535d-4e49-4c05",
                     "type": "selectionEntry",
+                    "categoryLinks": [{"name": "Bolt Weapon", "id": "01d1-3ef4-feda-db6a", "hidden": false, "primary": false, "targetId": "1c08-e7e4-55b9-8e30"}],
                     "constraints": [
                       {"id": "91ea-12bc-83af-5d57", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
                       {"id": "1d18-aaf7-7393-e9c3", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
@@ -96071,6 +96118,7 @@
                     "import": true,
                     "targetId": "c5b3-535d-4e49-4c05",
                     "type": "selectionEntry",
+                    "categoryLinks": [{"name": "Bolt Weapon", "id": "0601-c9b4-3a5e-8e6b", "hidden": false, "primary": false, "targetId": "1c08-e7e4-55b9-8e30"}],
                     "constraints": [
                       {"id": "124a-0397-e851-d7c7", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1},
                       {"id": "7638-dfc6-35f2-a0d5", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}
@@ -96397,6 +96445,7 @@
                         "hidden": false,
                         "import": true,
                         "type": "upgrade",
+                        "categoryLinks": [{"name": "Bolt Weapon", "id": "84ca-4d44-f8fc-698d", "hidden": false, "primary": false, "targetId": "1c08-e7e4-55b9-8e30"}],
                         "infoLinks": [
                           {"name": "Precision", "id": "f622-7180-8619-9961", "hidden": false, "targetId": "9143-31ae-e0a6-6007", "type": "rule"},
                           {"name": "Heavy", "id": "37d5-e87d-e797-ff25", "hidden": false, "targetId": "1202-10a8-78e9-4c67", "type": "rule"}
@@ -97505,8 +97554,9 @@
           }
         ],
         "infoLinks": [
-          {"name": "Combat Doctrines", "id": "61e9-9532-987a-61ef", "hidden": false, "targetId": "3b76-4053-ece9-6e7d", "type": "rule"},
-          {"name": "Templar Vows", "id": "e92e-ed7a-8016-296c", "hidden": false, "targetId": "f26c-4b28-aaea-40cf", "type": "rule"}
+          {"name": "Transhuman Strategist", "id": "61e9-9532-987a-61ef", "hidden": false, "targetId": "c6cc-c38c-dfe6-dbb8", "type": "rule"},
+          {"name": "Templar Vows", "id": "e92e-ed7a-8016-296c", "hidden": false, "targetId": "f26c-4b28-aaea-40cf", "type": "rule"},
+          {"name": "Combat Doctrines", "id": "24b9-9ee9-5243-87aa", "hidden": false, "targetId": "3b76-4053-ece9-6e7d", "type": "rule"}
         ],
         "modifierGroups": [
           {
@@ -97740,6 +97790,7 @@
                 "hidden": false,
                 "import": true,
                 "type": "upgrade",
+                "categoryLinks": [{"name": "Bolt Weapon", "id": "cb9b-d08d-4624-0321", "hidden": false, "primary": false, "targetId": "1c08-e7e4-55b9-8e30"}],
                 "constraints": [
                   {"id": "6172-091d-ded7-5f3a", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
                   {"id": "9bc1-5132-86de-7cb2", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1}
@@ -100946,9 +100997,10 @@
           {"name": "Enhancements", "id": "15ac-59bd-9291-5b63", "hidden": false, "import": true, "targetId": "9e5d-de4c-c5d1-1d3e", "type": "selectionEntryGroup"}
         ],
         "infoLinks": [
-          {"name": "Combat Doctrines", "id": "cf5a-cb6d-e300-8ec7", "hidden": false, "targetId": "3b76-4053-ece9-6e7d", "type": "rule"},
+          {"name": "Transhuman Strategist", "id": "cf5a-cb6d-e300-8ec7", "hidden": false, "targetId": "c6cc-c38c-dfe6-dbb8", "type": "rule"},
           {"name": "Templar Vows", "id": "6221-26b6-0720-8ba8", "hidden": false, "targetId": "f26c-4b28-aaea-40cf", "type": "rule"},
-          {"name": "Leader", "id": "4403-4dc3-c521-5a4b", "hidden": false, "targetId": "b4dd-3e1f-41cb-218f", "type": "rule"}
+          {"name": "Leader", "id": "4403-4dc3-c521-5a4b", "hidden": false, "targetId": "b4dd-3e1f-41cb-218f", "type": "rule"},
+          {"name": "Combat Doctrines", "id": "231b-bee3-0526-2af2", "hidden": false, "targetId": "3b76-4053-ece9-6e7d", "type": "rule"}
         ],
         "modifierGroups": [
           {
@@ -124988,23 +125040,6 @@
                     "skipIfPresent": "Sustained Hits 1: non-Monster/Vehicle",
                     "type": "increment",
                     "value": 1
-                  },
-                  {
-                    "field": "hidden",
-                    "type": "set",
-                    "value": true,
-                    "conditions": [
-                      {
-                        "childId": "cf47-a0d7-7207-29dc",
-                        "childName": "Infantry",
-                        "field": "selections",
-                        "includeChildSelections": false,
-                        "scope": "ancestor",
-                        "shared": true,
-                        "type": "notInstanceOf",
-                        "value": 1
-                      }
-                    ]
                   }
                 ],
                 "profiles": [

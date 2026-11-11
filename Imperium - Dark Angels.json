@@ -9075,32 +9075,6 @@
         "hidden": false,
         "import": true,
         "type": "model",
-        "associations": [
-          {
-            "name": "Leading",
-            "id": "8059-20bc-fe16-e10c",
-            "action": "group",
-            "childId": "unit",
-            "childName": "unit",
-            "includeChildSelections": true,
-            "label": "Led by",
-            "max": 1,
-            "min": 0,
-            "scope": "force",
-            "conditionGroups": [
-              {
-                "type": "or",
-                "conditions": [
-                  {"childId": "ad98-e844-f9ec-7551", "childName": "Eliminator Squad", "field": "selections", "scope": "self", "shared": true, "type": "instanceOf", "value": 1},
-                  {"childId": "ddd0-955d-9c0-7110", "childName": "Incursor Squad", "field": "selections", "scope": "self", "shared": true, "type": "instanceOf", "value": 1},
-                  {"childId": "87a5-bbbf-3c87-49a4", "childName": "Infiltrator Squad", "field": "selections", "scope": "self", "shared": true, "type": "instanceOf", "value": 1},
-                  {"childId": "e38d-551c-a280-3c38", "childName": "Reiver Squad", "field": "selections", "scope": "self", "shared": true, "type": "instanceOf", "value": 1},
-                  {"childId": "c54b-f947-7ccb-745", "childName": "Scout Squad", "field": "selections", "scope": "self", "shared": true, "type": "instanceOf", "value": 1}
-                ]
-              }
-            ]
-          }
-        ],
         "categoryLinks": [
           {"name": "Character", "id": "edc3-bbbe-5425-b8f7", "hidden": false, "primary": true, "targetId": "9cfd-1c32-585f-7d5c"},
           {"name": "Infantry", "id": "e339-9e9b-deb5-5e4e", "hidden": false, "primary": false, "targetId": "cf47-a0d7-7207-29dc"},
@@ -9114,18 +9088,7 @@
           {"id": "5943-234b-a608-1c9b", "field": "75bb-ded1-c86d-bdf0", "includeChildSelections": false, "scope": "self", "shared": true, "type": "max", "value": 6},
           {"id": "1715-354c-c37d-f005", "field": "716d-91b7-d55a-1022", "includeChildSelections": true, "scope": "self", "shared": true, "type": "max", "value": 0},
           {"id": "ccf7-f706-361a-7ce0", "field": "716d-91b7-d55a-1022", "includeChildSelections": true, "scope": "self", "shared": true, "type": "min", "value": 0},
-          {"id": "5e3b-fdae-e794-da8c", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 3},
-          {"id": "4843-5b9f-b219-8fb5", "field": "associations", "includeChildSelections": false, "scope": "self", "shared": true, "type": "max", "value": 1},
-          {
-            "id": "5560-2f65-b2fb-6a27",
-            "field": "associations",
-            "includeChildSelections": false,
-            "message": "{this} must be attached to a Bodyguard unit.",
-            "scope": "self",
-            "shared": true,
-            "type": "min",
-            "value": 1
-          }
+          {"id": "5e3b-fdae-e794-da8c", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 3}
         ],
         "costs": [
           {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 120},
@@ -9444,7 +9407,10 @@
                 "hidden": false,
                 "import": true,
                 "type": "upgrade",
-                "categoryLinks": [{"name": "Melee Weapon", "id": "4627-6743-bd36-8178", "hidden": false, "primary": false, "targetId": "ccdd-3987-11ed-90cd"}],
+                "categoryLinks": [
+                  {"name": "Ranged Weapon", "id": "c2cc-83ba-c76f-6002", "hidden": false, "primary": false, "targetId": "eeda-8544-a2f3-3fab"},
+                  {"name": "Plasma", "id": "30e4-7c75-8852-bea1", "hidden": false, "primary": false, "targetId": "cb29-f4bb-ff15-6b11"}
+                ],
                 "constraints": [
                   {"id": "c264-785a-020d-c767", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
                   {"id": "af19-526e-b6f8-f4a4", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
@@ -10159,12 +10125,12 @@
         "hidden": false,
         "import": true,
         "type": "upgrade",
+        "categoryLinks": [{"name": "Plasma", "id": "d052-6914-4238-0368", "hidden": false, "primary": false, "targetId": "cb29-f4bb-ff15-6b11"}],
         "entryLinks": [
           {"name": "Weapon Modifications", "id": "8b0d-ecbd-b781-3091", "hidden": false, "import": true, "targetId": "f9da-852a-d7f0-92e9", "type": "selectionEntryGroup"}
         ],
         "infoLinks": [
           {"name": "Torrent", "id": "8a71-47f3-22f8-7e66", "hidden": false, "targetId": "5edf-d619-23e0-9b56", "type": "rule"},
-          {"name": "Lethal Hits", "id": "6ad9-4c84-9189-deb3", "hidden": false, "targetId": "d1d1-611e-5191-1095", "type": "rule"},
           {"name": "Blast", "id": "3e59-74e2-04f7-f413", "hidden": false, "targetId": "6c1f-1cf7-ff25-c99e", "type": "rule"}
         ],
         "profiles": [
@@ -10181,7 +10147,7 @@
               {"name": "S", "$text": "7", "typeId": "2229-f494-25db-c5d3"},
               {"name": "AP", "$text": "-2", "typeId": "9ead-8a10-520-de15"},
               {"name": "D", "$text": "2", "typeId": "a354-c1c8-a745-f9e3"},
-              {"name": "Keywords", "$text": "Blast 1, Lethal Hits, Torrent", "typeId": "7f1b-8591-2fcf-d01c"}
+              {"name": "Keywords", "$text": "Blast 1, Torrent", "typeId": "7f1b-8591-2fcf-d01c"}
             ]
           }
         ]
@@ -10192,6 +10158,7 @@
         "hidden": false,
         "import": true,
         "type": "upgrade",
+        "categoryLinks": [{"name": "Plasma", "id": "3c9c-b337-1cc4-3c65", "hidden": false, "primary": false, "targetId": "cb29-f4bb-ff15-6b11"}],
         "entryLinks": [
           {"name": "Weapon Modifications", "id": "6b01-7bdd-199d-fb1f", "hidden": false, "import": true, "targetId": "f9da-852a-d7f0-92e9", "type": "selectionEntryGroup"}
         ],
@@ -10209,7 +10176,7 @@
             "typeName": "Ranged Weapons",
             "characteristics": [
               {"name": "Range", "$text": "24\"", "typeId": "9896-9419-16a1-92fc"},
-              {"name": "A", "$text": "3", "typeId": "3bb-c35f-f54-fb08"},
+              {"name": "A", "$text": "2", "typeId": "3bb-c35f-f54-fb08"},
               {"name": "BS", "$text": "3+", "typeId": "94d-8a98-cf90-183e"},
               {"name": "S", "$text": "9", "typeId": "2229-f494-25db-c5d3"},
               {"name": "AP", "$text": "-3", "typeId": "9ead-8a10-520-de15"},
@@ -10225,7 +10192,7 @@
             "typeName": "Ranged Weapons",
             "characteristics": [
               {"name": "Range", "$text": "24\"", "typeId": "9896-9419-16a1-92fc"},
-              {"name": "A", "$text": "3", "typeId": "3bb-c35f-f54-fb08"},
+              {"name": "A", "$text": "2", "typeId": "3bb-c35f-f54-fb08"},
               {"name": "BS", "$text": "3+", "typeId": "94d-8a98-cf90-183e"},
               {"name": "S", "$text": "8", "typeId": "2229-f494-25db-c5d3"},
               {"name": "AP", "$text": "-2", "typeId": "9ead-8a10-520-de15"},
@@ -11038,7 +11005,7 @@
                       {"name": "M", "$text": "5\"", "typeId": "e703-ecb6-5ce7-aec1"},
                       {"name": "T", "$text": "6", "typeId": "d29d-cf75-fc2d-34a4"},
                       {"name": "Sv", "$text": "2+", "typeId": "450-a17e-9d5e-29da"},
-                      {"name": "W", "$text": "4", "typeId": "750a-a2ec-90d3-21fe"},
+                      {"name": "W", "$text": "3", "typeId": "750a-a2ec-90d3-21fe"},
                       {"name": "LD", "$text": "6+", "typeId": "58d2-b879-49c7-43bc"},
                       {"name": "OC", "$text": "1", "typeId": "bef7-942a-1a23-59f8"},
                       {"name": "InSv", "$text": "4+", "typeId": "55a7-5b54-c60d-11dc"},
@@ -11064,6 +11031,7 @@
                         "hidden": false,
                         "import": true,
                         "type": "upgrade",
+                        "categoryLinks": [{"name": "Plasma", "id": "b674-8c3d-5a83-1cfb", "hidden": false, "primary": false, "targetId": "cb29-f4bb-ff15-6b11"}],
                         "constraints": [
                           {"id": "d87c-8aad-6842-28e5", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
                           {"id": "55cd-347b-1b82-e5ff", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1}
@@ -11167,7 +11135,7 @@
                       {"name": "M", "$text": "5\"", "typeId": "e703-ecb6-5ce7-aec1"},
                       {"name": "T", "$text": "6", "typeId": "d29d-cf75-fc2d-34a4"},
                       {"name": "Sv", "$text": "2+", "typeId": "450-a17e-9d5e-29da"},
-                      {"name": "W", "$text": "4", "typeId": "750a-a2ec-90d3-21fe"},
+                      {"name": "W", "$text": "3", "typeId": "750a-a2ec-90d3-21fe"},
                       {"name": "LD", "$text": "6+", "typeId": "58d2-b879-49c7-43bc"},
                       {"name": "OC", "$text": "1", "typeId": "bef7-942a-1a23-59f8"},
                       {"name": "InSv", "$text": "4+", "typeId": "55a7-5b54-c60d-11dc"},
@@ -11200,8 +11168,9 @@
                           {"name": "Weapon Modifications", "id": "498a-ff5d-0358-5a69", "hidden": false, "import": true, "targetId": "f9da-852a-d7f0-92e9", "type": "selectionEntryGroup"}
                         ],
                         "infoLinks": [
-                          {"name": "Devastating Wounds", "id": "5165-cb94-8acb-92d6", "hidden": false, "targetId": "be1e-ac8e-1e2c-3528", "type": "rule"},
-                          {"name": "Sustained Hits", "id": "6bf3-cc20-ca81-8425", "hidden": false, "targetId": "1897-c22c-9597-12b1", "type": "rule"}
+                          {"name": "Cleave", "id": "5165-cb94-8acb-92d6", "hidden": false, "targetId": "bf16-5d16-4725-f912", "type": "rule"},
+                          {"name": "Sustained Hits", "id": "6bf3-cc20-ca81-8425", "hidden": false, "targetId": "1897-c22c-9597-12b1", "type": "rule"},
+                          {"name": "Devastating Wounds", "id": "1c43-033c-e7eb-b54c", "hidden": false, "targetId": "be1e-ac8e-1e2c-3528", "type": "rule"}
                         ],
                         "profiles": [
                           {
@@ -11217,7 +11186,7 @@
                               {"name": "S", "$text": "6", "typeId": "ab33-d393-96ce-ccba"},
                               {"name": "AP", "$text": "-2", "typeId": "41a0-1301-112a-e2f2"},
                               {"name": "D", "$text": "2", "typeId": "3254-9fe6-d824-513e"},
-                              {"name": "Keywords", "$text": "Devastating Wounds, Sustained Hits 1", "typeId": "893f-9000-ccf7-648e"}
+                              {"name": "Keywords", "$text": "Cleave, Devastating Wounds, Sustained Hits 1", "typeId": "893f-9000-ccf7-648e"}
                             ]
                           }
                         ]
@@ -11229,6 +11198,7 @@
                         "hidden": false,
                         "import": true,
                         "type": "upgrade",
+                        "categoryLinks": [{"name": "Plasma", "id": "beef-0473-ebb7-d5cd", "hidden": false, "primary": false, "targetId": "cb29-f4bb-ff15-6b11"}],
                         "constraints": [
                           {"id": "c319-796e-71fe-e7a7", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
                           {"id": "211a-1d9f-d342-dd0b", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1}
@@ -11797,6 +11767,7 @@
                 "hidden": false,
                 "import": true,
                 "type": "upgrade",
+                "categoryLinks": [{"name": "Plasma", "id": "4d4f-a2a3-404b-0dd6", "hidden": false, "primary": false, "targetId": "cb29-f4bb-ff15-6b11"}],
                 "constraints": [
                   {"id": "5510-15f8-32f3-040f", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1},
                   {"id": "9952-9e2e-9234-841a", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}
@@ -13319,8 +13290,8 @@
                     "value": 1
                   },
                   {
-                    "childId": "c7d2-a98d-4ad2-c426",
-                    "childName": "Vanguard Veteran Squad",
+                    "childId": "799c-9dd8-858d-4dd3",
+                    "childName": "Tactical Squad [Custom Units]",
                     "field": "selections",
                     "scope": "self",
                     "shared": true,
@@ -13335,6 +13306,36 @@
                     "scope": "self",
                     "shared": true,
                     "sortIndex": 11,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "c7d2-a98d-4ad2-c426",
+                    "childName": "Vanguard Veteran Squad",
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "sortIndex": 18,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "b691-d586-45ab-7799",
+                    "childName": "Veteran Squad [Custom Units]",
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "sortIndex": 18,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "01ec-25ac-7d1a-1d51",
+                    "childName": "Seeker Squad",
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "sortIndex": 18,
                     "type": "instanceOf",
                     "value": 1
                   }
@@ -15630,6 +15631,7 @@
             "import": true,
             "page": 15,
             "type": "upgrade",
+            "categoryLinks": [{"name": "Bolt Weapon", "id": "521c-cf81-8b46-ec24", "hidden": false, "primary": false, "targetId": "1c08-e7e4-55b9-8e30"}],
             "constraints": [
               {"id": "d293-5240-c264-a748", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "2659-a28c-9944-66d2", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
@@ -16152,7 +16154,7 @@
                 ],
                 "profiles": [
                   {
-                    "name": "Stoneborn Lord",
+                    "name": "Naufragia Praefectus",
                     "id": "9aad-4832-c37e-4d1e",
                     "hidden": false,
                     "typeId": "c547-1836-d8a-ff4f",
