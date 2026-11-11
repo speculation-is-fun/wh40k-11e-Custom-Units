@@ -9419,12 +9419,11 @@
                 "infoLinks": [
                   {"name": "Devastating Wounds", "id": "fc52-78e2-8432-c8c9", "hidden": false, "targetId": "be1e-ac8e-1e2c-3528", "type": "rule"},
                   {"name": "Precision", "id": "f227-496f-8167-4edb", "hidden": false, "targetId": "9143-31ae-e0a6-6007", "type": "rule"},
-                  {"name": "Rapid Fire", "id": "0925-28bc-3be6-dd4f", "hidden": false, "targetId": "c5c8-8b58-b8b6-7786", "type": "rule"},
                   {"name": "Ignores Cover", "id": "dc7f-e897-eba8-339d", "hidden": false, "targetId": "4640-43e7-30b-215a", "type": "rule"}
                 ],
                 "profiles": [
                   {
-                    "name": "Master Crafted Plasma Fusil",
+                    "name": "Master-crafted Plasma Fusil",
                     "id": "67c4-30ce-2694-2959",
                     "hidden": false,
                     "typeId": "f77d-b953-8fa4-b762",
@@ -9436,7 +9435,7 @@
                       {"name": "S", "$text": "10", "typeId": "2229-f494-25db-c5d3"},
                       {"name": "AP", "$text": "-3", "typeId": "9ead-8a10-520-de15"},
                       {"name": "D", "$text": "4", "typeId": "a354-c1c8-a745-f9e3"},
-                      {"name": "Keywords", "$text": "Devastating Wounds, Ignores Cover, Precision, Rapid Fire 1", "typeId": "7f1b-8591-2fcf-d01c"}
+                      {"name": "Keywords", "$text": "Devastating Wounds, Ignores Cover, Precision", "typeId": "7f1b-8591-2fcf-d01c"}
                     ]
                   }
                 ]
@@ -10631,7 +10630,7 @@
                         "typeName": "Melee Weapons",
                         "characteristics": [
                           {"name": "Range", "$text": "Melee", "typeId": "914c-b413-91e3-a132"},
-                          {"name": "A", "$text": "5", "typeId": "2337-daa1-6682-b110"},
+                          {"name": "A", "$text": "4", "typeId": "2337-daa1-6682-b110"},
                           {"name": "WS", "$text": "3+", "typeId": "95d1-95f-45b4-11d6"},
                           {"name": "S", "$text": "6", "typeId": "ab33-d393-96ce-ccba"},
                           {"name": "AP", "$text": "-3", "typeId": "41a0-1301-112a-e2f2"},
@@ -11042,7 +11041,7 @@
                         ],
                         "profiles": [
                           {
-                            "name": "Hellfire Plasma Caster",
+                            "name": "Hellfire Plasmacaster",
                             "id": "17e8-f517-ce9e-62ef",
                             "hidden": false,
                             "typeId": "f77d-b953-8fa4-b762",
@@ -11090,11 +11089,11 @@
                             "typeName": "Melee Weapons",
                             "characteristics": [
                               {"name": "Range", "$text": "Melee", "typeId": "914c-b413-91e3-a132"},
-                              {"name": "A", "$text": "5", "typeId": "2337-daa1-6682-b110"},
+                              {"name": "A", "$text": "4", "typeId": "2337-daa1-6682-b110"},
                               {"name": "WS", "$text": "3+", "typeId": "95d1-95f-45b4-11d6"},
                               {"name": "S", "$text": "7", "typeId": "ab33-d393-96ce-ccba"},
-                              {"name": "AP", "$text": "-2", "typeId": "41a0-1301-112a-e2f2"},
-                              {"name": "D", "$text": "3", "typeId": "3254-9fe6-d824-513e"},
+                              {"name": "AP", "$text": "-3", "typeId": "41a0-1301-112a-e2f2"},
+                              {"name": "D", "$text": "2", "typeId": "3254-9fe6-d824-513e"},
                               {"name": "Keywords", "$text": "Cleave, Devastating Wounds", "typeId": "893f-9000-ccf7-648e"}
                             ]
                           }
@@ -11209,7 +11208,7 @@
                         ],
                         "profiles": [
                           {
-                            "name": "Hellfire Plasma Caster",
+                            "name": "Hellfire Plasmacaster",
                             "id": "5f19-dc1c-079c-618a",
                             "hidden": false,
                             "typeId": "f77d-b953-8fa4-b762",
@@ -14470,7 +14469,7 @@
                                   {"name": "A", "$text": "3", "typeId": "3bb-c35f-f54-fb08"},
                                   {"name": "BS", "$text": "3+", "typeId": "94d-8a98-cf90-183e"},
                                   {"name": "S", "$text": "6", "typeId": "2229-f494-25db-c5d3"},
-                                  {"name": "AP", "$text": "-1", "typeId": "9ead-8a10-520-de15"},
+                                  {"name": "AP", "$text": "-2", "typeId": "9ead-8a10-520-de15"},
                                   {"name": "D", "$text": "3", "typeId": "a354-c1c8-a745-f9e3"},
                                   {"name": "Keywords", "$text": "Anti-Vehicle 3+", "typeId": "7f1b-8591-2fcf-d01c"}
                                 ]
@@ -14800,9 +14799,9 @@
                               {"name": "Range", "$text": "24\"", "typeId": "9896-9419-16a1-92fc"},
                               {"name": "A", "$text": "3", "typeId": "3bb-c35f-f54-fb08"},
                               {"name": "BS", "$text": "3+", "typeId": "94d-8a98-cf90-183e"},
-                              {"name": "S", "$text": "8", "typeId": "2229-f494-25db-c5d3"},
+                              {"name": "S", "$text": "9", "typeId": "2229-f494-25db-c5d3"},
                               {"name": "AP", "$text": "-2", "typeId": "9ead-8a10-520-de15"},
-                              {"name": "D", "$text": "D3+2", "typeId": "a354-c1c8-a745-f9e3"},
+                              {"name": "D", "$text": "D3+3", "typeId": "a354-c1c8-a745-f9e3"},
                               {"name": "Keywords", "$text": "Anti-Vehicle 3+, Blast 2", "typeId": "7f1b-8591-2fcf-d01c"}
                             ]
                           }
@@ -14833,7 +14832,7 @@
                             "typeName": "Ranged Weapons",
                             "characteristics": [
                               {"name": "Range", "$text": "24\"", "typeId": "9896-9419-16a1-92fc"},
-                              {"name": "A", "$text": "3", "typeId": "3bb-c35f-f54-fb08"},
+                              {"name": "A", "$text": "4", "typeId": "3bb-c35f-f54-fb08"},
                               {"name": "BS", "$text": "3+", "typeId": "94d-8a98-cf90-183e"},
                               {"name": "S", "$text": "5", "typeId": "2229-f494-25db-c5d3"},
                               {"name": "AP", "$text": "-2", "typeId": "9ead-8a10-520-de15"},
@@ -15700,7 +15699,7 @@
                 "typeName": "Melee Weapons",
                 "characteristics": [
                   {"name": "Range", "$text": "Melee", "typeId": "914c-b413-91e3-a132"},
-                  {"name": "A", "$text": "8", "typeId": "2337-daa1-6682-b110"},
+                  {"name": "A", "$text": "6", "typeId": "2337-daa1-6682-b110"},
                   {"name": "WS", "$text": "2+", "typeId": "95d1-95f-45b4-11d6"},
                   {"name": "S", "$text": "6", "typeId": "ab33-d393-96ce-ccba"},
                   {"name": "AP", "$text": "-2", "typeId": "41a0-1301-112a-e2f2"},

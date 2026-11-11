@@ -20018,7 +20018,7 @@
           {"name": "Ascalon", "id": "e226-c007-1f30-6c98", "hidden": false, "primary": false, "targetId": "ae5a-3925-d3c3-4c39"}
         ],
         "costs": [
-          {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 470},
+          {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 485},
           {"name": "Crusade Points", "typeId": "b03b-c239-15a5-da55", "value": 0},
           {"name": "Crusade: Battle Honours", "typeId": "75bb-ded1-c86d-bdf0", "value": 0},
           {"name": "Crusade: Experience", "typeId": "a623-fe74-1d33-cddf", "value": 0},
@@ -20174,11 +20174,11 @@
                     "typeName": "Ranged Weapons",
                     "characteristics": [
                       {"name": "Range", "$text": "24\"", "typeId": "9896-9419-16a1-92fc"},
-                      {"name": "A", "$text": "2D6+10", "typeId": "3bb-c35f-f54-fb08"},
+                      {"name": "A", "$text": "2D6+5", "typeId": "3bb-c35f-f54-fb08"},
                       {"name": "BS", "$text": "-", "typeId": "94d-8a98-cf90-183e"},
-                      {"name": "S", "$text": "8", "typeId": "2229-f494-25db-c5d3"},
-                      {"name": "AP", "$text": "-3", "typeId": "9ead-8a10-520-de15"},
-                      {"name": "D", "$text": "3", "typeId": "a354-c1c8-a745-f9e3"},
+                      {"name": "S", "$text": "7", "typeId": "2229-f494-25db-c5d3"},
+                      {"name": "AP", "$text": "-2", "typeId": "9ead-8a10-520-de15"},
+                      {"name": "D", "$text": "2", "typeId": "a354-c1c8-a745-f9e3"},
                       {"name": "Keywords", "$text": "Blast 4, Torrent", "typeId": "7f1b-8591-2fcf-d01c"}
                     ]
                   }

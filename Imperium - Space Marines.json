@@ -22995,7 +22995,8 @@
         "categoryLinks": [{"name": "Bolt Weapon", "id": "6070-ad3a-e1c6-6f53", "hidden": false, "primary": false, "targetId": "1c08-e7e4-55b9-8e30"}],
         "infoLinks": [
           {"name": "Twin-linked", "id": "6154-f39f-42d2-8ba1", "hidden": false, "targetId": "cf93-ad4d-2f08-a79d", "type": "rule"},
-          {"name": "Rapid Fire", "id": "9f01-c823-4e52-b3c9", "hidden": false, "targetId": "c5c8-8b58-b8b6-7786", "type": "rule"}
+          {"name": "Close-quarters", "id": "9f01-c823-4e52-b3c9", "hidden": false, "targetId": "5238-5ad4-52f7-6eb4", "type": "rule"},
+          {"name": "Rapid Fire", "id": "cc43-e65f-cc6c-f6b8", "hidden": false, "targetId": "c5c8-8b58-b8b6-7786", "type": "rule"}
         ],
         "profiles": [
           {
@@ -23008,10 +23009,10 @@
               {"name": "Range", "$text": "24\"", "typeId": "9896-9419-16a1-92fc"},
               {"name": "A", "$text": "3", "typeId": "3bb-c35f-f54-fb08"},
               {"name": "BS", "$text": "3+", "typeId": "94d-8a98-cf90-183e"},
-              {"name": "S", "$text": "4", "typeId": "2229-f494-25db-c5d3"},
-              {"name": "AP", "$text": "0", "typeId": "9ead-8a10-520-de15"},
+              {"name": "S", "$text": "5", "typeId": "2229-f494-25db-c5d3"},
+              {"name": "AP", "$text": "-1", "typeId": "9ead-8a10-520-de15"},
               {"name": "D", "$text": "1", "typeId": "a354-c1c8-a745-f9e3"},
-              {"name": "Keywords", "$text": "Rapid Fire 3, Twin-linked", "typeId": "7f1b-8591-2fcf-d01c"}
+              {"name": "Keywords", "$text": "Close-quarters, Rapid Fire 3, Twin-linked", "typeId": "7f1b-8591-2fcf-d01c"}
             ]
           }
         ]
@@ -26378,10 +26379,10 @@
               {"name": "Range", "$text": "18\"", "typeId": "9896-9419-16a1-92fc"},
               {"name": "A", "$text": "2", "typeId": "3bb-c35f-f54-fb08"},
               {"name": "BS", "$text": "3+", "typeId": "94d-8a98-cf90-183e"},
-              {"name": "S", "$text": "9", "typeId": "2229-f494-25db-c5d3"},
-              {"name": "AP", "$text": "-4", "typeId": "9ead-8a10-520-de15"},
-              {"name": "D", "$text": "D6", "typeId": "a354-c1c8-a745-f9e3"},
-              {"name": "Keywords", "$text": "Melta 2, Twin-linked", "typeId": "7f1b-8591-2fcf-d01c"}
+              {"name": "S", "$text": "10", "typeId": "2229-f494-25db-c5d3"},
+              {"name": "AP", "$text": "-3", "typeId": "9ead-8a10-520-de15"},
+              {"name": "D", "$text": "D3+3", "typeId": "a354-c1c8-a745-f9e3"},
+              {"name": "Keywords", "$text": "Melta 3, Twin-linked", "typeId": "7f1b-8591-2fcf-d01c"}
             ]
           }
         ]
@@ -72450,8 +72451,8 @@
               {"name": "Range", "$text": "12\"", "typeId": "9896-9419-16a1-92fc"},
               {"name": "A", "$text": "D6", "typeId": "3bb-c35f-f54-fb08"},
               {"name": "BS", "$text": "N/A", "typeId": "94d-8a98-cf90-183e"},
-              {"name": "S", "$text": "4", "typeId": "2229-f494-25db-c5d3"},
-              {"name": "AP", "$text": "0", "typeId": "9ead-8a10-520-de15"},
+              {"name": "S", "$text": "5", "typeId": "2229-f494-25db-c5d3"},
+              {"name": "AP", "$text": "-1", "typeId": "9ead-8a10-520-de15"},
               {"name": "D", "$text": "1", "typeId": "a354-c1c8-a745-f9e3"},
               {"name": "Keywords", "$text": "Ignores Cover, Torrent, Twin-linked", "typeId": "7f1b-8591-2fcf-d01c"}
             ]
