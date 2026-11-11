@@ -2482,7 +2482,11 @@
         "import": true,
         "type": "upgrade",
         "costs": [{"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 0}],
-        "infoLinks": [{"name": "Sustained Hits", "id": "465f-d9c7-bd66-48dc", "hidden": false, "targetId": "1897-c22c-9597-12b1", "type": "rule"}],
+        "infoLinks": [
+          {"name": "Rapid Fire", "id": "465f-d9c7-bd66-48dc", "hidden": false, "targetId": "c5c8-8b58-b8b6-7786", "type": "rule"},
+          {"name": "Sustained Hits", "id": "2daf-44d5-e0d6-1792", "hidden": false, "targetId": "1897-c22c-9597-12b1", "type": "rule"}
+        ],
+        "modifiers": [{"field": "category", "type": "add", "value": "1c08-e7e4-55b9-8e30"}],
         "profiles": [
           {
             "name": "Heavy bolter",
@@ -2497,7 +2501,7 @@
               {"name": "S", "$text": "5", "typeId": "2229-f494-25db-c5d3"},
               {"name": "AP", "$text": "-1", "typeId": "9ead-8a10-520-de15"},
               {"name": "D", "$text": "2", "typeId": "a354-c1c8-a745-f9e3"},
-              {"name": "Keywords", "$text": "Sustained Hits 1", "typeId": "7f1b-8591-2fcf-d01c"}
+              {"name": "Keywords", "$text": "Rapid Fire 2, Sustained Hits 1", "typeId": "7f1b-8591-2fcf-d01c"}
             ]
           }
         ]
@@ -2630,7 +2634,10 @@
         "import": true,
         "type": "upgrade",
         "costs": [{"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 0}],
-        "infoLinks": [{"name": "Twin-linked", "id": "7fde-67de-100f-1779", "hidden": false, "targetId": "cf93-ad4d-2f08-a79d", "type": "rule"}],
+        "infoLinks": [
+          {"name": "Rapid Fire", "id": "7fde-67de-100f-1779", "hidden": false, "targetId": "c5c8-8b58-b8b6-7786", "type": "rule"},
+          {"name": "Twin-linked", "id": "04a4-2429-0843-457b", "hidden": false, "targetId": "cf93-ad4d-2f08-a79d", "type": "rule"}
+        ],
         "profiles": [
           {
             "name": "Twin autocannon",
@@ -2645,7 +2652,7 @@
               {"name": "S", "$text": "9", "typeId": "2229-f494-25db-c5d3"},
               {"name": "AP", "$text": "-1", "typeId": "9ead-8a10-520-de15"},
               {"name": "D", "$text": "3", "typeId": "a354-c1c8-a745-f9e3"},
-              {"name": "Keywords", "$text": "Twin-linked", "typeId": "7f1b-8591-2fcf-d01c"}
+              {"name": "Keywords", "$text": "Rapid Fire 2, Twin-linked", "typeId": "7f1b-8591-2fcf-d01c"}
             ]
           }
         ]
@@ -2659,9 +2666,11 @@
         "type": "upgrade",
         "costs": [{"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 0}],
         "infoLinks": [
-          {"name": "Sustained Hits", "id": "2c26-8118-4b80-1722", "hidden": false, "targetId": "1897-c22c-9597-12b1", "type": "rule"},
-          {"name": "Twin-linked", "id": "ec41-4295-7747-9ff8", "hidden": false, "targetId": "cf93-ad4d-2f08-a79d", "type": "rule"}
+          {"name": "Rapid Fire", "id": "2c26-8118-4b80-1722", "hidden": false, "targetId": "c5c8-8b58-b8b6-7786", "type": "rule"},
+          {"name": "Twin-linked", "id": "ec41-4295-7747-9ff8", "hidden": false, "targetId": "cf93-ad4d-2f08-a79d", "type": "rule"},
+          {"name": "Sustained Hits", "id": "d3e7-7e8f-454c-b4d2", "hidden": false, "targetId": "1897-c22c-9597-12b1", "type": "rule"}
         ],
+        "modifiers": [{"field": "category", "type": "add", "value": "1c08-e7e4-55b9-8e30"}],
         "profiles": [
           {
             "name": "Twin heavy bolter",
@@ -2676,7 +2685,7 @@
               {"name": "S", "$text": "5", "typeId": "2229-f494-25db-c5d3"},
               {"name": "AP", "$text": "-1", "typeId": "9ead-8a10-520-de15"},
               {"name": "D", "$text": "2", "typeId": "a354-c1c8-a745-f9e3"},
-              {"name": "Keywords", "$text": "Sustained Hits 1, Twin-linked", "typeId": "7f1b-8591-2fcf-d01c"}
+              {"name": "Keywords", "$text": "Rapid Fire 2, Sustained Hits 1, Twin-linked", "typeId": "7f1b-8591-2fcf-d01c"}
             ]
           }
         ]
@@ -2697,7 +2706,7 @@
         ],
         "profiles": [
           {
-            "name": "Flamestorm Cannon",
+            "name": "Twin Heavy Flamer",
             "id": "2532-750b-e7bc-982c",
             "hidden": false,
             "typeId": "f77d-b953-8fa4-b762",
@@ -2706,10 +2715,10 @@
               {"name": "Range", "$text": "12\"", "typeId": "9896-9419-16a1-92fc"},
               {"name": "A", "$text": "3", "typeId": "3bb-c35f-f54-fb08"},
               {"name": "BS", "$text": "N/A", "typeId": "94d-8a98-cf90-183e"},
-              {"name": "S", "$text": "6", "typeId": "2229-f494-25db-c5d3"},
-              {"name": "AP", "$text": "-2", "typeId": "9ead-8a10-520-de15"},
-              {"name": "D", "$text": "2", "typeId": "a354-c1c8-a745-f9e3"},
-              {"name": "Keywords", "$text": "Torrent, Twin-linked, Blast 2", "typeId": "7f1b-8591-2fcf-d01c"}
+              {"name": "S", "$text": "5", "typeId": "2229-f494-25db-c5d3"},
+              {"name": "AP", "$text": "-1", "typeId": "9ead-8a10-520-de15"},
+              {"name": "D", "$text": "1", "typeId": "a354-c1c8-a745-f9e3"},
+              {"name": "Keywords", "$text": "Blast 2, Torrent, Twin-linked", "typeId": "7f1b-8591-2fcf-d01c"}
             ]
           }
         ]
@@ -2736,7 +2745,7 @@
               {"name": "BS", "$text": "3+", "typeId": "94d-8a98-cf90-183e"},
               {"name": "S", "$text": "12", "typeId": "2229-f494-25db-c5d3"},
               {"name": "AP", "$text": "-3", "typeId": "9ead-8a10-520-de15"},
-              {"name": "D", "$text": "D6+1", "typeId": "a354-c1c8-a745-f9e3"},
+              {"name": "D", "$text": "D3+3", "typeId": "a354-c1c8-a745-f9e3"},
               {"name": "Keywords", "$text": "Twin-linked", "typeId": "7f1b-8591-2fcf-d01c"}
             ]
           }
@@ -5896,6 +5905,7 @@
         ],
         "costs": [{"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 0}],
         "infoLinks": [{"name": "Rapid Fire", "id": "873a-6c96-2be3-60a5", "hidden": false, "targetId": "c5c8-8b58-b8b6-7786", "type": "rule"}],
+        "modifiers": [{"field": "category", "type": "add", "value": "1c08-e7e4-55b9-8e30"}],
         "profiles": [
           {
             "name": "Storm bolter",
@@ -7203,6 +7213,7 @@
                   }
                 ],
                 "infoLinks": [{"name": "Devastating Wounds", "id": "fa83-5139-4175-f839", "hidden": false, "targetId": "be1e-ac8e-1e2c-3528", "type": "rule"}],
+                "modifiers": [{"field": "category", "type": "add", "value": "1c08-e7e4-55b9-8e30"}],
                 "profiles": [
                   {
                     "name": "Punisher rotary cannon",
@@ -9817,6 +9828,7 @@
                   }
                 ],
                 "infoLinks": [{"name": "Twin-linked", "id": "8903-72e5-6d7c-9c52", "hidden": false, "targetId": "cf93-ad4d-2f08-a79d", "type": "rule"}],
+                "modifiers": [{"field": "category", "type": "add", "value": "1c08-e7e4-55b9-8e30"}],
                 "profiles": [
                   {
                     "name": "Twin avenger bolt cannon",
@@ -9886,6 +9898,7 @@
                     "hidden": false,
                     "import": true,
                     "type": "upgrade",
+                    "modifiers": [{"field": "category", "type": "add", "value": "1c08-e7e4-55b9-8e30"}],
                     "selectionEntries": [
                       {
                         "name": "Quad heavy bolter",
@@ -11549,6 +11562,7 @@
                     "hidden": false,
                     "import": true,
                     "type": "upgrade",
+                    "modifiers": [{"field": "category", "type": "add", "value": "1c08-e7e4-55b9-8e30"}],
                     "selectionEntries": [
                       {
                         "name": "Quad heavy bolter",
@@ -11901,6 +11915,7 @@
                     "hidden": false,
                     "import": true,
                     "type": "upgrade",
+                    "modifiers": [{"field": "category", "type": "add", "value": "1c08-e7e4-55b9-8e30"}],
                     "selectionEntries": [
                       {
                         "name": "Quad lascannon",
@@ -12898,6 +12913,23 @@
                 "value": 1
               }
             ]
+          },
+          {
+            "field": "category",
+            "type": "add",
+            "value": "40a7-5157-ad85-fb50",
+            "conditions": [
+              {
+                "childId": "470a-6daa-9014-12df",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "scope": "primary-catalogue",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 0
+              }
+            ]
           }
         ],
         "profiles": [
@@ -12931,6 +12963,20 @@
                 "typeId": "9b8f-694b-e5e-b573"
               }
             ]
+          },
+          {
+            "name": "Sentry Programming",
+            "id": "e3e9-06c9-09c0-9d4b",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "You can target this model with the Fire Overwatch Stratagem for 0CP, and can do so even if you have already targeted a different unit with that Stratagem this turn.  This model can only be targeted with that Stratagem once\nper turn.",
+                "typeId": "9b8f-694b-e5e-b573"
+              }
+            ]
           }
         ],
         "selectionEntryGroups": [
@@ -12945,16 +12991,17 @@
                 "hidden": false,
                 "import": true,
                 "type": "model",
-                "constraints": [{"id": "d0cc-07bb-7458-e967", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 3}],
+                "constraints": [{"id": "d0cc-07bb-7458-e967", "field": "selections", "includeChildSelections": false, "scope": "self", "shared": true, "type": "max", "value": 3}],
                 "costs": [
-                  {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 30},
+                  {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 25},
                   {"name": "Crusade Points", "typeId": "b03b-c239-15a5-da55", "value": 0},
                   {"name": "Crusade: Battle Honours", "typeId": "75bb-ded1-c86d-bdf0", "value": 0},
                   {"name": "Crusade: Experience", "typeId": "a623-fe74-1d33-cddf", "value": 0},
                   {"name": "Crusade: Weapon Modifications", "typeId": "716d-91b7-d55a-1022", "value": 0},
                   {"name": "Blackstone Fragments", "typeId": "ac6b-ced3-9b5e-9a6e", "value": 0},
                   {"name": "Detachment Points", "typeId": "82ae-1066-5107-6ae0", "value": 0},
-                  {"name": "Enhancements", "typeId": "f759-1bc4-cb3a-f0d2", "value": 0}
+                  {"name": "Enhancements", "typeId": "f759-1bc4-cb3a-f0d2", "value": 0},
+                  {"name": "Command Points", "typeId": "621c-5e90-c575-8242", "value": 0}
                 ],
                 "selectionEntryGroups": [
                   {
@@ -12968,12 +13015,13 @@
                     ],
                     "entryLinks": [
                       {
-                        "name": "Twin heavy bolter",
+                        "name": "Twin autocannon",
                         "id": "8106-4848-82fb-ac14",
                         "hidden": false,
                         "import": true,
-                        "targetId": "f1a6-b394-5bc5-a3cb",
+                        "targetId": "9f56-5d6e-54a6-9b94",
                         "type": "selectionEntry",
+                        "costs": [{"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 5}],
                         "entryLinks": [
                           {
                             "name": "Weapon Modifications",
@@ -12993,10 +13041,89 @@
                         "import": true,
                         "targetId": "c36c-6247-f673-fe00",
                         "type": "selectionEntry",
+                        "costs": [{"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 5}],
                         "entryLinks": [
                           {
                             "name": "Weapon Modifications",
                             "id": "743f-47b7-03c2-441b",
+                            "flatten": false,
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "f9da-852a-d7f0-92e9",
+                            "type": "selectionEntryGroup"
+                          }
+                        ]
+                      },
+                      {"name": "Twin heavy flamer", "id": "3bc1-7060-8926-f65c", "hidden": false, "import": true, "targetId": "28c2-3ff0-43c1-380d", "type": "selectionEntry"},
+                      {
+                        "name": "Twin plasma cannon",
+                        "id": "a7b8-3dd0-27c3-773a",
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "d609-d14b-3da9-9bd1",
+                        "type": "selectionEntry",
+                        "costs": [{"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 10}],
+                        "entryLinks": [
+                          {
+                            "name": "Weapon Modifications",
+                            "id": "727c-4ca0-1f3d-91b5",
+                            "flatten": false,
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "f9da-852a-d7f0-92e9",
+                            "type": "selectionEntryGroup"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Twin volkite culverin",
+                        "id": "32b3-26c6-2dda-bc62",
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "5030-c511-fac-674f",
+                        "type": "selectionEntry",
+                        "entryLinks": [
+                          {
+                            "name": "Weapon Modifications",
+                            "id": "74bf-ca05-a278-56ba",
+                            "flatten": false,
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "f9da-852a-d7f0-92e9",
+                            "type": "selectionEntryGroup"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Twin heavy bolter",
+                        "id": "13e6-cdba-59ca-0472",
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "f1a6-b394-5bc5-a3cb",
+                        "type": "selectionEntry",
+                        "entryLinks": [
+                          {
+                            "name": "Weapon Modifications",
+                            "id": "7cd2-a8c1-ec2e-d493",
+                            "flatten": false,
+                            "hidden": false,
+                            "import": true,
+                            "targetId": "f9da-852a-d7f0-92e9",
+                            "type": "selectionEntryGroup"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Twin assault cannon",
+                        "id": "aef3-1b1c-7608-ac3b",
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "1edc-791f-2974-bb4e",
+                        "type": "selectionEntry",
+                        "entryLinks": [
+                          {
+                            "name": "Weapon Modifications",
+                            "id": "964d-ac46-fb3b-fa47",
                             "flatten": false,
                             "hidden": false,
                             "import": true,
@@ -18135,6 +18262,7 @@
           {"name": "Sustained Hits", "id": "e45f-fe46-842c-3d30", "hidden": false, "targetId": "1897-c22c-9597-12b1", "type": "rule"},
           {"name": "Twin-linked", "id": "f34c-a164-88f8-570d", "hidden": false, "targetId": "cf93-ad4d-2f08-a79d", "type": "rule"}
         ],
+        "modifiers": [{"field": "category", "type": "add", "value": "1c08-e7e4-55b9-8e30"}],
         "profiles": [
           {
             "name": "Twin assault cannon",
@@ -20307,6 +20435,7 @@
                     "hidden": false,
                     "import": true,
                     "type": "upgrade",
+                    "modifiers": [{"field": "category", "type": "add", "value": "1c08-e7e4-55b9-8e30"}],
                     "selectionEntries": [
                       {
                         "name": "Quad heavy bolter",
@@ -20798,6 +20927,7 @@
                     "hidden": false,
                     "import": true,
                     "type": "upgrade",
+                    "modifiers": [{"field": "category", "type": "add", "value": "1c08-e7e4-55b9-8e30"}],
                     "selectionEntries": [
                       {
                         "name": "Quad heavy bolter",
@@ -20911,6 +21041,23 @@
                 "shared": true,
                 "type": "lessThan",
                 "value": 1
+              }
+            ]
+          },
+          {
+            "field": "category",
+            "type": "add",
+            "value": "40a7-5157-ad85-fb50",
+            "conditions": [
+              {
+                "childId": "470a-6daa-9014-12df",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "scope": "primary-catalogue",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 0
               }
             ]
           }
@@ -21288,6 +21435,7 @@
                     "hidden": false,
                     "import": true,
                     "type": "upgrade",
+                    "modifiers": [{"field": "category", "type": "add", "value": "1c08-e7e4-55b9-8e30"}],
                     "selectionEntries": [
                       {
                         "name": "Quad heavy bolter",
@@ -21327,6 +21475,54 @@
                   }
                 ]
               }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Twin plasma cannon",
+        "id": "d609-d14b-3da9-9bd1",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "costs": [{"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 0}],
+        "infoLinks": [
+          {"name": "Hazardous", "id": "890c-8328-f322-7104", "hidden": false, "targetId": "8367-374c-f87-c627", "type": "rule"},
+          {"name": "Twin-linked", "id": "2678-aab1-6ed9-9dcc", "hidden": false, "targetId": "cf93-ad4d-2f08-a79d", "type": "rule"},
+          {"name": "Blast", "id": "5d6e-8b40-f235-cd35", "hidden": false, "targetId": "6c1f-1cf7-ff25-c99e", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Twin plasma cannon - Standard",
+            "id": "1ea8-abd7-7dbb-961e",
+            "hidden": false,
+            "typeId": "f77d-b953-8fa4-b762",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Range", "$text": "24\"", "typeId": "9896-9419-16a1-92fc"},
+              {"name": "A", "$text": "3", "typeId": "3bb-c35f-f54-fb08"},
+              {"name": "BS", "$text": "3+", "typeId": "94d-8a98-cf90-183e"},
+              {"name": "S", "$text": "9", "typeId": "2229-f494-25db-c5d3"},
+              {"name": "AP", "$text": "-2", "typeId": "9ead-8a10-520-de15"},
+              {"name": "D", "$text": "2", "typeId": "a354-c1c8-a745-f9e3"},
+              {"name": "Keywords", "$text": "Blast, Twin-linked", "typeId": "7f1b-8591-2fcf-d01c"}
+            ]
+          },
+          {
+            "name": "Twin plasma cannon - Overcharged",
+            "id": "eb0f-d505-06e3-6155",
+            "hidden": false,
+            "typeId": "f77d-b953-8fa4-b762",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Range", "$text": "24\"", "typeId": "9896-9419-16a1-92fc"},
+              {"name": "A", "$text": "3", "typeId": "3bb-c35f-f54-fb08"},
+              {"name": "BS", "$text": "3+", "typeId": "94d-8a98-cf90-183e"},
+              {"name": "S", "$text": "10", "typeId": "2229-f494-25db-c5d3"},
+              {"name": "AP", "$text": "-3", "typeId": "9ead-8a10-520-de15"},
+              {"name": "D", "$text": "3", "typeId": "a354-c1c8-a745-f9e3"},
+              {"name": "Keywords", "$text": "Blast, Hazardous, Twin-linked", "typeId": "7f1b-8591-2fcf-d01c"}
             ]
           }
         ]
