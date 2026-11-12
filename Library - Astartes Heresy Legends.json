@@ -18935,14 +18935,15 @@
           {"name": "Custom Units", "id": "e104-e818-511d-9e0d", "hidden": false, "primary": false, "targetId": "e875-4d09-70f8-e315"}
         ],
         "costs": [
-          {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 450},
+          {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 525},
           {"name": "Crusade Points", "typeId": "b03b-c239-15a5-da55", "value": 0},
           {"name": "Crusade: Battle Honours", "typeId": "75bb-ded1-c86d-bdf0", "value": 0},
           {"name": "Crusade: Experience", "typeId": "a623-fe74-1d33-cddf", "value": 0},
           {"name": "Crusade: Weapon Modifications", "typeId": "716d-91b7-d55a-1022", "value": 0},
           {"name": "Blackstone Fragments", "typeId": "ac6b-ced3-9b5e-9a6e", "value": 0},
           {"name": "Detachment Points", "typeId": "82ae-1066-5107-6ae0", "value": 0},
-          {"name": "Enhancements", "typeId": "f759-1bc4-cb3a-f0d2", "value": 0}
+          {"name": "Enhancements", "typeId": "f759-1bc4-cb3a-f0d2", "value": 0},
+          {"name": "Command Points", "typeId": "621c-5e90-c575-8242", "value": 0}
         ],
         "infoLinks": [
           {
