@@ -6646,7 +6646,38 @@
         "targetId": "fad7-57e7-0d89-add7",
         "type": "selectionEntry"
       },
-      {"name": "Land Raider Tempest", "id": "6e54-370e-2a05-897e", "hidden": false, "import": true, "targetId": "707e-5dc1-d8ad-5ace", "type": "selectionEntry"}
+      {"name": "Land Raider Tempest", "id": "6e54-370e-2a05-897e", "hidden": false, "import": true, "targetId": "707e-5dc1-d8ad-5ace", "type": "selectionEntry"},
+      {
+        "name": "Araknae Quad Accelerator Platform",
+        "id": "460a-4a37-cba0-8cec",
+        "hidden": false,
+        "import": true,
+        "targetId": "30d1-ae28-59df-0de8",
+        "type": "selectionEntry",
+        "entryLinks": [
+          {"name": "Crusade", "id": "1518-7e55-ee2a-0f5c", "hidden": false, "import": true, "targetId": "9a99-f13c-a667-e698", "type": "selectionEntryGroup"},
+          {"name": "Enhancements", "id": "315e-0195-8895-61e6", "hidden": false, "import": true, "targetId": "9e5d-de4c-c5d1-1d3e", "type": "selectionEntryGroup"}
+        ],
+        "modifiers": [
+          {
+            "field": "category",
+            "type": "add",
+            "value": "0a82-2ca2-6290-7d07",
+            "conditions": [
+              {
+                "childId": "470a-6daa-9014-12df",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "scope": "primary-catalogue",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 0
+              }
+            ]
+          }
+        ]
+      }
     ],
     "infoLinks": [
       {"name": "Combat Doctrines", "id": "001d-723a-56e2-f202", "hidden": false, "targetId": "3b76-4053-ece9-6e7d", "type": "rule"},
@@ -46374,8 +46405,9 @@
             "modifiers": [{"field": "name", "type": "append", "value": "D6"}]
           },
           {"name": "Damaged: 1-4 Wounds Remaining", "id": "1d13-9d57-7b02-a92c", "hidden": false, "targetId": "ee64-aaaf-75df-8da9", "type": "profile"},
-          {"name": "Combat Doctrines", "id": "ea5f-ec72-6615-9925", "hidden": false, "targetId": "3b76-4053-ece9-6e7d", "type": "rule"},
-          {"name": "Templar Vows", "id": "e13d-e47a-cf8b-97f9", "hidden": false, "targetId": "f26c-4b28-aaea-40cf", "type": "rule"}
+          {"name": "Deep Strike", "id": "ea5f-ec72-6615-9925", "hidden": false, "targetId": "7cb5-dd6b-dd87-ad3b", "type": "rule"},
+          {"name": "Templar Vows", "id": "e13d-e47a-cf8b-97f9", "hidden": false, "targetId": "f26c-4b28-aaea-40cf", "type": "rule"},
+          {"name": "Combat Doctrines", "id": "b386-4822-2a5c-60b2", "hidden": false, "targetId": "3b76-4053-ece9-6e7d", "type": "rule"}
         ],
         "modifiers": [
           {
