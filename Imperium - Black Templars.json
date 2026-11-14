@@ -14249,7 +14249,8 @@
             "sortIndex": 1,
             "targetId": "9a99-f13c-a667-e698",
             "type": "selectionEntryGroup"
-          }
+          },
+          {"name": "Enhancements", "id": "fa46-5f85-9cef-13bd", "hidden": false, "import": true, "targetId": "9e5d-de4c-c5d1-1d3e", "type": "selectionEntryGroup"}
         ],
         "infoLinks": [
           {"name": "Combat Doctrines", "id": "5891-a064-112c-8957", "hidden": false, "targetId": "3b76-4053-ece9-6e7d", "type": "rule"},
@@ -14448,7 +14449,7 @@
         ],
         "profiles": [
           {
-            "name": "Furious Retribution",
+            "name": "Annihilator Protocols",
             "id": "0a91-68e9-6cea-ba52",
             "hidden": false,
             "typeId": "9cc3-6d83-4dd3-9b64",
@@ -14456,7 +14457,7 @@
             "characteristics": [
               {
                 "name": "Description",
-                "$text": "Melee weapons equipped by models in this unit have the [SUSTAINED HITS 2] ability when targeting Monster, Infantry, or Mounted units.",
+                "$text": "Melee weapons equipped by models in this unit have the [SUSTAINED HITS 2] ability when targeting Monster, Vehicle or Fortification units",
                 "typeId": "9b8f-694b-e5e-b573"
               }
             ]
@@ -14611,11 +14612,11 @@
                         ]
                       },
                       {
-                        "name": "Twin multi-melta",
+                        "name": "Twin meltagun",
                         "id": "9775-8a0f-2eab-e193",
                         "hidden": false,
                         "import": true,
-                        "targetId": "6fad-2d0d-8ff9-5f8f",
+                        "targetId": "4f80-b9b6-5209-2f99",
                         "type": "selectionEntry",
                         "entryLinks": [
                           {"name": "Weapon Modifications", "id": "81a2-a257-008d-ecc9", "hidden": false, "import": true, "targetId": "f9da-852a-d7f0-92e9", "type": "selectionEntryGroup"}
