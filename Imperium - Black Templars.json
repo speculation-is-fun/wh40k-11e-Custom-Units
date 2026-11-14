@@ -14448,7 +14448,7 @@
         ],
         "profiles": [
           {
-            "name": "Annihilator Protocols",
+            "name": "Furious Retribution",
             "id": "0a91-68e9-6cea-ba52",
             "hidden": false,
             "typeId": "9cc3-6d83-4dd3-9b64",
@@ -14456,7 +14456,7 @@
             "characteristics": [
               {
                 "name": "Description",
-                "$text": "Melee weapons equipped by models in this unit have the [SUSTAINED HITS 2] ability when targeting Monster, Vehicle or Fortification units",
+                "$text": "Melee weapons equipped by models in this unit have the [SUSTAINED HITS 2] ability when targeting Monster, Infantry, or Mounted units.",
                 "typeId": "9b8f-694b-e5e-b573"
               }
             ]
@@ -14611,11 +14611,11 @@
                         ]
                       },
                       {
-                        "name": "Twin meltagun",
+                        "name": "Twin multi-melta",
                         "id": "9775-8a0f-2eab-e193",
                         "hidden": false,
                         "import": true,
-                        "targetId": "4f80-b9b6-5209-2f99",
+                        "targetId": "6fad-2d0d-8ff9-5f8f",
                         "type": "selectionEntry",
                         "entryLinks": [
                           {"name": "Weapon Modifications", "id": "81a2-a257-008d-ecc9", "hidden": false, "import": true, "targetId": "f9da-852a-d7f0-92e9", "type": "selectionEntryGroup"}

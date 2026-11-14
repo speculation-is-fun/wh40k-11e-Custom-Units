@@ -4681,7 +4681,8 @@
             "sortIndex": 1,
             "targetId": "9a99-f13c-a667-e698",
             "type": "selectionEntryGroup"
-          }
+          },
+          {"name": "Enhancements", "id": "5c14-bbfd-ae8d-85f8", "hidden": false, "import": true, "targetId": "9e5d-de4c-c5d1-1d3e", "type": "selectionEntryGroup"}
         ],
         "modifierGroups": [
           {
@@ -4845,7 +4846,8 @@
             "sortIndex": 1,
             "targetId": "9a99-f13c-a667-e698",
             "type": "selectionEntryGroup"
-          }
+          },
+          {"name": "Enhancements", "id": "8b72-44e1-ae8f-9211", "hidden": false, "import": true, "targetId": "9e5d-de4c-c5d1-1d3e", "type": "selectionEntryGroup"}
         ],
         "modifierGroups": [
           {
@@ -6312,7 +6314,10 @@
         "import": true,
         "targetId": "9ee5-d3ab-1837-88b1",
         "type": "selectionEntry",
-        "entryLinks": [{"name": "Enhancements", "id": "d6cc-57ff-d205-8ff4", "hidden": false, "import": true, "targetId": "9e5d-de4c-c5d1-1d3e", "type": "selectionEntryGroup"}]
+        "entryLinks": [
+          {"name": "Enhancements", "id": "d6cc-57ff-d205-8ff4", "hidden": false, "import": true, "targetId": "9e5d-de4c-c5d1-1d3e", "type": "selectionEntryGroup"},
+          {"name": "Crusade", "id": "c69f-838f-1c12-7184", "hidden": false, "import": true, "targetId": "9a99-f13c-a667-e698", "type": "selectionEntryGroup"}
+        ]
       },
       {
         "name": "Moritat [Custom Units]",
@@ -6596,7 +6601,11 @@
         "hidden": false,
         "import": true,
         "targetId": "aa80-cc86-93ac-16e9",
-        "type": "selectionEntry"
+        "type": "selectionEntry",
+        "entryLinks": [
+          {"name": "Enhancements", "id": "048b-94c2-900e-537a", "hidden": false, "import": true, "targetId": "9e5d-de4c-c5d1-1d3e", "type": "selectionEntryGroup"},
+          {"name": "Crusade", "id": "810e-fd84-388e-247d", "hidden": false, "import": true, "targetId": "9a99-f13c-a667-e698", "type": "selectionEntryGroup"}
+        ]
       },
       {
         "name": "Glaive [Legends] [Custom Units]",
@@ -6604,7 +6613,11 @@
         "hidden": false,
         "import": true,
         "targetId": "e405-7147-d1bc-d43c",
-        "type": "selectionEntry"
+        "type": "selectionEntry",
+        "entryLinks": [
+          {"name": "Crusade", "id": "1a99-73e1-3c9c-a116", "hidden": false, "import": true, "targetId": "9a99-f13c-a667-e698", "type": "selectionEntryGroup"},
+          {"name": "Enhancements", "id": "b0f5-d97e-62aa-5aa0", "hidden": false, "import": true, "targetId": "9e5d-de4c-c5d1-1d3e", "type": "selectionEntryGroup"}
+        ]
       },
       {
         "name": "Chapter Master [Custom Units]",
