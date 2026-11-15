@@ -14455,7 +14455,7 @@
         ],
         "profiles": [
           {
-            "name": "Annihilator Protocols",
+            "name": "Vengeful Retribution",
             "id": "0a91-68e9-6cea-ba52",
             "hidden": false,
             "typeId": "9cc3-6d83-4dd3-9b64",
@@ -14463,7 +14463,7 @@
             "characteristics": [
               {
                 "name": "Description",
-                "$text": "Melee weapons equipped by models in this unit have the [SUSTAINED HITS 2] ability when targeting Monster, Vehicle or Fortification units",
+                "$text": "Melee weapons equipped by models in this unit have the [SUSTAINED HITS 2] ability when targeting Monster, Mounted, or Infantry units.",
                 "typeId": "9b8f-694b-e5e-b573"
               }
             ]
