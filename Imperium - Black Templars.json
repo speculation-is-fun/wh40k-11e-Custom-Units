@@ -4592,7 +4592,8 @@
           {"name": "Emperor's Champion", "id": "c1f2-a6fa-f22d-5a0b", "primary": false, "targetId": "1ba5-20a1-4dd6-9a4f"},
           {"name": "Faction: Black Templars", "id": "999-a190-698c-c1f4", "primary": false, "targetId": "9249-acae-2882-d95"},
           {"name": "Leader", "id": "31ca-b074-e2a5-59e2", "primary": false, "targetId": "1556-9b56-fba6-4370"},
-          {"name": "Explosives", "id": "9677-dbf9-2dee-d89c", "hidden": false, "primary": false, "targetId": "e33d-891d-33aa-e9bf"}
+          {"name": "Explosives", "id": "9677-dbf9-2dee-d89c", "hidden": false, "primary": false, "targetId": "e33d-891d-33aa-e9bf"},
+          {"name": "Templar Brethren", "id": "20e2-d0bc-ebfc-0e9e", "hidden": false, "primary": false, "targetId": "d916-2298-da6f-bd28"}
         ],
         "constraints": [
           {"id": "4203-5e64-70bd-9412", "field": "selections", "scope": "roster", "shared": true, "type": "max", "value": 1},
@@ -7521,7 +7522,8 @@
           {"name": "Lieutenant", "id": "5aed-ba30-7aef-239d", "primary": false, "targetId": "9c1a-42ff-a418-11d1"},
           {"name": "Castellan", "id": "b76b-346f-6b24-cd48", "primary": false, "targetId": "c9ce-476b-65bd-4e81"},
           {"name": "Support", "id": "51da-6dd4-da94-d9af", "primary": false, "targetId": "7dcd-7f61-69a7-0294"},
-          {"name": "Explosives", "id": "e19d-b070-30a6-715e", "hidden": false, "primary": false, "targetId": "e33d-891d-33aa-e9bf"}
+          {"name": "Explosives", "id": "e19d-b070-30a6-715e", "hidden": false, "primary": false, "targetId": "e33d-891d-33aa-e9bf"},
+          {"name": "Templar Brethren", "id": "8c0c-4500-a4a0-567f", "hidden": false, "primary": false, "targetId": "d916-2298-da6f-bd28"}
         ],
         "constraints": [
           {"id": "78c5-0f88-ee95-4e5b", "field": "75bb-ded1-c86d-bdf0", "includeChildSelections": false, "scope": "self", "shared": true, "type": "max", "value": 6},
@@ -8488,7 +8490,8 @@
           {"name": "Faction: Adeptus Astartes", "id": "6e01-bcb8-db6b-fb25", "primary": false, "targetId": "6e7-40c-58d9-e402"},
           {"name": "Faction: Black Templars", "id": "e467-a61d-1e47-5f67", "primary": false, "targetId": "9249-acae-2882-d95"},
           {"name": "Execrator", "id": "b1c6-0301-3f7c-0ff7", "primary": false, "targetId": "a4bd-e355-816d-d093"},
-          {"name": "Leader", "id": "fbb6-2546-4206-7080", "primary": false, "targetId": "1556-9b56-fba6-4370"}
+          {"name": "Leader", "id": "fbb6-2546-4206-7080", "primary": false, "targetId": "1556-9b56-fba6-4370"},
+          {"name": "Templar Brethren", "id": "9e4d-9774-fefd-5d43", "hidden": false, "primary": false, "targetId": "d916-2298-da6f-bd28"}
         ],
         "constraints": [
           {"id": "e9a1-3929-7af7-815e", "field": "75bb-ded1-c86d-bdf0", "includeChildSelections": false, "scope": "self", "shared": true, "type": "max", "value": 6},
@@ -13258,7 +13261,8 @@
           {"name": "Leader", "id": "b973-3155-4617-d8cf", "primary": false, "targetId": "1556-9b56-fba6-4370"},
           {"name": "Explosives", "id": "2979-27c7-5afc-b0ce", "hidden": false, "primary": false, "targetId": "e33d-891d-33aa-e9bf"},
           {"name": "Epic Hero", "id": "56b2-58fc-8664-7090", "hidden": false, "primary": true, "targetId": "4f3a-f0f7-6647-348d"},
-          {"name": "Custom Units", "id": "b807-4c7e-23b4-f731", "hidden": false, "primary": false, "targetId": "e875-4d09-70f8-e315"}
+          {"name": "Custom Units", "id": "b807-4c7e-23b4-f731", "hidden": false, "primary": false, "targetId": "e875-4d09-70f8-e315"},
+          {"name": "Templar Brethren", "id": "202a-73fd-5469-5b44", "hidden": false, "primary": false, "targetId": "d916-2298-da6f-bd28"}
         ],
         "constraints": [
           {"id": "4962-220c-d2fb-5b95", "field": "75bb-ded1-c86d-bdf0", "includeChildSelections": false, "scope": "self", "shared": true, "type": "max", "value": 6},
@@ -13649,7 +13653,8 @@
           {"name": "Dreadnought", "id": "7892-eb9a-792d-ce98", "hidden": false, "primary": false, "targetId": "c97c-376-e2e0-1dd2"},
           {"name": "Leviathan Dreadnought", "id": "1a6c-4abd-edc8-ff6a", "hidden": false, "primary": false, "targetId": "4610-30f4-126d-95f"},
           {"name": "Epic Hero", "id": "b319-881d-841b-8e3d", "hidden": false, "primary": true, "targetId": "4f3a-f0f7-6647-348d"},
-          {"name": "Character", "id": "771b-d42f-35d2-3c2f", "hidden": false, "primary": false, "targetId": "9cfd-1c32-585f-7d5c"}
+          {"name": "Character", "id": "771b-d42f-35d2-3c2f", "hidden": false, "primary": false, "targetId": "9cfd-1c32-585f-7d5c"},
+          {"name": "Templar Brethren", "id": "eaa8-e610-6164-d29c", "hidden": false, "primary": false, "targetId": "d916-2298-da6f-bd28"}
         ],
         "constraints": [
           {
@@ -14219,7 +14224,8 @@
           {"name": "Imperium", "id": "98f8-4e18-9a61-c555", "hidden": false, "primary": false, "targetId": "aff3-d6a3-2a95-9dc"},
           {"name": "Centurion Assault Squad", "id": "8dc8-6c29-c8f6-5b39", "hidden": false, "primary": false, "targetId": "5de-1fc6-899f-701c"},
           {"name": "Faction: Adeptus Astartes", "id": "5ebb-8777-6b98-b0a8", "hidden": false, "primary": false, "targetId": "6e7-40c-58d9-e402"},
-          {"name": "Centurion", "id": "f032-1e6a-856e-eaea", "hidden": false, "primary": false, "targetId": "facf-9dfb-9481-fd3f"}
+          {"name": "Centurion", "id": "f032-1e6a-856e-eaea", "hidden": false, "primary": false, "targetId": "facf-9dfb-9481-fd3f"},
+          {"name": "Templar Brethren", "id": "941c-1b16-7b72-e466", "hidden": false, "primary": false, "targetId": "d916-2298-da6f-bd28"}
         ],
         "constraints": [
           {"id": "dc71-7b08-b768-c584", "field": "75bb-ded1-c86d-bdf0", "includeChildSelections": false, "scope": "self", "shared": true, "type": "max", "value": 3},
