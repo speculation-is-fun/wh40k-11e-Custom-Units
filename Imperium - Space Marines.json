@@ -379,7 +379,8 @@
       {"name": "Master of the Forge", "id": "789a-4bcf-87e6-12e0", "hidden": false},
       {"name": "Master of Sanctity", "id": "40c0-9353-6f8a-d281", "hidden": false},
       {"name": "Chief Librarian", "id": "fe94-de84-7f3f-7fa7", "hidden": false},
-      {"name": "Land Raider Tempest", "id": "d705-4a81-0bed-305e", "hidden": false}
+      {"name": "Land Raider Tempest", "id": "d705-4a81-0bed-305e", "hidden": false},
+      {"name": "Airborne Insertion", "id": "5154-3ad1-fc2c-0158", "hidden": false}
     ],
     "costTypes": [
       {
@@ -44973,7 +44974,7 @@
             "characteristics": [
               {
                 "name": "Description",
-                "$text": "This model has a transport capacity of 6 models. It can only transport Scout Squad, Scout Sniper Squad and Sergeant Telion models.",
+                "$text": "This model has a transport capacity of 6 models. It can only transport Phobos units, Neophyte Squad, Scout Squad, Scout Sniper Squad, and Sergeant Telion models.",
                 "typeId": "9b8f-694b-e5e-b573"
               }
             ]
@@ -115124,6 +115125,58 @@
               }
             ],
             "rules": [{"name": "Rip and Tear", "id": "a454-7d2b-b33f-7702", "description": "Chain Weapons equipped by friendly units have +1A", "hidden": false}]
+          },
+          {
+            "name": "Aerial Assault [Custom Units]",
+            "id": "5943-4ff0-dc5e-d769",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "categoryLinks": [
+              {"name": "Purge the Foe", "id": "5f34-756e-5b7f-9e32", "hidden": false, "primary": false, "targetId": "6fe0-3dbe-f7e0-10bb"},
+              {"name": "Airborne Insertion", "id": "9068-2c8f-93fb-d519", "hidden": false, "primary": false, "targetId": "5154-3ad1-fc2c-0158"}
+            ],
+            "constraints": [{"id": "97ca-b540-8fd7-dc62", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "costs": [
+              {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 0},
+              {"name": "Crusade Points", "typeId": "b03b-c239-15a5-da55", "value": 0},
+              {"name": "Crusade: Battle Honours", "typeId": "75bb-ded1-c86d-bdf0", "value": 0},
+              {"name": "Crusade: Experience", "typeId": "a623-fe74-1d33-cddf", "value": 0},
+              {"name": "Crusade: Weapon Modifications", "typeId": "716d-91b7-d55a-1022", "value": 0},
+              {"name": "Blackstone Fragments", "typeId": "ac6b-ced3-9b5e-9a6e", "value": 0},
+              {"name": "Detachment Points", "typeId": "82ae-1066-5107-6ae0", "value": 1},
+              {"name": "Enhancements", "typeId": "f759-1bc4-cb3a-f0d2", "value": 0},
+              {"name": "Honour Points", "typeId": "8135-9a2f-6627-09e2", "value": 0},
+              {"name": "Relic Fragments", "typeId": "0ece-6541-4662-ece2", "value": 0}
+            ],
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "9d3b-38d9-2d95-fac7",
+                    "childName": "Show Custom Units",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "lessThan",
+                    "value": 1
+                  }
+                ]
+              }
+            ],
+            "rules": [
+              {
+                "name": "Aerial Deployment",
+                "id": "f588-41ee-7809-e7ad",
+                "description": "You can have up to 80% of your army start the battle in strategic reserves\n\n\nFriendly Adeptus Astartes Aircraft have [Stealth]",
+                "hidden": false
+              }
+            ]
           }
         ]
       },
@@ -115982,7 +116035,7 @@
             ]
           },
           {
-            "name": "Ironstorm Spearhead Enhancements",
+            "name": "Aerial Assault Enhancements",
             "id": "21b-fffe-4336-f398",
             "hidden": false,
             "constraints": [{"id": "78ce-d253-7daf-87d", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
@@ -115998,7 +116051,8 @@
                       {"childId": "cac3-71d1-ea4b-795d", "field": "forces", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "lessThan", "value": 1},
                       {
                         "id": "d047-2714-5a51-8e28",
-                        "childId": "aa86-1617-4029-fcd7",
+                        "childId": "5943-4ff0-dc5e-d769",
+                        "childName": "Aerial Assault [Custom Units]",
                         "field": "selections",
                         "includeChildForces": true,
                         "includeChildSelections": true,
@@ -116010,51 +116064,18 @@
                     ]
                   }
                 ]
-              },
-              {
-                "comment": "Deathwatch Support",
-                "field": "hidden",
-                "type": "set",
-                "value": true,
-                "conditionGroups": [
-                  {
-                    "type": "and",
-                    "conditions": [
-                      {
-                        "childId": "d39c-9989-db7f-d815",
-                        "childName": "Faction: Deathwatch",
-                        "field": "selections",
-                        "includeChildSelections": false,
-                        "scope": "ancestor",
-                        "shared": true,
-                        "type": "instanceOf",
-                        "value": 1
-                      },
-                      {
-                        "childId": "5eb6-4ed2-6aca-c7f1",
-                        "childName": "Deathwatch Support",
-                        "field": "selections",
-                        "includeChildSelections": true,
-                        "scope": "force",
-                        "shared": true,
-                        "type": "atLeast",
-                        "value": 1
-                      }
-                    ]
-                  }
-                ]
               }
             ],
             "selectionEntries": [
               {
-                "name": "Gunnery Honours (Upgrade)",
+                "name": "Drop Pod Assault (Upgrade)",
                 "id": "64bf-bc5c-2a45-54f0",
                 "hidden": false,
                 "import": true,
                 "type": "upgrade",
                 "constraints": [{"id": "fd4e-8643-944d-377e", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 3}],
                 "costs": [
-                  {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 15},
+                  {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 10},
                   {"name": "Crusade Points", "typeId": "b03b-c239-15a5-da55", "value": 0},
                   {"name": "Crusade: Battle Honours", "typeId": "75bb-ded1-c86d-bdf0", "value": 0},
                   {"name": "Crusade: Experience", "typeId": "a623-fe74-1d33-cddf", "value": 0},
@@ -116062,6 +116083,7 @@
                   {"name": "Blackstone Fragments", "typeId": "ac6b-ced3-9b5e-9a6e", "value": 0},
                   {"name": "Detachment Points", "typeId": "82ae-1066-5107-6ae0", "value": 0},
                   {"name": "Enhancements", "typeId": "f759-1bc4-cb3a-f0d2", "value": 1},
+                  {"name": "Command Points", "typeId": "621c-5e90-c575-8242", "value": 0},
                   {"name": "Honour Points", "typeId": "8135-9a2f-6627-09e2", "value": 0},
                   {"name": "Relic Fragments", "typeId": "0ece-6541-4662-ece2", "value": 0}
                 ],
@@ -116113,8 +116135,8 @@
                     "value": true,
                     "conditions": [
                       {
-                        "childId": "dbd4-63-af05-998",
-                        "childName": "Vehicle",
+                        "childId": "cf47-a0d7-7207-29dc",
+                        "childName": "Infantry",
                         "field": "selections",
                         "includeChildSelections": true,
                         "scope": "ancestor",
@@ -116123,34 +116145,11 @@
                         "value": 1
                       }
                     ]
-                  },
-                  {
-                    "field": "hidden",
-                    "type": "set",
-                    "value": true,
-                    "conditionGroups": [
-                      {
-                        "type": "or",
-                        "conditions": [
-                          {
-                            "childId": "ba07-411c-2832-1f79",
-                            "childName": "Dedicated Transport",
-                            "field": "selections",
-                            "scope": "ancestor",
-                            "shared": true,
-                            "type": "instanceOf",
-                            "value": 1
-                          },
-                          {"childId": "c619-2086-bbcf-69c9", "childName": "Fly", "field": "selections", "scope": "ancestor", "shared": true, "type": "instanceOf", "value": 1},
-                          {"childId": "6dda-e157-334d-e93a", "childName": "Walker", "field": "selections", "scope": "ancestor", "shared": true, "type": "instanceOf", "value": 1}
-                        ]
-                      }
-                    ]
                   }
                 ],
                 "profiles": [
                   {
-                    "name": "Gunnery Honours",
+                    "name": "Drop Pod Assault",
                     "id": "8a83-8c2e-fee1-bf95",
                     "hidden": false,
                     "typeId": "9cc3-6d83-4dd3-9b64",
@@ -116158,7 +116157,7 @@
                     "characteristics": [
                       {
                         "name": "Description",
-                        "$text": "Adeptus Astartes Vehicle unit only (excluding Dedicated Transport/Fly/Walker units). This unit's ranged attacks have [Heavy]",
+                        "$text": "Adeptus Astartes Infantry units only. If this unit disembarked from a Drop Pod this battle round, its attacks can reroll hit rolls of one and is still eligible to charge.",
                         "typeId": "9b8f-694b-e5e-b573"
                       }
                     ]
@@ -116166,7 +116165,7 @@
                 ]
               },
               {
-                "name": "Redoubtable Machine Spirit (Upgrade)",
+                "name": "Improved Auspex Array (Upgrade)",
                 "id": "fe18-a419-ace5-df4a",
                 "hidden": false,
                 "import": true,
@@ -116230,33 +116229,10 @@
                     "field": "hidden",
                     "type": "set",
                     "value": true,
-                    "conditionGroups": [
-                      {
-                        "type": "or",
-                        "conditions": [
-                          {
-                            "childId": "ba07-411c-2832-1f79",
-                            "childName": "Dedicated Transport",
-                            "field": "selections",
-                            "scope": "ancestor",
-                            "shared": true,
-                            "type": "instanceOf",
-                            "value": 1
-                          },
-                          {"childId": "c619-2086-bbcf-69c9", "childName": "Fly", "field": "selections", "scope": "ancestor", "shared": true, "type": "instanceOf", "value": 1},
-                          {"childId": "6dda-e157-334d-e93a", "childName": "Walker", "field": "selections", "scope": "ancestor", "shared": true, "type": "instanceOf", "value": 1}
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "field": "hidden",
-                    "type": "set",
-                    "value": true,
                     "conditions": [
                       {
-                        "childId": "dbd4-63-af05-998",
-                        "childName": "Vehicle",
+                        "childId": "63f1-e6e8-f6f6-a4f0",
+                        "childName": "Aircraft",
                         "field": "selections",
                         "includeChildSelections": true,
                         "scope": "ancestor",
@@ -116266,19 +116242,11 @@
                       }
                     ]
                   },
-                  {
-                    "affects": "self.entries.group.recursive.profiles.Unit",
-                    "field": "55a7-5b54-c60d-11dc",
-                    "join": ", ",
-                    "scope": "parent",
-                    "skipIfPresent": "Sustained Hits 1: non-Monster/Vehicle",
-                    "type": "set",
-                    "value": "5+"
-                  }
+                  {"affects": "group.profiles.Ranged Weapons", "field": "add-info", "join": ", ", "scope": "parent", "type": "add", "value": "4640-43e7-30b-215a"}
                 ],
                 "profiles": [
                   {
-                    "name": "Redoubtable Machine Spirit",
+                    "name": "Improved Auspex Array",
                     "id": "d9bf-2cca-0bce-da0e",
                     "hidden": false,
                     "typeId": "9cc3-6d83-4dd3-9b64",
@@ -116286,7 +116254,7 @@
                     "characteristics": [
                       {
                         "name": "Description",
-                        "$text": "Adeptus Astartes Vehicle unit only (excluding Dedicated Transport/Fly/Walker units) This unit:\n▪ Has a 5+ InvSv\n▪ At the end of your Command phase, heals 1 wound",
+                        "$text": "Adeptus Astartes Aircraft unit only. This unit:\n▪ Has a [Ignores Cover]\n▪ At the end of your movement phase you can select one enemy unit within 24\" of this unit. That unit has +6\" detection range.",
                         "typeId": "9b8f-694b-e5e-b573"
                       }
                     ]
@@ -125522,6 +125490,320 @@
                     "typeId": "9cc3-6d83-4dd3-9b64",
                     "typeName": "Abilities",
                     "characteristics": [{"name": "Description", "$text": "Adeptus Astartes Infantry unit only. This unit's Power Weapon attacks have +1A.", "typeId": "9b8f-694b-e5e-b573"}]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Ironstorm Spearhead Enhancements",
+            "id": "ddb0-2586-9b23-e06b",
+            "hidden": false,
+            "constraints": [{"id": "789c-6154-96ac-c05d", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {"childId": "cac3-71d1-ea4b-795d", "field": "forces", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "lessThan", "value": 1},
+                      {
+                        "id": "d5f4-fc08-b838-b7a8",
+                        "childId": "aa86-1617-4029-fcd7",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "roster",
+                        "shared": true,
+                        "type": "lessThan",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "comment": "Deathwatch Support",
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "d39c-9989-db7f-d815",
+                        "childName": "Faction: Deathwatch",
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "ancestor",
+                        "shared": true,
+                        "type": "instanceOf",
+                        "value": 1
+                      },
+                      {
+                        "childId": "5eb6-4ed2-6aca-c7f1",
+                        "childName": "Deathwatch Support",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Gunnery Honours (Upgrade)",
+                "id": "b408-2e56-a477-6dae",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [{"id": "06bf-6c0a-ae33-cef8", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 3}],
+                "costs": [
+                  {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 15},
+                  {"name": "Crusade Points", "typeId": "b03b-c239-15a5-da55", "value": 0},
+                  {"name": "Crusade: Battle Honours", "typeId": "75bb-ded1-c86d-bdf0", "value": 0},
+                  {"name": "Crusade: Experience", "typeId": "a623-fe74-1d33-cddf", "value": 0},
+                  {"name": "Crusade: Weapon Modifications", "typeId": "716d-91b7-d55a-1022", "value": 0},
+                  {"name": "Blackstone Fragments", "typeId": "ac6b-ced3-9b5e-9a6e", "value": 0},
+                  {"name": "Detachment Points", "typeId": "82ae-1066-5107-6ae0", "value": 0},
+                  {"name": "Enhancements", "typeId": "f759-1bc4-cb3a-f0d2", "value": 1},
+                  {"name": "Honour Points", "typeId": "8135-9a2f-6627-09e2", "value": 0},
+                  {"name": "Relic Fragments", "typeId": "0ece-6541-4662-ece2", "value": 0}
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "field": "f759-1bc4-cb3a-f0d2",
+                        "type": "divide",
+                        "value": 2,
+                        "conditions": [
+                          {
+                            "childId": "b408-2e56-a477-6dae",
+                            "childName": "Gunnery Honours",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "roster",
+                            "shared": true,
+                            "type": "equalTo",
+                            "value": 2
+                          }
+                        ]
+                      },
+                      {
+                        "field": "f759-1bc4-cb3a-f0d2",
+                        "type": "divide",
+                        "value": 3,
+                        "conditions": [
+                          {
+                            "childId": "b408-2e56-a477-6dae",
+                            "childName": "Gunnery Honours",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "roster",
+                            "shared": true,
+                            "type": "greaterThan",
+                            "value": 2
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": true,
+                    "conditions": [
+                      {
+                        "childId": "dbd4-63-af05-998",
+                        "childName": "Vehicle",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "ancestor",
+                        "shared": true,
+                        "type": "notInstanceOf",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": true,
+                    "conditionGroups": [
+                      {
+                        "type": "or",
+                        "conditions": [
+                          {
+                            "childId": "ba07-411c-2832-1f79",
+                            "childName": "Dedicated Transport",
+                            "field": "selections",
+                            "scope": "ancestor",
+                            "shared": true,
+                            "type": "instanceOf",
+                            "value": 1
+                          },
+                          {"childId": "c619-2086-bbcf-69c9", "childName": "Fly", "field": "selections", "scope": "ancestor", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "6dda-e157-334d-e93a", "childName": "Walker", "field": "selections", "scope": "ancestor", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Gunnery Honours",
+                    "id": "9fa5-275f-1d99-5fd2",
+                    "hidden": false,
+                    "typeId": "9cc3-6d83-4dd3-9b64",
+                    "typeName": "Abilities",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "Adeptus Astartes Vehicle unit only (excluding Dedicated Transport/Fly/Walker units). This unit's ranged attacks have [Heavy]",
+                        "typeId": "9b8f-694b-e5e-b573"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Redoubtable Machine Spirit (Upgrade)",
+                "id": "5756-8c9b-fdd1-7bc5",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [{"id": "1885-f4ef-99cd-1af9", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 3}],
+                "costs": [
+                  {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 25},
+                  {"name": "Crusade Points", "typeId": "b03b-c239-15a5-da55", "value": 0},
+                  {"name": "Crusade: Battle Honours", "typeId": "75bb-ded1-c86d-bdf0", "value": 0},
+                  {"name": "Crusade: Experience", "typeId": "a623-fe74-1d33-cddf", "value": 0},
+                  {"name": "Crusade: Weapon Modifications", "typeId": "716d-91b7-d55a-1022", "value": 0},
+                  {"name": "Blackstone Fragments", "typeId": "ac6b-ced3-9b5e-9a6e", "value": 0},
+                  {"name": "Detachment Points", "typeId": "82ae-1066-5107-6ae0", "value": 0},
+                  {"name": "Enhancements", "typeId": "f759-1bc4-cb3a-f0d2", "value": 1},
+                  {"name": "Honour Points", "typeId": "8135-9a2f-6627-09e2", "value": 0},
+                  {"name": "Relic Fragments", "typeId": "0ece-6541-4662-ece2", "value": 0}
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "field": "f759-1bc4-cb3a-f0d2",
+                        "type": "divide",
+                        "value": 2,
+                        "conditions": [
+                          {
+                            "childId": "5756-8c9b-fdd1-7bc5",
+                            "childName": "Redoubtable Machine Spirit",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "roster",
+                            "shared": true,
+                            "type": "equalTo",
+                            "value": 2
+                          }
+                        ]
+                      },
+                      {
+                        "field": "f759-1bc4-cb3a-f0d2",
+                        "type": "divide",
+                        "value": 3,
+                        "conditions": [
+                          {
+                            "childId": "5756-8c9b-fdd1-7bc5",
+                            "childName": "Redoubtable Machine Spirit",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "roster",
+                            "shared": true,
+                            "type": "greaterThan",
+                            "value": 2
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": true,
+                    "conditionGroups": [
+                      {
+                        "type": "or",
+                        "conditions": [
+                          {
+                            "childId": "ba07-411c-2832-1f79",
+                            "childName": "Dedicated Transport",
+                            "field": "selections",
+                            "scope": "ancestor",
+                            "shared": true,
+                            "type": "instanceOf",
+                            "value": 1
+                          },
+                          {"childId": "c619-2086-bbcf-69c9", "childName": "Fly", "field": "selections", "scope": "ancestor", "shared": true, "type": "instanceOf", "value": 1},
+                          {"childId": "6dda-e157-334d-e93a", "childName": "Walker", "field": "selections", "scope": "ancestor", "shared": true, "type": "instanceOf", "value": 1}
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": true,
+                    "conditions": [
+                      {
+                        "childId": "dbd4-63-af05-998",
+                        "childName": "Vehicle",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "ancestor",
+                        "shared": true,
+                        "type": "notInstanceOf",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {
+                    "affects": "self.entries.group.recursive.profiles.Unit",
+                    "field": "55a7-5b54-c60d-11dc",
+                    "join": ", ",
+                    "scope": "parent",
+                    "skipIfPresent": "Sustained Hits 1: non-Monster/Vehicle",
+                    "type": "set",
+                    "value": "5+"
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Redoubtable Machine Spirit",
+                    "id": "a367-d33a-6e05-359a",
+                    "hidden": false,
+                    "typeId": "9cc3-6d83-4dd3-9b64",
+                    "typeName": "Abilities",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "Adeptus Astartes Vehicle unit only (excluding Dedicated Transport/Fly/Walker units) This unit:\n▪ Has a 5+ InvSv\n▪ At the end of your Command phase, heals 1 wound",
+                        "typeId": "9b8f-694b-e5e-b573"
+                      }
+                    ]
                   }
                 ]
               }
@@ -152314,6 +152596,148 @@
                       {
                         "name": "Description",
                         "$text": "Fight Phase\n\n\nWhen\nFight step of your opponent’s Fight phase, just after an enemy unit has resolved its attacks.\n\n\nTarget\nOne friendly unit that is eligible to fight.\n\n\nEffect\nUntil the end of the phase, your unit has the Fights First ability and it must be the next unit you select to fight (12.04).",
+                        "typeId": "9b8f-694b-e5e-b573"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Aerial Assault Stratagems",
+            "id": "28c0-3ce8-297c-775f",
+            "hidden": false,
+            "constraints": [{"id": "8a96-d114-26b9-d229", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {"childId": "cac3-71d1-ea4b-795d", "field": "forces", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "lessThan", "value": 1},
+                      {
+                        "childId": "5943-4ff0-dc5e-d769",
+                        "childName": "Aerial Assault [Custom Units]",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "scope": "roster",
+                        "shared": true,
+                        "type": "lessThan",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Wings of Glory",
+                "id": "2264-fefd-27dc-9e5b",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "costs": [
+                  {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 0},
+                  {"name": "Crusade Points", "typeId": "b03b-c239-15a5-da55", "value": 0},
+                  {"name": "Crusade: Battle Honours", "typeId": "75bb-ded1-c86d-bdf0", "value": 0},
+                  {"name": "Crusade: Experience", "typeId": "a623-fe74-1d33-cddf", "value": 0},
+                  {"name": "Crusade: Weapon Modifications", "typeId": "716d-91b7-d55a-1022", "value": 0},
+                  {"name": "Blackstone Fragments", "typeId": "ac6b-ced3-9b5e-9a6e", "value": 0},
+                  {"name": "Detachment Points", "typeId": "82ae-1066-5107-6ae0", "value": 0},
+                  {"name": "Enhancements", "typeId": "f759-1bc4-cb3a-f0d2", "value": 0},
+                  {"name": "Command Points", "typeId": "621c-5e90-c575-8242", "value": 1},
+                  {"name": "Honour Points", "typeId": "8135-9a2f-6627-09e2", "value": 0},
+                  {"name": "Relic Fragments", "typeId": "0ece-6541-4662-ece2", "value": 0}
+                ],
+                "profiles": [
+                  {
+                    "name": "Wings of Glory",
+                    "id": "8e70-94ed-260f-db62",
+                    "hidden": false,
+                    "typeId": "9cc3-6d83-4dd3-9b64",
+                    "typeName": "Abilities",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "Command Phase\n\n\nWhen\nEnd of your opponent's Fight phase.\n\n\nTarget\nA friendly Fly unit on an objective that you control or is uncontrolled.\n\n\nEffect\nThat objective is secured.",
+                        "typeId": "9b8f-694b-e5e-b573"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Skyborne Annihilation",
+                "id": "b621-e9cf-f90c-c920",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "costs": [
+                  {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 0},
+                  {"name": "Crusade Points", "typeId": "b03b-c239-15a5-da55", "value": 0},
+                  {"name": "Crusade: Battle Honours", "typeId": "75bb-ded1-c86d-bdf0", "value": 0},
+                  {"name": "Crusade: Experience", "typeId": "a623-fe74-1d33-cddf", "value": 0},
+                  {"name": "Crusade: Weapon Modifications", "typeId": "716d-91b7-d55a-1022", "value": 0},
+                  {"name": "Blackstone Fragments", "typeId": "ac6b-ced3-9b5e-9a6e", "value": 0},
+                  {"name": "Detachment Points", "typeId": "82ae-1066-5107-6ae0", "value": 0},
+                  {"name": "Enhancements", "typeId": "f759-1bc4-cb3a-f0d2", "value": 0},
+                  {"name": "Command Points", "typeId": "621c-5e90-c575-8242", "value": 1},
+                  {"name": "Honour Points", "typeId": "8135-9a2f-6627-09e2", "value": 0},
+                  {"name": "Relic Fragments", "typeId": "0ece-6541-4662-ece2", "value": 0}
+                ],
+                "profiles": [
+                  {
+                    "name": "Skyborne Annihilation",
+                    "id": "af81-5198-f114-e71b",
+                    "hidden": false,
+                    "typeId": "9cc3-6d83-4dd3-9b64",
+                    "typeName": "Abilities",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "Shooting Phase\n\n\nWhen\nYour Shooting phase, when a friendly Aircraft unit shoots.\n\n\nTarget\nThat Aircraft unit.\n\n\nEffect\nThis units attacks have -1 AP and +1 to wound when targeting enemy Monster/Vehicle units.",
+                        "typeId": "9b8f-694b-e5e-b573"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Airborne Strike",
+                "id": "0366-1402-54a1-385c",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "costs": [
+                  {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 0},
+                  {"name": "Crusade Points", "typeId": "b03b-c239-15a5-da55", "value": 0},
+                  {"name": "Crusade: Battle Honours", "typeId": "75bb-ded1-c86d-bdf0", "value": 0},
+                  {"name": "Crusade: Experience", "typeId": "a623-fe74-1d33-cddf", "value": 0},
+                  {"name": "Crusade: Weapon Modifications", "typeId": "716d-91b7-d55a-1022", "value": 0},
+                  {"name": "Blackstone Fragments", "typeId": "ac6b-ced3-9b5e-9a6e", "value": 0},
+                  {"name": "Detachment Points", "typeId": "82ae-1066-5107-6ae0", "value": 0},
+                  {"name": "Enhancements", "typeId": "f759-1bc4-cb3a-f0d2", "value": 0},
+                  {"name": "Command Points", "typeId": "621c-5e90-c575-8242", "value": 1},
+                  {"name": "Honour Points", "typeId": "8135-9a2f-6627-09e2", "value": 0},
+                  {"name": "Relic Fragments", "typeId": "0ece-6541-4662-ece2", "value": 0}
+                ],
+                "profiles": [
+                  {
+                    "name": "Airborne Strike",
+                    "id": "8934-5dde-b284-d2de",
+                    "hidden": false,
+                    "typeId": "9cc3-6d83-4dd3-9b64",
+                    "typeName": "Abilities",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "Movement Phase\n\n\nWhen\nYour Movement phase, when a friendly unit disembarks a friendly Aircraft unit.\n\n\nTarget\nThat disembarking unit.\n\n\nEffect\nYour unit is still eligible to charge this turn, and has +1S in melee if the Assault Doctrine is active for that unit.",
                         "typeId": "9b8f-694b-e5e-b573"
                       }
                     ]
