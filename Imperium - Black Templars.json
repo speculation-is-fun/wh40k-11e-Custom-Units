@@ -15047,7 +15047,8 @@
             "conditions": [
               {
                 "id": "0ebe-9a2e-0608-47a7",
-                "childId": "20eb-6360-a2cf-cf5a",
+                "childId": "6300-cc8e-7067-a920",
+                "childName": "Neophytes",
                 "field": "selections",
                 "includeChildSelections": true,
                 "scope": "d69a-e840-d82d-20ae",
@@ -15081,8 +15082,8 @@
             "defaultSelectionEntryId": "9455-ced-8432-d4e8",
             "hidden": false,
             "constraints": [
-              {"id": "1af2-e91c-3551-2b86", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 4},
-              {"id": "5a43-d089-50f8-7f3f", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 8}
+              {"id": "1af2-e91c-3551-2b86", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 5},
+              {"id": "5a43-d089-50f8-7f3f", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 10}
             ],
             "selectionEntries": [
               {
@@ -15091,7 +15092,7 @@
                 "hidden": false,
                 "import": true,
                 "type": "model",
-                "constraints": [{"id": "328f-d70a-1f4b-6bfc", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 8}],
+                "constraints": [{"id": "328f-d70a-1f4b-6bfc", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 10}],
                 "infoLinks": [{"name": "Neophyte", "id": "a953-5181-acb3-2bbb", "hidden": false, "targetId": "1f75-3cc0-3706-0807", "type": "profile"}],
                 "selectionEntries": [
                   {
@@ -15165,7 +15166,7 @@
                 "hidden": false,
                 "import": true,
                 "type": "model",
-                "constraints": [{"id": "d21e-c754-a9ac-c7c7", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 8}],
+                "constraints": [{"id": "d21e-c754-a9ac-c7c7", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 10}],
                 "entryLinks": [
                   {
                     "name": "Bolt pistol",
