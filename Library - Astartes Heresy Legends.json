@@ -1337,7 +1337,7 @@
       {"name": "Saturnine Dreadnought", "id": "5000-e7ff-b212-e707", "hidden": false},
       {"name": "Land Raider Ares", "id": "683f-fca8-b42c-e10e", "hidden": false},
       {"name": "Sabre Strike Tank", "id": "1d2c-758e-2343-c46f", "hidden": false},
-      {"name": "Aquitor Bombard", "id": "cd8f-0acd-d380-ba09", "hidden": false},
+      {"name": "Arquitor Bombard", "id": "cd8f-0acd-d380-ba09", "hidden": false},
       {"name": "Moritat", "id": "28f2-2ac9-4af1-45cd", "hidden": false},
       {"name": "Glaive", "id": "c9d5-2261-ba45-971e", "hidden": false},
       {"name": "Ascalon", "id": "ae5a-3925-d3c3-4c39", "hidden": false},
@@ -9212,7 +9212,8 @@
           },
           {"name": "Damaged: 1-6 wounds remaining", "id": "ea61-a62-d344-4a43", "hidden": false, "targetId": "8edb-b088-4c26-2fef", "type": "profile"},
           {"name": "Hover", "id": "8734-cf-7c0f-8c36", "hidden": false, "targetId": "eec5-5f54-9c03-c305", "type": "rule"},
-          {"name": "Combat Doctrines", "id": "2288-f524-a2f2-6eff", "hidden": false, "targetId": "3b76-4053-ece9-6e7d", "type": "rule"}
+          {"name": "Combat Doctrines", "id": "2288-f524-a2f2-6eff", "hidden": false, "targetId": "3b76-4053-ece9-6e7d", "type": "rule"},
+          {"name": "Assault Ramp", "id": "1bd4-53d1-79e9-6247", "hidden": false, "targetId": "b1c6-8391-4b18-5d57", "type": "profile"}
         ],
         "modifiers": [
           {
@@ -9278,7 +9279,7 @@
             "typeId": "c547-1836-d8a-ff4f",
             "typeName": "Unit",
             "characteristics": [
-              {"name": "M", "$text": "20+\"", "typeId": "e703-ecb6-5ce7-aec1"},
+              {"name": "M", "$text": "20\"", "typeId": "e703-ecb6-5ce7-aec1"},
               {"name": "T", "$text": "10", "typeId": "d29d-cf75-fc2d-34a4"},
               {"name": "Sv", "$text": "3+", "typeId": "450-a17e-9d5e-29da"},
               {"name": "W", "$text": "18", "typeId": "750a-a2ec-90d3-21fe"},
@@ -9376,12 +9377,12 @@
                     "typeName": "Ranged Weapons",
                     "characteristics": [
                       {"name": "Range", "$text": "48\"", "typeId": "9896-9419-16a1-92fc"},
-                      {"name": "A", "$text": "2D6", "typeId": "3bb-c35f-f54-fb08"},
+                      {"name": "A", "$text": "8", "typeId": "3bb-c35f-f54-fb08"},
                       {"name": "BS", "$text": "3+", "typeId": "94d-8a98-cf90-183e"},
                       {"name": "S", "$text": "6", "typeId": "2229-f494-25db-c5d3"},
-                      {"name": "AP", "$text": "0", "typeId": "9ead-8a10-520-de15"},
+                      {"name": "AP", "$text": "-1", "typeId": "9ead-8a10-520-de15"},
                       {"name": "D", "$text": "1", "typeId": "a354-c1c8-a745-f9e3"},
-                      {"name": "Keywords", "$text": "Blast", "typeId": "7f1b-8591-2fcf-d01c"}
+                      {"name": "Keywords", "$text": "Blast 3", "typeId": "7f1b-8591-2fcf-d01c"}
                     ]
                   }
                 ]
@@ -9452,10 +9453,10 @@
                           {"name": "Range", "$text": "18\"", "typeId": "9896-9419-16a1-92fc"},
                           {"name": "A", "$text": "2", "typeId": "3bb-c35f-f54-fb08"},
                           {"name": "BS", "$text": "3+", "typeId": "94d-8a98-cf90-183e"},
-                          {"name": "S", "$text": "9", "typeId": "2229-f494-25db-c5d3"},
+                          {"name": "S", "$text": "10", "typeId": "2229-f494-25db-c5d3"},
                           {"name": "AP", "$text": "-4", "typeId": "9ead-8a10-520-de15"},
-                          {"name": "D", "$text": "D6", "typeId": "a354-c1c8-a745-f9e3"},
-                          {"name": "Keywords", "$text": "Melta 2, Twin-linked", "typeId": "7f1b-8591-2fcf-d01c"}
+                          {"name": "D", "$text": "D3+2", "typeId": "a354-c1c8-a745-f9e3"},
+                          {"name": "Keywords", "$text": "Melta 3, Twin-linked", "typeId": "7f1b-8591-2fcf-d01c"}
                         ]
                       }
                     ]
@@ -9487,12 +9488,12 @@
                         "typeName": "Ranged Weapons",
                         "characteristics": [
                           {"name": "Range", "$text": "48\"", "typeId": "9896-9419-16a1-92fc"},
-                          {"name": "A", "$text": "2D6", "typeId": "3bb-c35f-f54-fb08"},
+                          {"name": "A", "$text": "D6+6", "typeId": "3bb-c35f-f54-fb08"},
                           {"name": "BS", "$text": "3+", "typeId": "94d-8a98-cf90-183e"},
-                          {"name": "S", "$text": "4", "typeId": "2229-f494-25db-c5d3"},
-                          {"name": "AP", "$text": "0", "typeId": "9ead-8a10-520-de15"},
+                          {"name": "S", "$text": "5", "typeId": "2229-f494-25db-c5d3"},
+                          {"name": "AP", "$text": "-1", "typeId": "9ead-8a10-520-de15"},
                           {"name": "D", "$text": "1", "typeId": "a354-c1c8-a745-f9e3"},
-                          {"name": "Keywords", "$text": "Blast", "typeId": "7f1b-8591-2fcf-d01c"}
+                          {"name": "Keywords", "$text": "Blast 2", "typeId": "7f1b-8591-2fcf-d01c"}
                         ],
                         "modifiers": [
                           {
@@ -9514,10 +9515,10 @@
                           {"name": "Range", "$text": "48\"", "typeId": "9896-9419-16a1-92fc"},
                           {"name": "A", "$text": "2", "typeId": "3bb-c35f-f54-fb08"},
                           {"name": "BS", "$text": "3+", "typeId": "94d-8a98-cf90-183e"},
-                          {"name": "S", "$text": "9", "typeId": "2229-f494-25db-c5d3"},
-                          {"name": "AP", "$text": "-2", "typeId": "9ead-8a10-520-de15"},
-                          {"name": "D", "$text": "D6", "typeId": "a354-c1c8-a745-f9e3"},
-                          {"name": "Keywords", "typeId": "7f1b-8591-2fcf-d01c"}
+                          {"name": "S", "$text": "10", "typeId": "2229-f494-25db-c5d3"},
+                          {"name": "AP", "$text": "-3", "typeId": "9ead-8a10-520-de15"},
+                          {"name": "D", "$text": "D3+3", "typeId": "a354-c1c8-a745-f9e3"},
+                          {"name": "Keywords", "$text": "", "typeId": "7f1b-8591-2fcf-d01c"}
                         ],
                         "modifiers": [
                           {
@@ -9572,7 +9573,10 @@
                             "type": "selectionEntryGroup"
                           }
                         ],
-                        "infoLinks": [{"name": "Twin-linked", "id": "4215-2ec9-3470-2c89", "hidden": false, "targetId": "cf93-ad4d-2f08-a79d", "type": "rule"}],
+                        "infoLinks": [
+                          {"name": "Anti", "id": "4215-2ec9-3470-2c89", "hidden": false, "targetId": "4111-82e3-9444-e942", "type": "rule"},
+                          {"name": "Twin-linked", "id": "d18e-8076-1e7a-0206", "hidden": false, "targetId": "cf93-ad4d-2f08-a79d", "type": "rule"}
+                        ],
                         "profiles": [
                           {
                             "name": "Twin hellstrike launcher",
@@ -9586,7 +9590,7 @@
                               {"name": "BS", "$text": "3+", "typeId": "94d-8a98-cf90-183e"},
                               {"name": "S", "$text": "10", "typeId": "2229-f494-25db-c5d3"},
                               {"name": "AP", "$text": "-3", "typeId": "9ead-8a10-520-de15"},
-                              {"name": "D", "$text": "D6", "typeId": "a354-c1c8-a745-f9e3"},
+                              {"name": "D", "$text": "D3+2", "typeId": "a354-c1c8-a745-f9e3"},
                               {"name": "Keywords", "$text": "Anti-Fly 2+, Twin-linked", "typeId": "7f1b-8591-2fcf-d01c"}
                             ]
                           }
@@ -9755,7 +9759,7 @@
             "typeId": "c547-1836-d8a-ff4f",
             "typeName": "Unit",
             "characteristics": [
-              {"name": "M", "$text": "20+\"", "typeId": "e703-ecb6-5ce7-aec1"},
+              {"name": "M", "$text": "20\"", "typeId": "e703-ecb6-5ce7-aec1"},
               {"name": "T", "$text": "10", "typeId": "d29d-cf75-fc2d-34a4"},
               {"name": "Sv", "$text": "3+", "typeId": "450-a17e-9d5e-29da"},
               {"name": "W", "$text": "18", "typeId": "750a-a2ec-90d3-21fe"},
@@ -9991,7 +9995,7 @@
                               {"name": "BS", "$text": "3+", "typeId": "94d-8a98-cf90-183e"},
                               {"name": "S", "$text": "10", "typeId": "2229-f494-25db-c5d3"},
                               {"name": "AP", "$text": "-3", "typeId": "9ead-8a10-520-de15"},
-                              {"name": "D", "$text": "D6", "typeId": "a354-c1c8-a745-f9e3"},
+                              {"name": "D", "$text": "D3+2", "typeId": "a354-c1c8-a745-f9e3"},
                               {"name": "Keywords", "$text": "Anti-Fly 2+, Twin-linked", "typeId": "7f1b-8591-2fcf-d01c"}
                             ]
                           }
@@ -12598,12 +12602,15 @@
           {"name": "Aircraft", "id": "0fb2-01d2-38c8-bc0c", "hidden": false, "primary": false, "targetId": "63f1-e6e8-f6f6-a4f0"}
         ],
         "costs": [
-          {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 900},
+          {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 800},
           {"name": "Crusade Points", "typeId": "b03b-c239-15a5-da55", "value": 0},
           {"name": "Crusade: Battle Honours", "typeId": "75bb-ded1-c86d-bdf0", "value": 0},
           {"name": "Crusade: Experience", "typeId": "a623-fe74-1d33-cddf", "value": 0},
           {"name": "Crusade: Weapon Modifications", "typeId": "716d-91b7-d55a-1022", "value": 0},
-          {"name": "Blackstone Fragments", "typeId": "ac6b-ced3-9b5e-9a6e", "value": 0}
+          {"name": "Blackstone Fragments", "typeId": "ac6b-ced3-9b5e-9a6e", "value": 0},
+          {"name": "Detachment Points", "typeId": "82ae-1066-5107-6ae0", "value": 0},
+          {"name": "Enhancements", "typeId": "f759-1bc4-cb3a-f0d2", "value": 0},
+          {"name": "Command Points", "typeId": "621c-5e90-c575-8242", "value": 0}
         ],
         "infoLinks": [
           {
@@ -12612,7 +12619,7 @@
             "hidden": false,
             "targetId": "b68a-5ded-65ac-98c",
             "type": "rule",
-            "modifiers": [{"field": "name", "type": "append", "value": "2D6"}]
+            "modifiers": [{"field": "name", "type": "append", "value": "2D6+2"}]
           },
           {"name": "Combat Doctrines", "id": "dd02-21f2-5857-bdf3", "hidden": false, "targetId": "3b76-4053-ece9-6e7d", "type": "rule"}
         ],
@@ -12694,7 +12701,7 @@
             "typeId": "c547-1836-d8a-ff4f",
             "typeName": "Unit",
             "characteristics": [
-              {"name": "M", "$text": "20\"+", "typeId": "e703-ecb6-5ce7-aec1"},
+              {"name": "M", "$text": "20\"", "typeId": "e703-ecb6-5ce7-aec1"},
               {"name": "T", "$text": "13", "typeId": "d29d-cf75-fc2d-34a4"},
               {"name": "Sv", "$text": "2+", "typeId": "450-a17e-9d5e-29da"},
               {"name": "W", "$text": "40", "typeId": "750a-a2ec-90d3-21fe"},
@@ -12863,7 +12870,7 @@
                       {"name": "BS", "$text": "3+", "typeId": "94d-8a98-cf90-183e"},
                       {"name": "S", "$text": "10", "typeId": "2229-f494-25db-c5d3"},
                       {"name": "AP", "$text": "-3", "typeId": "9ead-8a10-520-de15"},
-                      {"name": "D", "$text": "D6", "typeId": "a354-c1c8-a745-f9e3"},
+                      {"name": "D", "$text": "D3+2", "typeId": "a354-c1c8-a745-f9e3"},
                       {"name": "Keywords", "$text": "Anti-Fly 3+", "typeId": "7f1b-8591-2fcf-d01c"}
                     ]
                   }
@@ -18558,9 +18565,7 @@
                     "infoLinks": [
                       {"name": "Blast", "id": "2dd4-ae43-3144-9794", "hidden": false, "targetId": "6c1f-1cf7-ff25-c99e", "type": "rule"},
                       {"name": "Devastating Wounds", "id": "6426-507c-bf4c-22ac", "hidden": false, "targetId": "be1e-ac8e-1e2c-3528", "type": "rule"},
-                      {"name": "Sustained Hits", "id": "fcdb-c9ff-bf5e-004a", "hidden": false, "targetId": "1897-c22c-9597-12b1", "type": "rule"},
                       {"name": "Indirect Fire", "id": "f231-031f-d0a4-ed87", "hidden": false, "targetId": "4ddd-4e29-acdd-5e6d", "type": "rule"},
-                      {"name": "Heavy", "id": "364c-1dbe-5601-0933", "hidden": false, "targetId": "1202-10a8-78e9-4c67", "type": "rule"},
                       {"name": "Ignores Cover", "id": "a38d-f4c1-c62e-da63", "hidden": false, "targetId": "4640-43e7-30b-215a", "type": "rule"}
                     ],
                     "profiles": [
@@ -18576,8 +18581,8 @@
                           {"name": "BS", "$text": "3+", "typeId": "94d-8a98-cf90-183e"},
                           {"name": "S", "$text": "14", "typeId": "2229-f494-25db-c5d3"},
                           {"name": "AP", "$text": "-4", "typeId": "9ead-8a10-520-de15"},
-                          {"name": "D", "$text": "2D3+4", "typeId": "a354-c1c8-a745-f9e3"},
-                          {"name": "Keywords", "$text": "Blast 2, Devastating Wounds, Heavy, Ignores Cover, Indirect Fire, Sustained Hits 1", "typeId": "7f1b-8591-2fcf-d01c"}
+                          {"name": "D", "$text": "2D3+2", "typeId": "a354-c1c8-a745-f9e3"},
+                          {"name": "Keywords", "$text": "Blast, Devastating Wounds, Ignores Cover, Indirect Fire", "typeId": "7f1b-8591-2fcf-d01c"}
                         ]
                       }
                     ]
@@ -18616,11 +18621,11 @@
                         "typeName": "Ranged Weapons",
                         "characteristics": [
                           {"name": "Range", "$text": "36\"", "typeId": "9896-9419-16a1-92fc"},
-                          {"name": "A", "$text": "6", "typeId": "3bb-c35f-f54-fb08"},
+                          {"name": "A", "$text": "8", "typeId": "3bb-c35f-f54-fb08"},
                           {"name": "BS", "$text": "3+", "typeId": "94d-8a98-cf90-183e"},
                           {"name": "S", "$text": "7", "typeId": "2229-f494-25db-c5d3"},
-                          {"name": "AP", "$text": "-2", "typeId": "9ead-8a10-520-de15"},
-                          {"name": "D", "$text": "4", "typeId": "a354-c1c8-a745-f9e3"},
+                          {"name": "AP", "$text": "-3", "typeId": "9ead-8a10-520-de15"},
+                          {"name": "D", "$text": "3", "typeId": "a354-c1c8-a745-f9e3"},
                           {"name": "Keywords", "$text": "Anti-Vehicle 3+, Blast 1, Ignores Cover, Indirect Fire", "typeId": "7f1b-8591-2fcf-d01c"}
                         ]
                       }
@@ -21876,7 +21881,7 @@
                         "typeName": "Ranged Weapons",
                         "characteristics": [
                           {"name": "Range", "$text": "48\"", "typeId": "9896-9419-16a1-92fc"},
-                          {"name": "A", "$text": "10", "typeId": "3bb-c35f-f54-fb08"},
+                          {"name": "A", "$text": "12", "typeId": "3bb-c35f-f54-fb08"},
                           {"name": "BS", "$text": "3+", "typeId": "94d-8a98-cf90-183e"},
                           {"name": "S", "$text": "7", "typeId": "2229-f494-25db-c5d3"},
                           {"name": "AP", "$text": "-2", "typeId": "9ead-8a10-520-de15"},
