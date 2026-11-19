@@ -469,7 +469,7 @@
       {
         "name": "Pedro Kantor",
         "id": "59e3-5a97-f36d-5b94",
-        "hidden": true,
+        "hidden": false,
         "import": true,
         "type": "model",
         "associations": [
@@ -624,7 +624,7 @@
             "typeName": "Unit",
             "characteristics": [
               {"name": "M", "$text": "6\"", "typeId": "e703-ecb6-5ce7-aec1"},
-              {"name": "T", "$text": "4", "typeId": "d29d-cf75-fc2d-34a4"},
+              {"name": "T", "$text": "5", "typeId": "d29d-cf75-fc2d-34a4"},
               {"name": "Sv", "$text": "2+", "typeId": "450-a17e-9d5e-29da"},
               {"name": "W", "$text": "5", "typeId": "750a-a2ec-90d3-21fe"},
               {"name": "LD", "$text": "6+", "typeId": "58d2-b879-49c7-43bc"},

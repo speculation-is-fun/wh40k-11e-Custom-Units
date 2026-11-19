@@ -380,7 +380,10 @@
       {"name": "Master of Sanctity", "id": "40c0-9353-6f8a-d281", "hidden": false},
       {"name": "Chief Librarian", "id": "fe94-de84-7f3f-7fa7", "hidden": false},
       {"name": "Land Raider Tempest", "id": "d705-4a81-0bed-305e", "hidden": false},
-      {"name": "Airborne Insertion", "id": "5154-3ad1-fc2c-0158", "hidden": false}
+      {"name": "Airborne Insertion", "id": "5154-3ad1-fc2c-0158", "hidden": false},
+      {"name": "Tyberos", "id": "83ec-6c88-acba-4d68", "hidden": false},
+      {"name": "Red Brethren", "id": "cb15-2257-b45e-3ac9", "hidden": false},
+      {"name": "Te Kahurangi", "id": "9500-0478-0aeb-16f7", "hidden": false}
     ],
     "costTypes": [
       {

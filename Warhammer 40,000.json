@@ -1257,7 +1257,8 @@
       {"name": "Indomitor Kill Team", "id": "2546-062b-7236-7fa3", "hidden": false},
       {"name": "Spectrus Kill Team", "id": "2b33-05a8-bf42-72f9", "hidden": false},
       {"name": "Allies: Tyranids", "id": "747a-c6a9-6f4f-7f09", "hidden": false},
-      {"name": "Custom Units", "id": "e875-4d09-70f8-e315", "hidden": true}
+      {"name": "Custom Units", "id": "e875-4d09-70f8-e315", "hidden": true},
+      {"name": "Faction: Carcharodon Astra", "id": "5905-a1dc-cf9f-8154", "hidden": false}
     ],
     "costTypes": [
       {

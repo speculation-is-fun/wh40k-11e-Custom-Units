@@ -2701,6 +2701,7 @@
                 "hidden": false,
                 "import": true,
                 "type": "upgrade",
+                "categoryLinks": [{"name": "Bolt Weapon", "id": "4571-445f-c6ba-72ea", "hidden": false, "primary": false, "targetId": "1c08-e7e4-55b9-8e30"}],
                 "constraints": [
                   {"id": "f2f1-5c12-db46-49b7-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
                   {"id": "f2f1-5c12-db46-49b7-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
